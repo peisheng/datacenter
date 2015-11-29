@@ -1,0 +1,51 @@
+
+ 
+记录时间：2014-12-28 10:58:08,063 
+错误描述：
+执行时间:29 毫秒 
+ -->ReaderExecuted.Command:
+SELECT TOP (2) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[SiteNameCn] AS [SiteNameCn], 
+    [Extent1].[SiteNameEn] AS [SiteNameEn], 
+    [Extent1].[SiteUrl] AS [SiteUrl], 
+    [Extent1].[CreateTime] AS [CreateTime], 
+    [Extent1].[UpdateTime] AS [UpdateTime]
+    FROM [dbo].[Website] AS [Extent1]
+    WHERE [Extent1].[Id] = @p0
+---------------------------------------------------
+
+ 
+记录时间：2014-12-28 10:58:17,159 
+错误描述：
+执行时间:17 毫秒 
+ -->ReaderExecuted.Command:
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[CategoryId] AS [CategoryId], 
+    [Extent1].[WebsiteId] AS [WebsiteId], 
+    [Extent1].[MappingName] AS [MappingName], 
+    [Extent1].[IspuPlished] AS [IspuPlished], 
+    [Extent1].[OrderNum] AS [OrderNum]
+    FROM [dbo].[Website_Category] AS [Extent1]
+    WHERE [Extent1].[WebsiteId] = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2014-12-28 10:58:29,783 
+错误描述：
+执行时间:17 毫秒 
+ -->ReaderExecuted.Command:
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ParentId] AS [ParentId], 
+    [Extent1].[SettingGroupName] AS [SettingGroupName], 
+    [Extent1].[SettingKey] AS [SettingKey], 
+    [Extent1].[SettingValue] AS [SettingValue], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateTime] AS [CreateTime], 
+    [Extent1].[WebsiteId] AS [WebsiteId]
+    FROM [dbo].[WebsiteSetting] AS [Extent1]
+    WHERE [Extent1].[WebsiteId] = @p__linq__0
+---------------------------------------------------

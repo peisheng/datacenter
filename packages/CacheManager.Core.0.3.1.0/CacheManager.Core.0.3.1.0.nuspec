@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>CacheManager.Core</id>
+    <version>0.3.1.0</version>
+    <title>CacheManager.Core</title>
+    <authors>MichaConrad</authors>
+    <owners>MichaConrad</owners>
+    <licenseUrl>http://cachemanager.codeplex.com/license</licenseUrl>
+    <projectUrl>http://cachemanager.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>CacheManager is a common interface and abstraction layer for caching. It supports various cache providers / clients and includes advanced features like multiple layer caching, event handling, synchronization and statistics.
+      The Core library contains all base interfaces and tools.
+      You may also want to install one of the other CacheManager packages to get other cache handle implementations etc.</description>
+    <summary>CacheManager is a common interface and abstraction layer for caching. 
+      It supports various cache providers / clients and includes advanced features.</summary>
+    <language>en-US</language>
+  </metadata>
+</package>

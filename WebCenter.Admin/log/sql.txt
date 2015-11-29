@@ -1,0 +1,2608 @@
+
+ 
+记录时间：2015-03-27 22:04:32,942 
+错误描述：
+执行时间:9 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:04:32,980 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:04:33,010 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:06:47,041 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:06:47,074 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:06:47,099 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,662 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,662 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,662 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,662 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,669 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,666 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,669 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,737 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,740 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,741 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,745 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,750 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,768 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,768 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,769 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,773 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,776 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,889 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:14:52,912 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:29:58,196 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:29:58,197 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:29:58,196 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:29:58,202 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:29:58,206 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:29:58,234 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:29:58,237 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:29:58,237 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:29:58,262 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:29:58,262 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:29:58,263 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:29:58,264 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:29:58,280 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,561 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,561 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,561 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,561 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,561 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,562 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,562 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,631 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,631 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,638 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,642 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,657 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,659 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,659 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,663 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,663 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,675 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,681 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:04,681 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:48,723 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:48,724 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:48,724 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:48,757 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:48,758 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:48,758 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:48,786 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:48,786 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:30:48,787 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:31:24,846 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:31:24,846 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:31:24,846 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:31:24,851 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:31:24,918 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:31:24,918 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:31:24,920 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:31:24,947 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:31:24,951 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:31:24,953 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:31:24,961 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:35:30,127 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:35:30,127 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:35:30,159 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:35:30,159 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:35:30,184 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:35:30,184 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:35:58,296 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:35:58,332 
+错误描述：
+执行时间:11 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:35:58,366 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:35:58,370 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:35:58,392 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:35:58,392 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:01,550 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:01,550 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:01,629 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:01,642 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:01,644 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:01,661 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:01,679 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:01,713 
+错误描述：
+执行时间:10 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:01,741 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:04,452 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:04,452 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:04,453 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:04,458 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:04,461 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:04,495 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:04,495 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:04,497 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:04,503 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:04,519 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:04,519 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:04,519 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:04,522 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:04,522 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:04,537 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:09,413 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:09,413 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:09,413 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:09,418 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:09,423 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:09,487 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:09,497 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:09,499 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:09,500 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:09,502 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:09,518 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:09,518 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:09,519 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:09,536 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:36:09,537 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:41:44,200 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:41:44,200 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:41:44,232 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:41:44,232 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:41:44,257 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:41:44,257 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,619 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,619 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,619 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,619 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,619 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,619 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,619 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,684 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,686 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,692 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,696 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,702 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`Name`, 
+`Extent1`.`SiteNameCn`, 
+`Extent1`.`SiteNameEn`, 
+`Extent1`.`SiteUrl`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`UpdateTime`
+FROM `website` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,714 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,715 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,716 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,717 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,724 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,726 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,735 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`ParentId`, 
+`Extent1`.`SettingGroupName`, 
+`Extent1`.`SettingKey`, 
+`Extent1`.`SettingValue`, 
+`Extent1`.`Description`, 
+`Extent1`.`CreateTime`, 
+`Extent1`.`WebsiteId`
+FROM `website_setting` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2015-03-27 22:48:03,748 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`CategoryId`, 
+`Extent1`.`WebsiteId`, 
+`Extent1`.`MappingName`, 
+`Extent1`.`Ispublished`, 
+`Extent1`.`OrderNum`
+FROM `website_category` AS `Extent1`
+ WHERE `Extent1`.`WebsiteId` = @p__linq__0
+---------------------------------------------------
