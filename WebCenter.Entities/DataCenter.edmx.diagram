@@ -5,49 +5,12 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="625d74e1092944a886cf389a97db8259" Name="Diagram1">
-        <EntityTypeShape EntityType="DataCenter.Entities.advertisement" Width="1.5" PointX="13" PointY="11.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.advertisement_type" Width="1.5" PointX="10.75" PointY="11.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.advertisement_vistedlog" Width="1.5" PointX="15.25" PointY="11.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.article" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.article_contents" Width="1.5" PointX="5.25" PointY="9.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.article_images" Width="1.5" PointX="5.25" PointY="11.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.article_keyword" Width="1.5" PointX="8.25" PointY="10.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.article_website" Width="1.5" PointX="8.25" PointY="7.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.base_action" Width="1.5" PointX="10.75" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.base_role" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.base_role_action" Width="1.5" PointX="13" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.base_user" Width="1.5" PointX="10.75" PointY="7.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.base_user_role" Width="1.5" PointX="13" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.category" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.comment" Width="1.5" PointX="8.25" PointY="14.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.keyword" Width="1.5" PointX="6" PointY="6.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.sequence" Width="1.5" PointX="5.75" PointY="2" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.spider_content" Width="1.5" PointX="7.75" PointY="2" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.spider_keyword" Width="1.5" PointX="12.75" PointY="7" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.spider_link" Width="1.5" PointX="14.75" PointY="7" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.visited_log" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.website" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.website_category" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DataCenter.Entities.website_setting" Width="1.5" PointX="3" PointY="14.5" IsExpanded="true" />
-        <AssociationConnector Association="DataCenter.Entities.AD_TYPE_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="DataCenter.Entities.AD_VISITED_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="DataCenter.Entities.ART_CAT_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="DataCenter.Entities.ART_CONTENT_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="DataCenter.Entities.Art_IMAGE_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="DataCenter.Entities.article_keyword_ibfk_1" ManuallyRouted="false" />
-        <AssociationConnector Association="DataCenter.Entities.article_website_Fk" ManuallyRouted="false" />
-        <AssociationConnector Association="DataCenter.Entities.comment_ibfk_1" ManuallyRouted="false" />
-        <AssociationConnector Association="DataCenter.Entities.article_keyword_ibfk_2" ManuallyRouted="false" />
-        <AssociationConnector Association="DataCenter.Entities.article_website_site_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="DataCenter.Entities.base_role_action_ibfk_1" ManuallyRouted="false" />
-        <AssociationConnector Association="DataCenter.Entities.base_role_action_ibfk_2" ManuallyRouted="false" />
-        <AssociationConnector Association="DataCenter.Entities.base_user_role_ibfk_2" ManuallyRouted="false" />
-        <AssociationConnector Association="DataCenter.Entities.base_user_role_ibfk_1" ManuallyRouted="false" />
-        <AssociationConnector Association="DataCenter.Entities.website_category_ibfk_1" ManuallyRouted="false" />
-        <AssociationConnector Association="DataCenter.Entities.comment_ibfk_2" ManuallyRouted="false" />
-        <AssociationConnector Association="DataCenter.Entities.visited_log_ibfk_1" ManuallyRouted="false" />
-        <AssociationConnector Association="DataCenter.Entities.website_category_ibfk_2" ManuallyRouted="false" />
-        <AssociationConnector Association="DataCenter.Entities.website_setting_ibfk_1" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DataCenter.Entities.company" Width="1.5" PointX="1" PointY="0.5" />
+        <EntityTypeShape EntityType="DataCenter.Entities.operate_log" Width="1.5" PointX="3" PointY="0.5" />
+        <EntityTypeShape EntityType="DataCenter.Entities.project_case" Width="1.5" PointX="5" PointY="0.5" />
+        <EntityTypeShape EntityType="DataCenter.Entities.sys_dictionary" Width="1.5" PointX="3" PointY="4.5" />
+        <EntityTypeShape EntityType="DataCenter.Entities.sys_user" Width="1.5" PointX="5" PointY="4.5" />
+        <EntityTypeShape EntityType="DataCenter.Entities.user" Width="1.5" PointX="7" PointY="0.5" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

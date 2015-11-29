@@ -4,1486 +4,303 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="DataCenter.Entities.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="advertisement">
+    <Schema Namespace="DataCenter.Entities.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="company">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="AdName" Type="varchar" MaxLength="100" Nullable="false" />
-          <Property Name="Code" Type="longtext" Nullable="false" />
-          <Property Name="Width" Type="int" Nullable="false" />
-          <Property Name="Height" Type="int" Nullable="false" />
-          <Property Name="AdType" Type="int" Nullable="false" />
-          <Property Name="BeginDate" Type="datetime" Precision="0" Nullable="false" />
-          <Property Name="EndDate" Type="datetime" Precision="0" Nullable="false" />
-          <Property Name="WebsiteId" Type="int" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="255" />
+          <Property Name="introdce" Type="text" Nullable="false" />
+          <Property Name="type_id" Type="int" />
+          <Property Name="address" Type="varchar" MaxLength="255" />
+          <Property Name="contact_name" Type="varchar" MaxLength="50" />
+          <Property Name="user_id" Type="int" />
+          <Property Name="site_url" Type="varchar" MaxLength="255" />
+          <Property Name="qq_number" Type="varchar" MaxLength="20" />
+          <Property Name="phone" Type="varchar" MaxLength="20" />
+          <Property Name="mobile" Type="varchar" MaxLength="20" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="logo_path" Type="varchar" MaxLength="255" />
+          <Property Name="create_time" Type="datetime" Precision="0" />
+          <Property Name="update_time" Type="datetime" Precision="0" />
         </EntityType>
-        <EntityType Name="advertisement_type">
+        <EntityType Name="operate_log">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="TypeName" Type="varchar" MaxLength="255" Nullable="false" />
-          <Property Name="Descripiton" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="desript" Type="varchar" MaxLength="200" />
+          <Property Name="user_name" Type="varchar" MaxLength="50" />
+          <Property Name="user_id" Type="int" />
+          <Property Name="result" Type="varchar" MaxLength="20" />
+          <Property Name="create_time" Type="datetime" Precision="0" />
         </EntityType>
-        <EntityType Name="advertisement_vistedlog">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="bigint" Nullable="false" />
-          <Property Name="AdvertisementId" Type="int" Nullable="false" />
-          <Property Name="VistedDate" Type="date" Nullable="false" />
-          <Property Name="ShowTimes" Type="bigint" Nullable="false" />
-          <Property Name="ClickTimes" Type="bigint" Nullable="false" />
-        </EntityType>
-        <EntityType Name="article">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" Nullable="false" />
-          <Property Name="Title" Type="varchar" MaxLength="100" Nullable="false" />
-          <Property Name="Description" Type="text" Nullable="false" />
-          <Property Name="CategoryId" Type="int" Nullable="false" />
-          <Property Name="Author" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="PublishedDate" Type="datetime" Precision="0" Nullable="false" />
-          <Property Name="ArticleSource" Type="varchar" MaxLength="200" Nullable="false" />
-          <Property Name="SourceUrl" Type="varchar" MaxLength="512" Nullable="false" />
-          <Property Name="IsImageAticle" Type="bit" Nullable="false" />
-        </EntityType>
-        <EntityType Name="article_contents">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" Nullable="false" />
-          <Property Name="ArticleID" Type="bigint" Nullable="false" />
-          <Property Name="ArticleContent" Type="longtext" Nullable="false" />
-        </EntityType>
-        <EntityType Name="article_images">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="bigint" Nullable="false" />
-          <Property Name="ArticleId" Type="bigint" Nullable="false" />
-          <Property Name="ImagePath" Type="varchar" MaxLength="500" Nullable="false" />
-          <Property Name="Width" Type="smallint" Nullable="false" />
-          <Property Name="Heigth" Type="smallint" Nullable="false" />
-        </EntityType>
-        <EntityType Name="article_keyword">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="bigint" Nullable="false" />
-          <Property Name="ArticleId" Type="bigint" Nullable="false" />
-          <Property Name="KeyWordId" Type="bigint" Nullable="false" />
-        </EntityType>
-        <EntityType Name="article_website">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" Nullable="false" />
-          <Property Name="ArticleId" Type="bigint" Nullable="false" />
-          <Property Name="WebsiteId" Type="int" Nullable="false" />
-          <Property Name="IsPublished" Type="bit" Nullable="false" />
-          <Property Name="IsTop" Type="bit" Nullable="false" />
-          <Property Name="IsHot" Type="bit" Nullable="false" />
-          <Property Name="IsSpecial" Type="bit" Nullable="false" />
-        </EntityType>
-        <EntityType Name="base_action">
+        <EntityType Name="project_case">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="ActionName" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="ActionUrl" Type="varchar" MaxLength="200" Nullable="false" />
-          <Property Name="CreateDate" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="255" />
+          <Property Name="descript" Type="varchar" MaxLength="500" />
+          <Property Name="type_id" Type="int" />
+          <Property Name="content" Type="text" />
+          <Property Name="company_id" Type="int" />
+          <Property Name="user_id" Type="int" />
+          <Property Name="is_publish" Type="int" />
+          <Property Name="view_count" Type="int" />
+          <Property Name="publish_time" Type="datetime" Precision="0" />
+          <Property Name="create_time" Type="datetime" Precision="0" />
         </EntityType>
-        <EntityType Name="base_role">
+        <EntityType Name="sys_dictionary">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="value" Type="varchar" MaxLength="255" />
+          <Property Name="group" Type="varchar" MaxLength="50" />
+          <Property Name="create_time" Type="datetime" Precision="0" />
+          <Property Name="update_time" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="sys_user">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="RoleName" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="RoleValue" Type="int" Nullable="false" />
-          <Property Name="CreateDate" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="user_name" Type="varchar" MaxLength="50" />
+          <Property Name="password" Type="varchar" MaxLength="124" />
+          <Property Name="hash_code" Type="varchar" MaxLength="20" />
+          <Property Name="display_name" Type="varchar" MaxLength="50" />
+          <Property Name="create_time" Type="datetime" Precision="0" />
         </EntityType>
-        <EntityType Name="base_role_action">
+        <EntityType Name="user">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="ActionId" Type="int" Nullable="false" />
-          <Property Name="RoleId" Type="int" Nullable="false" />
-          <Property Name="CreateDate" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="qq_number" Type="varchar" MaxLength="20" />
+          <Property Name="phone" Type="varchar" MaxLength="20" />
+          <Property Name="mobile" Type="varchar" MaxLength="20" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="photo_path" Type="varchar" MaxLength="255" />
+          <Property Name="password" Type="varchar" MaxLength="124" />
+          <Property Name="hash_code" Type="varchar" MaxLength="20" />
+          <Property Name="is_admin" Type="int" />
+          <Property Name="company_id" Type="int" />
+          <Property Name="last_login_time" Type="datetime" Precision="0" />
+          <Property Name="create_time" Type="datetime" Precision="0" />
+          <Property Name="update_time" Type="datetime" Precision="0" />
         </EntityType>
-        <EntityType Name="base_user">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="Mobile" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="LastLoginTime" Type="datetime" Precision="0" Nullable="false" />
-          <Property Name="CreateDate" Type="datetime" Precision="0" Nullable="false" />
-          <Property Name="HashCode" Type="varchar" MaxLength="32" Nullable="false" />
-        </EntityType>
-        <EntityType Name="base_user_role">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="UserId" Type="int" Nullable="false" />
-          <Property Name="RoleId" Type="int" Nullable="false" />
-          <Property Name="CreateDate" Type="datetime" Precision="0" Nullable="false" />
-        </EntityType>
-        <EntityType Name="category">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="CateName" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="Description" Type="varchar" MaxLength="200" Nullable="false" />
-          <Property Name="PingYin" Type="varchar" MaxLength="255" Nullable="false" />
-          <Property Name="IsEnabled" Type="bit" Nullable="false" />
-        </EntityType>
-        <EntityType Name="comment">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="bigint" Nullable="false" />
-          <Property Name="ArticleId" Type="bigint" Nullable="false" />
-          <Property Name="CommentContent" Type="text" Nullable="false" />
-          <Property Name="WebsiteId" Type="int" Nullable="false" />
-          <Property Name="CommentTime" Type="datetime" Precision="0" Nullable="false" />
-          <Property Name="IpAddress" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="IsPublish" Type="bit" Nullable="false" />
-        </EntityType>
-        <EntityType Name="keywords">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="bigint" Nullable="false" />
-          <Property Name="Keyword" Type="varchar" MaxLength="255" Nullable="false" />
-          <Property Name="CreateTime" Type="datetime" Precision="0" Nullable="false" />
-        </EntityType>
-        <EntityType Name="sequence">
-          <Key>
-            <PropertyRef Name="name" />
-          </Key>
-          <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="id" Type="ubigint" Nullable="false" />
-        </EntityType>
-        <EntityType Name="spider_content">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="bigint" Nullable="false" />
-          <Property Name="Title" Type="varchar" MaxLength="100" Nullable="false" />
-          <Property Name="Description" Type="text" Nullable="false" />
-          <Property Name="HtmlContent" Type="longtext" Nullable="false" />
-          <Property Name="TextContent" Type="longtext" Nullable="false" />
-          <Property Name="SourceUrl" Type="varchar" MaxLength="200" Nullable="false" />
-          <Property Name="ExpiredDate" Type="datetime" Precision="0" Nullable="false" />
-          <Property Name="CategoryId" Type="int" Nullable="false" />
-        </EntityType>
-        <EntityType Name="spider_keyword">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="bigint" Nullable="false" />
-          <Property Name="KeyWord" Type="varchar" MaxLength="200" Nullable="false" />
-          <Property Name="CreateDate" Type="datetime" Precision="0" Nullable="false" />
-          <Property Name="IsCatched" Type="bit" Nullable="false" />
-          <Property Name="IsExpired" Type="bit" Nullable="false" />
-          <Property Name="ExpiredDate" Type="datetime" Precision="0" Nullable="false" />
-          <Property Name="CategoryId" Type="int" Nullable="false" />
-        </EntityType>
-        <EntityType Name="spider_link">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="bigint" Nullable="false" />
-          <Property Name="LinkUrl" Type="varchar" MaxLength="200" Nullable="false" />
-          <Property Name="IsCatched" Type="bit" Nullable="false" />
-          <Property Name="CategoryId" Type="int" Nullable="false" />
-        </EntityType>
-        <EntityType Name="visited_log">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" Nullable="false" />
-          <Property Name="WebSiteId" Type="int" Nullable="false" />
-          <Property Name="PageUrl" Type="varchar" MaxLength="600" Nullable="false" />
-          <Property Name="VisitedDate" Type="datetime" Precision="0" Nullable="false" />
-          <Property Name="UserName" Type="varchar" MaxLength="255" Nullable="false" />
-        </EntityType>
-        <EntityType Name="website">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="SiteNameCn" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="SiteNameEn" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="SiteUrl" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="CreateTime" Type="datetime" Precision="0" Nullable="false" />
-          <Property Name="UpdateTime" Type="datetime" Precision="0" Nullable="false" />
-        </EntityType>
-        <EntityType Name="website_category">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="CategoryId" Type="int" Nullable="false" />
-          <Property Name="WebsiteId" Type="int" Nullable="false" />
-          <Property Name="MappingName" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="Ispublished" Type="bit" Nullable="false" />
-          <Property Name="OrderNum" Type="int" Nullable="false" />
-        </EntityType>
-        <EntityType Name="website_setting">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="ParentId" Type="int" Nullable="false" />
-          <Property Name="SettingGroupName" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="SettingKey" Type="varchar" MaxLength="100" Nullable="false" />
-          <Property Name="SettingValue" Type="varchar" MaxLength="800" Nullable="false" />
-          <Property Name="Description" Type="varchar" MaxLength="200" Nullable="false" />
-          <Property Name="CreateTime" Type="datetime" Precision="0" Nullable="false" />
-          <Property Name="WebsiteId" Type="int" Nullable="false" />
-        </EntityType>
-        <Association Name="AD_TYPE_FK">
-          <End Role="advertisement_type" Type="Self.advertisement_type" Multiplicity="1" />
-          <End Role="advertisement" Type="Self.advertisement" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="advertisement_type">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="advertisement">
-              <PropertyRef Name="AdType" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="AD_VISITED_FK">
-          <End Role="advertisement" Type="Self.advertisement" Multiplicity="1" />
-          <End Role="advertisement_vistedlog" Type="Self.advertisement_vistedlog" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="advertisement">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="advertisement_vistedlog">
-              <PropertyRef Name="AdvertisementId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="ART_CAT_FK">
-          <End Role="category" Type="Self.category" Multiplicity="1" />
-          <End Role="article" Type="Self.article" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="category">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="article">
-              <PropertyRef Name="CategoryId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="ART_CONTENT_FK">
-          <End Role="article" Type="Self.article" Multiplicity="1" />
-          <End Role="article_contents" Type="Self.article_contents" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="article">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="article_contents">
-              <PropertyRef Name="ArticleID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="Art_IMAGE_FK">
-          <End Role="article" Type="Self.article" Multiplicity="1" />
-          <End Role="article_images" Type="Self.article_images" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="article">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="article_images">
-              <PropertyRef Name="ArticleId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="article_keyword_ibfk_1">
-          <End Role="article" Type="Self.article" Multiplicity="1" />
-          <End Role="article_keyword" Type="Self.article_keyword" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="article">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="article_keyword">
-              <PropertyRef Name="ArticleId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="article_keyword_ibfk_2">
-          <End Role="keywords" Type="Self.keywords" Multiplicity="1" />
-          <End Role="article_keyword" Type="Self.article_keyword" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="keywords">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="article_keyword">
-              <PropertyRef Name="KeyWordId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="article_website_Fk">
-          <End Role="article" Type="Self.article" Multiplicity="1" />
-          <End Role="article_website" Type="Self.article_website" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="article">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="article_website">
-              <PropertyRef Name="ArticleId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="article_website_site_FK">
-          <End Role="website" Type="Self.website" Multiplicity="1" />
-          <End Role="article_website" Type="Self.article_website" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="website">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="article_website">
-              <PropertyRef Name="WebsiteId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="base_role_action_ibfk_1">
-          <End Role="base_action" Type="Self.base_action" Multiplicity="1" />
-          <End Role="base_role_action" Type="Self.base_role_action" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="base_action">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="base_role_action">
-              <PropertyRef Name="ActionId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="base_role_action_ibfk_2">
-          <End Role="base_role" Type="Self.base_role" Multiplicity="1" />
-          <End Role="base_role_action" Type="Self.base_role_action" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="base_role">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="base_role_action">
-              <PropertyRef Name="RoleId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="base_user_role_ibfk_1">
-          <End Role="base_user" Type="Self.base_user" Multiplicity="1" />
-          <End Role="base_user_role" Type="Self.base_user_role" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="base_user">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="base_user_role">
-              <PropertyRef Name="UserId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="base_user_role_ibfk_2">
-          <End Role="base_role" Type="Self.base_role" Multiplicity="1" />
-          <End Role="base_user_role" Type="Self.base_user_role" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="base_role">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="base_user_role">
-              <PropertyRef Name="RoleId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="comment_ibfk_1">
-          <End Role="article" Type="Self.article" Multiplicity="1" />
-          <End Role="comment" Type="Self.comment" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="article">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="comment">
-              <PropertyRef Name="ArticleId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="comment_ibfk_2">
-          <End Role="website" Type="Self.website" Multiplicity="1" />
-          <End Role="comment" Type="Self.comment" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="website">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="comment">
-              <PropertyRef Name="WebsiteId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="visited_log_ibfk_1">
-          <End Role="website" Type="Self.website" Multiplicity="1" />
-          <End Role="visited_log" Type="Self.visited_log" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="website">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="visited_log">
-              <PropertyRef Name="WebSiteId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="website_category_ibfk_1">
-          <End Role="category" Type="Self.category" Multiplicity="1" />
-          <End Role="website_category" Type="Self.website_category" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="category">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="website_category">
-              <PropertyRef Name="CategoryId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="website_category_ibfk_2">
-          <End Role="website" Type="Self.website" Multiplicity="1" />
-          <End Role="website_category" Type="Self.website_category" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="website">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="website_category">
-              <PropertyRef Name="WebsiteId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="website_setting_ibfk_1">
-          <End Role="website" Type="Self.website" Multiplicity="1" />
-          <End Role="website_setting" Type="Self.website_setting" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="website">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="website_setting">
-              <PropertyRef Name="WebsiteId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="DataCenterEntitiesStoreContainer">
-          <EntitySet Name="advertisement" EntityType="Self.advertisement" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="advertisement_type" EntityType="Self.advertisement_type" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="advertisement_vistedlog" EntityType="Self.advertisement_vistedlog" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="article" EntityType="Self.article" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="article_contents" EntityType="Self.article_contents" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="article_images" EntityType="Self.article_images" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="article_keyword" EntityType="Self.article_keyword" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="article_website" EntityType="Self.article_website" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="base_action" EntityType="Self.base_action" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="base_role" EntityType="Self.base_role" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="base_role_action" EntityType="Self.base_role_action" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="base_user" EntityType="Self.base_user" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="base_user_role" EntityType="Self.base_user_role" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="category" EntityType="Self.category" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="comment" EntityType="Self.comment" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="keywords" EntityType="Self.keywords" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="sequence" EntityType="Self.sequence" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="spider_content" EntityType="Self.spider_content" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="spider_keyword" EntityType="Self.spider_keyword" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="spider_link" EntityType="Self.spider_link" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="visited_log" EntityType="Self.visited_log" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="website" EntityType="Self.website" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="website_category" EntityType="Self.website_category" Schema="datacenter" store:Type="Tables" />
-          <EntitySet Name="website_setting" EntityType="Self.website_setting" Schema="datacenter" store:Type="Tables" />
-          <AssociationSet Name="AD_TYPE_FK" Association="Self.AD_TYPE_FK">
-            <End Role="advertisement_type" EntitySet="advertisement_type" />
-            <End Role="advertisement" EntitySet="advertisement" />
-          </AssociationSet>
-          <AssociationSet Name="AD_VISITED_FK" Association="Self.AD_VISITED_FK">
-            <End Role="advertisement" EntitySet="advertisement" />
-            <End Role="advertisement_vistedlog" EntitySet="advertisement_vistedlog" />
-          </AssociationSet>
-          <AssociationSet Name="ART_CAT_FK" Association="Self.ART_CAT_FK">
-            <End Role="category" EntitySet="category" />
-            <End Role="article" EntitySet="article" />
-          </AssociationSet>
-          <AssociationSet Name="ART_CONTENT_FK" Association="Self.ART_CONTENT_FK">
-            <End Role="article" EntitySet="article" />
-            <End Role="article_contents" EntitySet="article_contents" />
-          </AssociationSet>
-          <AssociationSet Name="Art_IMAGE_FK" Association="Self.Art_IMAGE_FK">
-            <End Role="article" EntitySet="article" />
-            <End Role="article_images" EntitySet="article_images" />
-          </AssociationSet>
-          <AssociationSet Name="article_keyword_ibfk_1" Association="Self.article_keyword_ibfk_1">
-            <End Role="article" EntitySet="article" />
-            <End Role="article_keyword" EntitySet="article_keyword" />
-          </AssociationSet>
-          <AssociationSet Name="article_keyword_ibfk_2" Association="Self.article_keyword_ibfk_2">
-            <End Role="keywords" EntitySet="keywords" />
-            <End Role="article_keyword" EntitySet="article_keyword" />
-          </AssociationSet>
-          <AssociationSet Name="article_website_Fk" Association="Self.article_website_Fk">
-            <End Role="article" EntitySet="article" />
-            <End Role="article_website" EntitySet="article_website" />
-          </AssociationSet>
-          <AssociationSet Name="article_website_site_FK" Association="Self.article_website_site_FK">
-            <End Role="website" EntitySet="website" />
-            <End Role="article_website" EntitySet="article_website" />
-          </AssociationSet>
-          <AssociationSet Name="base_role_action_ibfk_1" Association="Self.base_role_action_ibfk_1">
-            <End Role="base_action" EntitySet="base_action" />
-            <End Role="base_role_action" EntitySet="base_role_action" />
-          </AssociationSet>
-          <AssociationSet Name="base_role_action_ibfk_2" Association="Self.base_role_action_ibfk_2">
-            <End Role="base_role" EntitySet="base_role" />
-            <End Role="base_role_action" EntitySet="base_role_action" />
-          </AssociationSet>
-          <AssociationSet Name="base_user_role_ibfk_1" Association="Self.base_user_role_ibfk_1">
-            <End Role="base_user" EntitySet="base_user" />
-            <End Role="base_user_role" EntitySet="base_user_role" />
-          </AssociationSet>
-          <AssociationSet Name="base_user_role_ibfk_2" Association="Self.base_user_role_ibfk_2">
-            <End Role="base_role" EntitySet="base_role" />
-            <End Role="base_user_role" EntitySet="base_user_role" />
-          </AssociationSet>
-          <AssociationSet Name="comment_ibfk_1" Association="Self.comment_ibfk_1">
-            <End Role="article" EntitySet="article" />
-            <End Role="comment" EntitySet="comment" />
-          </AssociationSet>
-          <AssociationSet Name="comment_ibfk_2" Association="Self.comment_ibfk_2">
-            <End Role="website" EntitySet="website" />
-            <End Role="comment" EntitySet="comment" />
-          </AssociationSet>
-          <AssociationSet Name="visited_log_ibfk_1" Association="Self.visited_log_ibfk_1">
-            <End Role="website" EntitySet="website" />
-            <End Role="visited_log" EntitySet="visited_log" />
-          </AssociationSet>
-          <AssociationSet Name="website_category_ibfk_1" Association="Self.website_category_ibfk_1">
-            <End Role="category" EntitySet="category" />
-            <End Role="website_category" EntitySet="website_category" />
-          </AssociationSet>
-          <AssociationSet Name="website_category_ibfk_2" Association="Self.website_category_ibfk_2">
-            <End Role="website" EntitySet="website" />
-            <End Role="website_category" EntitySet="website_category" />
-          </AssociationSet>
-          <AssociationSet Name="website_setting_ibfk_1" Association="Self.website_setting_ibfk_1">
-            <End Role="website" EntitySet="website" />
-            <End Role="website_setting" EntitySet="website_setting" />
-          </AssociationSet>
+          <EntitySet Name="company" EntityType="Self.company" Schema="todaystart" store:Type="Tables" />
+          <EntitySet Name="operate_log" EntityType="Self.operate_log" Schema="todaystart" store:Type="Tables" />
+          <EntitySet Name="project_case" EntityType="Self.project_case" Schema="todaystart" store:Type="Tables" />
+          <EntitySet Name="sys_dictionary" EntityType="Self.sys_dictionary" Schema="todaystart" store:Type="Tables" />
+          <EntitySet Name="sys_user" EntityType="Self.sys_user" Schema="todaystart" store:Type="Tables" />
+          <EntitySet Name="user" EntityType="Self.user" Schema="todaystart" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DataCenter.Entities" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="advertisement">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="AdName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Code" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Width" Type="Int32" Nullable="false" />
-          <Property Name="Height" Type="Int32" Nullable="false" />
-          <Property Name="AdType" Type="Int32" Nullable="false" />
-          <Property Name="BeginDate" Type="DateTime" Nullable="false" />
-          <Property Name="EndDate" Type="DateTime" Nullable="false" />
-          <Property Name="WebsiteId" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="advertisement_type" Relationship="Self.AD_TYPE_FK" FromRole="advertisement" ToRole="advertisement_type" />
-          <NavigationProperty Name="advertisement_vistedlog" Relationship="Self.AD_VISITED_FK" FromRole="advertisement" ToRole="advertisement_vistedlog" />
-        </EntityType>
-        <EntityType Name="advertisement_type">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="TypeName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Descripiton" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="advertisements" Relationship="Self.AD_TYPE_FK" FromRole="advertisement_type" ToRole="advertisement" />
-        </EntityType>
-        <EntityType Name="advertisement_vistedlog">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int64" Nullable="false" />
-          <Property Name="AdvertisementId" Type="Int32" Nullable="false" />
-          <Property Name="VistedDate" Type="DateTime" Nullable="false" />
-          <Property Name="ShowTimes" Type="Int64" Nullable="false" />
-          <Property Name="ClickTimes" Type="Int64" Nullable="false" />
-          <NavigationProperty Name="advertisement" Relationship="Self.AD_VISITED_FK" FromRole="advertisement_vistedlog" ToRole="advertisement" />
-        </EntityType>
-        <EntityType Name="article">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" />
-          <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Description" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="CategoryId" Type="Int32" Nullable="false" />
-          <Property Name="Author" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="PublishedDate" Type="DateTime" Nullable="false" />
-          <Property Name="ArticleSource" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="SourceUrl" Type="String" MaxLength="512" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="IsImageAticle" Type="Boolean" Nullable="false" />
-          <NavigationProperty Name="category" Relationship="Self.ART_CAT_FK" FromRole="article" ToRole="category" />
-          <NavigationProperty Name="article_contents" Relationship="Self.ART_CONTENT_FK" FromRole="article" ToRole="article_contents" />
-          <NavigationProperty Name="article_images" Relationship="Self.Art_IMAGE_FK" FromRole="article" ToRole="article_images" />
-          <NavigationProperty Name="article_keyword" Relationship="Self.article_keyword_ibfk_1" FromRole="article" ToRole="article_keyword" />
-          <NavigationProperty Name="article_website" Relationship="Self.article_website_Fk" FromRole="article" ToRole="article_website" />
-          <NavigationProperty Name="comments" Relationship="Self.comment_ibfk_1" FromRole="article" ToRole="comment" />
-        </EntityType>
-        <EntityType Name="article_contents">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" />
-          <Property Name="ArticleID" Type="Int64" Nullable="false" />
-          <Property Name="ArticleContent" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="article" Relationship="Self.ART_CONTENT_FK" FromRole="article_contents" ToRole="article" />
-        </EntityType>
-        <EntityType Name="article_images">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int64" Nullable="false" />
-          <Property Name="ArticleId" Type="Int64" Nullable="false" />
-          <Property Name="ImagePath" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Width" Type="Int16" Nullable="false" />
-          <Property Name="Heigth" Type="Int16" Nullable="false" />
-          <NavigationProperty Name="article" Relationship="Self.Art_IMAGE_FK" FromRole="article_images" ToRole="article" />
-        </EntityType>
-        <EntityType Name="article_keyword">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int64" Nullable="false" />
-          <Property Name="ArticleId" Type="Int64" Nullable="false" />
-          <Property Name="KeyWordId" Type="Int64" Nullable="false" />
-          <NavigationProperty Name="article" Relationship="Self.article_keyword_ibfk_1" FromRole="article_keyword" ToRole="article" />
-          <NavigationProperty Name="keyword" Relationship="Self.article_keyword_ibfk_2" FromRole="article_keyword" ToRole="keywords" />
-        </EntityType>
-        <EntityType Name="article_website">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" />
-          <Property Name="ArticleId" Type="Int64" Nullable="false" />
-          <Property Name="WebsiteId" Type="Int32" Nullable="false" />
-          <Property Name="IsPublished" Type="Boolean" Nullable="false" />
-          <NavigationProperty Name="article" Relationship="Self.article_website_Fk" FromRole="article_website" ToRole="article" />
-          <NavigationProperty Name="website" Relationship="Self.article_website_site_FK" FromRole="article_website" ToRole="website" />
-          <Property Name="IsTop" Type="Boolean" Nullable="false" />
-          <Property Name="IsHot" Type="Boolean" Nullable="false" />
-          <Property Name="IsSpecial" Type="Boolean" Nullable="false" />
-        </EntityType>
-        <EntityType Name="base_action">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="ActionName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ActionUrl" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="CreateDate" Type="DateTime" Nullable="false" />
-          <NavigationProperty Name="base_role_action" Relationship="Self.base_role_action_ibfk_1" FromRole="base_action" ToRole="base_role_action" />
-        </EntityType>
-        <EntityType Name="base_role">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="RoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="RoleValue" Type="Int32" Nullable="false" />
-          <Property Name="CreateDate" Type="DateTime" Nullable="false" />
-          <NavigationProperty Name="base_role_action" Relationship="Self.base_role_action_ibfk_2" FromRole="base_role" ToRole="base_role_action" />
-          <NavigationProperty Name="base_user_role" Relationship="Self.base_user_role_ibfk_2" FromRole="base_role" ToRole="base_user_role" />
-        </EntityType>
-        <EntityType Name="base_role_action">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="ActionId" Type="Int32" Nullable="false" />
-          <Property Name="RoleId" Type="Int32" Nullable="false" />
-          <Property Name="CreateDate" Type="DateTime" Nullable="false" />
-          <NavigationProperty Name="base_action" Relationship="Self.base_role_action_ibfk_1" FromRole="base_role_action" ToRole="base_action" />
-          <NavigationProperty Name="base_role" Relationship="Self.base_role_action_ibfk_2" FromRole="base_role_action" ToRole="base_role" />
-        </EntityType>
-        <EntityType Name="base_user">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="LastLoginTime" Type="DateTime" Nullable="false" />
-          <Property Name="CreateDate" Type="DateTime" Nullable="false" />
-          <NavigationProperty Name="base_user_role" Relationship="Self.base_user_role_ibfk_1" FromRole="base_user" ToRole="base_user_role" />
-          <Property Name="HashCode" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="false" />
-        </EntityType>
-        <EntityType Name="base_user_role">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="UserId" Type="Int32" Nullable="false" />
-          <Property Name="RoleId" Type="Int32" Nullable="false" />
-          <Property Name="CreateDate" Type="DateTime" Nullable="false" />
-          <NavigationProperty Name="base_role" Relationship="Self.base_user_role_ibfk_2" FromRole="base_user_role" ToRole="base_role" />
-          <NavigationProperty Name="base_user" Relationship="Self.base_user_role_ibfk_1" FromRole="base_user_role" ToRole="base_user" />
-        </EntityType>
-        <EntityType Name="category">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="CateName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="PingYin" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
-          <NavigationProperty Name="articles" Relationship="Self.ART_CAT_FK" FromRole="category" ToRole="article" />
-          <NavigationProperty Name="website_category" Relationship="Self.website_category_ibfk_1" FromRole="category" ToRole="website_category" />
-        </EntityType>
-        <EntityType Name="comment">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int64" Nullable="false" />
-          <Property Name="ArticleId" Type="Int64" Nullable="false" />
-          <Property Name="CommentContent" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="WebsiteId" Type="Int32" Nullable="false" />
-          <Property Name="CommentTime" Type="DateTime" Nullable="false" />
-          <Property Name="IpAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="IsPublish" Type="Boolean" Nullable="false" />
-          <NavigationProperty Name="article" Relationship="Self.comment_ibfk_1" FromRole="comment" ToRole="article" />
-          <NavigationProperty Name="website" Relationship="Self.comment_ibfk_2" FromRole="comment" ToRole="website" />
-        </EntityType>
-        <EntityType Name="keyword">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int64" Nullable="false" />
-          <Property Name="Keyword1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="CreateTime" Type="DateTime" Nullable="false" />
-          <NavigationProperty Name="article_keyword" Relationship="Self.article_keyword_ibfk_2" FromRole="keywords" ToRole="article_keyword" />
-        </EntityType>
-        <EntityType Name="sequence">
-          <Key>
-            <PropertyRef Name="name" />
-          </Key>
-          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="id" Type="Decimal" Nullable="false" />
-        </EntityType>
-        <EntityType Name="spider_content">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int64" Nullable="false" />
-          <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Description" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="HtmlContent" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="TextContent" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="SourceUrl" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ExpiredDate" Type="DateTime" Nullable="false" />
-          <Property Name="CategoryId" Type="Int32" Nullable="false" />
-        </EntityType>
-        <EntityType Name="spider_keyword">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int64" Nullable="false" />
-          <Property Name="KeyWord" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="CreateDate" Type="DateTime" Nullable="false" />
-          <Property Name="IsCatched" Type="Boolean" Nullable="false" />
-          <Property Name="IsExpired" Type="Boolean" Nullable="false" />
-          <Property Name="ExpiredDate" Type="DateTime" Nullable="false" />
-          <Property Name="CategoryId" Type="Int32" Nullable="false" />
-        </EntityType>
-        <EntityType Name="spider_link">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int64" Nullable="false" />
-          <Property Name="LinkUrl" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="IsCatched" Type="Boolean" Nullable="false" />
-          <Property Name="CategoryId" Type="Int32" Nullable="false" />
-        </EntityType>
-        <EntityType Name="visited_log">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" />
-          <Property Name="WebSiteId" Type="Int32" Nullable="false" />
-          <Property Name="PageUrl" Type="String" MaxLength="600" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="VisitedDate" Type="DateTime" Nullable="false" />
-          <Property Name="UserName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="website" Relationship="Self.visited_log_ibfk_1" FromRole="visited_log" ToRole="website" />
-        </EntityType>
-        <EntityType Name="website">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="SiteNameCn" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="SiteNameEn" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="SiteUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="CreateTime" Type="DateTime" Nullable="false" />
-          <Property Name="UpdateTime" Type="DateTime" Nullable="false" />
-          <NavigationProperty Name="article_website" Relationship="Self.article_website_site_FK" FromRole="website" ToRole="article_website" />
-          <NavigationProperty Name="comments" Relationship="Self.comment_ibfk_2" FromRole="website" ToRole="comment" />
-          <NavigationProperty Name="visited_log" Relationship="Self.visited_log_ibfk_1" FromRole="website" ToRole="visited_log" />
-          <NavigationProperty Name="website_category" Relationship="Self.website_category_ibfk_2" FromRole="website" ToRole="website_category" />
-          <NavigationProperty Name="website_setting" Relationship="Self.website_setting_ibfk_1" FromRole="website" ToRole="website_setting" />
-        </EntityType>
-        <EntityType Name="website_category">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="CategoryId" Type="Int32" Nullable="false" />
-          <Property Name="WebsiteId" Type="Int32" Nullable="false" />
-          <Property Name="MappingName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Ispublished" Type="Boolean" Nullable="false" />
-          <Property Name="OrderNum" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="category" Relationship="Self.website_category_ibfk_1" FromRole="website_category" ToRole="category" />
-          <NavigationProperty Name="website" Relationship="Self.website_category_ibfk_2" FromRole="website_category" ToRole="website" />
-        </EntityType>
-        <EntityType Name="website_setting">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="ParentId" Type="Int32" Nullable="false" />
-          <Property Name="SettingGroupName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="SettingKey" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="SettingValue" Type="String" MaxLength="800" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="CreateTime" Type="DateTime" Nullable="false" />
-          <Property Name="WebsiteId" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="website" Relationship="Self.website_setting_ibfk_1" FromRole="website_setting" ToRole="website" />
-        </EntityType>
-        <Association Name="AD_TYPE_FK">
-          <End Role="advertisement_type" Type="Self.advertisement_type" Multiplicity="1" />
-          <End Role="advertisement" Type="Self.advertisement" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="advertisement_type">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="advertisement">
-              <PropertyRef Name="AdType" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="AD_VISITED_FK">
-          <End Role="advertisement" Type="Self.advertisement" Multiplicity="1" />
-          <End Role="advertisement_vistedlog" Type="Self.advertisement_vistedlog" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="advertisement">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="advertisement_vistedlog">
-              <PropertyRef Name="AdvertisementId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="ART_CAT_FK">
-          <End Role="category" Type="Self.category" Multiplicity="1" />
-          <End Role="article" Type="Self.article" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="category">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="article">
-              <PropertyRef Name="CategoryId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="ART_CONTENT_FK">
-          <End Role="article" Type="Self.article" Multiplicity="1" />
-          <End Role="article_contents" Type="Self.article_contents" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="article">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="article_contents">
-              <PropertyRef Name="ArticleID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="Art_IMAGE_FK">
-          <End Role="article" Type="Self.article" Multiplicity="1" />
-          <End Role="article_images" Type="Self.article_images" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="article">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="article_images">
-              <PropertyRef Name="ArticleId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="article_keyword_ibfk_1">
-          <End Role="article" Type="Self.article" Multiplicity="1" />
-          <End Role="article_keyword" Type="Self.article_keyword" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="article">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="article_keyword">
-              <PropertyRef Name="ArticleId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="article_website_Fk">
-          <End Role="article" Type="Self.article" Multiplicity="1" />
-          <End Role="article_website" Type="Self.article_website" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="article">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="article_website">
-              <PropertyRef Name="ArticleId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="comment_ibfk_1">
-          <End Role="article" Type="Self.article" Multiplicity="1" />
-          <End Role="comment" Type="Self.comment" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="article">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="comment">
-              <PropertyRef Name="ArticleId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="article_keyword_ibfk_2">
-          <End Role="keywords" Type="Self.keyword" Multiplicity="1" />
-          <End Role="article_keyword" Type="Self.article_keyword" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="keywords">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="article_keyword">
-              <PropertyRef Name="KeyWordId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="article_website_site_FK">
-          <End Role="website" Type="Self.website" Multiplicity="1" />
-          <End Role="article_website" Type="Self.article_website" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="website">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="article_website">
-              <PropertyRef Name="WebsiteId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="base_role_action_ibfk_1">
-          <End Role="base_action" Type="Self.base_action" Multiplicity="1" />
-          <End Role="base_role_action" Type="Self.base_role_action" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="base_action">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="base_role_action">
-              <PropertyRef Name="ActionId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="base_role_action_ibfk_2">
-          <End Role="base_role" Type="Self.base_role" Multiplicity="1" />
-          <End Role="base_role_action" Type="Self.base_role_action" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="base_role">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="base_role_action">
-              <PropertyRef Name="RoleId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="base_user_role_ibfk_2">
-          <End Role="base_role" Type="Self.base_role" Multiplicity="1" />
-          <End Role="base_user_role" Type="Self.base_user_role" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="base_role">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="base_user_role">
-              <PropertyRef Name="RoleId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="base_user_role_ibfk_1">
-          <End Role="base_user" Type="Self.base_user" Multiplicity="1" />
-          <End Role="base_user_role" Type="Self.base_user_role" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="base_user">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="base_user_role">
-              <PropertyRef Name="UserId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="website_category_ibfk_1">
-          <End Role="category" Type="Self.category" Multiplicity="1" />
-          <End Role="website_category" Type="Self.website_category" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="category">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="website_category">
-              <PropertyRef Name="CategoryId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="comment_ibfk_2">
-          <End Role="website" Type="Self.website" Multiplicity="1" />
-          <End Role="comment" Type="Self.comment" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="website">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="comment">
-              <PropertyRef Name="WebsiteId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="visited_log_ibfk_1">
-          <End Role="website" Type="Self.website" Multiplicity="1" />
-          <End Role="visited_log" Type="Self.visited_log" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="website">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="visited_log">
-              <PropertyRef Name="WebSiteId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="website_category_ibfk_2">
-          <End Role="website" Type="Self.website" Multiplicity="1" />
-          <End Role="website_category" Type="Self.website_category" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="website">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="website_category">
-              <PropertyRef Name="WebsiteId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="website_setting_ibfk_1">
-          <End Role="website" Type="Self.website" Multiplicity="1" />
-          <End Role="website_setting" Type="Self.website_setting" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="website">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="website_setting">
-              <PropertyRef Name="WebsiteId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="advertisements" EntityType="Self.advertisement" />
-          <EntitySet Name="advertisement_type" EntityType="Self.advertisement_type" />
-          <EntitySet Name="advertisement_vistedlog" EntityType="Self.advertisement_vistedlog" />
-          <EntitySet Name="articles" EntityType="Self.article" />
-          <EntitySet Name="article_contents" EntityType="Self.article_contents" />
-          <EntitySet Name="article_images" EntityType="Self.article_images" />
-          <EntitySet Name="article_keyword" EntityType="Self.article_keyword" />
-          <EntitySet Name="article_website" EntityType="Self.article_website" />
-          <EntitySet Name="base_action" EntityType="Self.base_action" />
-          <EntitySet Name="base_role" EntityType="Self.base_role" />
-          <EntitySet Name="base_role_action" EntityType="Self.base_role_action" />
-          <EntitySet Name="base_user" EntityType="Self.base_user" />
-          <EntitySet Name="base_user_role" EntityType="Self.base_user_role" />
-          <EntitySet Name="categories" EntityType="Self.category" />
-          <EntitySet Name="comments" EntityType="Self.comment" />
-          <EntitySet Name="keywords" EntityType="Self.keyword" />
-          <EntitySet Name="sequences" EntityType="Self.sequence" />
-          <EntitySet Name="spider_content" EntityType="Self.spider_content" />
-          <EntitySet Name="spider_keyword" EntityType="Self.spider_keyword" />
-          <EntitySet Name="spider_link" EntityType="Self.spider_link" />
-          <EntitySet Name="visited_log" EntityType="Self.visited_log" />
-          <EntitySet Name="websites" EntityType="Self.website" />
-          <EntitySet Name="website_category" EntityType="Self.website_category" />
-          <EntitySet Name="website_setting" EntityType="Self.website_setting" />
-          <AssociationSet Name="AD_TYPE_FK" Association="Self.AD_TYPE_FK">
-            <End Role="advertisement_type" EntitySet="advertisement_type" />
-            <End Role="advertisement" EntitySet="advertisements" />
-          </AssociationSet>
-          <AssociationSet Name="AD_VISITED_FK" Association="Self.AD_VISITED_FK">
-            <End Role="advertisement" EntitySet="advertisements" />
-            <End Role="advertisement_vistedlog" EntitySet="advertisement_vistedlog" />
-          </AssociationSet>
-          <AssociationSet Name="ART_CAT_FK" Association="Self.ART_CAT_FK">
-            <End Role="category" EntitySet="categories" />
-            <End Role="article" EntitySet="articles" />
-          </AssociationSet>
-          <AssociationSet Name="ART_CONTENT_FK" Association="Self.ART_CONTENT_FK">
-            <End Role="article" EntitySet="articles" />
-            <End Role="article_contents" EntitySet="article_contents" />
-          </AssociationSet>
-          <AssociationSet Name="Art_IMAGE_FK" Association="Self.Art_IMAGE_FK">
-            <End Role="article" EntitySet="articles" />
-            <End Role="article_images" EntitySet="article_images" />
-          </AssociationSet>
-          <AssociationSet Name="article_keyword_ibfk_1" Association="Self.article_keyword_ibfk_1">
-            <End Role="article" EntitySet="articles" />
-            <End Role="article_keyword" EntitySet="article_keyword" />
-          </AssociationSet>
-          <AssociationSet Name="article_website_Fk" Association="Self.article_website_Fk">
-            <End Role="article" EntitySet="articles" />
-            <End Role="article_website" EntitySet="article_website" />
-          </AssociationSet>
-          <AssociationSet Name="comment_ibfk_1" Association="Self.comment_ibfk_1">
-            <End Role="article" EntitySet="articles" />
-            <End Role="comment" EntitySet="comments" />
-          </AssociationSet>
-          <AssociationSet Name="article_keyword_ibfk_2" Association="Self.article_keyword_ibfk_2">
-            <End Role="keywords" EntitySet="keywords" />
-            <End Role="article_keyword" EntitySet="article_keyword" />
-          </AssociationSet>
-          <AssociationSet Name="article_website_site_FK" Association="Self.article_website_site_FK">
-            <End Role="website" EntitySet="websites" />
-            <End Role="article_website" EntitySet="article_website" />
-          </AssociationSet>
-          <AssociationSet Name="base_role_action_ibfk_1" Association="Self.base_role_action_ibfk_1">
-            <End Role="base_action" EntitySet="base_action" />
-            <End Role="base_role_action" EntitySet="base_role_action" />
-          </AssociationSet>
-          <AssociationSet Name="base_role_action_ibfk_2" Association="Self.base_role_action_ibfk_2">
-            <End Role="base_role" EntitySet="base_role" />
-            <End Role="base_role_action" EntitySet="base_role_action" />
-          </AssociationSet>
-          <AssociationSet Name="base_user_role_ibfk_2" Association="Self.base_user_role_ibfk_2">
-            <End Role="base_role" EntitySet="base_role" />
-            <End Role="base_user_role" EntitySet="base_user_role" />
-          </AssociationSet>
-          <AssociationSet Name="base_user_role_ibfk_1" Association="Self.base_user_role_ibfk_1">
-            <End Role="base_user" EntitySet="base_user" />
-            <End Role="base_user_role" EntitySet="base_user_role" />
-          </AssociationSet>
-          <AssociationSet Name="website_category_ibfk_1" Association="Self.website_category_ibfk_1">
-            <End Role="category" EntitySet="categories" />
-            <End Role="website_category" EntitySet="website_category" />
-          </AssociationSet>
-          <AssociationSet Name="comment_ibfk_2" Association="Self.comment_ibfk_2">
-            <End Role="website" EntitySet="websites" />
-            <End Role="comment" EntitySet="comments" />
-          </AssociationSet>
-          <AssociationSet Name="visited_log_ibfk_1" Association="Self.visited_log_ibfk_1">
-            <End Role="website" EntitySet="websites" />
-            <End Role="visited_log" EntitySet="visited_log" />
-          </AssociationSet>
-          <AssociationSet Name="website_category_ibfk_2" Association="Self.website_category_ibfk_2">
-            <End Role="website" EntitySet="websites" />
-            <End Role="website_category" EntitySet="website_category" />
-          </AssociationSet>
-          <AssociationSet Name="website_setting_ibfk_1" Association="Self.website_setting_ibfk_1">
-            <End Role="website" EntitySet="websites" />
-            <End Role="website_setting" EntitySet="website_setting" />
-          </AssociationSet>
+          <EntitySet Name="companies" EntityType="DataCenter.Entities.company" />
+          <EntitySet Name="operate_log" EntityType="DataCenter.Entities.operate_log" />
+          <EntitySet Name="project_case" EntityType="DataCenter.Entities.project_case" />
+          <EntitySet Name="sys_dictionary" EntityType="DataCenter.Entities.sys_dictionary" />
+          <EntitySet Name="sys_user" EntityType="DataCenter.Entities.sys_user" />
+          <EntitySet Name="users" EntityType="DataCenter.Entities.user" />
         </EntityContainer>
-      </Schema>
+        <EntityType Name="company">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="introdce" Type="String" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="type_id" Type="Int32" />
+          <Property Name="address" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="contact_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="user_id" Type="Int32" />
+          <Property Name="site_url" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="qq_number" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="logo_path" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="create_time" Type="DateTime" />
+          <Property Name="update_time" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="operate_log">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="desript" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="user_id" Type="Int32" />
+          <Property Name="result" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="create_time" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="project_case">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="title" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="descript" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="type_id" Type="Int32" />
+          <Property Name="content" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="company_id" Type="Int32" />
+          <Property Name="user_id" Type="Int32" />
+          <Property Name="is_publish" Type="Int32" />
+          <Property Name="view_count" Type="Int32" />
+          <Property Name="publish_time" Type="DateTime" />
+          <Property Name="create_time" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="sys_dictionary">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="value" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="group" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="create_time" Type="DateTime" />
+          <Property Name="update_time" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="sys_user">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="password" Type="String" MaxLength="124" FixedLength="false" Unicode="false" />
+          <Property Name="hash_code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="display_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="create_time" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="qq_number" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="photo_path" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="password" Type="String" MaxLength="124" FixedLength="false" Unicode="false" />
+          <Property Name="hash_code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="is_admin" Type="Int32" />
+          <Property Name="company_id" Type="Int32" />
+          <Property Name="last_login_time" Type="DateTime" />
+          <Property Name="create_time" Type="DateTime" />
+          <Property Name="update_time" Type="DateTime" />
+        </EntityType>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="DataCenterEntitiesStoreContainer" CdmEntityContainer="Entities">
-          <EntitySetMapping Name="advertisements">
-            <EntityTypeMapping TypeName="DataCenter.Entities.advertisement">
-              <MappingFragment StoreEntitySet="advertisement">
+          <EntitySetMapping Name="companies">
+            <EntityTypeMapping TypeName="DataCenter.Entities.company">
+              <MappingFragment StoreEntitySet="company">
+                <ScalarProperty Name="update_time" ColumnName="update_time" />
+                <ScalarProperty Name="create_time" ColumnName="create_time" />
+                <ScalarProperty Name="logo_path" ColumnName="logo_path" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="mobile" ColumnName="mobile" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="qq_number" ColumnName="qq_number" />
+                <ScalarProperty Name="site_url" ColumnName="site_url" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="contact_name" ColumnName="contact_name" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="type_id" ColumnName="type_id" />
+                <ScalarProperty Name="introdce" ColumnName="introdce" />
+                <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="AdName" ColumnName="AdName" />
-                <ScalarProperty Name="Code" ColumnName="Code" />
-                <ScalarProperty Name="Width" ColumnName="Width" />
-                <ScalarProperty Name="Height" ColumnName="Height" />
-                <ScalarProperty Name="AdType" ColumnName="AdType" />
-                <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
-                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
-                <ScalarProperty Name="WebsiteId" ColumnName="WebsiteId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="advertisement_type">
-            <EntityTypeMapping TypeName="DataCenter.Entities.advertisement_type">
-              <MappingFragment StoreEntitySet="advertisement_type">
+          <EntitySetMapping Name="operate_log">
+            <EntityTypeMapping TypeName="DataCenter.Entities.operate_log">
+              <MappingFragment StoreEntitySet="operate_log">
+                <ScalarProperty Name="create_time" ColumnName="create_time" />
+                <ScalarProperty Name="result" ColumnName="result" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="user_name" ColumnName="user_name" />
+                <ScalarProperty Name="desript" ColumnName="desript" />
+                <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="TypeName" ColumnName="TypeName" />
-                <ScalarProperty Name="Descripiton" ColumnName="Descripiton" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="advertisement_vistedlog">
-            <EntityTypeMapping TypeName="DataCenter.Entities.advertisement_vistedlog">
-              <MappingFragment StoreEntitySet="advertisement_vistedlog">
+          <EntitySetMapping Name="project_case">
+            <EntityTypeMapping TypeName="DataCenter.Entities.project_case">
+              <MappingFragment StoreEntitySet="project_case">
+                <ScalarProperty Name="create_time" ColumnName="create_time" />
+                <ScalarProperty Name="publish_time" ColumnName="publish_time" />
+                <ScalarProperty Name="view_count" ColumnName="view_count" />
+                <ScalarProperty Name="is_publish" ColumnName="is_publish" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="company_id" ColumnName="company_id" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="type_id" ColumnName="type_id" />
+                <ScalarProperty Name="descript" ColumnName="descript" />
+                <ScalarProperty Name="title" ColumnName="title" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="AdvertisementId" ColumnName="AdvertisementId" />
-                <ScalarProperty Name="VistedDate" ColumnName="VistedDate" />
-                <ScalarProperty Name="ShowTimes" ColumnName="ShowTimes" />
-                <ScalarProperty Name="ClickTimes" ColumnName="ClickTimes" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="articles">
-            <EntityTypeMapping TypeName="DataCenter.Entities.article">
-              <MappingFragment StoreEntitySet="article">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="Title" ColumnName="Title" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
-                <ScalarProperty Name="Author" ColumnName="Author" />
-                <ScalarProperty Name="PublishedDate" ColumnName="PublishedDate" />
-                <ScalarProperty Name="ArticleSource" ColumnName="ArticleSource" />
-                <ScalarProperty Name="SourceUrl" ColumnName="SourceUrl" />
-                <ScalarProperty Name="IsImageAticle" ColumnName="IsImageAticle" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="article_contents">
-            <EntityTypeMapping TypeName="DataCenter.Entities.article_contents">
-              <MappingFragment StoreEntitySet="article_contents">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="ArticleID" ColumnName="ArticleID" />
-                <ScalarProperty Name="ArticleContent" ColumnName="ArticleContent" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="article_images">
-            <EntityTypeMapping TypeName="DataCenter.Entities.article_images">
-              <MappingFragment StoreEntitySet="article_images">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="ArticleId" ColumnName="ArticleId" />
-                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
-                <ScalarProperty Name="Width" ColumnName="Width" />
-                <ScalarProperty Name="Heigth" ColumnName="Heigth" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="article_keyword">
-            <EntityTypeMapping TypeName="DataCenter.Entities.article_keyword">
-              <MappingFragment StoreEntitySet="article_keyword">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="ArticleId" ColumnName="ArticleId" />
-                <ScalarProperty Name="KeyWordId" ColumnName="KeyWordId" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="article_website">
-            <EntityTypeMapping TypeName="DataCenter.Entities.article_website">
-              <MappingFragment StoreEntitySet="article_website">
-                <ScalarProperty Name="IsSpecial" ColumnName="IsSpecial" />
-                <ScalarProperty Name="IsHot" ColumnName="IsHot" />
-                <ScalarProperty Name="IsTop" ColumnName="IsTop" />
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="ArticleId" ColumnName="ArticleId" />
-                <ScalarProperty Name="WebsiteId" ColumnName="WebsiteId" />
-                <ScalarProperty Name="IsPublished" ColumnName="IsPublished" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="base_action">
-            <EntityTypeMapping TypeName="DataCenter.Entities.base_action">
-              <MappingFragment StoreEntitySet="base_action">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="ActionName" ColumnName="ActionName" />
-                <ScalarProperty Name="ActionUrl" ColumnName="ActionUrl" />
-                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="base_role">
-            <EntityTypeMapping TypeName="DataCenter.Entities.base_role">
-              <MappingFragment StoreEntitySet="base_role">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
-                <ScalarProperty Name="RoleValue" ColumnName="RoleValue" />
-                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="base_role_action">
-            <EntityTypeMapping TypeName="DataCenter.Entities.base_role_action">
-              <MappingFragment StoreEntitySet="base_role_action">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="ActionId" ColumnName="ActionId" />
-                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
-                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="base_user">
-            <EntityTypeMapping TypeName="DataCenter.Entities.base_user">
-              <MappingFragment StoreEntitySet="base_user">
-                <ScalarProperty Name="HashCode" ColumnName="HashCode" />
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="UserName" ColumnName="UserName" />
-                <ScalarProperty Name="Password" ColumnName="Password" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
-                <ScalarProperty Name="LastLoginTime" ColumnName="LastLoginTime" />
-                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="base_user_role">
-            <EntityTypeMapping TypeName="DataCenter.Entities.base_user_role">
-              <MappingFragment StoreEntitySet="base_user_role">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="UserId" ColumnName="UserId" />
-                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
-                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="categories">
-            <EntityTypeMapping TypeName="DataCenter.Entities.category">
-              <MappingFragment StoreEntitySet="category">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="CateName" ColumnName="CateName" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="PingYin" ColumnName="PingYin" />
-                <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="comments">
-            <EntityTypeMapping TypeName="DataCenter.Entities.comment">
-              <MappingFragment StoreEntitySet="comment">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="ArticleId" ColumnName="ArticleId" />
-                <ScalarProperty Name="CommentContent" ColumnName="CommentContent" />
-                <ScalarProperty Name="WebsiteId" ColumnName="WebsiteId" />
-                <ScalarProperty Name="CommentTime" ColumnName="CommentTime" />
-                <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
-                <ScalarProperty Name="IsPublish" ColumnName="IsPublish" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="keywords">
-            <EntityTypeMapping TypeName="DataCenter.Entities.keyword">
-              <MappingFragment StoreEntitySet="keywords">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Keyword1" ColumnName="Keyword" />
-                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="sequences">
-            <EntityTypeMapping TypeName="DataCenter.Entities.sequence">
-              <MappingFragment StoreEntitySet="sequence">
+          <EntitySetMapping Name="sys_dictionary">
+            <EntityTypeMapping TypeName="DataCenter.Entities.sys_dictionary">
+              <MappingFragment StoreEntitySet="sys_dictionary">
+                <ScalarProperty Name="update_time" ColumnName="update_time" />
+                <ScalarProperty Name="create_time" ColumnName="create_time" />
+                <ScalarProperty Name="group" ColumnName="group" />
+                <ScalarProperty Name="value" ColumnName="value" />
                 <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="spider_content">
-            <EntityTypeMapping TypeName="DataCenter.Entities.spider_content">
-              <MappingFragment StoreEntitySet="spider_content">
+          <EntitySetMapping Name="sys_user">
+            <EntityTypeMapping TypeName="DataCenter.Entities.sys_user">
+              <MappingFragment StoreEntitySet="sys_user">
+                <ScalarProperty Name="create_time" ColumnName="create_time" />
+                <ScalarProperty Name="display_name" ColumnName="display_name" />
+                <ScalarProperty Name="hash_code" ColumnName="hash_code" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="user_name" ColumnName="user_name" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Title" ColumnName="Title" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="HtmlContent" ColumnName="HtmlContent" />
-                <ScalarProperty Name="TextContent" ColumnName="TextContent" />
-                <ScalarProperty Name="SourceUrl" ColumnName="SourceUrl" />
-                <ScalarProperty Name="ExpiredDate" ColumnName="ExpiredDate" />
-                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="spider_keyword">
-            <EntityTypeMapping TypeName="DataCenter.Entities.spider_keyword">
-              <MappingFragment StoreEntitySet="spider_keyword">
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="DataCenter.Entities.user">
+              <MappingFragment StoreEntitySet="user">
+                <ScalarProperty Name="update_time" ColumnName="update_time" />
+                <ScalarProperty Name="create_time" ColumnName="create_time" />
+                <ScalarProperty Name="last_login_time" ColumnName="last_login_time" />
+                <ScalarProperty Name="company_id" ColumnName="company_id" />
+                <ScalarProperty Name="is_admin" ColumnName="is_admin" />
+                <ScalarProperty Name="hash_code" ColumnName="hash_code" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="photo_path" ColumnName="photo_path" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="mobile" ColumnName="mobile" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="qq_number" ColumnName="qq_number" />
+                <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="KeyWord" ColumnName="KeyWord" />
-                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
-                <ScalarProperty Name="IsCatched" ColumnName="IsCatched" />
-                <ScalarProperty Name="IsExpired" ColumnName="IsExpired" />
-                <ScalarProperty Name="ExpiredDate" ColumnName="ExpiredDate" />
-                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="spider_link">
-            <EntityTypeMapping TypeName="DataCenter.Entities.spider_link">
-              <MappingFragment StoreEntitySet="spider_link">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="LinkUrl" ColumnName="LinkUrl" />
-                <ScalarProperty Name="IsCatched" ColumnName="IsCatched" />
-                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="visited_log">
-            <EntityTypeMapping TypeName="DataCenter.Entities.visited_log">
-              <MappingFragment StoreEntitySet="visited_log">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="WebSiteId" ColumnName="WebSiteId" />
-                <ScalarProperty Name="PageUrl" ColumnName="PageUrl" />
-                <ScalarProperty Name="VisitedDate" ColumnName="VisitedDate" />
-                <ScalarProperty Name="UserName" ColumnName="UserName" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="websites">
-            <EntityTypeMapping TypeName="DataCenter.Entities.website">
-              <MappingFragment StoreEntitySet="website">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="SiteNameCn" ColumnName="SiteNameCn" />
-                <ScalarProperty Name="SiteNameEn" ColumnName="SiteNameEn" />
-                <ScalarProperty Name="SiteUrl" ColumnName="SiteUrl" />
-                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
-                <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="website_category">
-            <EntityTypeMapping TypeName="DataCenter.Entities.website_category">
-              <MappingFragment StoreEntitySet="website_category">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
-                <ScalarProperty Name="WebsiteId" ColumnName="WebsiteId" />
-                <ScalarProperty Name="MappingName" ColumnName="MappingName" />
-                <ScalarProperty Name="Ispublished" ColumnName="Ispublished" />
-                <ScalarProperty Name="OrderNum" ColumnName="OrderNum" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="website_setting">
-            <EntityTypeMapping TypeName="DataCenter.Entities.website_setting">
-              <MappingFragment StoreEntitySet="website_setting">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
-                <ScalarProperty Name="SettingGroupName" ColumnName="SettingGroupName" />
-                <ScalarProperty Name="SettingKey" ColumnName="SettingKey" />
-                <ScalarProperty Name="SettingValue" ColumnName="SettingValue" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
-                <ScalarProperty Name="WebsiteId" ColumnName="WebsiteId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

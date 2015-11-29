@@ -25,29 +25,11 @@ namespace WebCenter.Entities
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<advertisement> advertisements { get; set; }
-        public virtual DbSet<advertisement_type> advertisement_type { get; set; }
-        public virtual DbSet<advertisement_vistedlog> advertisement_vistedlog { get; set; }
-        public virtual DbSet<article> articles { get; set; }
-        public virtual DbSet<article_contents> article_contents { get; set; }
-        public virtual DbSet<article_images> article_images { get; set; }
-        public virtual DbSet<article_keyword> article_keyword { get; set; }
-        public virtual DbSet<article_website> article_website { get; set; }
-        public virtual DbSet<base_action> base_action { get; set; }
-        public virtual DbSet<base_role> base_role { get; set; }
-        public virtual DbSet<base_role_action> base_role_action { get; set; }
-        public virtual DbSet<base_user> base_user { get; set; }
-        public virtual DbSet<base_user_role> base_user_role { get; set; }
-        public virtual DbSet<category> categories { get; set; }
-        public virtual DbSet<comment> comments { get; set; }
-        public virtual DbSet<keyword> keywords { get; set; }
-        public virtual DbSet<sequence> sequences { get; set; }
-        public virtual DbSet<spider_content> spider_content { get; set; }
-        public virtual DbSet<spider_keyword> spider_keyword { get; set; }
-        public virtual DbSet<spider_link> spider_link { get; set; }
-        public virtual DbSet<visited_log> visited_log { get; set; }
-        public virtual DbSet<website> websites { get; set; }
-        public virtual DbSet<website_category> website_category { get; set; }
-        public virtual DbSet<website_setting> website_setting { get; set; }
+        public virtual DbSet<company> companies { get; set; }
+        public virtual DbSet<operate_log> operate_log { get; set; }
+        public virtual DbSet<project_case> project_case { get; set; }
+        public virtual DbSet<sys_dictionary> sys_dictionary { get; set; }
+        public virtual DbSet<sys_user> sys_user { get; set; }
+        public virtual DbSet<user> users { get; set; }
     }
 }

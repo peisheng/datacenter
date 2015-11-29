@@ -82,11 +82,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseService.cs" />
-    <Compile Include="BussServices\advertisementService.cs" />
-    <Compile Include="BussServices\article_websiteService.cs" />
-    <Compile Include="BussServices\WebsiteCategoryService.cs" />
-    <Compile Include="BussServices\WebSiteService.cs" />
-    <Compile Include="BussServices\WebsiteSettingService.cs" />
     <Compile Include="UnitOfWork.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -136,6 +131,7 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="BussServices\" />
     <Folder Include="Respository\" />
   </ItemGroup>
   <ItemGroup>

@@ -71,51 +71,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="advertisement.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
-    <Compile Include="advertisement_type.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
-    <Compile Include="advertisement_vistedlog.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
-    <Compile Include="article.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
-    <Compile Include="article_contents.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
-    <Compile Include="article_images.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
-    <Compile Include="article_keyword.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
-    <Compile Include="article_website.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
     <Compile Include="Attribute\EntityPrimKey.cs" />
     <Compile Include="BaseModel.cs" />
-    <Compile Include="base_action.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
-    <Compile Include="base_role.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
-    <Compile Include="base_role_action.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
-    <Compile Include="base_user.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
-    <Compile Include="base_user_role.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
-    <Compile Include="category.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
-    <Compile Include="comment.cs">
+    <Compile Include="company.cs">
       <DependentUpon>DataCenter.tt</DependentUpon>
     </Compile>
     <Compile Include="DataCenter.Context.cs">
@@ -134,32 +92,20 @@
       <DependentUpon>DataCenter.edmx</DependentUpon>
     </Compile>
     <Compile Include="DataCenterDb.cs" />
-    <Compile Include="keyword.cs">
+    <Compile Include="operate_log.cs">
+      <DependentUpon>DataCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="project_case.cs">
       <DependentUpon>DataCenter.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="sequence.cs">
+    <Compile Include="sys_dictionary.cs">
       <DependentUpon>DataCenter.tt</DependentUpon>
     </Compile>
-    <Compile Include="spider_content.cs">
+    <Compile Include="sys_user.cs">
       <DependentUpon>DataCenter.tt</DependentUpon>
     </Compile>
-    <Compile Include="spider_keyword.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
-    <Compile Include="spider_link.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
-    <Compile Include="visited_log.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
-    <Compile Include="website.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
-    <Compile Include="website_category.cs">
-      <DependentUpon>DataCenter.tt</DependentUpon>
-    </Compile>
-    <Compile Include="website_setting.cs">
+    <Compile Include="user.cs">
       <DependentUpon>DataCenter.tt</DependentUpon>
     </Compile>
   </ItemGroup>

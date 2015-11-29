@@ -13,75 +13,21 @@ namespace WebCenter.IDAL
    
 	  
 
-		IDAL.IadvertisementRepository advertisementRepository { get; }
+		IDAL.IcompanyRepository companyRepository { get; }
 	  
 
-		IDAL.Iadvertisement_typeRepository advertisement_typeRepository { get; }
+		IDAL.Ioperate_logRepository operate_logRepository { get; }
 	  
 
-		IDAL.Iadvertisement_vistedlogRepository advertisement_vistedlogRepository { get; }
+		IDAL.Iproject_caseRepository project_caseRepository { get; }
 	  
 
-		IDAL.IarticleRepository articleRepository { get; }
+		IDAL.Isys_dictionaryRepository sys_dictionaryRepository { get; }
 	  
 
-		IDAL.Iarticle_contentsRepository article_contentsRepository { get; }
+		IDAL.Isys_userRepository sys_userRepository { get; }
 	  
 
-		IDAL.Iarticle_imagesRepository article_imagesRepository { get; }
-	  
-
-		IDAL.Iarticle_keywordRepository article_keywordRepository { get; }
-	  
-
-		IDAL.Iarticle_websiteRepository article_websiteRepository { get; }
-	  
-
-		IDAL.Ibase_actionRepository base_actionRepository { get; }
-	  
-
-		IDAL.Ibase_roleRepository base_roleRepository { get; }
-	  
-
-		IDAL.Ibase_role_actionRepository base_role_actionRepository { get; }
-	  
-
-		IDAL.Ibase_userRepository base_userRepository { get; }
-	  
-
-		IDAL.Ibase_user_roleRepository base_user_roleRepository { get; }
-	  
-
-		IDAL.IcategoryRepository categoryRepository { get; }
-	  
-
-		IDAL.IcommentRepository commentRepository { get; }
-	  
-
-		IDAL.IkeywordRepository keywordRepository { get; }
-	  
-
-		IDAL.IsequenceRepository sequenceRepository { get; }
-	  
-
-		IDAL.Ispider_contentRepository spider_contentRepository { get; }
-	  
-
-		IDAL.Ispider_keywordRepository spider_keywordRepository { get; }
-	  
-
-		IDAL.Ispider_linkRepository spider_linkRepository { get; }
-	  
-
-		IDAL.Ivisited_logRepository visited_logRepository { get; }
-	  
-
-		IDAL.IwebsiteRepository websiteRepository { get; }
-	  
-
-		IDAL.Iwebsite_categoryRepository website_categoryRepository { get; }
-	  
-
-		IDAL.Iwebsite_settingRepository website_settingRepository { get; }
+		IDAL.IuserRepository userRepository { get; }
 	}
 }

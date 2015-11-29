@@ -17,7 +17,12 @@ namespace WebCenter.Web.Controllers
         { 
         }
         public ActionResult Index()
-        { 
+        {
+            company com = new company();
+            com.address = "test";
+            com.create_time = DateTime.Now;
+            com.introdce = "i am test";
+            Uof.IcompanyService.AddEntity(com);
             return View();
         }
 

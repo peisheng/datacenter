@@ -69,11 +69,6 @@
     <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IBussServices\IWebSiteSettingService.cs" />
-    <Compile Include="IBussServices\IWebsite_CategoryService.cs" />
-    <Compile Include="IBussServices\IWebsiteService.cs" />
-    <Compile Include="IBussServices\IArticle_WebsiteService.cs" />
-    <Compile Include="IBussServices\IAdvertisementService.cs" />
     <Compile Include="IBaseService.cs" />
     <Compile Include="IServices.cs">
       <DependentUpon>IServices.tt</DependentUpon>
@@ -121,6 +116,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="IBussServices\" />
     <Folder Include="Infrastructure\" />
   </ItemGroup>
   <ItemGroup>
