@@ -13,6 +13,8 @@ namespace WebCenter.DAL
 	
 	public IDAL.Iproject_caseRepository project_caseRepository { get { return new project_caseRepository(); } }
 	
+	public IDAL.IsequenceRepository sequenceRepository { get { return new sequenceRepository(); } }
+	
 	public IDAL.Isys_dictionaryRepository sys_dictionaryRepository { get { return new sys_dictionaryRepository(); } }
 	
 	public IDAL.Isys_userRepository sys_userRepository { get { return new sys_userRepository(); } }

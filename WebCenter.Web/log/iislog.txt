@@ -1,0 +1,96 @@
+
+ 
+记录时间：2015-11-30 21:45:54,085 
+错误描述：
+执行时间:9 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('company') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-11-30 21:45:54,976 
+错误描述：
+执行时间:5 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `company`(
+`Id`, 
+`name`, 
+`introdce`, 
+`type_id`, 
+`address`, 
+`contact_name`, 
+`user_id`, 
+`site_url`, 
+`qq_number`, 
+`phone`, 
+`mobile`, 
+`email`, 
+`logo_path`, 
+`create_time`, 
+`update_time`) VALUES (
+0, 
+NULL, 
+@gp1, 
+NULL, 
+@gp2, 
+NULL, 
+NULL, 
+NULL, 
+NULL, 
+NULL, 
+NULL, 
+NULL, 
+NULL, 
+@gp3, 
+NULL)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-11-30 21:46:13,308 
+错误描述：
+执行时间:28 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('company') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-11-30 21:46:13,508 
+错误描述：
+执行时间:6 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `company`(
+`Id`, 
+`name`, 
+`introdce`, 
+`type_id`, 
+`address`, 
+`contact_name`, 
+`user_id`, 
+`site_url`, 
+`qq_number`, 
+`phone`, 
+`mobile`, 
+`email`, 
+`logo_path`, 
+`create_time`, 
+`update_time`) VALUES (
+1, 
+NULL, 
+@gp1, 
+NULL, 
+@gp2, 
+NULL, 
+NULL, 
+NULL, 
+NULL, 
+NULL, 
+NULL, 
+NULL, 
+NULL, 
+@gp3, 
+NULL)
+ 
+---------------------------------------------------

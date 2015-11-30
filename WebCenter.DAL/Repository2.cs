@@ -22,6 +22,11 @@ namespace WebCenter.DAL
          
     }
 	
+	public partial class sequenceRepository :BaseRepository<sequence>,IsequenceRepository
+    {
+         
+    }
+	
 	public partial class sys_dictionaryRepository :BaseRepository<sys_dictionary>,Isys_dictionaryRepository
     {
          

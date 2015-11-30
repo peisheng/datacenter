@@ -43,6 +43,16 @@ namespace WebCenter.Services
         }  
     }
 	
+	public partial class sequenceService:BaseService<sequence>,IsequenceService
+    {   
+        public sequenceService()
+        {}
+        public override void SetCurrentRepository()
+        {
+            CurrentRepository = _dbSession.sequenceRepository;
+        }  
+    }
+	
 	public partial class sys_dictionaryService:BaseService<sys_dictionary>,Isys_dictionaryService
     {   
         public sys_dictionaryService()

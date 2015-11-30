@@ -23,6 +23,8 @@ private void AutoAddBinds()
 	
 	   kernel.Bind<Iproject_caseService>().To<project_caseService>().InRequestScope();
 	
+	   kernel.Bind<IsequenceService>().To<sequenceService>().InRequestScope();
+	
 	   kernel.Bind<Isys_dictionaryService>().To<sys_dictionaryService>().InRequestScope();
 	
 	   kernel.Bind<Isys_userService>().To<sys_userService>().InRequestScope();

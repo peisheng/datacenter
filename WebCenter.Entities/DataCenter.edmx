@@ -52,6 +52,14 @@
           <Property Name="view_count" Type="int" />
           <Property Name="publish_time" Type="datetime" Precision="0" />
           <Property Name="create_time" Type="datetime" Precision="0" />
+          <Property Name="update_time" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="sequence">
+          <Key>
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="id" Type="ubigint" Nullable="false" />
         </EntityType>
         <EntityType Name="sys_dictionary">
           <Key>
@@ -80,7 +88,8 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="user_name" Type="varchar" MaxLength="50" />
+          <Property Name="real_name" Type="varchar" MaxLength="50" />
           <Property Name="qq_number" Type="varchar" MaxLength="20" />
           <Property Name="phone" Type="varchar" MaxLength="20" />
           <Property Name="mobile" Type="varchar" MaxLength="20" />
@@ -90,17 +99,99 @@
           <Property Name="hash_code" Type="varchar" MaxLength="20" />
           <Property Name="is_admin" Type="int" />
           <Property Name="company_id" Type="int" />
+          <Property Name="login_token" Type="varchar" MaxLength="255" />
           <Property Name="last_login_time" Type="datetime" Precision="0" />
           <Property Name="create_time" Type="datetime" Precision="0" />
           <Property Name="update_time" Type="datetime" Precision="0" />
         </EntityType>
+        <Association Name="company_ibfk_1">
+          <End Role="sys_dictionary" Type="Self.sys_dictionary" Multiplicity="0..1" />
+          <End Role="company" Type="Self.company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="sys_dictionary">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="company">
+              <PropertyRef Name="type_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="company_ibfk_2">
+          <End Role="user" Type="Self.user" Multiplicity="0..1" />
+          <End Role="company" Type="Self.company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="company">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="project_case_ibfk_1">
+          <End Role="sys_dictionary" Type="Self.sys_dictionary" Multiplicity="0..1" />
+          <End Role="project_case" Type="Self.project_case" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="sys_dictionary">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="project_case">
+              <PropertyRef Name="type_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="project_case_ibfk_2">
+          <End Role="company" Type="Self.company" Multiplicity="0..1" />
+          <End Role="project_case" Type="Self.project_case" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="company">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="project_case">
+              <PropertyRef Name="company_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="project_case_ibfk_3">
+          <End Role="sys_dictionary" Type="Self.sys_dictionary" Multiplicity="0..1" />
+          <End Role="project_case" Type="Self.project_case" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="sys_dictionary">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="project_case">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="DataCenterEntitiesStoreContainer">
           <EntitySet Name="company" EntityType="Self.company" Schema="todaystart" store:Type="Tables" />
           <EntitySet Name="operate_log" EntityType="Self.operate_log" Schema="todaystart" store:Type="Tables" />
           <EntitySet Name="project_case" EntityType="Self.project_case" Schema="todaystart" store:Type="Tables" />
+          <EntitySet Name="sequence" EntityType="Self.sequence" Schema="todaystart" store:Type="Tables" />
           <EntitySet Name="sys_dictionary" EntityType="Self.sys_dictionary" Schema="todaystart" store:Type="Tables" />
           <EntitySet Name="sys_user" EntityType="Self.sys_user" Schema="todaystart" store:Type="Tables" />
           <EntitySet Name="user" EntityType="Self.user" Schema="todaystart" store:Type="Tables" />
+          <AssociationSet Name="company_ibfk_1" Association="Self.company_ibfk_1">
+            <End Role="sys_dictionary" EntitySet="sys_dictionary" />
+            <End Role="company" EntitySet="company" />
+          </AssociationSet>
+          <AssociationSet Name="company_ibfk_2" Association="Self.company_ibfk_2">
+            <End Role="user" EntitySet="user" />
+            <End Role="company" EntitySet="company" />
+          </AssociationSet>
+          <AssociationSet Name="project_case_ibfk_1" Association="Self.project_case_ibfk_1">
+            <End Role="sys_dictionary" EntitySet="sys_dictionary" />
+            <End Role="project_case" EntitySet="project_case" />
+          </AssociationSet>
+          <AssociationSet Name="project_case_ibfk_2" Association="Self.project_case_ibfk_2">
+            <End Role="company" EntitySet="company" />
+            <End Role="project_case" EntitySet="project_case" />
+          </AssociationSet>
+          <AssociationSet Name="project_case_ibfk_3" Association="Self.project_case_ibfk_3">
+            <End Role="sys_dictionary" EntitySet="sys_dictionary" />
+            <End Role="project_case" EntitySet="project_case" />
+          </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -110,9 +201,30 @@
           <EntitySet Name="companies" EntityType="DataCenter.Entities.company" />
           <EntitySet Name="operate_log" EntityType="DataCenter.Entities.operate_log" />
           <EntitySet Name="project_case" EntityType="DataCenter.Entities.project_case" />
+          <EntitySet Name="sequences" EntityType="DataCenter.Entities.sequence" />
           <EntitySet Name="sys_dictionary" EntityType="DataCenter.Entities.sys_dictionary" />
           <EntitySet Name="sys_user" EntityType="DataCenter.Entities.sys_user" />
           <EntitySet Name="users" EntityType="DataCenter.Entities.user" />
+          <AssociationSet Name="company_ibfk_1" Association="DataCenter.Entities.company_ibfk_1">
+            <End Role="sys_dictionary" EntitySet="sys_dictionary" />
+            <End Role="company" EntitySet="companies" />
+          </AssociationSet>
+          <AssociationSet Name="company_ibfk_2" Association="DataCenter.Entities.company_ibfk_2">
+            <End Role="user" EntitySet="users" />
+            <End Role="company" EntitySet="companies" />
+          </AssociationSet>
+          <AssociationSet Name="project_case_ibfk_2" Association="DataCenter.Entities.project_case_ibfk_2">
+            <End Role="company" EntitySet="companies" />
+            <End Role="project_case" EntitySet="project_case" />
+          </AssociationSet>
+          <AssociationSet Name="project_case_ibfk_1" Association="DataCenter.Entities.project_case_ibfk_1">
+            <End Role="sys_dictionary" EntitySet="sys_dictionary" />
+            <End Role="project_case" EntitySet="project_case" />
+          </AssociationSet>
+          <AssociationSet Name="project_case_ibfk_3" Association="DataCenter.Entities.project_case_ibfk_3">
+            <End Role="sys_dictionary" EntitySet="sys_dictionary" />
+            <End Role="project_case" EntitySet="project_case" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="company">
           <Key>
@@ -133,6 +245,9 @@
           <Property Name="logo_path" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="create_time" Type="DateTime" />
           <Property Name="update_time" Type="DateTime" />
+          <NavigationProperty Name="sys_dictionary" Relationship="DataCenter.Entities.company_ibfk_1" FromRole="company" ToRole="sys_dictionary" />
+          <NavigationProperty Name="user" Relationship="DataCenter.Entities.company_ibfk_2" FromRole="company" ToRole="user" />
+          <NavigationProperty Name="project_case" Relationship="DataCenter.Entities.project_case_ibfk_2" FromRole="company" ToRole="project_case" />
         </EntityType>
         <EntityType Name="operate_log">
           <Key>
@@ -161,6 +276,17 @@
           <Property Name="view_count" Type="Int32" />
           <Property Name="publish_time" Type="DateTime" />
           <Property Name="create_time" Type="DateTime" />
+          <Property Name="update_time" Type="DateTime" />
+          <NavigationProperty Name="company" Relationship="DataCenter.Entities.project_case_ibfk_2" FromRole="project_case" ToRole="company" />
+          <NavigationProperty Name="sys_dictionary" Relationship="DataCenter.Entities.project_case_ibfk_1" FromRole="project_case" ToRole="sys_dictionary" />
+          <NavigationProperty Name="sys_dictionary1" Relationship="DataCenter.Entities.project_case_ibfk_3" FromRole="project_case" ToRole="sys_dictionary" />
+        </EntityType>
+        <EntityType Name="sequence">
+          <Key>
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Decimal" Nullable="false" />
         </EntityType>
         <EntityType Name="sys_dictionary">
           <Key>
@@ -172,6 +298,9 @@
           <Property Name="group" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="create_time" Type="DateTime" />
           <Property Name="update_time" Type="DateTime" />
+          <NavigationProperty Name="companies" Relationship="DataCenter.Entities.company_ibfk_1" FromRole="sys_dictionary" ToRole="company" />
+          <NavigationProperty Name="project_case" Relationship="DataCenter.Entities.project_case_ibfk_1" FromRole="sys_dictionary" ToRole="project_case" />
+          <NavigationProperty Name="project_case1" Relationship="DataCenter.Entities.project_case_ibfk_3" FromRole="sys_dictionary" ToRole="project_case" />
         </EntityType>
         <EntityType Name="sys_user">
           <Key>
@@ -189,7 +318,8 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="real_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="qq_number" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
@@ -199,10 +329,72 @@
           <Property Name="hash_code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="is_admin" Type="Int32" />
           <Property Name="company_id" Type="Int32" />
+          <Property Name="login_token" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="last_login_time" Type="DateTime" />
           <Property Name="create_time" Type="DateTime" />
           <Property Name="update_time" Type="DateTime" />
+          <NavigationProperty Name="companies" Relationship="DataCenter.Entities.company_ibfk_2" FromRole="user" ToRole="company" />
         </EntityType>
+        <Association Name="company_ibfk_1">
+          <End Type="DataCenter.Entities.sys_dictionary" Role="sys_dictionary" Multiplicity="0..1" />
+          <End Type="DataCenter.Entities.company" Role="company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="sys_dictionary">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="company">
+              <PropertyRef Name="type_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="company_ibfk_2">
+          <End Type="DataCenter.Entities.user" Role="user" Multiplicity="0..1" />
+          <End Type="DataCenter.Entities.company" Role="company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="company">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="project_case_ibfk_2">
+          <End Type="DataCenter.Entities.company" Role="company" Multiplicity="0..1" />
+          <End Type="DataCenter.Entities.project_case" Role="project_case" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="company">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="project_case">
+              <PropertyRef Name="company_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="project_case_ibfk_1">
+          <End Type="DataCenter.Entities.sys_dictionary" Role="sys_dictionary" Multiplicity="0..1" />
+          <End Type="DataCenter.Entities.project_case" Role="project_case" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="sys_dictionary">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="project_case">
+              <PropertyRef Name="type_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="project_case_ibfk_3">
+          <End Type="DataCenter.Entities.sys_dictionary" Role="sys_dictionary" Multiplicity="0..1" />
+          <End Type="DataCenter.Entities.project_case" Role="project_case" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="sys_dictionary">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="project_case">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -246,6 +438,7 @@
           <EntitySetMapping Name="project_case">
             <EntityTypeMapping TypeName="DataCenter.Entities.project_case">
               <MappingFragment StoreEntitySet="project_case">
+                <ScalarProperty Name="update_time" ColumnName="update_time" />
                 <ScalarProperty Name="create_time" ColumnName="create_time" />
                 <ScalarProperty Name="publish_time" ColumnName="publish_time" />
                 <ScalarProperty Name="view_count" ColumnName="view_count" />
@@ -257,6 +450,14 @@
                 <ScalarProperty Name="descript" ColumnName="descript" />
                 <ScalarProperty Name="title" ColumnName="title" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sequences">
+            <EntityTypeMapping TypeName="DataCenter.Entities.sequence">
+              <MappingFragment StoreEntitySet="sequence">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -290,6 +491,7 @@
                 <ScalarProperty Name="update_time" ColumnName="update_time" />
                 <ScalarProperty Name="create_time" ColumnName="create_time" />
                 <ScalarProperty Name="last_login_time" ColumnName="last_login_time" />
+                <ScalarProperty Name="login_token" ColumnName="login_token" />
                 <ScalarProperty Name="company_id" ColumnName="company_id" />
                 <ScalarProperty Name="is_admin" ColumnName="is_admin" />
                 <ScalarProperty Name="hash_code" ColumnName="hash_code" />
@@ -299,7 +501,8 @@
                 <ScalarProperty Name="mobile" ColumnName="mobile" />
                 <ScalarProperty Name="phone" ColumnName="phone" />
                 <ScalarProperty Name="qq_number" ColumnName="qq_number" />
-                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="real_name" ColumnName="real_name" />
+                <ScalarProperty Name="user_name" ColumnName="user_name" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>

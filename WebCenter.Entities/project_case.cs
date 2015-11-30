@@ -59,5 +59,13 @@ namespace WebCenter.Entities
     
     
         public Nullable<System.DateTime> create_time { get; set; }
+    
+    
+    
+        public Nullable<System.DateTime> update_time { get; set; }
+    
+        public virtual company company { get; set; }
+        public virtual sys_dictionary sys_dictionary { get; set; }
+        public virtual sys_dictionary sys_dictionary1 { get; set; }
     }
 }

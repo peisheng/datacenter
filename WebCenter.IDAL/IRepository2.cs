@@ -18,6 +18,10 @@ namespace WebCenter.IDAL
     {         
     }
 	
+    public partial interface IsequenceRepository :IBaseRepository<sequence>
+    {         
+    }
+	
     public partial interface Isys_dictionaryRepository :IBaseRepository<sys_dictionary>
     {         
     }

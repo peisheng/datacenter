@@ -22,6 +22,10 @@ namespace WebCenter.IServices
     {   
     }
 	
+	public partial interface IsequenceService:IBaseService<sequence>
+    {   
+    }
+	
 	public partial interface Isys_dictionaryService:IBaseService<sys_dictionary>
     {   
     }

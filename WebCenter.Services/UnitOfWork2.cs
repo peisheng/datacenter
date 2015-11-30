@@ -30,6 +30,13 @@ namespace WebCenter.Services
     } 
 	
   [Ninject.Inject]
+	 public  IsequenceService IsequenceService
+    {
+        get;
+        set;
+    } 
+	
+  [Ninject.Inject]
 	 public  Isys_dictionaryService Isys_dictionaryService
     {
         get;

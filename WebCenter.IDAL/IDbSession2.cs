@@ -22,6 +22,9 @@ namespace WebCenter.IDAL
 		IDAL.Iproject_caseRepository project_caseRepository { get; }
 	  
 
+		IDAL.IsequenceRepository sequenceRepository { get; }
+	  
+
 		IDAL.Isys_dictionaryRepository sys_dictionaryRepository { get; }
 	  
 

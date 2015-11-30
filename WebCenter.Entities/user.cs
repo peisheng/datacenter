@@ -14,6 +14,11 @@ namespace WebCenter.Entities
     
     public partial class user
     {
+        public user()
+        {
+            this.companies = new HashSet<company>();
+        }
+    
     
     
     
@@ -22,7 +27,11 @@ namespace WebCenter.Entities
     
     
     
-        public string name { get; set; }
+        public string user_name { get; set; }
+    
+    
+    
+        public string real_name { get; set; }
     
     
     
@@ -62,6 +71,10 @@ namespace WebCenter.Entities
     
     
     
+        public string login_token { get; set; }
+    
+    
+    
         public Nullable<System.DateTime> last_login_time { get; set; }
     
     
@@ -71,5 +84,7 @@ namespace WebCenter.Entities
     
     
         public Nullable<System.DateTime> update_time { get; set; }
+    
+        public virtual ICollection<company> companies { get; set; }
     }
 }
