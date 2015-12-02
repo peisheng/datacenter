@@ -58,5 +58,19 @@ namespace WebCenter.Web.Controllers
             }
 
         }
+
+        [HttpGet]
+        public ActionResult Logout()
+        {
+            Session.Abandon();
+            FormsAuthentication.SignOut();
+            return Redirect("/index.html");
+        }
+        //需要授权才可访问
+        [Authorize]
+        public ActionResult someAction()
+        {
+            return Content("");
+        }
     }
 }

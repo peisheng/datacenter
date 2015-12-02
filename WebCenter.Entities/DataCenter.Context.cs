@@ -25,12 +25,13 @@ namespace WebCenter.Entities
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<company> companies { get; set; }
         public virtual DbSet<operate_log> operate_log { get; set; }
-        public virtual DbSet<project_case> project_case { get; set; }
         public virtual DbSet<sequence> sequences { get; set; }
-        public virtual DbSet<sys_dictionary> sys_dictionary { get; set; }
         public virtual DbSet<sys_user> sys_user { get; set; }
         public virtual DbSet<user> users { get; set; }
+        public virtual DbSet<city> cities { get; set; }
+        public virtual DbSet<company> companies { get; set; }
+        public virtual DbSet<project_case> project_case { get; set; }
+        public virtual DbSet<sys_dictionary> sys_dictionary { get; set; }
     }
 }

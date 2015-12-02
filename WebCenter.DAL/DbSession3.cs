@@ -7,6 +7,8 @@ namespace WebCenter.DAL
     public partial class DbSession:IDbSession  
     {   
 	
+	public IDAL.IcityRepository cityRepository { get { return new cityRepository(); } }
+	
 	public IDAL.IcompanyRepository companyRepository { get { return new companyRepository(); } }
 	
 	public IDAL.Ioperate_logRepository operate_logRepository { get { return new operate_logRepository(); } }

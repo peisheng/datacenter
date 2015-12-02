@@ -31,7 +31,7 @@ namespace WebCenter.Entities
     
     
     
-        public string introdce { get; set; }
+        public string introduce { get; set; }
     
     
     
@@ -67,7 +67,15 @@ namespace WebCenter.Entities
     
     
     
+        public Nullable<int> city_id { get; set; }
+    
+    
+    
         public string email { get; set; }
+    
+    
+    
+        public string company_image_path { get; set; }
     
     
     
@@ -81,6 +89,7 @@ namespace WebCenter.Entities
     
         public Nullable<System.DateTime> update_time { get; set; }
     
+        public virtual city city { get; set; }
         public virtual sys_dictionary sys_dictionary { get; set; }
         public virtual user user { get; set; }
         public virtual ICollection<project_case> project_case { get; set; }

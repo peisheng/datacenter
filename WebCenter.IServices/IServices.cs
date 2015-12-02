@@ -10,6 +10,10 @@ namespace WebCenter.IServices
 {
    
 	
+	public partial interface IcityService:IBaseService<city>
+    {   
+    }
+	
 	public partial interface IcompanyService:IBaseService<company>
     {   
     }

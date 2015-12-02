@@ -7,6 +7,11 @@ namespace WebCenter.DAL
 {
    
 	
+	public partial class cityRepository :BaseRepository<city>,IcityRepository
+    {
+         
+    }
+	
 	public partial class companyRepository :BaseRepository<company>,IcompanyRepository
     {
          

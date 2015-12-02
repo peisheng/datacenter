@@ -13,6 +13,9 @@ namespace WebCenter.IDAL
    
 	  
 
+		IDAL.IcityRepository cityRepository { get; }
+	  
+
 		IDAL.IcompanyRepository companyRepository { get; }
 	  
 

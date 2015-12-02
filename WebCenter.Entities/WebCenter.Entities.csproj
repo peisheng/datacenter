@@ -73,6 +73,9 @@
   <ItemGroup>
     <Compile Include="Attribute\EntityPrimKey.cs" />
     <Compile Include="BaseModel.cs" />
+    <Compile Include="city.cs">
+      <DependentUpon>DataCenter.tt</DependentUpon>
+    </Compile>
     <Compile Include="company.cs">
       <DependentUpon>DataCenter.tt</DependentUpon>
     </Compile>

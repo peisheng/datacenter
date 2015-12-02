@@ -6,6 +6,10 @@ namespace WebCenter.IDAL
 {
    
 	
+    public partial interface IcityRepository :IBaseRepository<city>
+    {         
+    }
+	
     public partial interface IcompanyRepository :IBaseRepository<company>
     {         
     }

@@ -17,6 +17,8 @@ public partial class  NinjectDependencyResolver:IDependencyResolver
 private void AutoAddBinds()
 {
 	
+	   kernel.Bind<IcityService>().To<cityService>().InRequestScope();
+	
 	   kernel.Bind<IcompanyService>().To<companyService>().InRequestScope();
 	
 	   kernel.Bind<Ioperate_logService>().To<operate_logService>().InRequestScope();

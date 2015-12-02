@@ -9,6 +9,13 @@ namespace WebCenter.Services
 {  
 	
   [Ninject.Inject]
+	 public  IcityService IcityService
+    {
+        get;
+        set;
+    } 
+	
+  [Ninject.Inject]
 	 public  IcompanyService IcompanyService
     {
         get;

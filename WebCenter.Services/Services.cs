@@ -13,6 +13,16 @@ namespace WebCenter.Services
 {
    
 	
+	public partial class cityService:BaseService<city>,IcityService
+    {   
+        public cityService()
+        {}
+        public override void SetCurrentRepository()
+        {
+            CurrentRepository = _dbSession.cityRepository;
+        }  
+    }
+	
 	public partial class companyService:BaseService<company>,IcompanyService
     {   
         public companyService()

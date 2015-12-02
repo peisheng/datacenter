@@ -21,6 +21,13 @@ namespace WebCenter.Web.Controllers
         }
         public ActionResult Index()
         {
+            //for (var i = 0; i < 300;i++ )
+            //{
+
+            IList<company> list = Uof.IcompanyService.GetAll().OrderByDescending(item=>item.Id).Skip(200).Take(50).ToList();
+
+            //}
+           
             return View();
         }
         [HttpPost]
