@@ -14,6 +14,11 @@ namespace WebCenter.Entities
     
     public partial class project_case
     {
+        public project_case()
+        {
+            this.companies = new HashSet<company>();
+        }
+    
     
     
     
@@ -46,6 +51,10 @@ namespace WebCenter.Entities
     
     
     
+        public Nullable<int> is_company_intro { get; set; }
+    
+    
+    
         public Nullable<int> is_publish { get; set; }
     
     
@@ -64,6 +73,7 @@ namespace WebCenter.Entities
     
         public Nullable<System.DateTime> update_time { get; set; }
     
+        public virtual ICollection<company> companies { get; set; }
         public virtual company company { get; set; }
         public virtual sys_dictionary sys_dictionary { get; set; }
         public virtual sys_dictionary sys_dictionary1 { get; set; }

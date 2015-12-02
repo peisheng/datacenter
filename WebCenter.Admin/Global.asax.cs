@@ -8,7 +8,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace WebCenter.Admin
+namespace WebCenter.Web
 {
     public class MvcApplication : System.Web.HttpApplication
     {

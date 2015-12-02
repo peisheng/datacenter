@@ -63,6 +63,10 @@ namespace WebCenter.Entities
     
     
     
+        public Nullable<int> position_id { get; set; }
+    
+    
+    
         public Nullable<int> is_admin { get; set; }
     
     
@@ -84,10 +88,6 @@ namespace WebCenter.Entities
     
     
         public Nullable<System.DateTime> update_time { get; set; }
-    
-    
-    
-        public Nullable<int> position_id { get; set; }
     
         public virtual ICollection<company> companies { get; set; }
     }

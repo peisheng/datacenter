@@ -8,7 +8,7 @@ using WebCenter.IServices;
 using WebCenter.Services;
 
 
-namespace WebCenter.Admin.Infrastructure
+namespace WebCenter.Web.Infrastructure
 {
     public  partial class NinjectDependencyResolver : IDependencyResolver
     {
@@ -18,7 +18,8 @@ namespace WebCenter.Admin.Infrastructure
             kernel = kernelParam;
             this.kernel.Settings.InjectNonPublic = true;
             AddBindings();
-            AutoAddBinds();            
+            AutoAddBinds();
+            
         }
 
         public object GetService(Type serviceType)

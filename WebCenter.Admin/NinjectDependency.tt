@@ -26,7 +26,7 @@ using Ninject;
 using Ninject.Web.Common;
 using WebCenter.IServices;
 using WebCenter.Services;
-namespace WebCenter.Admin.Infrastructure
+namespace WebCenter.Web.Infrastructure
 {
 
 public partial class  NinjectDependencyResolver:IDependencyResolver
@@ -38,9 +38,9 @@ private void AutoAddBinds()
 foreach (EntityType entity in ItemCollection.GetItems<EntityType>().OrderBy(e => e.Name))
 {      
 #>	
-	   kernel.Bind<I<#=entity.Name #>Service>().To<<#=entity.Name #>Service>().InSingletonScope();
+	   kernel.Bind<I<#=entity.Name #>Service>().To<<#=entity.Name #>Service>().InRequestScope();
 <#}#>
-  kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InSingletonScope();
+  kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InRequestScope();
 
 }
   

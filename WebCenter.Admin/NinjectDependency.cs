@@ -8,7 +8,7 @@ using Ninject;
 using Ninject.Web.Common;
 using WebCenter.IServices;
 using WebCenter.Services;
-namespace WebCenter.Admin.Infrastructure
+namespace WebCenter.Web.Infrastructure
 {
 
 public partial class  NinjectDependencyResolver:IDependencyResolver
@@ -17,18 +17,20 @@ public partial class  NinjectDependencyResolver:IDependencyResolver
 private void AutoAddBinds()
 {
 	
-	   kernel.Bind<IcompanyService>().To<companyService>().InSingletonScope();
+	   kernel.Bind<IcompanyService>().To<companyService>().InRequestScope();
 	
-	   kernel.Bind<Ioperate_logService>().To<operate_logService>().InSingletonScope();
+	   kernel.Bind<Ioperate_logService>().To<operate_logService>().InRequestScope();
 	
-	   kernel.Bind<Iproject_caseService>().To<project_caseService>().InSingletonScope();
+	   kernel.Bind<Iproject_caseService>().To<project_caseService>().InRequestScope();
 	
-	   kernel.Bind<Isys_dictionaryService>().To<sys_dictionaryService>().InSingletonScope();
+	   kernel.Bind<IsequenceService>().To<sequenceService>().InRequestScope();
 	
-	   kernel.Bind<Isys_userService>().To<sys_userService>().InSingletonScope();
+	   kernel.Bind<Isys_dictionaryService>().To<sys_dictionaryService>().InRequestScope();
 	
-	   kernel.Bind<IuserService>().To<userService>().InSingletonScope();
-  kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InSingletonScope();
+	   kernel.Bind<Isys_userService>().To<sys_userService>().InRequestScope();
+	
+	   kernel.Bind<IuserService>().To<userService>().InRequestScope();
+  kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InRequestScope();
 
 }
   

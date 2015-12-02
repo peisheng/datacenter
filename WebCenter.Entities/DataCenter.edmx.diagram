@@ -5,21 +5,22 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="625d74e1092944a886cf389a97db8259" Name="Diagram1">
-        <EntityTypeShape EntityType="DataCenter.Entities.operate_log" Width="1.5" PointX="2.75" PointY="6.75" />
-        <EntityTypeShape EntityType="DataCenter.Entities.sequence" Width="1.5" PointX="4.75" PointY="6.75" />
-        <EntityTypeShape EntityType="DataCenter.Entities.sys_user" Width="1.5" PointX="6.75" PointY="6.75" />
-        <EntityTypeShape EntityType="DataCenter.Entities.user" Width="1.5" PointX="0.75" PointY="6.125" />
-        <EntityTypeShape EntityType="DataCenter.Entities.city" Width="1.5" PointX="9.375" PointY="6.375" />
-        <EntityTypeShape EntityType="DataCenter.Entities.company" Width="1.5" PointX="11.625" PointY="3.875" />
-        <EntityTypeShape EntityType="DataCenter.Entities.project_case" Width="1.5" PointX="13.875" PointY="3.625" />
-        <EntityTypeShape EntityType="DataCenter.Entities.sys_dictionary" Width="1.5" PointX="9.375" PointY="2.125" />
+        <EntityTypeShape EntityType="DataCenter.Entities.city" Width="1.5" PointX="0.75" PointY="8.5" />
+        <EntityTypeShape EntityType="DataCenter.Entities.company" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="DataCenter.Entities.operate_log" Width="1.5" PointX="5.75" PointY="6.75" />
+        <EntityTypeShape EntityType="DataCenter.Entities.project_case" Width="1.5" PointX="5.25" PointY="1.5" />
+        <EntityTypeShape EntityType="DataCenter.Entities.sequence" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DataCenter.Entities.sys_dictionary" Width="1.5" PointX="0.75" PointY="2.25" />
+        <EntityTypeShape EntityType="DataCenter.Entities.sys_user" Width="1.5" PointX="2.75" PointY="7.75" />
+        <EntityTypeShape EntityType="DataCenter.Entities.user" Width="1.5" PointX="0.75" PointY="11.125" />
         <AssociationConnector Association="DataCenter.Entities.company_ibfk_3" />
         <AssociationConnector Association="DataCenter.Entities.company_ibfk_1" />
         <AssociationConnector Association="DataCenter.Entities.company_ibfk_2" />
+        <AssociationConnector Association="DataCenter.Entities.company_ibfk_4" />
         <AssociationConnector Association="DataCenter.Entities.project_case_ibfk_2" />
         <AssociationConnector Association="DataCenter.Entities.project_case_ibfk_1" />
         <AssociationConnector Association="DataCenter.Entities.project_case_ibfk_3" />
-        </Diagram>
+      </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

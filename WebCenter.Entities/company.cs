@@ -16,7 +16,7 @@ namespace WebCenter.Entities
     {
         public company()
         {
-            this.project_case = new HashSet<project_case>();
+            this.project_case1 = new HashSet<project_case>();
         }
     
     
@@ -31,7 +31,7 @@ namespace WebCenter.Entities
     
     
     
-        public string introduce { get; set; }
+        public Nullable<int> introduce_page_id { get; set; }
     
     
     
@@ -92,6 +92,7 @@ namespace WebCenter.Entities
         public virtual city city { get; set; }
         public virtual sys_dictionary sys_dictionary { get; set; }
         public virtual user user { get; set; }
-        public virtual ICollection<project_case> project_case { get; set; }
+        public virtual project_case project_case { get; set; }
+        public virtual ICollection<project_case> project_case1 { get; set; }
     }
 }

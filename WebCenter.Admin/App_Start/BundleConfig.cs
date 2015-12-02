@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace WebCenter.Admin
+namespace WebCenter.Web
 {
     public class BundleConfig
     {
@@ -22,17 +22,11 @@ namespace WebCenter.Admin
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
-            bundles.Add(new ScriptBundle("~/bundles/easyui").Include(
-                   "~/Content/easyui/jquery.easyui.min.js"
-                  ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"
-                      ));
-            bundles.Add(new StyleBundle("~/Content/easyui").Include(
-                     "~/Content/easyui/themes/bootstrap/easyui.css"
-                     )); 
+                      "~/Content/site.css")); 
+
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
             BundleTable.EnableOptimizations = false;
