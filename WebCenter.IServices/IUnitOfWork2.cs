@@ -12,6 +12,8 @@ namespace WebCenter.IServices
 	
 	  IcompanyService IcompanyService{get;set;} 
 	
+	  IfileService IfileService{get;set;} 
+	
 	  Ioperate_logService Ioperate_logService{get;set;} 
 	
 	  Iproject_caseService Iproject_caseService{get;set;} 

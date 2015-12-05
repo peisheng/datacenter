@@ -31,6 +31,7 @@ namespace WebCenter.DAL
             if (dbcontext == null)  //线程的数据槽里面没有次上下文
             {
                 dbcontext = new WebCenter.Entities.DataCenter("DataCenter");  //创建了一个EF上下文
+               // dbcontext.Configuration.ProxyCreationEnabled = true;
                 //存储指定对象
                 CallContext.SetData("DbContext", dbcontext);
             }

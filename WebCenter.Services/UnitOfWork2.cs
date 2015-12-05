@@ -23,6 +23,13 @@ namespace WebCenter.Services
     } 
 	
   [Ninject.Inject]
+	 public  IfileService IfileService
+    {
+        get;
+        set;
+    } 
+	
+  [Ninject.Inject]
 	 public  Ioperate_logService Ioperate_logService
     {
         get;

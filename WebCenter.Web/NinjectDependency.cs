@@ -21,6 +21,8 @@ private void AutoAddBinds()
 	
 	   kernel.Bind<IcompanyService>().To<companyService>().InRequestScope();
 	
+	   kernel.Bind<IfileService>().To<fileService>().InRequestScope();
+	
 	   kernel.Bind<Ioperate_logService>().To<operate_logService>().InRequestScope();
 	
 	   kernel.Bind<Iproject_caseService>().To<project_caseService>().InRequestScope();

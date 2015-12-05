@@ -36,6 +36,15 @@
           <Property Name="create_time" Type="datetime" Precision="0" />
           <Property Name="update_time" Type="datetime" Precision="0" />
         </EntityType>
+        <EntityType Name="file">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="file_name" Type="varchar" MaxLength="255" />
+          <Property Name="file_path" Type="varchar" MaxLength="255" />
+          <Property Name="create_time" Type="datetime" Precision="0" />
+        </EntityType>
         <EntityType Name="operate_log">
           <Key>
             <PropertyRef Name="Id" />
@@ -59,6 +68,7 @@
           <Property Name="content" Type="text" />
           <Property Name="company_id" Type="int" />
           <Property Name="user_id" Type="int" />
+          <Property Name="main_image_path" Type="varchar" MaxLength="255" />
           <Property Name="is_company_intro" Type="int" />
           <Property Name="is_publish" Type="int" />
           <Property Name="view_count" Type="int" />
@@ -190,11 +200,11 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="project_case_ibfk_3">
-          <End Role="sys_dictionary" Type="Self.sys_dictionary" Multiplicity="0..1" />
+          <End Role="user" Type="Self.user" Multiplicity="0..1" />
           <End Role="project_case" Type="Self.project_case" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="sys_dictionary">
-              <PropertyRef Name="id" />
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="project_case">
               <PropertyRef Name="user_id" />
@@ -204,6 +214,7 @@
         <EntityContainer Name="DataCenterEntitiesStoreContainer">
           <EntitySet Name="city" EntityType="Self.city" Schema="todaystart" store:Type="Tables" />
           <EntitySet Name="company" EntityType="Self.company" Schema="todaystart" store:Type="Tables" />
+          <EntitySet Name="file" EntityType="Self.file" Schema="todaystart" store:Type="Tables" />
           <EntitySet Name="operate_log" EntityType="Self.operate_log" Schema="todaystart" store:Type="Tables" />
           <EntitySet Name="project_case" EntityType="Self.project_case" Schema="todaystart" store:Type="Tables" />
           <EntitySet Name="sequence" EntityType="Self.sequence" Schema="todaystart" store:Type="Tables" />
@@ -235,7 +246,7 @@
             <End Role="project_case" EntitySet="project_case" />
           </AssociationSet>
           <AssociationSet Name="project_case_ibfk_3" Association="Self.project_case_ibfk_3">
-            <End Role="sys_dictionary" EntitySet="sys_dictionary" />
+            <End Role="user" EntitySet="user" />
             <End Role="project_case" EntitySet="project_case" />
           </AssociationSet>
         </EntityContainer>
@@ -277,9 +288,10 @@
             <End Role="project_case" EntitySet="project_case" />
           </AssociationSet>
           <AssociationSet Name="project_case_ibfk_3" Association="DataCenter.Entities.project_case_ibfk_3">
-            <End Role="sys_dictionary" EntitySet="sys_dictionary" />
+            <End Role="user" EntitySet="users" />
             <End Role="project_case" EntitySet="project_case" />
           </AssociationSet>
+          <EntitySet Name="files" EntityType="DataCenter.Entities.file" />
         </EntityContainer>
         <EntityType Name="city">
           <Key>
@@ -341,6 +353,7 @@
           <Property Name="content" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
           <Property Name="company_id" Type="Int32" />
           <Property Name="user_id" Type="Int32" />
+          <Property Name="main_image_path" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="is_company_intro" Type="Int32" />
           <Property Name="is_publish" Type="Int32" />
           <Property Name="view_count" Type="Int32" />
@@ -350,7 +363,7 @@
           <NavigationProperty Name="companies" Relationship="DataCenter.Entities.company_ibfk_4" FromRole="project_case" ToRole="company" />
           <NavigationProperty Name="company" Relationship="DataCenter.Entities.project_case_ibfk_2" FromRole="project_case" ToRole="company" />
           <NavigationProperty Name="sys_dictionary" Relationship="DataCenter.Entities.project_case_ibfk_1" FromRole="project_case" ToRole="sys_dictionary" />
-          <NavigationProperty Name="sys_dictionary1" Relationship="DataCenter.Entities.project_case_ibfk_3" FromRole="project_case" ToRole="sys_dictionary" />
+          <NavigationProperty Name="user" Relationship="DataCenter.Entities.project_case_ibfk_3" FromRole="project_case" ToRole="user" />
         </EntityType>
         <EntityType Name="sequence">
           <Key>
@@ -371,7 +384,6 @@
           <Property Name="update_time" Type="DateTime" />
           <NavigationProperty Name="companies" Relationship="DataCenter.Entities.company_ibfk_1" FromRole="sys_dictionary" ToRole="company" />
           <NavigationProperty Name="project_case" Relationship="DataCenter.Entities.project_case_ibfk_1" FromRole="sys_dictionary" ToRole="project_case" />
-          <NavigationProperty Name="project_case1" Relationship="DataCenter.Entities.project_case_ibfk_3" FromRole="sys_dictionary" ToRole="project_case" />
         </EntityType>
         <EntityType Name="sys_user">
           <Key>
@@ -406,6 +418,7 @@
           <Property Name="create_time" Type="DateTime" />
           <Property Name="update_time" Type="DateTime" />
           <NavigationProperty Name="companies" Relationship="DataCenter.Entities.company_ibfk_2" FromRole="user" ToRole="company" />
+          <NavigationProperty Name="project_case" Relationship="DataCenter.Entities.project_case_ibfk_3" FromRole="user" ToRole="project_case" />
         </EntityType>
         <Association Name="company_ibfk_3">
           <End Type="DataCenter.Entities.city" Role="city" Multiplicity="0..1" />
@@ -480,17 +493,26 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="project_case_ibfk_3">
-          <End Type="DataCenter.Entities.sys_dictionary" Role="sys_dictionary" Multiplicity="0..1" />
+          <End Type="DataCenter.Entities.user" Role="user" Multiplicity="0..1" />
           <End Type="DataCenter.Entities.project_case" Role="project_case" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="sys_dictionary">
-              <PropertyRef Name="id" />
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="project_case">
               <PropertyRef Name="user_id" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="file">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="file_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="file_path" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="create_time" Type="DateTime" />
+        </EntityType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -552,6 +574,7 @@
                 <ScalarProperty Name="view_count" ColumnName="view_count" />
                 <ScalarProperty Name="is_publish" ColumnName="is_publish" />
                 <ScalarProperty Name="is_company_intro" ColumnName="is_company_intro" />
+                <ScalarProperty Name="main_image_path" ColumnName="main_image_path" />
                 <ScalarProperty Name="user_id" ColumnName="user_id" />
                 <ScalarProperty Name="company_id" ColumnName="company_id" />
                 <ScalarProperty Name="content" ColumnName="content" />
@@ -614,6 +637,16 @@
                 <ScalarProperty Name="real_name" ColumnName="real_name" />
                 <ScalarProperty Name="user_name" ColumnName="user_name" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="files">
+            <EntityTypeMapping TypeName="DataCenter.Entities.file">
+              <MappingFragment StoreEntitySet="file">
+                <ScalarProperty Name="create_time" ColumnName="create_time" />
+                <ScalarProperty Name="file_path" ColumnName="file_path" />
+                <ScalarProperty Name="file_name" ColumnName="file_name" />
+                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

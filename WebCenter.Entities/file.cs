@@ -12,41 +12,24 @@ namespace WebCenter.Entities
     using System;
     using System.Collections.Generic;
     
-    public partial class sys_dictionary
+    public partial class file
     {
-        public sys_dictionary()
-        {
-            this.companies = new HashSet<company>();
-            this.project_case = new HashSet<project_case>();
-        }
     
     
     
-    
-    [EntityPrimKey("sys_dictionary")]
+    [EntityPrimKey("file")]
         public int id { get; set; }
     
     
     
-        public string name { get; set; }
+        public string file_name { get; set; }
     
     
     
-        public string value { get; set; }
-    
-    
-    
-        public string group { get; set; }
+        public string file_path { get; set; }
     
     
     
         public Nullable<System.DateTime> create_time { get; set; }
-    
-    
-    
-        public Nullable<System.DateTime> update_time { get; set; }
-    
-        public virtual ICollection<company> companies { get; set; }
-        public virtual ICollection<project_case> project_case { get; set; }
     }
 }

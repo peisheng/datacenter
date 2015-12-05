@@ -17,6 +17,11 @@ namespace WebCenter.DAL
          
     }
 	
+	public partial class fileRepository :BaseRepository<file>,IfileRepository
+    {
+         
+    }
+	
 	public partial class operate_logRepository :BaseRepository<operate_log>,Ioperate_logRepository
     {
          

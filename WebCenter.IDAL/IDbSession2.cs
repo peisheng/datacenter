@@ -19,6 +19,9 @@ namespace WebCenter.IDAL
 		IDAL.IcompanyRepository companyRepository { get; }
 	  
 
+		IDAL.IfileRepository fileRepository { get; }
+	  
+
 		IDAL.Ioperate_logRepository operate_logRepository { get; }
 	  
 

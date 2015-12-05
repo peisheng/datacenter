@@ -14,6 +14,10 @@ namespace WebCenter.IDAL
     {         
     }
 	
+    public partial interface IfileRepository :IBaseRepository<file>
+    {         
+    }
+	
     public partial interface Ioperate_logRepository :IBaseRepository<operate_log>
     {         
     }

@@ -1,0 +1,38 @@
+﻿using log4net;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using WebCenter.IServices;
+using WebCenter.Entities;
+using System.Web.Security;
+using System.Linq.Expressions;
+using Common;
+using System.Collections;
+using Newtonsoft.Json;
+
+namespace WebCenter.Web.Controllers
+{
+
+    [JsonObject(IsReference = true)]
+    public class FileController : BaseController
+    {
+
+
+        public FileController(IUnitOfWork UOF)
+            : base(UOF)
+        {
+        }
+
+
+        public ActionResult Upload()
+        {
+            return null;
+        }
+
+
+       
+
+    }
+}

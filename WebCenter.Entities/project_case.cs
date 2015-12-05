@@ -51,6 +51,10 @@ namespace WebCenter.Entities
     
     
     
+        public string main_image_path { get; set; }
+    
+    
+    
         public Nullable<int> is_company_intro { get; set; }
     
     
@@ -76,6 +80,6 @@ namespace WebCenter.Entities
         public virtual ICollection<company> companies { get; set; }
         public virtual company company { get; set; }
         public virtual sys_dictionary sys_dictionary { get; set; }
-        public virtual sys_dictionary sys_dictionary1 { get; set; }
+        public virtual user user { get; set; }
     }
 }

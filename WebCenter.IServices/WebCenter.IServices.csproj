@@ -83,9 +83,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>IUnitOfWork2.tt</DependentUpon>
     </Compile>
+    <Compile Include="ProjectServices\IProjectService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WebCenter.Common\Common.csproj">
+      <Project>{55dec9f4-cac0-4408-b6dd-e0ef47fdcb18}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WebCenter.Dal\WebCenter.DAL.csproj">
       <Project>{057ff7fa-a49d-440d-8263-751990af8adf}</Project>
       <Name>WebCenter.DAL</Name>
@@ -115,10 +120,7 @@
       <LastGenOutput>IUnitOfWork2.cs</LastGenOutput>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="IBussServices\" />
-    <Folder Include="Infrastructure\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config">

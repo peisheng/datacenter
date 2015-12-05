@@ -33,5 +33,6 @@ namespace WebCenter.Entities
         public virtual DbSet<sys_dictionary> sys_dictionary { get; set; }
         public virtual DbSet<sys_user> sys_user { get; set; }
         public virtual DbSet<user> users { get; set; }
+        public virtual DbSet<file> files { get; set; }
     }
 }

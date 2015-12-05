@@ -33,6 +33,16 @@ namespace WebCenter.Services
         }  
     }
 	
+	public partial class fileService:BaseService<file>,IfileService
+    {   
+        public fileService()
+        {}
+        public override void SetCurrentRepository()
+        {
+            CurrentRepository = _dbSession.fileRepository;
+        }  
+    }
+	
 	public partial class operate_logService:BaseService<operate_log>,Ioperate_logService
     {   
         public operate_logService()

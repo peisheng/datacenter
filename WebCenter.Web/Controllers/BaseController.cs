@@ -8,11 +8,13 @@ using WebCenter.Entities;
 using CacheManager.Core;
 using System.Configuration;
 using Common;
+using Newtonsoft.Json;
 
 
 
 namespace WebCenter.Web.Controllers
 {
+    [JsonObject(IsReference = true)]
     public class BaseController : Controller
     {
       

@@ -18,6 +18,10 @@ namespace WebCenter.IServices
     {   
     }
 	
+	public partial interface IfileService:IBaseService<file>
+    {   
+    }
+	
 	public partial interface Ioperate_logService:IBaseService<operate_log>
     {   
     }

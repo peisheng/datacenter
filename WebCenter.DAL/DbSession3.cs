@@ -11,6 +11,8 @@ namespace WebCenter.DAL
 	
 	public IDAL.IcompanyRepository companyRepository { get { return new companyRepository(); } }
 	
+	public IDAL.IfileRepository fileRepository { get { return new fileRepository(); } }
+	
 	public IDAL.Ioperate_logRepository operate_logRepository { get { return new operate_logRepository(); } }
 	
 	public IDAL.Iproject_caseRepository project_caseRepository { get { return new project_caseRepository(); } }

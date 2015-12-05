@@ -95,6 +95,9 @@
       <DependentUpon>DataCenter.edmx</DependentUpon>
     </Compile>
     <Compile Include="DataCenterDb.cs" />
+    <Compile Include="file.cs">
+      <DependentUpon>DataCenter.tt</DependentUpon>
+    </Compile>
     <Compile Include="operate_log.cs">
       <DependentUpon>DataCenter.tt</DependentUpon>
     </Compile>
