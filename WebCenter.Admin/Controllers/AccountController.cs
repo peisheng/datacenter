@@ -8,7 +8,7 @@ using WebCenter.Entities;
 using Common;
 using System.Web.Security;
 
-namespace WebCenter.Web.Controllers
+namespace WebCenter.Admin.Controllers
 {
     public class AccountController : BaseController
     {

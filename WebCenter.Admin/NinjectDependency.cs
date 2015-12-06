@@ -8,7 +8,7 @@ using Ninject;
 using Ninject.Web.Common;
 using WebCenter.IServices;
 using WebCenter.Services;
-namespace WebCenter.Web.Infrastructure
+namespace WebCenter.Admin.Infrastructure
 {
 
 public partial class  NinjectDependencyResolver:IDependencyResolver
@@ -17,7 +17,11 @@ public partial class  NinjectDependencyResolver:IDependencyResolver
 private void AutoAddBinds()
 {
 	
+	   kernel.Bind<IcityService>().To<cityService>().InRequestScope();
+	
 	   kernel.Bind<IcompanyService>().To<companyService>().InRequestScope();
+	
+	   kernel.Bind<IfileService>().To<fileService>().InRequestScope();
 	
 	   kernel.Bind<Ioperate_logService>().To<operate_logService>().InRequestScope();
 	

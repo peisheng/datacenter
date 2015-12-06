@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace WebCenter.Web
+namespace WebCenter.Admin
 {
     public class FilterConfig
     {

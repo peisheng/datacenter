@@ -8,7 +8,7 @@ using WebCenter.IServices;
 using WebCenter.Services;
 
 
-namespace WebCenter.Web.Infrastructure
+namespace WebCenter.Admin.Infrastructure
 {
     public  partial class NinjectDependencyResolver : IDependencyResolver
     {

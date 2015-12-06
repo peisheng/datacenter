@@ -8,7 +8,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace WebCenter.Web
+namespace WebCenter.Admin
 {
     public class MvcApplication : System.Web.HttpApplication
     {
@@ -19,6 +19,7 @@ namespace WebCenter.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            
             DbInterception.Add(new Common.EFIntercepterLogging());
         }
     }
