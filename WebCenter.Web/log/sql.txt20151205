@@ -1,0 +1,891 @@
+
+ 
+记录时间：2015-12-05 20:20:04,285 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:20:04,420 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:31:51,681 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @p__linq__0) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:31:51,706 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Project1`.`Id`, 
+`Project1`.`title`, 
+`Project1`.`descript`, 
+`Project1`.`type_id`, 
+`Project1`.`content`, 
+`Project1`.`company_id`, 
+`Project1`.`user_id`, 
+`Project1`.`main_image_path`, 
+`Project1`.`is_company_intro`, 
+`Project1`.`is_publish`, 
+`Project1`.`view_count`, 
+`Project1`.`publish_time`, 
+`Project1`.`create_time`, 
+`Project1`.`update_time`
+FROM `project_case` AS `Project1`
+ WHERE `Project1`.`company_id` = @p__linq__0
+ ORDER BY 
+`Project1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:31:57,305 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @p__linq__0) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:31:57,308 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Project1`.`Id`, 
+`Project1`.`title`, 
+`Project1`.`descript`, 
+`Project1`.`type_id`, 
+`Project1`.`content`, 
+`Project1`.`company_id`, 
+`Project1`.`user_id`, 
+`Project1`.`main_image_path`, 
+`Project1`.`is_company_intro`, 
+`Project1`.`is_publish`, 
+`Project1`.`view_count`, 
+`Project1`.`publish_time`, 
+`Project1`.`create_time`, 
+`Project1`.`update_time`
+FROM `project_case` AS `Project1`
+ WHERE `Project1`.`company_id` = @p__linq__0
+ ORDER BY 
+`Project1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:32:12,576 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @p__linq__0) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:32:12,579 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Project1`.`Id`, 
+`Project1`.`title`, 
+`Project1`.`descript`, 
+`Project1`.`type_id`, 
+`Project1`.`content`, 
+`Project1`.`company_id`, 
+`Project1`.`user_id`, 
+`Project1`.`main_image_path`, 
+`Project1`.`is_company_intro`, 
+`Project1`.`is_publish`, 
+`Project1`.`view_count`, 
+`Project1`.`publish_time`, 
+`Project1`.`create_time`, 
+`Project1`.`update_time`
+FROM `project_case` AS `Project1`
+ WHERE `Project1`.`company_id` = @p__linq__0
+ ORDER BY 
+`Project1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:32:14,935 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @p__linq__0) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:32:14,940 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Project1`.`Id`, 
+`Project1`.`title`, 
+`Project1`.`descript`, 
+`Project1`.`type_id`, 
+`Project1`.`content`, 
+`Project1`.`company_id`, 
+`Project1`.`user_id`, 
+`Project1`.`main_image_path`, 
+`Project1`.`is_company_intro`, 
+`Project1`.`is_publish`, 
+`Project1`.`view_count`, 
+`Project1`.`publish_time`, 
+`Project1`.`create_time`, 
+`Project1`.`update_time`
+FROM `project_case` AS `Project1`
+ WHERE `Project1`.`company_id` = @p__linq__0
+ ORDER BY 
+`Project1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:32:17,136 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @p__linq__0) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:32:17,139 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Project1`.`Id`, 
+`Project1`.`title`, 
+`Project1`.`descript`, 
+`Project1`.`type_id`, 
+`Project1`.`content`, 
+`Project1`.`company_id`, 
+`Project1`.`user_id`, 
+`Project1`.`main_image_path`, 
+`Project1`.`is_company_intro`, 
+`Project1`.`is_publish`, 
+`Project1`.`view_count`, 
+`Project1`.`publish_time`, 
+`Project1`.`create_time`, 
+`Project1`.`update_time`
+FROM `project_case` AS `Project1`
+ WHERE `Project1`.`company_id` = @p__linq__0
+ ORDER BY 
+`Project1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:33:12,740 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @p__linq__0) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:33:12,883 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Project1`.`Id`, 
+`Project1`.`title`, 
+`Project1`.`descript`, 
+`Project1`.`type_id`, 
+`Project1`.`content`, 
+`Project1`.`company_id`, 
+`Project1`.`user_id`, 
+`Project1`.`main_image_path`, 
+`Project1`.`is_company_intro`, 
+`Project1`.`is_publish`, 
+`Project1`.`view_count`, 
+`Project1`.`publish_time`, 
+`Project1`.`create_time`, 
+`Project1`.`update_time`
+FROM `project_case` AS `Project1`
+ WHERE `Project1`.`company_id` = @p__linq__0
+ ORDER BY 
+`Project1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:33:15,508 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @p__linq__0) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:33:15,510 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Project1`.`Id`, 
+`Project1`.`title`, 
+`Project1`.`descript`, 
+`Project1`.`type_id`, 
+`Project1`.`content`, 
+`Project1`.`company_id`, 
+`Project1`.`user_id`, 
+`Project1`.`main_image_path`, 
+`Project1`.`is_company_intro`, 
+`Project1`.`is_publish`, 
+`Project1`.`view_count`, 
+`Project1`.`publish_time`, 
+`Project1`.`create_time`, 
+`Project1`.`update_time`
+FROM `project_case` AS `Project1`
+ WHERE `Project1`.`company_id` = @p__linq__0
+ ORDER BY 
+`Project1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:33:54,670 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @p__linq__0) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:33:55,038 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Project1`.`Id`, 
+`Project1`.`title`, 
+`Project1`.`descript`, 
+`Project1`.`type_id`, 
+`Project1`.`content`, 
+`Project1`.`company_id`, 
+`Project1`.`user_id`, 
+`Project1`.`main_image_path`, 
+`Project1`.`is_company_intro`, 
+`Project1`.`is_publish`, 
+`Project1`.`view_count`, 
+`Project1`.`publish_time`, 
+`Project1`.`create_time`, 
+`Project1`.`update_time`
+FROM `project_case` AS `Project1`
+ WHERE `Project1`.`company_id` = @p__linq__0
+ ORDER BY 
+`Project1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:34:00,052 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @p__linq__0) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:34:00,055 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Project1`.`Id`, 
+`Project1`.`title`, 
+`Project1`.`descript`, 
+`Project1`.`type_id`, 
+`Project1`.`content`, 
+`Project1`.`company_id`, 
+`Project1`.`user_id`, 
+`Project1`.`main_image_path`, 
+`Project1`.`is_company_intro`, 
+`Project1`.`is_publish`, 
+`Project1`.`view_count`, 
+`Project1`.`publish_time`, 
+`Project1`.`create_time`, 
+`Project1`.`update_time`
+FROM `project_case` AS `Project1`
+ WHERE `Project1`.`company_id` = @p__linq__0
+ ORDER BY 
+`Project1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:37:38,495 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @p__linq__0) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:37:38,634 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Project1`.`Id`, 
+`Project1`.`title`, 
+`Project1`.`descript`, 
+`Project1`.`type_id`, 
+`Project1`.`content`, 
+`Project1`.`company_id`, 
+`Project1`.`user_id`, 
+`Project1`.`main_image_path`, 
+`Project1`.`is_company_intro`, 
+`Project1`.`is_publish`, 
+`Project1`.`view_count`, 
+`Project1`.`publish_time`, 
+`Project1`.`create_time`, 
+`Project1`.`update_time`
+FROM `project_case` AS `Project1`
+ WHERE `Project1`.`company_id` = @p__linq__0
+ ORDER BY 
+`Project1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:37:38,773 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:46:13,144 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `project_case` AS `Extent1`
+ WHERE (`Extent1`.`title` LIKE '%p__linq__0%') OR (`Extent1`.`descript` LIKE '%p__linq__1%')) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 20:46:13,207 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Project1`.`Id`, 
+`Project1`.`title`, 
+`Project1`.`descript`, 
+`Project1`.`type_id`, 
+`Project1`.`content`, 
+`Project1`.`company_id`, 
+`Project1`.`user_id`, 
+`Project1`.`main_image_path`, 
+`Project1`.`is_company_intro`, 
+`Project1`.`is_publish`, 
+`Project1`.`view_count`, 
+`Project1`.`publish_time`, 
+`Project1`.`create_time`, 
+`Project1`.`update_time`
+FROM `project_case` AS `Project1`
+ WHERE (`Project1`.`title` LIKE '%p__linq__0%') OR (`Project1`.`descript` LIKE '%p__linq__1%')
+ ORDER BY 
+`Project1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 21:00:52,882 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `company` AS `Extent1`
+ WHERE `Extent1`.`name` LIKE '%p__linq__0%') AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 21:00:53,038 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Project1`.`Id`, 
+`Project1`.`name`, 
+`Project1`.`introduce_page_id`, 
+`Project1`.`type_id`, 
+`Project1`.`address`, 
+`Project1`.`contact_name`, 
+`Project1`.`user_id`, 
+`Project1`.`site_url`, 
+`Project1`.`qq_number`, 
+`Project1`.`phone`, 
+`Project1`.`mobile`, 
+`Project1`.`city_id`, 
+`Project1`.`email`, 
+`Project1`.`company_image_path`, 
+`Project1`.`logo_path`, 
+`Project1`.`create_time`, 
+`Project1`.`update_time`
+FROM `company` AS `Project1`
+ WHERE `Project1`.`name` LIKE '%p__linq__0%'
+ ORDER BY 
+`Project1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 21:00:56,956 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `company` AS `Extent1`
+ WHERE `Extent1`.`name` LIKE '%p__linq__0%') AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 21:00:56,960 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Project1`.`Id`, 
+`Project1`.`name`, 
+`Project1`.`introduce_page_id`, 
+`Project1`.`type_id`, 
+`Project1`.`address`, 
+`Project1`.`contact_name`, 
+`Project1`.`user_id`, 
+`Project1`.`site_url`, 
+`Project1`.`qq_number`, 
+`Project1`.`phone`, 
+`Project1`.`mobile`, 
+`Project1`.`city_id`, 
+`Project1`.`email`, 
+`Project1`.`company_image_path`, 
+`Project1`.`logo_path`, 
+`Project1`.`create_time`, 
+`Project1`.`update_time`
+FROM `company` AS `Project1`
+ WHERE `Project1`.`name` LIKE '%p__linq__0%'
+ ORDER BY 
+`Project1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 21:01:01,730 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `company` AS `Extent1`) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 21:01:01,733 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ ORDER BY 
+`Extent1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 21:01:02,230 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 21:01:05,170 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `company` AS `Extent1`) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 21:01:05,172 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ ORDER BY 
+`Extent1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 21:01:05,175 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 22:14:51,053 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `company` AS `Extent1`) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 22:14:51,055 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ ORDER BY 
+`Extent1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 22:14:51,058 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 22:15:25,811 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `company` AS `Extent1`) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 22:15:25,813 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ ORDER BY 
+`Extent1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 22:15:25,815 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 22:17:15,589 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `company` AS `Extent1`) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 22:17:15,732 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ ORDER BY 
+`Extent1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 22:17:15,924 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 22:40:58,137 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2015-12-05 22:40:58,257 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------

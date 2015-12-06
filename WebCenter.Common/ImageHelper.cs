@@ -10,7 +10,7 @@ using System.Drawing.Drawing2D;
 
 namespace Common
 {
-    class ImageHelper
+    public class ImageHelper
     {
 
 
@@ -25,7 +25,7 @@ namespace Common
         /// <param name="flag">压缩质量 1-100</param>
         /// <returns></returns>
 
-        public bool GetPicThumbnail(string sFile, string dFile, int dHeight, int dWidth, int flag)
+        public static bool GetPicThumbnail(string sFile, string dFile, int dHeight, int dWidth, int flag)
         {
             System.Drawing.Image iSource = System.Drawing.Image.FromFile(sFile);
 
