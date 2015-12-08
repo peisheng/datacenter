@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WebCenter.Web")]
+[assembly: AssemblyTitle("WebCenter.Admin")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("WebCenter.Web")]
+[assembly: AssemblyProduct("WebCenter.Admin")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("40145af7-2293-432a-9d60-3f9fc77f39c7")]
+[assembly: Guid("71B0826E-8A25-4175-A82D-17B1B15D4922")]
 
 // Version information for an assembly consists of the following four values:
 //

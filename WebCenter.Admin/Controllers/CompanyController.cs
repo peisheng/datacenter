@@ -42,16 +42,24 @@ namespace WebCenter.Admin.Controllers
                 condition = tmp;
             }
             PagedList<company> list = Uof.IcompanyService.GetAll(condition).OrderByDescending(item => item.Id).ToPagedList(page_index, page_size);
+
+            List<int> listId= list.Select(p => p.Id).ToList();
+            var companyList=Uof.IuserService.GetAll(item=>listId.Contains(item.Id)).GroupBy(item=>item.company_id).Select(item=>new {companyId=(int)item.Key,count=item.Count()}).ToList();
             var obj = new ArrayList();
             foreach (var item in list)
             {
                 var it = new
                 {
                     id = item.Id,
-                    name = item.name,
-                    logo_path = item.logo_path,
+                    name = item.name,                  
                     type_name = item.sys_dictionary == null ? "" : item.sys_dictionary.value,
-                    city_name = item.city == null ? "" : item.city.city_name
+                    city_name = item.city == null ? "" : item.city.city_name,
+                    author_name=item.user==null?"":item.user.real_name,
+                    view_count=0,
+                    article_count=item.project_case1.Count,
+                    logo_path = item.logo_path,
+                    member_count=companyList.FirstOrDefault(x=>x.companyId==item.Id)==null?0:companyList.FirstOrDefault(x=>x.companyId==item.Id).count,
+                    create_time=item.create_time 
                 };
                 obj.Add(it);
             }
@@ -63,8 +71,6 @@ namespace WebCenter.Admin.Controllers
                 items = obj
             };
             return Json(result, JsonRequestBehavior.AllowGet);
-
-
         }
 
         public ActionResult Get(int id = 0)
