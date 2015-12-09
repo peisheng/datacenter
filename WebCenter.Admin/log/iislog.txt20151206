@@ -1,0 +1,6620 @@
+
+ 
+记录时间：2015-12-06 16:23:17,423 
+错误描述：
+执行时间:11 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 16:23:18,336 
+错误描述：
+执行时间:10 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+1, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 16:23:27,892 
+错误描述：
+执行时间:348 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 16:23:27,895 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+2, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 16:23:28,129 
+错误描述：
+执行时间:14 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 16:23:28,132 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+3, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 16:23:28,279 
+错误描述：
+执行时间:9 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 16:23:28,282 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+4, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 16:23:28,427 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 16:23:28,430 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+5, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 16:23:28,601 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 16:23:28,604 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+6, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 16:23:28,701 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 16:23:28,703 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+7, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 16:23:28,842 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 16:23:28,845 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+8, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 18:22:07,154 
+错误描述：
+执行时间:8 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 18:22:07,292 
+错误描述：
+执行时间:3 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+9, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 18:32:23,124 
+错误描述：
+执行时间:11 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 18:32:23,325 
+错误描述：
+执行时间:5 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+10, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 18:34:01,509 
+错误描述：
+执行时间:8 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 18:34:02,879 
+错误描述：
+执行时间:2 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+11, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:36:40,373 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:36:40,379 
+错误描述：
+执行时间:2 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+12, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:36:43,183 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:36:43,185 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+13, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:36:46,043 
+错误描述：
+执行时间:19 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:36:46,046 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+14, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:36:48,285 
+错误描述：
+执行时间:14 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:36:48,287 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+15, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:36:51,437 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:36:51,439 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+16, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:42:03,732 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:42:04,734 
+错误描述：
+执行时间:2 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+17, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:42:59,138 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:42:59,139 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:42:59,139 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:42:59,139 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:43:00,368 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+18, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:43:00,369 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+21, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:43:00,369 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+20, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:43:00,369 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+19, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:43:00,514 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:43:00,517 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+22, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:43:00,583 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:43:00,586 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+23, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:43:00,610 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:43:00,610 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:43:00,630 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:43:00,630 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:43:00,684 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:43:00,687 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+24, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:43:00,690 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:43:00,693 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+25, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:19,942 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:19,942 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:19,943 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:19,943 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:19,942 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:21,041 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+27, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:21,041 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+28, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:21,041 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+26, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:21,041 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+30, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:21,041 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+29, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:21,321 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:21,321 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:21,338 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:21,338 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:21,805 
+错误描述：
+执行时间:448 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:21,807 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+31, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:21,812 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:21,812 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:21,815 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+33, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:44:21,816 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+32, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:03,722 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:03,725 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:03,725 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:03,728 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:03,724 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:03,725 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:03,734 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:03,734 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:04,876 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+35, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:04,876 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+36, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:04,876 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+37, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:04,877 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+38, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:04,877 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+34, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:04,877 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+39, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:04,878 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+41, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:04,878 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+40, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:05,330 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:05,330 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:05,331 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:05,331 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:05,331 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:05,331 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:05,333 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:46:05,333 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:08,575 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:08,581 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:08,591 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:08,575 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:08,582 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:08,575 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:08,582 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:08,582 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:08,598 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:08,602 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:08,602 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:08,602 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:08,615 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:08,623 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:08,629 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:08,629 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:08,635 
+错误描述：
+执行时间:4 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:08,640 
+错误描述：
+执行时间:4 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:09,621 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+56, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:09,621 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+51, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:09,621 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+46, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:09,621 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+55, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:09,621 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+47, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:09,621 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+42, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:09,622 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+54, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:09,622 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+50, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:09,623 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+43, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:09,623 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+45, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:09,623 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+49, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:09,624 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+59, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:09,624 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+48, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:09,624 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+53, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:09,624 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+58, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:09,625 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+44, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:09,625 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+57, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:09,625 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+52, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:10,002 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:10,005 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+60, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:10,614 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:10,614 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:10,616 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:48:10,616 
+错误描述：图片压缩失败
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:51,061 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:51,068 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:51,068 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:51,068 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:51,062 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:51,072 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:51,073 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:51,073 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:51,068 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,207 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+63, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,207 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+69, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,207 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+61, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,208 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+67, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,208 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+65, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,209 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+64, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,209 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+68, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,210 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+62, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,210 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+66, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,453 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,456 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+70, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,462 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,465 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+71, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,558 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,561 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+72, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,837 
+错误描述：
+执行时间:4 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,840 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+73, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,842 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,846 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+74, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,849 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,852 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+75, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,916 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,919 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+76, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,921 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:52,925 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+77, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,030 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,033 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+78, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,037 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,041 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+79, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,174 
+错误描述：
+执行时间:9 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,177 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+80, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,209 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,214 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+81, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,350 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,353 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+82, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,356 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,359 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+83, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,632 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,635 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+84, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,654 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,657 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+85, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,787 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,790 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+86, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,877 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,880 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+87, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,950 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,953 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+88, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,955 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,955 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,960 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+89, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:53,960 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+90, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:54,042 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:54,046 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+91, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:54,200 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:54,204 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+92, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:54,579 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:54,583 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+93, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:54,788 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:49:54,791 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+94, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:29,321 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:29,324 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+95, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:29,478 
+错误描述：
+执行时间:8 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:29,481 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+96, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:29,625 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:29,628 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+97, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:29,770 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:29,772 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+98, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:29,924 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:29,926 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+99, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:30,062 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:30,064 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+100, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:30,192 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:30,194 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+101, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:30,342 
+错误描述：
+执行时间:8 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:30,345 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+102, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:30,978 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:30,982 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+103, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:31,233 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:31,237 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+104, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:31,239 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:31,242 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+105, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:31,348 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:31,351 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+106, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:31,486 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:31,489 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+107, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:31,638 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:31,642 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+108, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:32,260 
+错误描述：
+执行时间:8 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:32,264 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+109, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:32,776 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:32,780 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+110, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:33,276 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:33,280 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+111, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:33,450 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:33,453 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+112, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:33,567 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:33,570 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+113, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:33,633 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:33,635 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+114, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:33,670 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:33,673 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+115, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:33,817 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:33,820 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+116, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:33,822 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:33,827 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+117, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:33,929 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:33,932 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+118, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:33,981 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:33,986 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+119, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:34,019 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:34,023 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+120, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:34,191 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:34,194 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+121, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:34,244 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:34,248 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+122, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:34,283 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:34,288 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+123, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:34,288 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:34,291 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+124, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:34,410 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:34,414 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+125, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:34,659 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:34,663 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+126, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:34,805 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:34,808 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+127, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:35,063 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:35,066 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+128, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:35,180 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:35,184 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+129, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:35,196 
+错误描述：
+执行时间:8 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:35,200 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+130, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:35,265 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:35,268 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+131, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:35,273 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:35,276 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+132, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:35,626 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:35,629 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+133, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:35,702 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:35,706 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+134, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:35,825 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:35,829 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+135, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:36,235 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:36,238 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+136, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:36,270 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:36,274 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+137, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:36,688 
+错误描述：
+执行时间:58 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:36,692 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+138, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:36,695 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:36,696 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:36,697 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:36,697 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:36,698 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:36,699 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:36,711 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+142, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:36,711 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+139, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:36,711 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+144, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:36,711 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+140, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:36,711 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+143, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:36,712 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+141, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:37,110 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:37,114 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+145, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:37,379 
+错误描述：
+执行时间:26 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:37,382 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+146, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:37,620 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:37,624 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+147, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:37,708 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:37,712 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+148, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:37,862 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:37,865 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+149, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:37,872 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:37,875 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+150, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:37,877 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:37,885 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+151, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:38,405 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:38,410 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+152, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:38,410 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:38,417 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+153, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:38,483 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:38,491 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+154, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:38,950 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:38,954 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+155, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:38,957 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:38,960 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+156, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:39,184 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:39,187 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+157, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:39,351 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:39,354 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+158, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:39,367 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:39,371 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+159, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:39,778 
+错误描述：
+执行时间:13 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:39,781 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+160, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:39,914 
+错误描述：
+执行时间:10 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:39,917 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+161, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:39,923 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:39,926 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+162, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:39,986 
+错误描述：
+执行时间:17 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:39,989 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+163, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:40,488 
+错误描述：
+执行时间:8 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:40,491 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+164, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:40,605 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:40,608 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+165, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:40,869 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:40,873 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+166, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:40,973 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:40,976 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+167, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:41,322 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:41,325 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+168, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:41,327 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:41,331 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+169, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:41,669 
+错误描述：
+执行时间:35 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:50:41,674 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+170, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,042 
+错误描述：
+执行时间:9 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,042 
+错误描述：
+执行时间:9 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,042 
+错误描述：
+执行时间:9 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,043 
+错误描述：
+执行时间:9 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,042 
+错误描述：
+执行时间:9 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,172 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+174, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,172 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+175, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,172 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+171, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,173 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+172, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,173 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+173, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,358 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,361 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+176, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,496 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,500 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+177, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,602 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,606 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+178, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,631 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,634 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+179, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,660 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,662 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+180, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,697 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,701 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+181, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,802 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,804 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+182, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,830 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:19,833 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+183, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,005 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,007 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+184, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,078 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,080 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+185, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,083 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,086 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+186, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,119 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,123 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+187, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,237 
+错误描述：
+执行时间:8 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,243 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+188, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,365 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,369 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+189, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,480 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,483 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+190, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,515 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,521 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+191, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,569 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,573 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+192, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,740 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,744 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+193, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,753 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,757 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+194, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,760 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,764 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+195, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,915 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:22,918 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+196, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,120 
+错误描述：
+执行时间:103 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,123 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+197, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,125 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,125 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,126 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,132 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+198, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,132 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+199, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,133 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+200, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,291 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,294 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+201, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,484 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,488 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+202, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,491 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,496 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+203, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,496 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,501 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+204, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,590 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,594 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+205, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,674 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,676 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+206, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,752 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,755 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+207, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,938 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,941 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+208, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,944 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:25,948 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+209, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:27,939 
+错误描述：
+执行时间:236 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:27,941 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+210, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:27,945 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:27,945 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:27,948 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+211, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:27,948 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+212, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:27,950 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:27,962 
+错误描述：
+执行时间:9 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+213, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:28,111 
+错误描述：
+执行时间:9 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:28,114 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+214, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:28,335 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:28,338 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+215, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:28,342 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:28,342 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:28,346 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+217, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:28,346 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+216, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:28,348 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:28,352 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+218, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:28,467 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:28,472 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+219, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:30,733 
+错误描述：
+执行时间:111 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:30,738 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+220, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:30,739 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:30,739 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:30,740 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:30,740 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:30,746 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+223, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:30,747 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+222, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:30,747 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+224, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:30,747 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+221, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:30,934 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:30,937 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+225, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:31,166 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:31,169 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+226, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:31,186 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:31,189 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+227, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:31,218 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:31,223 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+228, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:31,280 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:31,284 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+229, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:31,330 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:31,335 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+230, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:31,463 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:31,466 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+231, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:33,220 
+错误描述：
+执行时间:42 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:33,224 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+232, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:33,289 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:33,293 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+233, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:33,295 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:33,299 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+234, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:33,436 
+错误描述：
+执行时间:26 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:33,440 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+235, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:33,665 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:33,668 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+236, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:33,898 
+错误描述：
+执行时间:10 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:33,901 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+237, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:33,910 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:33,913 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+238, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:33,980 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:33,983 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+239, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:34,063 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:34,066 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+240, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:34,183 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:34,186 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+241, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:34,188 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:34,192 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+242, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:34,193 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:34,196 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+243, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:36,330 
+错误描述：
+执行时间:28 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:36,333 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+244, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:36,340 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:36,340 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:36,346 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+246, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:36,347 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+245, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:36,364 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:36,368 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+247, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:36,863 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:36,867 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+248, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:36,960 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:36,964 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+249, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:36,983 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+ 
+---------------------------------------------------
+
+ 
+记录时间：2015-12-06 21:52:36,987 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+250, 
+@gp1, 
+@gp2, 
+@gp3)
+ 
+---------------------------------------------------
