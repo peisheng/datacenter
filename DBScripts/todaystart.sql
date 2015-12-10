@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50536
 File Encoding         : 65001
 
-Date: 2015-12-08 08:52:56
+Date: 2015-12-11 00:25:19
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -725,7 +725,7 @@ CREATE TABLE `company` (
 -- ----------------------------
 -- Records of company
 -- ----------------------------
-INSERT INTO `company` VALUES ('1', 'test', null, null, 'sss', 'peisheng', null, null, null, null, null, '1', null, 'sss.jpg', null, null, null);
+INSERT INTO `company` VALUES ('1', 'test', null, null, 'sss', 'peisheng', '1', null, null, null, null, '1', null, 'sss.jpg', null, null, null);
 INSERT INTO `company` VALUES ('2', 'test', null, null, 'sss', 'peisheng', null, null, null, null, null, '1', null, 'sss.jpg', null, null, null);
 INSERT INTO `company` VALUES ('3', 'test', null, null, 'sss', 'peisheng', null, null, null, null, null, '1', null, 'sss.jpg', null, null, null);
 INSERT INTO `company` VALUES ('4', 'test', null, null, 'sss', 'peisheng', null, null, null, null, null, '1', null, 'sss.jpg', null, null, null);
@@ -738,7 +738,6 @@ INSERT INTO `company` VALUES ('10', 'test', null, null, 'sss', 'peisheng', null,
 INSERT INTO `company` VALUES ('11', 'test', null, null, 'sss', 'peisheng', null, null, null, null, null, '1', null, 'sss.jpg', null, null, null);
 INSERT INTO `company` VALUES ('12', 'test', null, null, 'sss', 'peisheng', null, null, null, null, null, '1', null, 'sss.jpg', null, null, null);
 INSERT INTO `company` VALUES ('13', 'test', null, null, 'sss', 'peisheng', null, null, null, null, null, '1', null, 'sss.jpg', null, null, null);
-INSERT INTO `company` VALUES ('14', 'test', null, null, 'sss', 'peisheng', null, null, null, null, null, '1', null, 'sss.jpg', null, null, null);
 INSERT INTO `company` VALUES ('15', 'test', null, null, 'sss', 'peisheng', null, null, null, null, null, '1', null, 'sss.jpg', null, null, null);
 INSERT INTO `company` VALUES ('16', 'test', null, null, 'sss', 'peisheng', null, null, null, null, null, '1', null, 'sss.jpg', null, null, null);
 INSERT INTO `company` VALUES ('17', 'test', null, null, 'sss', 'peisheng', null, null, null, null, null, '1', null, 'sss.jpg', null, null, null);
@@ -2341,14 +2340,14 @@ CREATE TABLE `user` (
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('1', 'ilove0', null, null, null, null, 'ilvoemeyou20@ass.com', null, '', null, null, '1', null, null, null, null, null);
-INSERT INTO `user` VALUES ('2', 'ilove1', null, null, null, null, 'ilvoemeyou20@ass.com', null, '', null, null, '1', null, null, null, null, null);
-INSERT INTO `user` VALUES ('3', 'ilove2', null, null, null, null, 'ilvoemeyou20@ass.com', null, '', null, null, '1', null, null, null, null, null);
-INSERT INTO `user` VALUES ('4', 'ilove3', null, null, null, null, 'ilvoemeyou20@ass.com', null, '', null, null, '1', null, null, null, null, null);
-INSERT INTO `user` VALUES ('5', 'ilove4', null, null, null, null, 'ilvoemeyou20@ass.com', null, '', null, null, '1', null, null, null, null, null);
-INSERT INTO `user` VALUES ('6', 'ilove5', null, null, null, null, 'ilvoemeyou20@ass.com', null, '', null, null, '1', null, null, null, null, null);
+INSERT INTO `user` VALUES ('1', 'ilove0', null, null, null, null, 'ilvoemeyou20@ass.com', null, '', null, null, '1', '1', null, null, null, null);
+INSERT INTO `user` VALUES ('2', 'ilove1', null, null, null, null, 'ilvoemeyou20@ass.com', null, '', null, null, '1', '1', null, null, null, null);
+INSERT INTO `user` VALUES ('3', 'ilove2', null, null, null, null, 'ilvoemeyou20@ass.com', null, '', null, null, '1', '1', null, null, null, null);
+INSERT INTO `user` VALUES ('4', 'ilove3', null, null, null, null, 'ilvoemeyou20@ass.com', null, '', null, null, '1', '1', null, null, null, null);
+INSERT INTO `user` VALUES ('5', 'ilove4', null, null, null, null, 'ilvoemeyou20@ass.com', null, '', null, null, '1', '1', null, null, null, null);
+INSERT INTO `user` VALUES ('6', 'ilove5', null, null, null, null, 'ilvoemeyou20@ass.com', null, '', null, null, '1', '1', null, null, null, null);
 INSERT INTO `user` VALUES ('7', 'ilove6', null, null, null, null, 'ilvoemeyou20@ass.com', null, '', null, null, '1', null, null, null, null, null);
-INSERT INTO `user` VALUES ('8', 'ilove7', null, null, null, null, 'ilvoemeyou20@ass.com', null, '', null, null, '1', null, null, null, null, null);
+INSERT INTO `user` VALUES ('8', 'ilove7', null, null, null, null, 'ilvoemeyou20@ass.com', null, '', null, null, '1', '1', null, null, null, null);
 INSERT INTO `user` VALUES ('9', 'ilove8', null, null, null, null, 'ilvoemeyou20@ass.com', null, '', null, null, '1', null, null, null, null, null);
 INSERT INTO `user` VALUES ('10', 'ilove9', null, null, null, null, 'ilvoemeyou20@ass.com', null, '', null, null, '1', null, null, null, null, null);
 INSERT INTO `user` VALUES ('11', 'ilove10', null, null, null, null, 'ilvoemeyou20@ass.com', null, '', null, null, '1', null, null, null, null, null);
