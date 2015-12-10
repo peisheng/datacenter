@@ -35,6 +35,7 @@ namespace WebCenter.Web.Controllers
         /// <returns></returns>
         public ActionResult List(int page_index, int page_size, string keyword = "")
         {
+            
             Expression<Func<company, bool>> condition = com => true;
             if (!string.IsNullOrEmpty(keyword))
             {

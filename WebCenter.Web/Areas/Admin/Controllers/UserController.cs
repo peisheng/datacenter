@@ -29,7 +29,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         /// <param name="page_size"></param>
         /// <param name="keyword"></param>
         /// <returns></returns>
-        public ActionResult List(int page_index, int page_size, string keyword = "")
+        public ActionResult List(int page_index, int page_size, string keyword = "",int company_id=0)
         {
             Expression<Func<company, bool>> condition = com => true;
             if (!string.IsNullOrEmpty(keyword))
@@ -107,6 +107,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             
            
         }
+        
  
     }
 }

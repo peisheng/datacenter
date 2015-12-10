@@ -22,7 +22,7 @@ namespace WebCenter.Web.Controllers
         public ActionResult Login(string username, string password, string return_url)
         {
             string hashPassword = HashPassword.GetHashPassword(password);
-            user _user = Uof.IuserService.GetAll(item => item.user_name == username && item.password == hashPassword).FirstOrDefault();
+            sys_user _user = Uof.Isys_userService.GetAll(item => item.user_name == username && item.password == hashPassword).FirstOrDefault();
 
             if (_user != null)
             {

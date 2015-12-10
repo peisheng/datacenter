@@ -17,20 +17,25 @@ namespace WebCenter.Web.Controllers
     [JsonObject(IsReference = true)]
     public class BaseController : Controller
     {
-      
+
         protected ICache<object> Cache;
         protected IUnitOfWork Uof;
 
 
-       
+
         public BaseController(IUnitOfWork uof)
         {
             Uof = uof;
             Cache = CacheUtil.Cache;
-            
+
         }
 
-       
+        public ActionResult ErrorResult
+        {
+            get { return Json(new { result = false }, JsonRequestBehavior.AllowGet); }
+        }
+
+
 
 
 
