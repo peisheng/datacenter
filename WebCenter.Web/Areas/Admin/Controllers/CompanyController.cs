@@ -34,7 +34,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             Expression<Func<company, bool>> condition = com => true;
             if (!string.IsNullOrEmpty(keyword))
             {
-                Expression<Func<company, bool>> tmp = com => com.name.Contains(keyword);
+                Expression<Func<company, bool>> tmp = com => com.name.IndexOf(keyword)>-1;
                 condition = tmp;
             }
             PagedList<company> list = Uof.IcompanyService.GetAll(condition).OrderByDescending(item => item.Id).ToPagedList(page_index, page_size);
@@ -180,7 +180,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                 Expression<Func<user, bool>> condition = _user => true;
                 if (!string.IsNullOrEmpty(keyword))
                 {
-                    Expression<Func<user, bool>> tmp = _user => (_user.user_name.Contains(keyword) || _user.real_name.Contains(keyword)) && _user.company_id == company_id;
+                    Expression<Func<user, bool>> tmp = _user => (_user.user_name.IndexOf(keyword) > -1 || _user.real_name.IndexOf(keyword)>-1) && _user.company_id == company_id;
                     condition = tmp;
                 }
                 else

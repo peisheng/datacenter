@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.Web.Mvc;
+using WebCenter.Web.Filters;
 
 namespace WebCenter.Web
 {
@@ -7,6 +8,8 @@ namespace WebCenter.Web
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
+            filters.Add(new JsonAttribute());
+          
             filters.Add(new HandleErrorAttribute());
         }
     }

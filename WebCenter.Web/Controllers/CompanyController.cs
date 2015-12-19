@@ -39,10 +39,10 @@ namespace WebCenter.Web.Controllers
             Expression<Func<company, bool>> condition = com => true;
             if (!string.IsNullOrEmpty(keyword))
             {
-                Expression<Func<company, bool>> tmp = com => com.name.Contains(keyword);
+                Expression<Func<company, bool>> tmp = com => com.name.IndexOf(keyword)>-1;
                 condition = tmp;
             }
-            PagedList<company> list = Uof.IcompanyService.GetAll(condition).OrderByDescending(item => item.Id).ToPagedList(page_index, page_size);
+            PagedList<company> list = Uof.IcompanyService.GetAll(condition,new string[2]{"city","sys_dictionary"}).OrderByDescending(item => item.Id).ToPagedList(page_index, page_size);
             var obj = new ArrayList();
             foreach (var item in list)
             {

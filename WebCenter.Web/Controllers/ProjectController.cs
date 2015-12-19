@@ -38,7 +38,7 @@ namespace WebCenter.Web.Controllers
             Expression<Func<project_case, bool>> condition = prj => true;
             if (!string.IsNullOrEmpty(keyword))
             {
-                Expression<Func<project_case, bool>> tmp = prj => prj.title.Contains(keyword) || prj.descript.Contains(keyword);
+                Expression<Func<project_case, bool>> tmp = prj => prj.title.IndexOf(keyword)>-1 || prj.descript.IndexOf(keyword)>-1;
                 condition = tmp;
             }
             if(company_id>0)
@@ -113,7 +113,8 @@ namespace WebCenter.Web.Controllers
                             descript = proj.descript,
                             type_name = proj.sys_dictionary == null ? "" : proj.sys_dictionary.value,
                             content = proj.content,
-                            user_name = proj.user == null ? "" : proj.user.user_name,
+                            main_image_path=proj.main_image_path,
+                            user_name = proj.user == null ? "" : proj.user.real_name,
                             company = new {
                                 name=company.name,
                                 logo_path=company.logo_path,
