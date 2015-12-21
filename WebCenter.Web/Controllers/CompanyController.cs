@@ -92,6 +92,7 @@ namespace WebCenter.Web.Controllers
                                   title = proj.title,
                                   description = proj.descript,
                                   type_name = proj.sys_dictionary == null ? "" : proj.sys_dictionary.value,
+                                  content=proj.content,
                                   view_count = proj.view_count,
                                   main_image_path = proj.main_image_path
                               }

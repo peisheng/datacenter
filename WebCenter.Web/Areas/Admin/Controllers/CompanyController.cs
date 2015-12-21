@@ -51,7 +51,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                     type_name = item.sys_dictionary == null ? "" : item.sys_dictionary.value,
                     city_name = item.city == null ? "" : item.city.city_name,
                     author_name = item.user == null ? "" : item.user.real_name,
-                    view_count = 0,
+                    view_count = item.project_case==null?0:item.project_case.view_count.GetValueOrDefault(0),
                     article_count = item.project_case1.Count,
                     logo_path = item.logo_path,
                     member_count = companyList.FirstOrDefault(x => x.companyId == item.Id) == null ? 0 : companyList.FirstOrDefault(x => x.companyId == item.Id).count,
