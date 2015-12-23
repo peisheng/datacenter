@@ -1,4 +1,5 @@
 ﻿using Common;
+using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -34,7 +35,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             Expression<Func<company, bool>> condition = com => true;
             if (!string.IsNullOrEmpty(keyword))
             {
-                Expression<Func<company, bool>> tmp = com => com.name.IndexOf(keyword)>-1;
+                Expression<Func<company, bool>> tmp = com => com.name.IndexOf(keyword) > -1;
                 condition = tmp;
             }
             PagedList<company> list = Uof.IcompanyService.GetAll(condition).OrderByDescending(item => item.Id).ToPagedList(page_index, page_size);
@@ -51,7 +52,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                     type_name = item.sys_dictionary == null ? "" : item.sys_dictionary.value,
                     city_name = item.city == null ? "" : item.city.city_name,
                     author_name = item.user == null ? "" : item.user.real_name,
-                    view_count = item.project_case==null?0:item.project_case.view_count.GetValueOrDefault(0),
+                    view_count = item.project_case == null ? 0 : item.project_case.view_count.GetValueOrDefault(0),
                     article_count = item.project_case1.Count,
                     logo_path = item.logo_path,
                     member_count = companyList.FirstOrDefault(x => x.companyId == item.Id) == null ? 0 : companyList.FirstOrDefault(x => x.companyId == item.Id).count,
@@ -74,12 +75,16 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         /// <param name="com"></param>
         /// <returns></returns>
         [HttpPost]
-        public ActionResult Save(company com)
+        public ActionResult Save(string jsonCom)
         {
+            JsonSerializerSettings setting = new JsonSerializerSettings();
+            company com = new company();
+            com = JsonConvert.DeserializeObject<company>(jsonCom);
             company _company = null;
             if (com != null)
             {
                 _company = new company();
+                _company.name = com.name;
                 _company.address = com.address;
                 _company.city_id = com.city_id;
                 _company.company_image_path = "";
@@ -89,7 +94,10 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                 _company.create_time = DateTime.Now;
                 _company.Id = com.Id;
                 if (_company.Id > 0)
+                {
                     Uof.IcompanyService.UpdateEntity(_company);
+                    // AddLog("修改企业",JsonConvert.SerializeObject(_company),"");
+                }
                 else
                 {
                     _company = Uof.IcompanyService.AddEntity(_company);
@@ -100,6 +108,8 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                     company_id = _company.Id,
                     result = true
                 };
+
+
                 return Json(obj);
             }
             return Json(new { result = false });
@@ -166,21 +176,21 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         }
 
         /// <summary>
-        /// 取得公司的所有分页用户
+        /// 取得公司的所有分页用户/或者所有用户
         /// </summary>
         /// <param name="company_id"></param>
         /// <param name="page_index"></param>
         /// <param name="page_size"></param>
         /// <param name="keyword"></param>
         /// <returns></returns>
-        public ActionResult GetUsers(int company_id, int page_index = 1, int page_size = 20, string keyword = "")
+        public ActionResult GetUsers(int page_index = 1, int page_size = 20, int company_id = 0, string keyword = "")
         {
             if (company_id > 0)
             {
                 Expression<Func<user, bool>> condition = _user => true;
                 if (!string.IsNullOrEmpty(keyword))
                 {
-                    Expression<Func<user, bool>> tmp = _user => (_user.user_name.IndexOf(keyword) > -1 || _user.real_name.IndexOf(keyword)>-1) && _user.company_id == company_id;
+                    Expression<Func<user, bool>> tmp = _user => (_user.user_name.IndexOf(keyword) > -1 || _user.real_name.IndexOf(keyword) > -1) && _user.company_id == company_id;
                     condition = tmp;
                 }
                 else
@@ -215,7 +225,36 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             }
             else
             {
-                return Json(new { result = false }, JsonRequestBehavior.AllowGet);
+                Expression<Func<user, bool>> condition = _user => true;
+                if (!string.IsNullOrEmpty(keyword))
+                {
+                    Expression<Func<user, bool>> tmp = _user => (_user.user_name.IndexOf(keyword) > -1 || _user.real_name.IndexOf(keyword) > -1);
+                    condition = tmp;
+                }
+                PagedList<user> list = Uof.IuserService.GetAll(condition).OrderByDescending(it => it.Id).ToPagedList(page_index, page_size);
+                ArrayList al = new ArrayList();
+                foreach (var item in list)
+                {
+                    var obj = new
+                    {
+                        id = item.Id,
+                        user_name = item.user_name,
+                        real_name = item.real_name,
+                        qq_number = item.qq_number,
+                        phone = item.phone,
+                        mobile = item.mobile,
+                        email = item.email
+                    };
+                    al.Add(obj);
+                }
+                var retObj = new
+                {
+                    total_count = list.TotalCount,
+                    current_page = page_index,
+                    page_size = page_size,
+                    items = al
+                };
+                return Json(retObj, JsonRequestBehavior.AllowGet);
             }
 
         }

@@ -35,6 +35,19 @@ namespace WebCenter.Web.Controllers
             get { return Json(new { result = false }, JsonRequestBehavior.AllowGet); }
         }
 
+        public void AddLog(string name, string descipt, string user_name, int user_id, string result)
+        {
+            operate_log log = new operate_log();
+            log.create_time = DateTime.Now;
+            log.desript = descipt;
+            log.name = name;
+            log.result = result;
+            //Request.LogonUserIdentity
+            //log.user_name = user_name;
+            //log.user_id = user_id;
+            Uof.Ioperate_logService.AddEntity(log);
+        }
+
 
 
 

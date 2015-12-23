@@ -29,42 +29,40 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             }
         }
 
-        public ActionResult Get(string type = "")
+        public ActionResult GetTypeDictList(string type)
         {
-            if (!string.IsNullOrEmpty(type))
+            var list = Uof.Isys_dictionaryService.GetAll(p => p.group == type).ToList();
+            var obj = list.Select(item => new
             {
-                var obj = DictService.GetAll(item => item.group == type).ToList();
-                ArrayList al = new ArrayList();
-                foreach (var item in obj)
-                {
-                    al.Add(new
-                    {
-                        id = item.id,
-                        name = item.name,
-                        value = item.value
-                    });
-                }
-                if (al.Count > 0)
-                    return Json(al, JsonRequestBehavior.AllowGet);
-            }
-            else
-            {
-                var obj = DictService.GetAll().ToList();
-                ArrayList al = new ArrayList();
-                foreach (var item in obj)
-                {
-                    al.Add(new
-                    {
-                        id = item.id,
-                        name = item.name,
-                        value = item.value
-                    });
-                }
-                if (al.Count > 0)
-                    return Json(al, JsonRequestBehavior.AllowGet);
-            }
-            return Json(new { result = false }, JsonRequestBehavior.AllowGet);
+                id = item.id,
+                value = item.value,
+                group = item.group
+            });
+            return Json(obj, JsonRequestBehavior.AllowGet);
+        }
 
+        public ActionResult GetCompanyTypeList()
+        {
+            return this.GetTypeDictList("公司类型");
+        }
+
+        public ActionResult GetArticleTypeList()
+        {
+            return this.GetTypeDictList("文章标签");
+        }
+
+        public ActionResult GetDictById(int id)
+        {
+
+            var dict = Uof.Isys_dictionaryService.GetById(id);
+            var obj = new
+            {
+                id = dict.id,
+                name = dict.name,
+                value = dict.value,
+                group = dict.group
+            };
+            return Json(obj, JsonRequestBehavior.AllowGet);
         }
 
         /// <summary>

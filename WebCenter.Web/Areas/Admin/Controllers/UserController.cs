@@ -55,7 +55,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                     article_count = item.project_case1.Count,
                     logo_path = item.logo_path,
                     member_count = companyList.FirstOrDefault(x => x.companyId == item.Id) == null ? 0 : companyList.FirstOrDefault(x => x.companyId == item.Id).count,
-                    create_time = item.create_time
+                    create_time = item.create_time.GetValueOrDefault(new DateTime(2000, 01, 01)).ToString("yyyy-MM-dd HH:mm:ss")
                 };
                 obj.Add(it);
             }

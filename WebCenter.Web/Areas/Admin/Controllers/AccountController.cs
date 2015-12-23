@@ -23,7 +23,8 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         public ActionResult Login(string username, string password, string return_url)
         {
             string hashPassword = HashPassword.GetHashPassword(password);
-            user _user = Uof.IuserService.GetAll(item => item.user_name == username && item.password == hashPassword).FirstOrDefault();
+            sys_user _user = Uof.Isys_userService.GetAll(item => item.user_name == username && item.password == hashPassword).FirstOrDefault();
+            
 
             if (_user != null)
             {
@@ -40,6 +41,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                 }
                 var returnObj = new
                 {
+                    username=username,
                     message = "",
                     result = true,
                     url = url
@@ -59,6 +61,19 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             }
 
         }
+
+        /// <summary>
+        /// 判断是否登录
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult CheckLogin()
+        {
+            bool b = HttpContext.Request.LogonUserIdentity.IsAuthenticated;
+
+            return Json(new {result=b},JsonRequestBehavior.AllowGet);
+
+        }
+
 
         [HttpGet]
         public ActionResult Logout()

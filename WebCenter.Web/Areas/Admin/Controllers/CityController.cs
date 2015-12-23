@@ -33,11 +33,17 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         {
             if (string.IsNullOrEmpty(province))
             {
-                return base.ErrorResult; 
+
+                var list = Uof.IcityService.GetAll().Select(it => new { id = it.Id, province = it.province, city = it.city_name }).ToList();
+                return Json(list, JsonRequestBehavior.AllowGet);
             }
-            string prov = province.Trim();
-            var list = Uof.IcityService.GetAll(item => item.province == prov).Select(it => new { id=it.Id,province=it.province,city=it.city_name}).ToList();
-            return Json(list,JsonRequestBehavior.AllowGet);
+            else
+            {
+                string prov = province.Trim();
+                var list = Uof.IcityService.GetAll(item => item.province == prov).Select(it => new { id = it.Id, province = it.province, city = it.city_name }).ToList();
+                return Json(list, JsonRequestBehavior.AllowGet);
+            }
+           
         }
 
         /// <summary>

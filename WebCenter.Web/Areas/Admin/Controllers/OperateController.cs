@@ -27,11 +27,22 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public ActionResult Clear()
+        public ActionResult Clear(int type=0)
         {
-            int i = Uof.Ioperate_logService.DeleteEntity(item => item.Id > 0);
-            if (i > 0)
-                return Json(new { result = true }, JsonRequestBehavior.AllowGet);
+            //清空
+            if (type == 0)
+            {
+                int i = Uof.Ioperate_logService.DeleteEntity(item => item.Id > 0);
+                if (i > 0)
+                    return Json(new { result = true }, JsonRequestBehavior.AllowGet);
+            }//清空一个月前的
+            else if (type == 1)
+            {
+                DateTime dt = DateTime.Now.AddMonths(-1);
+                int i = Uof.Ioperate_logService.DeleteEntity(item =>item.create_time.HasValue&& item.create_time< dt);
+                if (i > 0)
+                    return Json(new { result = true }, JsonRequestBehavior.AllowGet);
+            }            
             return Json(new { result = false }, JsonRequestBehavior.AllowGet);
         }
 
@@ -57,7 +68,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                         user_name = item.user_name,
                         user_id = item.user_id,
                         result = item.result,
-                        create_time = item.create_time
+                        create_time = item.create_time.GetValueOrDefault(new DateTime(2000,01,01)).ToString("yyyy-MM-dd HH:mm:ss")
                     };
                     al.Add(obj);
                 }
