@@ -62,13 +62,39 @@ namespace WebCenter.Web.Areas.Admin.Controllers
 
         }
 
+        [HttpPost]
+        public ActionResult changePassword(string oldPwd,string newPwd)
+        {
+            string curentUser = ControllerContext.HttpContext.User.Identity.Name;
+            string hashPassword = HashPassword.GetHashPassword(oldPwd);
+            string newPassword = HashPassword.GetHashPassword(newPwd);
+            sys_user _user = Uof.Isys_userService.GetAll(item => item.user_name == curentUser && item.password == hashPassword).FirstOrDefault();
+            if (_user != null||string.IsNullOrEmpty(curentUser))
+            {
+                _user.password = newPassword;
+                bool b = Uof.Isys_userService.UpdateEntity(_user);
+                var ret = new { result = b };
+                if (b)
+                {
+                    FormsAuthentication.SignOut();
+                }
+                return Json(ret);
+            }
+            else
+            {
+                return Json(new { result=false});
+            }
+
+
+        }
+
         /// <summary>
         /// 判断是否登录
         /// </summary>
         /// <returns></returns>
         public ActionResult CheckLogin()
         {
-            bool b = HttpContext.Request.LogonUserIdentity.IsAuthenticated;
+            bool b = ControllerContext.HttpContext.User.Identity.IsAuthenticated;
 
             return Json(new {result=b},JsonRequestBehavior.AllowGet);
 
@@ -80,7 +106,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         {
             Session.Abandon();
             FormsAuthentication.SignOut();
-            return Redirect("/index.html");
+            return Json(new { result=true},JsonRequestBehavior.AllowGet);
         }
         //需要授权才可访问
         [Authorize]
