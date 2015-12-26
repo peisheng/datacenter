@@ -1,4 +1,5 @@
 ﻿using Common;
+using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -39,7 +40,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             Expression<Func<project_case, bool>> condition = prj => true;
             if (!string.IsNullOrEmpty(keyword))
             {
-                Expression<Func<project_case, bool>> tmp = prj => prj.title.IndexOf(keyword)>-1 || prj.descript.IndexOf(keyword)>-1;
+                Expression<Func<project_case, bool>> tmp = prj => prj.title.IndexOf(keyword) > -1 || prj.descript.IndexOf(keyword) > -1;
                 condition = tmp;
             }
             if (company_id > 0)
@@ -55,11 +56,11 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                 {
                     id = item.Id,
                     title = item.title,
-                    descript=item.descript,
+                    descript = item.descript,
                     type_name = item.sys_dictionary == null ? "" : item.sys_dictionary.value,
                     view_count = item.view_count,
-                    publish_time=item.publish_time,
-                    is_company_intro=item.is_company_intro                    
+                    publish_time = item.publish_time,
+                    is_company_intro = item.is_company_intro
                 };
                 obj.Add(it);
             }
@@ -80,25 +81,54 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         /// <returns></returns>
         [Authorize]
         [HttpPost]
-        public ActionResult Save(project_case proj)
+        public ActionResult Save(string proj)
         {
-            if (proj != null && proj.Id > 0)
+            project_case project = new project_case();
+
+            project = JsonConvert.DeserializeObject<project_case>(proj);
+            if (project != null && project.Id > 0)
             {
-                proj.update_time = DateTime.Now;
-                Uof.Iproject_caseService.UpdateEntity(proj);
-                return Json(new {result=true});
-            }
-            else if (proj != null && proj.Id == 0)
-            {
-                proj = Uof.Iproject_caseService.AddEntity(proj);
-                if (proj.is_company_intro > 0)
+                project.update_time = DateTime.Now;
+                Uof.Iproject_caseService.UpdateEntity(project);
+                if (project.is_company_intro > 0)
                 {
-                    company com = Uof.IcompanyService.GetById(proj.company_id.Value);
-                    com.introduce_page_id = proj.Id;
+                    company com = Uof.IcompanyService.GetById(project.company_id.Value);
+                    com.introduce_page_id = project.Id;
                     com.update_time = DateTime.Now;
                     Uof.IcompanyService.UpdateEntity(com);
-                    return Json(new { result = true });
+                    return Json(new
+                    {
+                        result = true,
+                        project_id = project.Id
+                    });
+                }
+                return Json(new { result = true });
+            }
+            else if (project != null && project.Id == 0)
+            {
+                project.create_time = DateTime.Now;
+                project.view_count = 0;
+                project = Uof.Iproject_caseService.AddEntity(project);
+                if (project.is_company_intro > 0)
+                {
+                    company com = Uof.IcompanyService.GetById(project.company_id.Value);
+                    com.introduce_page_id = project.Id;
+                    com.update_time = DateTime.Now;
+                    Uof.IcompanyService.UpdateEntity(com);
+                    return Json(new
+                    {
+                        result = true,
+                        project_id = project.Id
+                    });
 
+                }
+                else
+                {
+                    return Json(new
+                    {
+                        result = true,
+                        project_id = project.Id
+                    });
                 }
             }
             else
@@ -109,28 +139,54 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         }
 
         [Authorize]
+        [HttpPost]
         /// <summary>
         /// 删除文章
         /// </summary>
         /// <returns></returns>
-        public ActionResult Delete(int id=0)
+        public ActionResult Delete(int id = 0)
         {
             if (id > 0)
             {
-              bool b=  Uof.Iproject_caseService.DeleteEntity(id);
-              if (b)
-              {
-                  return Json(new { result = true });
-              }
-              else {
-                  return Json(new { result = false });
-              }
+                bool b = Uof.Iproject_caseService.DeleteEntity(id);
+                if (b)
+                {
+                    return Json(new { result = true });
+                }
+                else
+                {
+                    return Json(new { result = false });
+                }
             }
-            return Json(new { result = false });            
+            return Json(new { result = false });
         }
 
-       
-        
- 
+        [Authorize]
+
+        public ActionResult Get(int id = 0)
+        {
+            if (id > 0)
+            {
+                project_case proj = Uof.Iproject_caseService.GetById(id);
+                var obj = new
+                {
+                    id = proj.Id,
+                    title = proj.title,
+                    descript = proj.descript,
+                    type_id = proj.type_id,
+                    content = proj.content,
+                    main_image_path = proj.main_image_path,
+                    company_id = proj.company_id,
+                    is_company_intro = proj.is_company_intro
+                };
+                return Json(obj, JsonRequestBehavior.AllowGet);
+            }
+            return Json(new { result = false });
+        }
+
+
+
+
+
     }
 }
