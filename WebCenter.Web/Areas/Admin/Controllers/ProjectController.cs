@@ -30,6 +30,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         /// <param name="keyword"></param>
         /// <param name="company_id"></param>
         /// <returns></returns>
+        [Authorize]
         [HttpGet]
 
         public ActionResult List(int page_index = 0, int page_size = 20, string keyword = "", int company_id = 0)
@@ -77,6 +78,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         /// </summary>
         /// <param name="proj"></param>
         /// <returns></returns>
+        [Authorize]
         [HttpPost]
         public ActionResult Save(project_case proj)
         {
@@ -106,6 +108,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             return Json(new { result = false });
         }
 
+        [Authorize]
         /// <summary>
         /// 删除文章
         /// </summary>

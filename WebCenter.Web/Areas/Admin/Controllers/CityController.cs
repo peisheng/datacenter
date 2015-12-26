@@ -28,6 +28,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         /// </summary>
         /// <param name="province"></param>
         /// <returns></returns>
+         
           [HttpGet]
         public ActionResult GetCitys(string province="")
         {

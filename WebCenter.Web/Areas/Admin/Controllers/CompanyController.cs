@@ -30,6 +30,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         /// <param name="page_size"></param>
         /// <param name="keyword"></param>
         /// <returns></returns>
+        [Authorize]
         public ActionResult List(int page_index, int page_size, string keyword = "")
         {
             Expression<Func<company, bool>> condition = com => true;
@@ -41,7 +42,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             PagedList<company> list = Uof.IcompanyService.GetAll(condition).OrderByDescending(item => item.Id).ToPagedList(page_index, page_size);
 
             List<int> listId = list.Select(p => p.Id).ToList();
-            var companyList = Uof.IuserService.GetAll(item => listId.Contains(item.Id)).GroupBy(item => item.company_id).Select(item => new { companyId = item.Key, count = item.Count() }).ToList();
+        ///    var companyList = Uof.IuserService.GetAll(item => listId.Contains(item.Id)).GroupBy(item => item.company_id).Select(item => new { companyId = item.Key, count = item.Count() }).ToList();
             var obj = new ArrayList();
             foreach (var item in list)
             {
@@ -55,7 +56,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                     view_count = item.project_case == null ? 0 : item.project_case.view_count.GetValueOrDefault(0),
                     article_count = item.project_case1.Count,
                     logo_path = item.logo_path,
-                    member_count = companyList.FirstOrDefault(x => x.companyId == item.Id) == null ? 0 : companyList.FirstOrDefault(x => x.companyId == item.Id).count,
+                    member_count = Uof.IuserService.GetAll(p=>p.company_id==item.Id).Count(),  // companyList.FirstOrDefault(x => x.companyId == item.Id) == null ? 0 : companyList.FirstOrDefault(x => x.companyId == item.Id).count,
                     create_time = item.create_time
                 };
                 obj.Add(it);
@@ -74,6 +75,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         /// </summary>
         /// <param name="com"></param>
         /// <returns></returns>
+        [Authorize]
         [HttpPost]
         public ActionResult Save(string jsonCom)
         {
@@ -87,6 +89,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                 _company.name = com.name;
                 _company.address = com.address;
                 _company.city_id = com.city_id;
+                
                 _company.company_image_path = "";
                 _company.logo_path = com.logo_path;
                 _company.site_url = com.site_url;
@@ -137,6 +140,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                         type_name = com.sys_dictionary == null ? "" : com.sys_dictionary.value,
                         city_id = com.city_id,
                         city_name = com.city == null ? "" : com.city.city_name,
+                        province = com.city == null ? "" : com.city.province,
                         address = com.address,
                         site_url = com.site_url,
                         logo_path = com.logo_path,
@@ -162,19 +166,20 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                         type_name = com.sys_dictionary == null ? "" : com.sys_dictionary.value,
                         city_id = com.city_id,
                         city_name = com.city == null ? "" : com.city.city_name,
+                        province = com.city == null ? "" : com.city.province,
                         address = com.address,
                         site_url = com.site_url,
                         logo_path = com.logo_path,
                         contact_info = ""
                     };
-                    return Json(obj, JsonRequestBehavior.AllowGet);
+                    return Json(obj, JsonRequestBehavior.AllowGet); 
                 }
 
             }
             return Json(new { result = false }, JsonRequestBehavior.AllowGet);
 
         }
-
+          [Authorize]
         /// <summary>
         /// 取得公司的所有分页用户/或者所有用户
         /// </summary>
@@ -258,6 +263,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             }
 
         }
+          [Authorize]
         /// <summary>
         /// remove the company by the id
         /// </summary>

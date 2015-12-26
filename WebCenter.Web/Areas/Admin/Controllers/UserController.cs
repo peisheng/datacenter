@@ -1,4 +1,5 @@
 ﻿using Common;
+using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -29,12 +30,13 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         /// <param name="page_size"></param>
         /// <param name="keyword"></param>
         /// <returns></returns>
-        public ActionResult List(int page_index, int page_size, string keyword = "",int company_id=0)
+        [Authorize]
+        public ActionResult List(int page_index, int page_size, string keyword = "", int company_id = 0)
         {
             Expression<Func<company, bool>> condition = com => true;
             if (!string.IsNullOrEmpty(keyword))
             {
-                Expression<Func<company, bool>> tmp = com => com.name.IndexOf(keyword)>-1;
+                Expression<Func<company, bool>> tmp = com => com.name.IndexOf(keyword) > -1;
                 condition = tmp;
             }
             PagedList<company> list = Uof.IcompanyService.GetAll(condition).OrderByDescending(item => item.Id).ToPagedList(page_index, page_size);
@@ -68,46 +70,90 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             };
             return Json(result, JsonRequestBehavior.AllowGet);
         }
-
+        [Authorize]
         [HttpPost]
-        public ActionResult Save(user contact)
+        public ActionResult Save(string contact)
         {
-            if (contact != null)
+            JsonSerializerSettings setting = new JsonSerializerSettings();
+            user _user = new user();
+            _user = JsonConvert.DeserializeObject<user>(contact);
+
+            if (_user != null)
             {
-                user _user = contact;
+                
                 if (_user.Id > 0)
                 {
                     Uof.IuserService.UpdateEntity(_user);
                 }
                 else
                 {
-                  _user=  Uof.IuserService.AddEntity(_user);                  
+                    _user = Uof.IuserService.AddEntity(_user);
                 }
                 if (_user.is_admin.HasValue && _user.is_admin.Value == 1)
                 {
                     company com = null;
                     if (_user.company_id.HasValue)
                         com = Uof.IcompanyService.GetById(_user.company_id.Value);
-                    com.contact_name = _user.real_name;
-                    com.email = _user.email;
-                    com.phone = _user.phone;
-                    com.mobile = _user.mobile;
-                    com.user_id = _user.Id;
-                    Uof.IcompanyService.UpdateEntity(com);
+                    if (com != null)
+                    {
+                        com.contact_name = _user.real_name;
+                        com.email = _user.email;
+                        com.phone = _user.phone;
+                        com.mobile = _user.mobile;
+                        com.user_id = _user.Id;
+                        Uof.IcompanyService.UpdateEntity(com);
+                    }
+                   
                 }
                 var obj = new
                 {
-                   user_id=_user.Id,
+                    user_id = _user.Id,
                     result = true
                 };
                 return Json(obj);
             }
             return Json(new { result = false });
-             
-            
-           
+
+
+
         }
+
+        [Authorize]
+        [HttpPost]
+        public ActionResult Delete(int id)
+        {
+            if (id>0)
+            {
+             bool b=    Uof.IuserService.DeleteEntity(id);
+             return Json(new { result=b});
+                
+            }
+
+            return Json(new { result = false});
+        }
+
+        [Authorize]
+        public ActionResult Get(int id)
+        {
+            if (id > 0)
+            {
+              user _user = Uof.IuserService.GetById(id);
+              var obj = new { 
+                  id=_user.Id,
+                  user_name=_user.user_name,
+                  real_name=_user.real_name,
+                  phone=_user.phone,
+                  mobile=_user.mobile,
+                  email=_user.email,
+                  is_admin=_user.is_admin,
+                  company_id=_user.company_id
+              };
+              return Json(obj,JsonRequestBehavior.AllowGet);
+            }
+            return Json(new { result = false },JsonRequestBehavior.AllowGet);
+        }
+
         
- 
+
     }
 }

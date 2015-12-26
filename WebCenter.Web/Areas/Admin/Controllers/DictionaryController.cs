@@ -119,7 +119,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         /// </summary>
         /// <param name="dict"></param>
         /// <returns></returns>
-
+        [Authorize]
         [HttpPost]
         public ActionResult Save(sys_dictionary dict)
         {
@@ -139,7 +139,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-
+        [Authorize]
         [HttpGet]
         public ActionResult Delete(int id = 0)
         {

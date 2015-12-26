@@ -18,7 +18,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         {
 
         }
-
+        
         [HttpPost]
         public ActionResult Login(string username, string password, string return_url)
         {
@@ -61,7 +61,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             }
 
         }
-
+          [Authorize]
         [HttpPost]
         public ActionResult changePassword(string oldPwd,string newPwd)
         {
@@ -102,6 +102,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
 
 
         [HttpGet]
+        
         public ActionResult Logout()
         {
             Session.Abandon();

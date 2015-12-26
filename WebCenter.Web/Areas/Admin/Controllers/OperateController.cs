@@ -51,7 +51,9 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         /// 记录列表
         /// </summary>
         /// <returns></returns>
+        [Authorize]
         [HttpGet]
+        
         public ActionResult List(int page_index = 1, int page_size = 20)
         {
             PagedList<operate_log> list = Uof.Ioperate_logService.GetAll().OrderByDescending(item => item.Id).ToPagedList(page_index, page_size);
