@@ -99,11 +99,13 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                 if (_company.Id > 0)
                 {
                     Uof.IcompanyService.UpdateEntity(_company);
-                    // AddLog("修改企业",JsonConvert.SerializeObject(_company),"");
+
+                    AddLog("修改企业信息 ID:" + _company.Id.ToString(), "修改企业信息", "成功");
                 }
                 else
                 {
                     _company = Uof.IcompanyService.AddEntity(_company);
+                    AddLog("添加企业信息 ID:" + _company.Id.ToString(), "添加企业信息", "成功");
                 }
 
                 var obj = new
@@ -115,6 +117,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
 
                 return Json(obj);
             }
+            AddLog("添加||修改企业信息 ", "添加||修改企业信息 ", "失败");
             return Json(new { result = false });
 
         }
@@ -276,9 +279,11 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                 bool b = Uof.IcompanyService.DeleteEntity(id);
                 if (b)
                 {
+                    AddLog("删除企业信息ID "+id.ToString(), " 删除企业信息", "成功");
                     return Json(new { result = true }, JsonRequestBehavior.AllowGet);
                 }
             }
+            AddLog("删除企业信息" + id.ToString(), " 删除企业信息", "失败");
             return Json(new { result = false }, JsonRequestBehavior.AllowGet);
         }
     }

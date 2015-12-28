@@ -33,16 +33,26 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             if (type == 0)
             {
                 int i = Uof.Ioperate_logService.DeleteEntity(item => item.Id > 0);
+
                 if (i > 0)
+                {
+                    AddLog("清空日志", "清空日志", "成功");
                     return Json(new { result = true }, JsonRequestBehavior.AllowGet);
+                }
+                   
             }//清空一个月前的
             else if (type == 1)
             {
                 DateTime dt = DateTime.Now.AddMonths(-1);
                 int i = Uof.Ioperate_logService.DeleteEntity(item =>item.create_time.HasValue&& item.create_time< dt);
                 if (i > 0)
+                {
+                    AddLog("清空一个月前的日志", "清空一个月前的日志", "成功");
                     return Json(new { result = true }, JsonRequestBehavior.AllowGet);
-            }            
+                }
+                  
+            }
+            AddLog("清空日志", "清空日志", "失败");
             return Json(new { result = false }, JsonRequestBehavior.AllowGet);
         }
 

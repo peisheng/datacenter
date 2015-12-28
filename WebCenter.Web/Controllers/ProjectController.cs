@@ -34,16 +34,16 @@ namespace WebCenter.Web.Controllers
        
         public ActionResult List(int page_index=0,int page_size=20,string keyword="",int company_id=0)
         {
-            
-            Expression<Func<project_case, bool>> condition = prj => true;
+
+            Expression<Func<project_case, bool>> condition = prj => prj.is_publish == 1;
             if (!string.IsNullOrEmpty(keyword))
             {
-                Expression<Func<project_case, bool>> tmp = prj => prj.title.IndexOf(keyword)>-1 || prj.descript.IndexOf(keyword)>-1;
+                Expression<Func<project_case, bool>> tmp = prj => (prj.title.IndexOf(keyword)>-1 || prj.descript.IndexOf(keyword)>-1)&&prj.is_publish==1;
                 condition = tmp;
             }
             if(company_id>0)
             {
-                Expression<Func<project_case, bool>> tmp = prj => prj.company.Id==company_id;
+                Expression<Func<project_case, bool>> tmp = prj => prj.company.Id==company_id&&prj.is_publish==1;
                 condition = tmp;
             }
             

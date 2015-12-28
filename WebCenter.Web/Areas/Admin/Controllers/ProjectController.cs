@@ -90,6 +90,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             {
                 project.update_time = DateTime.Now;
                 Uof.Iproject_caseService.UpdateEntity(project);
+                AddLog("更新文章 文章ID：" + project.Id.ToString(), "更新文章", "成功");
                 if (project.is_company_intro > 0)
                 {
                     company com = Uof.IcompanyService.GetById(project.company_id.Value);
@@ -107,8 +108,14 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             else if (project != null && project.Id == 0)
             {
                 project.create_time = DateTime.Now;
-                project.view_count = 0;
+                if (project.view_count == null)
+                    project.view_count = 0;
+                if (project.is_publish == null)
+                {
+                    project.is_publish = 0;
+                }
                 project = Uof.Iproject_caseService.AddEntity(project);
+                AddLog("添加文章 文章ID：" + project.Id.ToString(), "添加文章", "成功");
                 if (project.is_company_intro > 0)
                 {
                     company com = Uof.IcompanyService.GetById(project.company_id.Value);
@@ -151,10 +158,12 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                 bool b = Uof.Iproject_caseService.DeleteEntity(id);
                 if (b)
                 {
+                    AddLog("删除文章ID：" + id.ToString(), "删除文章", "成功");
                     return Json(new { result = true });
                 }
                 else
                 {
+                    AddLog("删除文章ID：" + id.ToString(), "删除文章", "失败");
                     return Json(new { result = false });
                 }
             }
@@ -177,11 +186,35 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                     content = proj.content,
                     main_image_path = proj.main_image_path,
                     company_id = proj.company_id,
-                    is_company_intro = proj.is_company_intro
+                    is_company_intro = proj.is_company_intro,
+                    view_count=proj.view_count,
+                    is_publish = proj.is_publish==null?0:proj.is_publish
                 };
                 return Json(obj, JsonRequestBehavior.AllowGet);
             }
-            return Json(new { result = false });
+            return Json(new { result = false }, JsonRequestBehavior.AllowGet);
+        }
+
+        [Authorize]
+
+        public ActionResult SetPublish(int id,int type)
+        {
+            if (id > 0)
+            {
+                project_case proj = Uof.Iproject_caseService.GetById(id);
+                proj.is_publish = type;
+                bool b = Uof.Iproject_caseService.UpdateEntity(proj);
+                if (type > 0)
+                {
+                    AddLog("设置文章发布 文章ID：" + id.ToString(), "设置文章发布", "成功");
+                }
+                if (type ==0)
+                {
+                    AddLog("撤消文章发布 文章ID：" + id.ToString(), "撤消文章发布", "成功");
+                }
+                return Json(new { result = b } ,JsonRequestBehavior.AllowGet);
+            }
+            return Json(new { result = false }, JsonRequestBehavior.AllowGet);
         }
 
 

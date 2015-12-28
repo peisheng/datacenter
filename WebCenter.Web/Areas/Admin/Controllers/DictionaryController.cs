@@ -1,4 +1,5 @@
 ﻿using Common;
+using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -114,6 +115,19 @@ namespace WebCenter.Web.Areas.Admin.Controllers
 
         }
 
+
+        [HttpGet]
+        public ActionResult GroupList()
+        {
+
+            var list = Uof.Isys_dictionaryService.GetAll().GroupBy(p => p.group).Select(item => item.Key).ToList();
+            return Json(list,JsonRequestBehavior.AllowGet);
+
+        }
+
+
+
+
         /// <summary>
         /// add & edit
         /// </summary>
@@ -121,15 +135,33 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         /// <returns></returns>
         [Authorize]
         [HttpPost]
-        public ActionResult Save(sys_dictionary dict)
+        public ActionResult Save(string dict)
         {
-            if (dict != null && dict.id > 0)
+            sys_dictionary _dict = new sys_dictionary();
+            //_dict.group;
+            //_dict.name;
+            //_dict.value;
+                
+            _dict = JsonConvert.DeserializeObject<sys_dictionary>(dict);
+            if (dict != null && _dict.id > 0)
             {
-                Uof.Isys_dictionaryService.UpdateEntity(dict);
+                Uof.Isys_dictionaryService.UpdateEntity(_dict);
+                AddLog("修改配置信息" + _dict.id.ToString(), " 修改配置信息", "成功");
+
+                return Json(new { 
+                result=true,
+                id=_dict.id                
+                });
             }
             else
             {
-                Uof.Isys_dictionaryService.AddEntity(dict);
+                AddLog("添加配置信息" + _dict.id.ToString(), " 添加配置信息", "成功");
+               _dict= Uof.Isys_dictionaryService.AddEntity(_dict);
+                return Json(new
+                {
+                    result = true,
+                    id = _dict.id
+                });
             }
             return Json(new { result = false });
         }
@@ -140,7 +172,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [Authorize]
-        [HttpGet]
+       
         public ActionResult Delete(int id = 0)
         {
             if (id > 0)
@@ -148,11 +180,10 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                 bool b = Uof.Isys_dictionaryService.DeleteEntity(id);
                 if (b)
                 {
-                    return Json(new { result = true });
+                    return Json(new { result = true },JsonRequestBehavior.AllowGet);
                 }
             }
-
-            return Json(new { result = false });
+            return Json(new { result = false },JsonRequestBehavior.AllowGet);
         }
 
 

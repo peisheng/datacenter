@@ -84,10 +84,13 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                 if (_user.Id > 0)
                 {
                     Uof.IuserService.UpdateEntity(_user);
+                    AddLog("修改用户 用户ID：" + _user.Id.ToString(), "修改用户", "成功");
+                    
                 }
                 else
                 {
                     _user = Uof.IuserService.AddEntity(_user);
+                    AddLog("添加用户 用户ID：" + _user.Id.ToString(), "添加用户", "成功");
                 }
                 if (_user.is_admin.HasValue && _user.is_admin.Value == 1)
                 {
@@ -118,6 +121,8 @@ namespace WebCenter.Web.Areas.Admin.Controllers
 
         }
 
+        
+
         [Authorize]
         [HttpPost]
         public ActionResult Delete(int id)
@@ -125,6 +130,16 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             if (id>0)
             {
              bool b=    Uof.IuserService.DeleteEntity(id);
+             if (b)
+             {
+                 AddLog("删除用户 用户ID：" + id.ToString(), "删除用户", "成功");
+             }
+             else
+             {
+                 AddLog("删除用户 用户ID：" + id.ToString(), "删除用户", "失败");
+ 
+             }
+             
              return Json(new { result=b});
                 
             }
@@ -153,6 +168,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             return Json(new { result = false },JsonRequestBehavior.AllowGet);
         }
 
+       
         
 
     }

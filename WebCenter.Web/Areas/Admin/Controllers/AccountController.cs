@@ -78,10 +78,12 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                 {
                     FormsAuthentication.SignOut();
                 }
+                AddLog("修改密码","修改密码","成功");
                 return Json(ret);
             }
             else
             {
+                AddLog("修改密码", "修改密码", "失败");
                 return Json(new { result=false});
             }
 

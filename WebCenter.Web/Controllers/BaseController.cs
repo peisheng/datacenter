@@ -35,11 +35,12 @@ namespace WebCenter.Web.Controllers
             get { return Json(new { result = false }, JsonRequestBehavior.AllowGet); }
         }
 
-        public void AddLog(string name, string descipt, string user_name, int user_id, string result)
+        public void AddLog(string name, string descipt, string result)
         {
             operate_log log = new operate_log();
             log.create_time = DateTime.Now;
             log.desript = descipt;
+            log.user_name = ControllerContext.HttpContext.User.Identity.Name;
             log.name = name;
             log.result = result;
             //Request.LogonUserIdentity
