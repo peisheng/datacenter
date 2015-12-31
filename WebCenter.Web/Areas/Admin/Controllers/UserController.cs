@@ -80,12 +80,12 @@ namespace WebCenter.Web.Areas.Admin.Controllers
 
             if (_user != null)
             {
-                
+
                 if (_user.Id > 0)
                 {
                     Uof.IuserService.UpdateEntity(_user);
                     AddLog("修改用户 用户ID：" + _user.Id.ToString(), "修改用户", "成功");
-                    
+
                 }
                 else
                 {
@@ -106,7 +106,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                         com.user_id = _user.Id;
                         Uof.IcompanyService.UpdateEntity(com);
                     }
-                   
+
                 }
                 var obj = new
                 {
@@ -121,30 +121,70 @@ namespace WebCenter.Web.Areas.Admin.Controllers
 
         }
 
-        
+
 
         [Authorize]
         [HttpPost]
         public ActionResult Delete(int id)
         {
-            if (id>0)
+            if (id > 0)
             {
-             bool b=    Uof.IuserService.DeleteEntity(id);
-             if (b)
-             {
-                 AddLog("删除用户 用户ID：" + id.ToString(), "删除用户", "成功");
-             }
-             else
-             {
-                 AddLog("删除用户 用户ID：" + id.ToString(), "删除用户", "失败");
- 
-             }
-             
-             return Json(new { result=b});
-                
+                IList<company> list = Uof.IcompanyService.GetAll(p => p.user_id == id).ToList();
+                if (list.Count > 0)
+                {
+                    //删除Company引用 
+                    try
+                    {
+                        for (int i = 0; i < list.Count; i++)
+                        {
+                            list[i].user_id = null;
+                        }
+                        Uof.IcompanyService.UpdateEntities(list);
+                    }
+                    catch (Exception ex)
+                    {
+                        LogHelper.LogError(ex.Message,ex);  
+                    }
+                   
+                }
+
+
+                IList<project_case> listpro = Uof.Iproject_caseService.GetAll(p => p.user_id == id).ToList();
+                if (listpro.Count > 0)
+                {
+                    //删除Project引用 
+                    try
+                    {
+                        for (int i = 0; i < listpro.Count; i++)
+                        {
+                            listpro[i].user_id = null;
+                        }
+                        Uof.Iproject_caseService.UpdateEntities(listpro);
+                    }
+                    catch (Exception ex)
+                    {
+                        LogHelper.LogError(ex.Message, ex);
+                    }
+
+                }
+
+               
+                bool b = Uof.IuserService.DeleteEntity(id);
+                if (b)
+                {
+                    AddLog("删除用户 用户ID：" + id.ToString(), "删除用户", "成功");
+                }
+                else
+                {
+                    AddLog("删除用户 用户ID：" + id.ToString(), "删除用户", "失败");
+
+                }
+
+                return Json(new { result = b });
+
             }
 
-            return Json(new { result = false});
+            return Json(new { result = false });
         }
 
         [Authorize]
@@ -152,24 +192,25 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         {
             if (id > 0)
             {
-              user _user = Uof.IuserService.GetById(id);
-              var obj = new { 
-                  id=_user.Id,
-                  user_name=_user.user_name,
-                  real_name=_user.real_name,
-                  phone=_user.phone,
-                  mobile=_user.mobile,
-                  email=_user.email,
-                  is_admin=_user.is_admin,
-                  company_id=_user.company_id
-              };
-              return Json(obj,JsonRequestBehavior.AllowGet);
+                user _user = Uof.IuserService.GetById(id);
+                var obj = new
+                {
+                    id = _user.Id,
+                    user_name = _user.user_name,
+                    real_name = _user.real_name,
+                    phone = _user.phone,
+                    mobile = _user.mobile,
+                    email = _user.email,
+                    is_admin = _user.is_admin,
+                    company_id = _user.company_id
+                };
+                return Json(obj, JsonRequestBehavior.AllowGet);
             }
-            return Json(new { result = false },JsonRequestBehavior.AllowGet);
+            return Json(new { result = false }, JsonRequestBehavior.AllowGet);
         }
 
-       
-        
+
+
 
     }
 }

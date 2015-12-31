@@ -155,6 +155,25 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         {
             if (id > 0)
             {
+                IList<company> list = Uof.IcompanyService.GetAll(p => p.introduce_page_id == id).ToList();
+                if (list.Count > 0)
+                {
+                    //删除Company引用 
+                    try
+                    {
+                        for (int i = 0; i < list.Count; i++)
+                        {
+                            list[i].introduce_page_id = null;
+                        }
+                        Uof.IcompanyService.UpdateEntities(list);
+                    }
+                    catch (Exception ex)
+                    {
+                        LogHelper.LogError(ex.Message, ex);
+                    }
+
+                }
+                 
                 bool b = Uof.Iproject_caseService.DeleteEntity(id);
                 if (b)
                 {

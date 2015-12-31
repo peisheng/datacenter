@@ -37,7 +37,7 @@ namespace WebCenter.Web.Controllers
                 HttpPostedFileBase postFile = Request.Files[tfile];//get post file 
                 if (postFile.ContentLength == 0)
                     continue;
-                string serverPath = Server.MapPath("~").Replace("Api","");
+                string serverPath = Server.MapPath("~").Replace("Api","").Replace("api","");
                 string folder = "Uploads\\" + DateTime.Today.ToString("yyyy-MM-dd") + "\\";
                 string guid = DateTime.Now.ToString("hh-mm-ss-") + new Random().Next(1000).ToString()+Guid.NewGuid().ToString().Substring(0,4);
                 string file_name =guid + postFile.FileName.Substring(postFile.FileName.LastIndexOf("."));
@@ -64,7 +64,7 @@ namespace WebCenter.Web.Controllers
                     id = file.id,
                     file_name = file.file_name
                 };
-                bool isZipSuccess= ImageHelper.GetPicThumbnail(sPath, dPath, 300, 450, 100);
+                bool isZipSuccess = ImageHelper.GetPicThumbnailWidth(sPath, dPath, 300, 450, 100);
                 if(!isZipSuccess)
                 {
                     LogHelper.LogError("图片压缩失败");

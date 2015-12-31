@@ -85,25 +85,36 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             company _company = null;
             if (com != null)
             {
-                _company = new company();
-                _company.name = com.name;
-                _company.address = com.address;
-                _company.city_id = com.city_id;
-                
-                _company.company_image_path = "";
-                _company.logo_path = com.logo_path;
-                _company.site_url = com.site_url;
-                _company.type_id = com.type_id;
-                _company.create_time = DateTime.Now;
-                _company.Id = com.Id;
-                if (_company.Id > 0)
+
+                if (com.Id > 0)
                 {
+                    _company = Uof.IcompanyService.GetById(com.Id);
+                    _company.name = com.name;
+                    _company.address = com.address;
+                    _company.city_id = com.city_id;
+
+                    _company.company_image_path = "";
+                    _company.logo_path = com.logo_path;
+                    _company.site_url = com.site_url;
+                    _company.type_id = com.type_id;
+                    _company.update_time = DateTime.Now;                   
+                     
                     Uof.IcompanyService.UpdateEntity(_company);
 
                     AddLog("修改企业信息 ID:" + _company.Id.ToString(), "修改企业信息", "成功");
                 }
                 else
                 {
+
+                    _company = new company();
+                    _company.name = com.name;
+                    _company.address = com.address;
+                    _company.city_id = com.city_id;
+                    _company.company_image_path = "";
+                    _company.logo_path = com.logo_path;
+                    _company.site_url = com.site_url;
+                    _company.type_id = com.type_id;
+                    _company.create_time = DateTime.Now;                 
                     _company = Uof.IcompanyService.AddEntity(_company);
                     AddLog("添加企业信息 ID:" + _company.Id.ToString(), "添加企业信息", "成功");
                 }
@@ -276,6 +287,44 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         {
             if (id > 0)
             {
+                IList<project_case> listpro = Uof.Iproject_caseService.GetAll(p => p.company_id == id).ToList();
+                if (listpro.Count > 0)
+                {
+                    //删除project引用 
+                    try
+                    {
+                        for (int i = 0; i < listpro.Count; i++)
+                        {
+                            listpro[i].company_id = null;
+                        }
+                        Uof.Iproject_caseService.UpdateEntities(listpro);
+                    }
+                    catch (Exception ex)
+                    {
+                        LogHelper.LogError(ex.Message, ex);
+                    }
+
+                }
+
+
+                IList<user> listUser = Uof.IuserService.GetAll(p => p.company_id == id).ToList();
+                if (listpro.Count > 0)
+                {
+                    //删除user引用 
+                    try
+                    {
+                        for (int i = 0; i < listUser.Count; i++)
+                        {
+                            listUser[i].company_id = null;
+                        }
+                        Uof.IuserService.UpdateEntities(listUser);
+                    }
+                    catch (Exception ex)
+                    {
+                        LogHelper.LogError(ex.Message, ex);
+                    }
+
+                }
                 bool b = Uof.IcompanyService.DeleteEntity(id);
                 if (b)
                 {
