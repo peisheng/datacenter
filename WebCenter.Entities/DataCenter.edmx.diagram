@@ -21,6 +21,7 @@
         <AssociationConnector Association="DataCenter.Entities.project_case_ibfk_1" />
         <AssociationConnector Association="DataCenter.Entities.project_case_ibfk_3" />
         <EntityTypeShape EntityType="DataCenter.Entities.file" Width="1.5" PointX="7.375" PointY="3.75" />
+        <AssociationConnector Association="DataCenter.Entities.user_ibfk_1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

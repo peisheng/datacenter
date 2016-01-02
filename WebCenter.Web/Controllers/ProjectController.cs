@@ -35,15 +35,15 @@ namespace WebCenter.Web.Controllers
         public ActionResult List(int page_index = 0, int page_size = 20, string keyword = "", int company_id = 0)
         {
 
-            Expression<Func<project_case, bool>> condition = prj => prj.is_publish == 1;
+            Expression<Func<project_case, bool>> condition = prj => prj.is_publish == 1&&(prj.is_company_intro==null||prj.is_company_intro==0);
             if (!string.IsNullOrEmpty(keyword))
             {
-                Expression<Func<project_case, bool>> tmp = prj => (prj.title.IndexOf(keyword) > -1 || prj.descript.IndexOf(keyword) > -1) && prj.is_publish == 1;
+                Expression<Func<project_case, bool>> tmp = prj => (prj.title.IndexOf(keyword) > -1 || prj.descript.IndexOf(keyword) > -1) && prj.is_publish == 1 && (prj.is_company_intro == null || prj.is_company_intro == 0);
                 condition = tmp;
             }
             if (company_id > 0)
             {
-                Expression<Func<project_case, bool>> tmp = prj => prj.company.Id == company_id && prj.is_publish == 1;
+                Expression<Func<project_case, bool>> tmp = prj => prj.company.Id == company_id && prj.is_publish == 1 && (prj.is_company_intro == null || prj.is_company_intro == 0);
                 condition = tmp;
             }
 
@@ -135,6 +135,13 @@ namespace WebCenter.Web.Controllers
                                 id = proj.Id,
                                 title = proj.title,
                                 descript = proj.descript,
+                                project_contact_phone=proj.project_contact_phone,
+                                project_address=proj.project_address,
+                                project_action_company=proj.project_action_company,
+                                project_design_company=proj.project_design_company,
+                                project_type=proj.project_type,
+                                project_name=proj.project_name,
+                                project_area=proj.project_area,
                                 type_name = proj.sys_dictionary == null ? "" : proj.sys_dictionary.value,
                                 content = proj.content,
                                 main_image_path = proj.main_image_path,

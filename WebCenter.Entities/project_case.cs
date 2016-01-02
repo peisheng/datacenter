@@ -77,6 +77,34 @@ namespace WebCenter.Entities
     
         public Nullable<System.DateTime> update_time { get; set; }
     
+    
+    
+        public string project_contact_phone { get; set; }
+    
+    
+    
+        public string project_address { get; set; }
+    
+    
+    
+        public string project_action_company { get; set; }
+    
+    
+    
+        public string project_design_company { get; set; }
+    
+    
+    
+        public string project_type { get; set; }
+    
+    
+    
+        public string project_name { get; set; }
+    
+    
+    
+        public string project_area { get; set; }
+    
         public virtual ICollection<company> companies { get; set; }
         public virtual company company { get; set; }
         public virtual sys_dictionary sys_dictionary { get; set; }

@@ -92,5 +92,6 @@ namespace WebCenter.Entities
     
         public virtual ICollection<company> companies { get; set; }
         public virtual ICollection<project_case> project_case { get; set; }
+        public virtual company company { get; set; }
     }
 }

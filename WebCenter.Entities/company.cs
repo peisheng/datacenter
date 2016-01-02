@@ -17,6 +17,7 @@ namespace WebCenter.Entities
         public company()
         {
             this.project_case1 = new HashSet<project_case>();
+            this.users = new HashSet<user>();
         }
     
     
@@ -94,5 +95,6 @@ namespace WebCenter.Entities
         public virtual user user { get; set; }
         public virtual project_case project_case { get; set; }
         public virtual ICollection<project_case> project_case1 { get; set; }
+        public virtual ICollection<user> users { get; set; }
     }
 }

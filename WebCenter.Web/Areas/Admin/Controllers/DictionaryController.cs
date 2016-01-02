@@ -146,7 +146,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             if (dict != null && _dict.id > 0)
             {
                 Uof.Isys_dictionaryService.UpdateEntity(_dict);
-                AddLog("修改配置信息" + _dict.id.ToString(), " 修改配置信息", "成功");
+                AddLog("修改配置信息ID:" + _dict.id.ToString(), " 修改配置信息", "成功");
 
                 return Json(new { 
                 result=true,
@@ -155,7 +155,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             }
             else
             {
-                AddLog("添加配置信息" + _dict.id.ToString(), " 添加配置信息", "成功");
+                AddLog("添加配置信息ID:" + _dict.id.ToString(), " 添加配置信息", "成功");
                _dict= Uof.Isys_dictionaryService.AddEntity(_dict);
                 return Json(new
                 {

@@ -84,7 +84,6 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         public ActionResult Save(string proj)
         {
             project_case project = new project_case();
-
             project = JsonConvert.DeserializeObject<project_case>(proj);
             if (project != null && project.Id > 0)
             {
@@ -93,10 +92,14 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                 AddLog("更新文章 文章ID：" + project.Id.ToString(), "更新文章", "成功");
                 if (project.is_company_intro > 0)
                 {
-                    company com = Uof.IcompanyService.GetById(project.company_id.Value);
-                    com.introduce_page_id = project.Id;
-                    com.update_time = DateTime.Now;
-                    Uof.IcompanyService.UpdateEntity(com);
+                    if (project.company_id.HasValue&&project.company_id.Value>0)
+                    {
+                        company com = Uof.IcompanyService.GetById(project.company_id.Value);
+                        com.introduce_page_id = project.Id;
+                        com.update_time = DateTime.Now;
+                        Uof.IcompanyService.UpdateEntity(com);
+                        SetIntroduceToCurrentArticle(com.Id,project);
+                    }                   
                     return Json(new
                     {
                         result = true,
@@ -118,16 +121,30 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                 AddLog("添加文章 文章ID：" + project.Id.ToString(), "添加文章", "成功");
                 if (project.is_company_intro > 0)
                 {
-                    company com = Uof.IcompanyService.GetById(project.company_id.Value);
-                    com.introduce_page_id = project.Id;
-                    com.update_time = DateTime.Now;
-                    Uof.IcompanyService.UpdateEntity(com);
+
+                    if (project.company_id.HasValue && project.company_id.Value > 0)
+                    {
+                        company com = Uof.IcompanyService.GetById(project.company_id.Value);
+                        com.introduce_page_id = project.Id;
+                        com.update_time = DateTime.Now;
+                        Uof.IcompanyService.UpdateEntity(com);
+                        SetIntroduceToCurrentArticle(com.Id, project);
+                    }
                     return Json(new
                     {
                         result = true,
                         project_id = project.Id
                     });
 
+                    //company com = Uof.IcompanyService.GetById(project.company_id.Value);
+                    //com.introduce_page_id = project.Id;
+                    //com.update_time = DateTime.Now;
+                    //Uof.IcompanyService.UpdateEntity(com);
+                    //return Json(new
+                    //{
+                    //    result = true,
+                    //    project_id = project.Id
+                    //});
                 }
                 else
                 {
@@ -142,8 +159,38 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             {
                 return Json(new { result = false });
             }
-            return Json(new { result = false });
+           
         }
+        /// <summary>
+        /// companyList
+        /// </summary>
+        /// <param name="company"></param>
+        private void SetIntroduceToCurrentArticle(int company_id,project_case proj)
+        {
+            try
+            {
+                if (proj.is_company_intro == 1)
+                {
+                    IList<project_case> list = Uof.Iproject_caseService.GetAll(p => p.company_id == company_id && p.Id != proj.Id).ToList();
+                    if (list.Count > 0)
+                    {
+                        for (int i = 0; i < list.Count; i++)
+                        {
+                            list[i].is_company_intro = 0;
+                        }
+
+                        Uof.Iproject_caseService.UpdateEntities(list);
+
+                    }
+                } 
+            }
+            catch(Exception ex) 
+            {
+                LogHelper.LogError(ex.Message,ex);
+            }
+                       
+        }
+      
 
         [Authorize]
         [HttpPost]
@@ -200,6 +247,13 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                 {
                     id = proj.Id,
                     title = proj.title,
+                    project_contact_phone = proj.project_contact_phone,
+                    project_address = proj.project_address,
+                    project_action_company = proj.project_action_company,
+                    project_design_company = proj.project_design_company,
+                    project_type = proj.project_type,
+                    project_name = proj.project_name,
+                    project_area = proj.project_area,
                     descript = proj.descript,
                     type_id = proj.type_id,
                     content = proj.content,
