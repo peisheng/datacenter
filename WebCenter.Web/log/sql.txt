@@ -797,3 +797,3265 @@ SELECT
 FROM `sys_dictionary` AS `Extent1`
  WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
 ---------------------------------------------------
+
+ 
+记录时间：2016-01-02 17:04:22,451 
+错误描述：
+执行时间:11 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 17:06:03,358 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 17:33:43,913 
+错误描述：
+执行时间:26 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 17:33:45,596 
+错误描述：
+执行时间:369 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+33, 
+@gp1, 
+@gp2, 
+@gp3)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 17:34:09,458 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 17:34:18,205 
+错误描述：
+执行时间:59 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 17:34:18,209 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+34, 
+@gp1, 
+@gp2, 
+@gp3)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 17:36:22,869 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 17:36:27,418 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 17:36:27,421 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+35, 
+@gp1, 
+@gp2, 
+@gp3)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 17:44:10,423 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 17:45:41,345 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 17:45:41,352 
+错误描述：
+执行时间:2 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+36, 
+@gp1, 
+@gp2, 
+@gp3)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 17:51:38,210 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 17:51:42,868 
+错误描述：
+执行时间:80 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 17:51:42,872 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+37, 
+@gp1, 
+@gp2, 
+@gp3)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 19:45:12,033 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 19:45:13,185 
+错误描述：
+执行时间:20 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+38, 
+@gp1, 
+@gp2, 
+@gp3)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 19:45:13,795 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 19:48:09,391 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 19:48:13,053 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 19:48:13,058 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+39, 
+@gp1, 
+@gp2, 
+@gp3)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:01:36,778 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:01:42,752 
+错误描述：
+执行时间:415 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:01:42,756 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+40, 
+@gp1, 
+@gp2, 
+@gp3)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:02:35,607 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:02:38,557 
+错误描述：
+执行时间:503 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:02:38,560 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+41, 
+@gp1, 
+@gp2, 
+@gp3)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:03:17,397 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:03:33,114 
+错误描述：
+执行时间:481 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:03:33,117 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+42, 
+@gp1, 
+@gp2, 
+@gp3)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:04:29,163 
+错误描述：
+执行时间:8 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:04:29,168 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+43, 
+@gp1, 
+@gp2, 
+@gp3)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:11:09,469 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:11:12,098 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:11:12,103 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+44, 
+@gp1, 
+@gp2, 
+@gp3)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:21:30,234 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:21:41,533 
+错误描述：
+执行时间:406 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:21:41,539 
+错误描述：
+执行时间:2 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+45, 
+@gp1, 
+@gp2, 
+@gp3)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:24:44,481 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:26,651 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:39,175 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `company` AS `Extent1`) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:39,275 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ ORDER BY 
+`Extent1`.`Id` DESC LIMIT 0,10
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:39,421 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:39,518 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:39,593 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:39,620 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:39,640 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `user` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @p__linq__0) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:39,643 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:39,644 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:39,702 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`user_name`, 
+`Extent1`.`real_name`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`email`, 
+`Extent1`.`photo_path`, 
+`Extent1`.`password`, 
+`Extent1`.`hash_code`, 
+`Extent1`.`position_id`, 
+`Extent1`.`is_admin`, 
+`Extent1`.`company_id`, 
+`Extent1`.`login_token`, 
+`Extent1`.`last_login_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `user` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:39,716 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:39,720 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:39,724 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `user` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @p__linq__0) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:40,142 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:40,207 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:40,284 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`
+FROM `city` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:41,476 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `company` AS `Extent1`) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:41,480 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ ORDER BY 
+`Extent1`.`Id` DESC LIMIT 0,10
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:41,482 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:41,483 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:41,485 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:41,487 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:41,490 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `user` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @p__linq__0) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:41,493 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:41,495 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:41,499 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`user_name`, 
+`Extent1`.`real_name`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`email`, 
+`Extent1`.`photo_path`, 
+`Extent1`.`password`, 
+`Extent1`.`hash_code`, 
+`Extent1`.`position_id`, 
+`Extent1`.`is_admin`, 
+`Extent1`.`company_id`, 
+`Extent1`.`login_token`, 
+`Extent1`.`last_login_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `user` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:41,503 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:41,505 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:41,513 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `user` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @p__linq__0) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:43,474 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:43,478 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:43,485 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`
+FROM `city` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:43,622 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:43,624 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:43,626 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:45,537 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @p__linq__0) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:45,553 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Project1`.`Id`, 
+`Project1`.`title`, 
+`Project1`.`descript`, 
+`Project1`.`type_id`, 
+`Project1`.`content`, 
+`Project1`.`company_id`, 
+`Project1`.`user_id`, 
+`Project1`.`main_image_path`, 
+`Project1`.`is_company_intro`, 
+`Project1`.`is_publish`, 
+`Project1`.`view_count`, 
+`Project1`.`publish_time`, 
+`Project1`.`create_time`, 
+`Project1`.`update_time`, 
+`Project1`.`project_contact_phone`, 
+`Project1`.`project_address`, 
+`Project1`.`project_action_company`, 
+`Project1`.`project_design_company`, 
+`Project1`.`project_type`, 
+`Project1`.`project_name`, 
+`Project1`.`project_area`
+FROM `project_case` AS `Project1`
+ WHERE `Project1`.`company_id` = @p__linq__0
+ ORDER BY 
+`Project1`.`Id` DESC LIMIT 0,15
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:45,555 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:47,308 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:55,362 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:29:55,364 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+46, 
+@gp1, 
+@gp2, 
+@gp3)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:30:10,699 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:30:16,372 
+错误描述：
+执行时间:209 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('file') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:30:16,377 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `file`(
+`id`, 
+`file_name`, 
+`file_path`, 
+`create_time`) VALUES (
+47, 
+@gp1, 
+@gp2, 
+@gp3)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:31:18,922 
+错误描述：
+执行时间:19 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('project_case') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:31:18,953 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `project_case`(
+`Id`, 
+`title`, 
+`project_contact_phone`, 
+`project_address`, 
+`project_action_company`, 
+`project_design_company`, 
+`project_type`, 
+`project_name`, 
+`project_area`, 
+`descript`, 
+`type_id`, 
+`content`, 
+`company_id`, 
+`user_id`, 
+`main_image_path`, 
+`is_company_intro`, 
+`is_publish`, 
+`view_count`, 
+`publish_time`, 
+`create_time`, 
+`update_time`) VALUES (
+5, 
+@gp1, 
+@gp2, 
+@gp3, 
+@gp4, 
+@gp5, 
+@gp6, 
+@gp7, 
+@gp8, 
+@gp9, 
+13, 
+@gp10, 
+2, 
+NULL, 
+@gp11, 
+0, 
+0, 
+0, 
+NULL, 
+@gp12, 
+NULL)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:31:18,985 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('operate_log') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:31:18,999 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `operate_log`(
+`Id`, 
+`name`, 
+`desript`, 
+`user_name`, 
+`user_id`, 
+`result`, 
+`create_time`) VALUES (
+18, 
+@gp1, 
+@gp2, 
+@gp3, 
+NULL, 
+@gp4, 
+@gp5)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:31:35,189 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:31:35,210 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`
+FROM `city` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:31:35,234 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:31:35,504 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:31:35,507 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:31:35,509 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:31:37,822 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`company_id` = @p__linq__0) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:31:37,826 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Project1`.`Id`, 
+`Project1`.`title`, 
+`Project1`.`descript`, 
+`Project1`.`type_id`, 
+`Project1`.`content`, 
+`Project1`.`company_id`, 
+`Project1`.`user_id`, 
+`Project1`.`main_image_path`, 
+`Project1`.`is_company_intro`, 
+`Project1`.`is_publish`, 
+`Project1`.`view_count`, 
+`Project1`.`publish_time`, 
+`Project1`.`create_time`, 
+`Project1`.`update_time`, 
+`Project1`.`project_contact_phone`, 
+`Project1`.`project_address`, 
+`Project1`.`project_action_company`, 
+`Project1`.`project_design_company`, 
+`Project1`.`project_type`, 
+`Project1`.`project_name`, 
+`Project1`.`project_area`
+FROM `project_case` AS `Project1`
+ WHERE `Project1`.`company_id` = @p__linq__0
+ ORDER BY 
+`Project1`.`Id` DESC LIMIT 0,15
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:31:37,829 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:31:40,234 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:31:40,387 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:32:06,526 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+UPDATE `project_case` SET `title`=@gp1, `project_contact_phone`=@gp2, `project_address`=@gp3, `project_action_company`=@gp4, `project_design_company`=@gp5, `project_type`=@gp6, `project_name`=@gp7, `project_area`=@gp8, `descript`=@gp9, `type_id`=13, `content`=@gp10, `company_id`=2, `user_id`=NULL, `main_image_path`=@gp11, `is_company_intro`=0, `is_publish`=0, `view_count`=0, `publish_time`=NULL, `create_time`=NULL, `update_time`=@gp12 WHERE `Id` = 5
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:32:06,554 
+错误描述：
+执行时间:6 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('operate_log') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:32:06,557 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `operate_log`(
+`Id`, 
+`name`, 
+`desript`, 
+`user_name`, 
+`user_id`, 
+`result`, 
+`create_time`) VALUES (
+19, 
+@gp1, 
+@gp2, 
+@gp3, 
+NULL, 
+@gp4, 
+@gp5)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:32:12,163 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:32:12,482 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:51:37,698 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:51:37,718 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+UPDATE `project_case` SET `title`=@gp1, `project_contact_phone`=@gp2, `project_address`=@gp3, `project_action_company`=@gp4, `project_design_company`=@gp5, `project_type`=@gp6, `project_name`=@gp7, `project_area`=@gp8, `descript`=@gp9, `type_id`=13, `content`=@gp10, `company_id`=2, `user_id`=NULL, `main_image_path`=@gp11, `is_company_intro`=0, `is_publish`=1, `view_count`=0, `publish_time`=NULL, `create_time`=NULL, `update_time`=@gp12 WHERE `Id` = 5
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:51:37,734 
+错误描述：
+执行时间:7 毫秒 
+ -->ReaderExecuted.Command:
+INSERT INTO `sequence` (`name`) VALUES('operate_log') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:51:37,739 
+错误描述：
+执行时间:1 毫秒
+-->NonQueryExecuted.Command:
+INSERT INTO `operate_log`(
+`Id`, 
+`name`, 
+`desript`, 
+`user_name`, 
+`user_id`, 
+`result`, 
+`create_time`) VALUES (
+20, 
+@gp1, 
+@gp2, 
+@gp3, 
+NULL, 
+@gp4, 
+@gp5)
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:51:44,898 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:51:45,244 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:51:54,382 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE (`Extent1`.`group` = @p__linq__0) OR ((`Extent1`.`group` IS  NULL) AND (@p__linq__0 IS  NULL))
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:51:54,599 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:24,056 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `company` AS `Extent1`) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:24,062 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ ORDER BY 
+`Extent1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:24,064 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:24,068 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:24,072 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:24,074 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:31,132 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `project_case` AS `Extent1`
+ WHERE (1 = `Extent1`.`is_publish`) AND ((`Extent1`.`is_company_intro` IS  NULL) OR (0 = `Extent1`.`is_company_intro`))) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:31,138 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE (1 = `Extent1`.`is_publish`) AND ((`Extent1`.`is_company_intro` IS  NULL) OR (0 = `Extent1`.`is_company_intro`))
+ ORDER BY 
+`Extent1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:31,140 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:31,143 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:31,966 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `company` AS `Extent1`) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:31,969 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ ORDER BY 
+`Extent1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:31,972 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:31,975 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:31,977 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:31,980 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:43,470 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:43,473 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:43,476 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:43,479 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:43,482 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:43,492 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `project_case` AS `Extent1`
+ WHERE ((`Extent1`.`company_id` = @p__linq__0) AND (1 = `Extent1`.`is_publish`)) AND ((`Extent1`.`is_company_intro` IS  NULL) OR (0 = `Extent1`.`is_company_intro`))) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:43,500 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Project1`.`Id`, 
+`Project1`.`title`, 
+`Project1`.`descript`, 
+`Project1`.`type_id`, 
+`Project1`.`content`, 
+`Project1`.`company_id`, 
+`Project1`.`user_id`, 
+`Project1`.`main_image_path`, 
+`Project1`.`is_company_intro`, 
+`Project1`.`is_publish`, 
+`Project1`.`view_count`, 
+`Project1`.`publish_time`, 
+`Project1`.`create_time`, 
+`Project1`.`update_time`, 
+`Project1`.`project_contact_phone`, 
+`Project1`.`project_address`, 
+`Project1`.`project_action_company`, 
+`Project1`.`project_design_company`, 
+`Project1`.`project_type`, 
+`Project1`.`project_name`, 
+`Project1`.`project_area`
+FROM `project_case` AS `Project1`
+ WHERE ((`Project1`.`company_id` = @p__linq__0) AND (1 = `Project1`.`is_publish`)) AND ((`Project1`.`is_company_intro` IS  NULL) OR (0 = `Project1`.`is_company_intro`))
+ ORDER BY 
+`Project1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:43,503 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:46,534 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:46,539 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+UPDATE `project_case` SET `title`=@gp1, `project_contact_phone`=NULL, `project_address`=NULL, `project_action_company`=NULL, `project_design_company`=NULL, `project_type`=NULL, `project_name`=NULL, `project_area`=NULL, `descript`=@gp2, `type_id`=13, `content`=@gp3, `company_id`=2, `user_id`=NULL, `main_image_path`=@gp4, `is_company_intro`=1, `is_publish`=1, `view_count`=15, `publish_time`=NULL, `create_time`=@gp5, `update_time`=NULL WHERE `Id` = 4
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:53,015 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:53,021 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:53,024 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:55,993 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 20:58:55,996 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+UPDATE `project_case` SET `title`=@gp1, `project_contact_phone`=@gp2, `project_address`=@gp3, `project_action_company`=@gp4, `project_design_company`=@gp5, `project_type`=@gp6, `project_name`=@gp7, `project_area`=@gp8, `descript`=@gp9, `type_id`=13, `content`=@gp10, `company_id`=2, `user_id`=NULL, `main_image_path`=@gp11, `is_company_intro`=0, `is_publish`=1, `view_count`=1, `publish_time`=NULL, `create_time`=NULL, `update_time`=@gp12 WHERE `Id` = 5
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:01:50,109 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:01:50,112 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:01:50,115 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:01:53,078 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:01:53,083 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+UPDATE `project_case` SET `title`=@gp1, `project_contact_phone`=@gp2, `project_address`=@gp3, `project_action_company`=@gp4, `project_design_company`=@gp5, `project_type`=@gp6, `project_name`=@gp7, `project_area`=@gp8, `descript`=@gp9, `type_id`=13, `content`=@gp10, `company_id`=2, `user_id`=NULL, `main_image_path`=@gp11, `is_company_intro`=0, `is_publish`=1, `view_count`=2, `publish_time`=NULL, `create_time`=NULL, `update_time`=@gp12 WHERE `Id` = 5
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:04:16,391 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:04:16,394 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `project_case` AS `Extent1`
+ WHERE ((`Extent1`.`company_id` = @p__linq__0) AND (1 = `Extent1`.`is_publish`)) AND ((`Extent1`.`is_company_intro` IS  NULL) OR (0 = `Extent1`.`is_company_intro`))) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:04:16,394 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:04:16,397 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:04:16,398 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Project1`.`Id`, 
+`Project1`.`title`, 
+`Project1`.`descript`, 
+`Project1`.`type_id`, 
+`Project1`.`content`, 
+`Project1`.`company_id`, 
+`Project1`.`user_id`, 
+`Project1`.`main_image_path`, 
+`Project1`.`is_company_intro`, 
+`Project1`.`is_publish`, 
+`Project1`.`view_count`, 
+`Project1`.`publish_time`, 
+`Project1`.`create_time`, 
+`Project1`.`update_time`, 
+`Project1`.`project_contact_phone`, 
+`Project1`.`project_address`, 
+`Project1`.`project_action_company`, 
+`Project1`.`project_design_company`, 
+`Project1`.`project_type`, 
+`Project1`.`project_name`, 
+`Project1`.`project_area`
+FROM `project_case` AS `Project1`
+ WHERE ((`Project1`.`company_id` = @p__linq__0) AND (1 = `Project1`.`is_publish`)) AND ((`Project1`.`is_company_intro` IS  NULL) OR (0 = `Project1`.`is_company_intro`))
+ ORDER BY 
+`Project1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:04:16,399 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:04:16,401 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:04:16,403 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:04:28,966 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:04:29,445 
+错误描述：
+执行时间:2 毫秒
+-->NonQueryExecuted.Command:
+UPDATE `project_case` SET `title`=@gp1, `project_contact_phone`=NULL, `project_address`=NULL, `project_action_company`=NULL, `project_design_company`=NULL, `project_type`=NULL, `project_name`=NULL, `project_area`=NULL, `descript`=@gp2, `type_id`=13, `content`=@gp3, `company_id`=2, `user_id`=NULL, `main_image_path`=@gp4, `is_company_intro`=1, `is_publish`=1, `view_count`=16, `publish_time`=NULL, `create_time`=@gp5, `update_time`=NULL WHERE `Id` = 4
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:15,730 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:15,857 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:15,988 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:18,701 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:18,705 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+UPDATE `project_case` SET `title`=@gp1, `project_contact_phone`=@gp2, `project_address`=@gp3, `project_action_company`=@gp4, `project_design_company`=@gp5, `project_type`=@gp6, `project_name`=@gp7, `project_area`=@gp8, `descript`=@gp9, `type_id`=13, `content`=@gp10, `company_id`=2, `user_id`=NULL, `main_image_path`=@gp11, `is_company_intro`=0, `is_publish`=1, `view_count`=3, `publish_time`=NULL, `create_time`=NULL, `update_time`=@gp12 WHERE `Id` = 5
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:22,445 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `company` AS `Extent1`) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:22,469 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ ORDER BY 
+`Extent1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:22,471 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:22,504 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:22,510 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:22,511 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:35,060 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`name`, 
+`Extent1`.`introduce_page_id`, 
+`Extent1`.`type_id`, 
+`Extent1`.`address`, 
+`Extent1`.`contact_name`, 
+`Extent1`.`user_id`, 
+`Extent1`.`site_url`, 
+`Extent1`.`qq_number`, 
+`Extent1`.`phone`, 
+`Extent1`.`mobile`, 
+`Extent1`.`city_id`, 
+`Extent1`.`email`, 
+`Extent1`.`company_image_path`, 
+`Extent1`.`logo_path`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `company` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:35,067 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:35,072 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:35,074 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`province`, 
+`Extent1`.`city_name`, 
+`Extent1`.`type`
+FROM `city` AS `Extent1`
+ WHERE `Extent1`.`Id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:35,078 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:35,255 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `project_case` AS `Extent1`
+ WHERE ((`Extent1`.`company_id` = @p__linq__0) AND (1 = `Extent1`.`is_publish`)) AND ((`Extent1`.`is_company_intro` IS  NULL) OR (0 = `Extent1`.`is_company_intro`))) AS `GroupBy1`
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:35,273 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Project1`.`Id`, 
+`Project1`.`title`, 
+`Project1`.`descript`, 
+`Project1`.`type_id`, 
+`Project1`.`content`, 
+`Project1`.`company_id`, 
+`Project1`.`user_id`, 
+`Project1`.`main_image_path`, 
+`Project1`.`is_company_intro`, 
+`Project1`.`is_publish`, 
+`Project1`.`view_count`, 
+`Project1`.`publish_time`, 
+`Project1`.`create_time`, 
+`Project1`.`update_time`, 
+`Project1`.`project_contact_phone`, 
+`Project1`.`project_address`, 
+`Project1`.`project_action_company`, 
+`Project1`.`project_design_company`, 
+`Project1`.`project_type`, 
+`Project1`.`project_name`, 
+`Project1`.`project_area`
+FROM `project_case` AS `Project1`
+ WHERE ((`Project1`.`company_id` = @p__linq__0) AND (1 = `Project1`.`is_publish`)) AND ((`Project1`.`is_company_intro` IS  NULL) OR (0 = `Project1`.`is_company_intro`))
+ ORDER BY 
+`Project1`.`Id` DESC LIMIT 0,20
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:35,276 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`
+FROM `sys_dictionary` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:38,147 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`Id`, 
+`Extent1`.`title`, 
+`Extent1`.`descript`, 
+`Extent1`.`type_id`, 
+`Extent1`.`content`, 
+`Extent1`.`company_id`, 
+`Extent1`.`user_id`, 
+`Extent1`.`main_image_path`, 
+`Extent1`.`is_company_intro`, 
+`Extent1`.`is_publish`, 
+`Extent1`.`view_count`, 
+`Extent1`.`publish_time`, 
+`Extent1`.`create_time`, 
+`Extent1`.`update_time`, 
+`Extent1`.`project_contact_phone`, 
+`Extent1`.`project_address`, 
+`Extent1`.`project_action_company`, 
+`Extent1`.`project_design_company`, 
+`Extent1`.`project_type`, 
+`Extent1`.`project_name`, 
+`Extent1`.`project_area`
+FROM `project_case` AS `Extent1`
+ WHERE `Extent1`.`Id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-01-02 21:05:38,151 
+错误描述：
+执行时间:0 毫秒
+-->NonQueryExecuted.Command:
+UPDATE `project_case` SET `title`=@gp1, `project_contact_phone`=NULL, `project_address`=NULL, `project_action_company`=NULL, `project_design_company`=NULL, `project_type`=NULL, `project_name`=NULL, `project_area`=NULL, `descript`=@gp2, `type_id`=13, `content`=@gp3, `company_id`=2, `user_id`=NULL, `main_image_path`=@gp4, `is_company_intro`=1, `is_publish`=1, `view_count`=17, `publish_time`=NULL, `create_time`=@gp5, `update_time`=NULL WHERE `Id` = 4
+---------------------------------------------------

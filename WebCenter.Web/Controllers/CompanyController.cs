@@ -34,12 +34,11 @@ namespace WebCenter.Web.Controllers
         /// <param name="keyword"></param>
         /// <returns></returns>
         public ActionResult List(int page_index, int page_size, string keyword = "")
-        {
-            
-            Expression<Func<company, bool>> condition = com => true;
+        {            
+            Expression<Func<company, bool>> condition = com => com.introduce_page_id>0;
             if (!string.IsNullOrEmpty(keyword))
             {
-                Expression<Func<company, bool>> tmp = com => com.name.IndexOf(keyword)>-1;
+                Expression<Func<company, bool>> tmp = com => com.name.IndexOf(keyword)>-1&&com.introduce_page_id>0;
                 condition = tmp;
             }
             PagedList<company> list = Uof.IcompanyService.GetAll(condition,new string[2]{"city","sys_dictionary"}).OrderByDescending(item => item.Id).ToPagedList(page_index, page_size);
@@ -91,6 +90,13 @@ namespace WebCenter.Web.Controllers
                                   id = proj.Id,
                                   title = proj.title,
                                   description = proj.descript,
+                                  project_contact_phone = proj.project_contact_phone,
+                                  project_address = proj.project_address,
+                                  project_action_company = proj.project_action_company,
+                                  project_design_company = proj.project_design_company,
+                                  project_type = proj.project_type,
+                                  project_name = proj.project_name,
+                                  project_area = proj.project_area,
                                   type_name = proj.sys_dictionary == null ? "" : proj.sys_dictionary.value,
                                   content=proj.content,
                                   view_count = proj.view_count,
