@@ -70,6 +70,12 @@
           <Property Name="project_type" Type="varchar" MaxLength="255" />
           <Property Name="project_name" Type="varchar" MaxLength="255" />
           <Property Name="project_area" Type="varchar" MaxLength="255" />
+          <Property Name="product_metal" Type="varchar" MaxLength="255" />
+          <Property Name="product_ruler" Type="varchar" MaxLength="255" />
+          <Property Name="product_cence" Type="varchar" MaxLength="255" />
+          <Property Name="product_price" Type="varchar" MaxLength="255" />
+          <Property Name="product_address" Type="varchar" MaxLength="255" />
+          <Property Name="is_product" Type="int" />
           <Property Name="descript" Type="varchar" MaxLength="500" />
           <Property Name="type_id" Type="int" />
           <Property Name="content" Type="text" />
@@ -399,6 +405,12 @@
           <Property Name="project_type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="project_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="project_area" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="product_metal" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="product_ruler" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="product_cence" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="product_price" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="product_address" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="is_product" Type="Int32" />
         </EntityType>
         <EntityType Name="sequence">
           <Key>
@@ -616,6 +628,12 @@
           <EntitySetMapping Name="project_case">
             <EntityTypeMapping TypeName="DataCenter.Entities.project_case">
               <MappingFragment StoreEntitySet="project_case">
+                <ScalarProperty Name="is_product" ColumnName="is_product" />
+                <ScalarProperty Name="product_address" ColumnName="product_address" />
+                <ScalarProperty Name="product_price" ColumnName="product_price" />
+                <ScalarProperty Name="product_cence" ColumnName="product_cence" />
+                <ScalarProperty Name="product_ruler" ColumnName="product_ruler" />
+                <ScalarProperty Name="product_metal" ColumnName="product_metal" />
                 <ScalarProperty Name="project_area" ColumnName="project_area" />
                 <ScalarProperty Name="project_name" ColumnName="project_name" />
                 <ScalarProperty Name="project_type" ColumnName="project_type" />

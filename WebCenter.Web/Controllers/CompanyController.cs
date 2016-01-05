@@ -76,6 +76,7 @@ namespace WebCenter.Web.Controllers
                 {
 
                     project_case proj = com.project_case;
+                    
                     if (proj != null)
                     {
                         var result = new
@@ -85,6 +86,8 @@ namespace WebCenter.Web.Controllers
                               type_name = com.sys_dictionary == null ? "" : com.sys_dictionary.value,
                               city_name = com.city == null ? "" : com.city.city_name,
                               phone = com.phone,
+                              mobile=com.mobile,
+                              address=com.address,
                               introduce_page = new
                               {
                                   id = proj.Id,
@@ -97,6 +100,12 @@ namespace WebCenter.Web.Controllers
                                   project_type = proj.project_type,
                                   project_name = proj.project_name,
                                   project_area = proj.project_area,
+                                  product_metal = proj.product_metal,
+                                  product_ruler = proj.product_ruler,
+                                  product_cence = proj.product_cence,
+                                  product_price = proj.product_price,
+                                  product_address = proj.product_address,
+                                  is_product = proj.is_product,
                                   type_name = proj.sys_dictionary == null ? "" : proj.sys_dictionary.value,
                                   content=proj.content,
                                   view_count = proj.view_count,

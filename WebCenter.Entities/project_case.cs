@@ -105,6 +105,30 @@ namespace WebCenter.Entities
     
         public string project_area { get; set; }
     
+    
+    
+        public string product_metal { get; set; }
+    
+    
+    
+        public string product_ruler { get; set; }
+    
+    
+    
+        public string product_cence { get; set; }
+    
+    
+    
+        public string product_price { get; set; }
+    
+    
+    
+        public string product_address { get; set; }
+    
+    
+    
+        public Nullable<int> is_product { get; set; }
+    
         public virtual ICollection<company> companies { get; set; }
         public virtual company company { get; set; }
         public virtual sys_dictionary sys_dictionary { get; set; }
