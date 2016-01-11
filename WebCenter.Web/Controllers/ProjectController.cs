@@ -58,7 +58,8 @@ namespace WebCenter.Web.Controllers
                     description = item.descript,
                     type_name = item.sys_dictionary == null ? "" : item.sys_dictionary.value,
                     view_count = item.view_count,
-                    main_image_path = item.main_image_path
+                    main_image_path = item.main_image_path,
+                    update_time=item.update_time.GetValueOrDefault(DateTime.Now).ToString("yyyy-MM-dd")
                 };
                 obj.Add(it);
             }
@@ -119,7 +120,8 @@ namespace WebCenter.Web.Controllers
                                 logo_path = company.logo_path,
                                 mobile = _user.mobile,
                                 phone = _user.phone,
-                                address = company.address
+                                address = company.address,
+                                company_phone=company.company_phone
                             };
                             string user_name = "";
                             if (proj.user == null)
@@ -149,6 +151,8 @@ namespace WebCenter.Web.Controllers
                                 product_address = proj.product_address,
                                 is_product = proj.is_product,
                                 type_name = proj.sys_dictionary == null ? "" : proj.sys_dictionary.value,
+                                type_id = proj.sys_dictionary == null ? "0" : proj.sys_dictionary.id.ToString(),
+                                update_time = proj.update_time.GetValueOrDefault(DateTime.Now).ToString("yy-MM-dd"),
                                 content = proj.content,
                                 main_image_path = proj.main_image_path,
                                 user_name = user_name,
@@ -177,6 +181,8 @@ namespace WebCenter.Web.Controllers
                                 product_address = proj.product_address,
                                 is_product = proj.is_product,
                                 type_name = proj.sys_dictionary == null ? "" : proj.sys_dictionary.value,
+                                type_id=proj.sys_dictionary == null ? "0" : proj.sys_dictionary.id.ToString(),
+                                update_time=proj.update_time.GetValueOrDefault(DateTime.Now).ToString("yy-MM-dd"),
                                 content = proj.content,
                                 main_image_path = proj.main_image_path,
                                 user_name = proj.user == null ? "" : proj.user.real_name,
@@ -186,7 +192,8 @@ namespace WebCenter.Web.Controllers
                                     logo_path = "",
                                     mobile = "",
                                     phone = "",
-                                    address = ""
+                                    address = "",
+                                    company_phone=""
                                 }
                             };
                             return Json(obj, JsonRequestBehavior.AllowGet);
@@ -219,6 +226,8 @@ namespace WebCenter.Web.Controllers
                             product_cence = proj.product_cence,
                             product_price = proj.product_price,
                             product_address = proj.product_address,
+                            type_id = proj.sys_dictionary == null ? "0" : proj.sys_dictionary.id.ToString(),
+                            update_time = proj.update_time.GetValueOrDefault(DateTime.Now).ToString("yy-MM-dd"),
                             is_product = proj.is_product,
                             company = new
                             {

@@ -111,6 +111,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             else if (project != null && project.Id == 0)
             {
                 project.create_time = DateTime.Now;
+                project.update_time = DateTime.Now;
                 if (project.view_count == null)
                     project.view_count = 0;
                 if (project.is_publish == null)
@@ -282,6 +283,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             {
                 project_case proj = Uof.Iproject_caseService.GetById(id);
                 proj.is_publish = type;
+                proj.update_time = DateTime.Now;
                 bool b = Uof.Iproject_caseService.UpdateEntity(proj);
                 if (type > 0)
                 {

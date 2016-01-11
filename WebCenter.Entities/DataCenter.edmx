@@ -32,6 +32,7 @@
           <Property Name="city_id" Type="int" />
           <Property Name="email" Type="varchar" MaxLength="50" />
           <Property Name="company_image_path" Type="varchar" MaxLength="255" />
+          <Property Name="company_phone" Type="varchar" MaxLength="255" />
           <Property Name="logo_path" Type="varchar" MaxLength="255" />
           <Property Name="create_time" Type="datetime" Precision="0" />
           <Property Name="update_time" Type="datetime" Precision="0" />
@@ -363,6 +364,7 @@
           <NavigationProperty Name="project_case" Relationship="DataCenter.Entities.company_ibfk_4" FromRole="company" ToRole="project_case" />
           <NavigationProperty Name="project_case1" Relationship="DataCenter.Entities.project_case_ibfk_2" FromRole="company" ToRole="project_case" />
           <NavigationProperty Name="users" Relationship="DataCenter.Entities.user_ibfk_1" FromRole="company" ToRole="user" />
+          <Property Name="company_phone" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="operate_log">
           <Key>
@@ -592,6 +594,7 @@
           <EntitySetMapping Name="companies">
             <EntityTypeMapping TypeName="DataCenter.Entities.company">
               <MappingFragment StoreEntitySet="company">
+                <ScalarProperty Name="company_phone" ColumnName="company_phone" />
                 <ScalarProperty Name="update_time" ColumnName="update_time" />
                 <ScalarProperty Name="create_time" ColumnName="create_time" />
                 <ScalarProperty Name="logo_path" ColumnName="logo_path" />

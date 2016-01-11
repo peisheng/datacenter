@@ -97,7 +97,8 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                     _company.logo_path = com.logo_path;
                     _company.site_url = com.site_url;
                     _company.type_id = com.type_id;
-                    _company.update_time = DateTime.Now;                   
+                    _company.update_time = DateTime.Now;
+                    _company.company_phone = com.company_phone;
                      
                     Uof.IcompanyService.UpdateEntity(_company);
 
@@ -114,7 +115,8 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                     _company.logo_path = com.logo_path;
                     _company.site_url = com.site_url;
                     _company.type_id = com.type_id;
-                    _company.create_time = DateTime.Now;                 
+                    _company.create_time = DateTime.Now;
+                    _company.company_phone = com.company_phone;
                     _company = Uof.IcompanyService.AddEntity(_company);
                     AddLog("添加企业信息 ID:" + _company.Id.ToString(), "添加企业信息", "成功");
                 }
@@ -158,6 +160,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                         address = com.address,
                         site_url = com.site_url,
                         logo_path = com.logo_path,
+                        company_phone=com.company_phone,
                         contact_info = new
                         {
                             user_name = com.user.user_name,
@@ -184,6 +187,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                         address = com.address,
                         site_url = com.site_url,
                         logo_path = com.logo_path,
+                        company_phone = com.company_phone,
                         contact_info = ""
                     };
                     return Json(obj, JsonRequestBehavior.AllowGet); 
@@ -211,6 +215,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                 {
                     Expression<Func<user, bool>> tmp = _user => (_user.user_name.IndexOf(keyword) > -1 || _user.real_name.IndexOf(keyword) > -1) && _user.company_id == company_id;
                     condition = tmp;
+
                 }
                 else
                 {

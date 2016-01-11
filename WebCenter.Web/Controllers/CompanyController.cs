@@ -33,12 +33,13 @@ namespace WebCenter.Web.Controllers
         /// <param name="page_size"></param>
         /// <param name="keyword"></param>
         /// <returns></returns>
-        public ActionResult List(int page_index, int page_size, string keyword = "")
+        public ActionResult List(int page_index, int page_size, string keyword = "",int type_id=0)
         {            
-            Expression<Func<company, bool>> condition = com => com.introduce_page_id>0;
+            Expression<Func<company, bool>> condition= condition = com => com.introduce_page_id>0;
+            
             if (!string.IsNullOrEmpty(keyword))
             {
-                Expression<Func<company, bool>> tmp = com => com.name.IndexOf(keyword)>-1&&com.introduce_page_id>0;
+                Expression<Func<company, bool>> tmp = com => com.name.IndexOf(keyword)>-1&&com.introduce_page_id>0;                
                 condition = tmp;
             }
             PagedList<company> list = Uof.IcompanyService.GetAll(condition,new string[2]{"city","sys_dictionary"}).OrderByDescending(item => item.Id).ToPagedList(page_index, page_size);
@@ -88,6 +89,7 @@ namespace WebCenter.Web.Controllers
                               phone = com.phone,
                               mobile=com.mobile,
                               address=com.address,
+                              company_phone=com.company_phone,
                               introduce_page = new
                               {
                                   id = proj.Id,
@@ -105,6 +107,7 @@ namespace WebCenter.Web.Controllers
                                   product_cence = proj.product_cence,
                                   product_price = proj.product_price,
                                   product_address = proj.product_address,
+
                                   is_product = proj.is_product,
                                   type_name = proj.sys_dictionary == null ? "" : proj.sys_dictionary.value,
                                   content=proj.content,
@@ -123,6 +126,7 @@ namespace WebCenter.Web.Controllers
                             type_name = com.sys_dictionary == null ? "" : com.sys_dictionary.value,
                             city_name = com.city == null ? "" : com.city.city_name,
                             phone = com.phone,
+                            company_phone=com.company_phone,
                             introduce_page = new { }
                         };
                         return Json(result, JsonRequestBehavior.AllowGet); 

@@ -90,6 +90,10 @@ namespace WebCenter.Entities
     
         public Nullable<System.DateTime> update_time { get; set; }
     
+    
+    
+        public string company_phone { get; set; }
+    
         public virtual city city { get; set; }
         public virtual sys_dictionary sys_dictionary { get; set; }
         public virtual user user { get; set; }
