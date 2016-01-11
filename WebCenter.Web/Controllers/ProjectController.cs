@@ -188,12 +188,12 @@ namespace WebCenter.Web.Controllers
                                 user_name = proj.user == null ? "" : proj.user.real_name,
                                 company = new
                                 {
-                                    name = "",
-                                    logo_path = "",
+                                    name = company.name,
+                                    logo_path = company.logo_path,
                                     mobile = "",
                                     phone = "",
-                                    address = "",
-                                    company_phone=""
+                                    address = company.address,
+                                    company_phone=company.company_phone
                                 }
                             };
                             return Json(obj, JsonRequestBehavior.AllowGet);
