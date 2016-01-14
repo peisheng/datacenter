@@ -52,8 +52,10 @@ namespace WebCenter.Web.Controllers
                     {
                         Directory.CreateDirectory(realPath);
                     }
+                    string ext=postFile.FileName.Substring(postFile.FileName.LastIndexOf("."));
                     string sPath = realPath + file_name;
-                    string dPath = realPath + guid + "_450_300" + postFile.FileName.Substring(postFile.FileName.LastIndexOf("."));
+                    string dPath = realPath + guid + "_450_300" + ext ;
+                    string smallPath = realPath + guid + "_160_120" + ext;
                     postFile.SaveAs(realPath + file_name);
                     file file = new Entities.file();
                     file.file_path = returnPath;
@@ -67,7 +69,9 @@ namespace WebCenter.Web.Controllers
                         id = file.id,
                         file_name = file.file_name
                     };
-                    bool isZipSuccess = ImageHelper.GetPicThumbnailWidth(sPath, dPath, 300, 450, 100);
+                    ImageHelper.GetPicThumbnailWidth(sPath,smallPath,120,160,80);
+                    bool isZipSuccess = ImageHelper.GetPicThumbnailWidth(sPath, dPath, 300, 450, 80);
+                    
                     if (!isZipSuccess)
                     {
                         LogHelper.LogError("图片压缩失败");

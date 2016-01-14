@@ -84,6 +84,7 @@
     <Compile Include="DistinctExtensions.cs" />
     <Compile Include="Dynamic.cs" />
     <Compile Include="Email.cs" />
+    <Compile Include="FileHelper.cs" />
     <Compile Include="HashPassword.cs" />
     <Compile Include="ImageHelper.cs" />
     <Compile Include="LogHelper.cs" />
