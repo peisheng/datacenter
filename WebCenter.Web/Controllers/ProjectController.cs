@@ -116,6 +116,7 @@ namespace WebCenter.Web.Controllers
 
                             var comobj = new
                             {
+                                id=company.Id,
                                 name = company.name,
                                 logo_path = company.logo_path,
                                 mobile = _user.mobile,
@@ -188,6 +189,7 @@ namespace WebCenter.Web.Controllers
                                 user_name = proj.user == null ? "" : proj.user.real_name,
                                 company = new
                                 {
+                                    id=company.Id,
                                     name = company.name,
                                     logo_path = company.logo_path,
                                     mobile = "",
@@ -231,6 +233,7 @@ namespace WebCenter.Web.Controllers
                             is_product = proj.is_product,
                             company = new
                             {
+                                id="",
                                 name = "",
                                 logo_path = "",
                                 mobile = "",

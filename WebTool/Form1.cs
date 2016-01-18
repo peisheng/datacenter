@@ -28,12 +28,12 @@ namespace WebTool
                foreach (string s in list)
                {
                    
-                   if (s.IndexOf("_450_300") <=-1)
+                   if (s.IndexOf("_450_300") <=-1&&s.IndexOf("_160_120")<=-1)
                    {
                        string smallPath = s.Replace(".", "_160_120.");
                        string dPath = s.Replace(".", "_450_300.");
-                       ImageHelper.GetPicThumbnailWidth(s, smallPath, 120, 160, 80);
-                       bool isZipSuccess = ImageHelper.GetPicThumbnailWidth(s, dPath, 300, 450, 80);
+                       ImageHelper.GetPicThumbnailWidth(s, smallPath, 120, 160, 100);
+                       bool isZipSuccess = ImageHelper.GetPicThumbnailWidth(s, dPath, 300, 450, 100);
                    }
                   
                }

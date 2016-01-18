@@ -89,6 +89,7 @@ namespace WebCenter.Web.Controllers
                               phone = com.phone,
                               mobile=com.mobile,
                               address=com.address,
+                              logo_path=com.logo_path,
                               company_phone=com.company_phone,
                               introduce_page = new
                               {
@@ -126,6 +127,7 @@ namespace WebCenter.Web.Controllers
                             type_name = com.sys_dictionary == null ? "" : com.sys_dictionary.value,
                             city_name = com.city == null ? "" : com.city.city_name,
                             phone = com.phone,
+                            logo_path = com.logo_path,
                             company_phone=com.company_phone,
                             introduce_page = new { }
                         };

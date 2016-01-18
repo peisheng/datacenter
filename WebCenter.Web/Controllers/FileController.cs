@@ -69,8 +69,8 @@ namespace WebCenter.Web.Controllers
                         id = file.id,
                         file_name = file.file_name
                     };
-                    ImageHelper.GetPicThumbnailWidth(sPath,smallPath,120,160,80);
-                    bool isZipSuccess = ImageHelper.GetPicThumbnailWidth(sPath, dPath, 300, 450, 80);
+                    ImageHelper.GetPicThumbnailWidth(sPath,smallPath,120,160,100);
+                    bool isZipSuccess = ImageHelper.GetPicThumbnailWidth(sPath, dPath, 300, 450, 100);
                     
                     if (!isZipSuccess)
                     {
