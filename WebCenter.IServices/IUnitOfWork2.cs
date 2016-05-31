@@ -8,19 +8,21 @@ namespace WebCenter.IServices
     public partial interface IUnitOfWork
 {  
 	
-	  IcityService IcityService{get;set;} 
+	  IcategoryService IcategoryService{get;set;} 
 	
-	  IcompanyService IcompanyService{get;set;} 
+	  Icontact_msgService Icontact_msgService{get;set;} 
 	
-	  IfileService IfileService{get;set;} 
+	  IdictionaryService IdictionaryService{get;set;} 
+	
+	  IimageService IimageService{get;set;} 
 	
 	  Ioperate_logService Ioperate_logService{get;set;} 
 	
-	  Iproject_caseService Iproject_caseService{get;set;} 
+	  IpageService IpageService{get;set;} 
 	
-	  IsequenceService IsequenceService{get;set;} 
+	  IproductService IproductService{get;set;} 
 	
-	  Isys_dictionaryService Isys_dictionaryService{get;set;} 
+	  IsettingService IsettingService{get;set;} 
 	
 	  Isys_userService Isys_userService{get;set;} 
 	

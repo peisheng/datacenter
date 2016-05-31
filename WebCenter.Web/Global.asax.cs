@@ -21,7 +21,7 @@ namespace WebCenter.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            WeixinConfig.Register();            
+                        
             DbInterception.Add(new Common.EFIntercepterLogging());
         }
 

@@ -25,14 +25,15 @@ namespace WebCenter.Entities
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<city> cities { get; set; }
-        public virtual DbSet<company> companies { get; set; }
+        public virtual DbSet<category> categories { get; set; }
+        public virtual DbSet<contact_msg> contact_msg { get; set; }
+        public virtual DbSet<dictionary> dictionaries { get; set; }
+        public virtual DbSet<image> images { get; set; }
         public virtual DbSet<operate_log> operate_log { get; set; }
-        public virtual DbSet<project_case> project_case { get; set; }
-        public virtual DbSet<sequence> sequences { get; set; }
-        public virtual DbSet<sys_dictionary> sys_dictionary { get; set; }
+        public virtual DbSet<page> pages { get; set; }
+        public virtual DbSet<product> products { get; set; }
+        public virtual DbSet<setting> settings { get; set; }
         public virtual DbSet<sys_user> sys_user { get; set; }
         public virtual DbSet<user> users { get; set; }
-        public virtual DbSet<file> files { get; set; }
     }
 }

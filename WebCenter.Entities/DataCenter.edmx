@@ -5,52 +5,54 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="DataCenter.Entities.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="city">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="province" Type="varchar" MaxLength="255" />
-          <Property Name="city_name" Type="varchar" MaxLength="255" />
-          <Property Name="type" Type="varchar" MaxLength="255" />
-        </EntityType>
-        <EntityType Name="company">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="name" Type="varchar" MaxLength="255" />
-          <Property Name="introduce_page_id" Type="int" />
-          <Property Name="type_id" Type="int" />
-          <Property Name="address" Type="varchar" MaxLength="255" />
-          <Property Name="contact_name" Type="varchar" MaxLength="50" />
-          <Property Name="user_id" Type="int" />
-          <Property Name="site_url" Type="varchar" MaxLength="255" />
-          <Property Name="qq_number" Type="varchar" MaxLength="20" />
-          <Property Name="phone" Type="varchar" MaxLength="20" />
-          <Property Name="mobile" Type="varchar" MaxLength="20" />
-          <Property Name="city_id" Type="int" />
-          <Property Name="email" Type="varchar" MaxLength="50" />
-          <Property Name="company_image_path" Type="varchar" MaxLength="255" />
-          <Property Name="company_phone" Type="varchar" MaxLength="255" />
-          <Property Name="logo_path" Type="varchar" MaxLength="255" />
-          <Property Name="create_time" Type="datetime" Precision="0" />
-          <Property Name="update_time" Type="datetime" Precision="0" />
-        </EntityType>
-        <EntityType Name="file">
+        <EntityType Name="category">
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="int" Nullable="false" />
-          <Property Name="file_name" Type="varchar" MaxLength="255" />
-          <Property Name="file_path" Type="varchar" MaxLength="255" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="category_name" Type="varchar" MaxLength="255" />
+          <Property Name="parent_id" Type="int" />
+          <Property Name="sort" Type="int" />
+        </EntityType>
+        <EntityType Name="contact_msg">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="255" />
+          <Property Name="email" Type="varchar" MaxLength="255" />
+          <Property Name="phone" Type="varchar" MaxLength="255" />
+          <Property Name="country_id" Type="varchar" MaxLength="255" />
+          <Property Name="msg_type" Type="varchar" MaxLength="255" />
+          <Property Name="content" Type="varchar" MaxLength="255" />
+          <Property Name="create_time" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="dictionary">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="value" Type="varchar" MaxLength="255" />
+          <Property Name="group" Type="varchar" MaxLength="50" />
+          <Property Name="date_created" Type="datetime" Precision="0" />
+          <Property Name="date_updated" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="image">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="image_name" Type="varchar" MaxLength="255" />
+          <Property Name="image_path" Type="varchar" MaxLength="255" />
+          <Property Name="product_id" Type="int" />
           <Property Name="create_time" Type="datetime" Precision="0" />
         </EntityType>
         <EntityType Name="operate_log">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="name" Type="varchar" MaxLength="50" />
           <Property Name="desript" Type="varchar" MaxLength="200" />
           <Property Name="user_name" Type="varchar" MaxLength="50" />
@@ -58,61 +60,48 @@
           <Property Name="result" Type="varchar" MaxLength="20" />
           <Property Name="create_time" Type="datetime" Precision="0" />
         </EntityType>
-        <EntityType Name="project_case">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="title" Type="varchar" MaxLength="255" />
-          <Property Name="project_contact_phone" Type="varchar" MaxLength="13" />
-          <Property Name="project_address" Type="varchar" MaxLength="255" />
-          <Property Name="project_action_company" Type="varchar" MaxLength="255" />
-          <Property Name="project_design_company" Type="varchar" MaxLength="255" />
-          <Property Name="project_type" Type="varchar" MaxLength="255" />
-          <Property Name="project_name" Type="varchar" MaxLength="255" />
-          <Property Name="project_area" Type="varchar" MaxLength="255" />
-          <Property Name="product_metal" Type="varchar" MaxLength="255" />
-          <Property Name="product_ruler" Type="varchar" MaxLength="255" />
-          <Property Name="product_cence" Type="varchar" MaxLength="255" />
-          <Property Name="product_price" Type="varchar" MaxLength="255" />
-          <Property Name="product_address" Type="varchar" MaxLength="255" />
-          <Property Name="is_product" Type="int" />
-          <Property Name="descript" Type="varchar" MaxLength="500" />
-          <Property Name="type_id" Type="int" />
-          <Property Name="content" Type="text" />
-          <Property Name="company_id" Type="int" />
-          <Property Name="user_id" Type="int" />
-          <Property Name="main_image_path" Type="varchar" MaxLength="255" />
-          <Property Name="is_company_intro" Type="int" />
-          <Property Name="is_publish" Type="int" />
-          <Property Name="view_count" Type="int" />
-          <Property Name="publish_time" Type="datetime" Precision="0" />
-          <Property Name="create_time" Type="datetime" Precision="0" />
-          <Property Name="update_time" Type="datetime" Precision="0" />
-        </EntityType>
-        <EntityType Name="sequence">
-          <Key>
-            <PropertyRef Name="name" />
-          </Key>
-          <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="id" Type="ubigint" Nullable="false" />
-        </EntityType>
-        <EntityType Name="sys_dictionary">
+        <EntityType Name="page">
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="int" Nullable="false" />
-          <Property Name="name" Type="varchar" MaxLength="50" />
-          <Property Name="value" Type="varchar" MaxLength="255" />
-          <Property Name="group" Type="varchar" MaxLength="50" />
-          <Property Name="create_time" Type="datetime" Precision="0" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="page_name" Type="varchar" MaxLength="255" />
+          <Property Name="page_title" Type="varchar" MaxLength="255" />
+          <Property Name="page_content" Type="text" />
           <Property Name="update_time" Type="datetime" Precision="0" />
+          <Property Name="create_time" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="product">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="product_name" Type="varchar" MaxLength="255" />
+          <Property Name="product_desc" Type="varchar" MaxLength="255" />
+          <Property Name="country" Type="varchar" MaxLength="255" />
+          <Property Name="amazon_url" Type="varchar" MaxLength="500" />
+          <Property Name="main_image_id" Type="int" />
+          <Property Name="catoryid" Type="int" />
+          <Property Name="product_specification" Type="text" />
+          <Property Name="product_features" Type="text" />
+          <Property Name="seo_title" Type="varchar" MaxLength="255" />
+          <Property Name="seo_keyword" Type="varchar" MaxLength="255" />
+          <Property Name="seo_desc" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="setting">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="255" />
+          <Property Name="value" Type="longtext" />
+          <Property Name="group" Type="varchar" MaxLength="255" />
         </EntityType>
         <EntityType Name="sys_user">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="user_name" Type="varchar" MaxLength="50" />
           <Property Name="password" Type="varchar" MaxLength="124" />
           <Property Name="hash_code" Type="varchar" MaxLength="20" />
@@ -123,7 +112,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="user_name" Type="varchar" MaxLength="50" />
           <Property Name="real_name" Type="varchar" MaxLength="50" />
           <Property Name="qq_number" Type="varchar" MaxLength="20" />
@@ -141,236 +130,82 @@
           <Property Name="create_time" Type="datetime" Precision="0" />
           <Property Name="update_time" Type="datetime" Precision="0" />
         </EntityType>
-        <Association Name="company_ibfk_1">
-          <End Role="sys_dictionary" Type="Self.sys_dictionary" Multiplicity="0..1" />
-          <End Role="company" Type="Self.company" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="sys_dictionary">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="company">
-              <PropertyRef Name="type_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="company_ibfk_2">
-          <End Role="user" Type="Self.user" Multiplicity="0..1" />
-          <End Role="company" Type="Self.company" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="user">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="company">
-              <PropertyRef Name="user_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="company_ibfk_3">
-          <End Role="city" Type="Self.city" Multiplicity="0..1" />
-          <End Role="company" Type="Self.company" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="city">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="company">
-              <PropertyRef Name="city_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="company_ibfk_4">
-          <End Role="project_case" Type="Self.project_case" Multiplicity="0..1" />
-          <End Role="company" Type="Self.company" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="project_case">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="company">
-              <PropertyRef Name="introduce_page_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="project_case_ibfk_1">
-          <End Role="sys_dictionary" Type="Self.sys_dictionary" Multiplicity="0..1" />
-          <End Role="project_case" Type="Self.project_case" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="sys_dictionary">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="project_case">
-              <PropertyRef Name="type_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="project_case_ibfk_2">
-          <End Role="company" Type="Self.company" Multiplicity="0..1" />
-          <End Role="project_case" Type="Self.project_case" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="company">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="project_case">
-              <PropertyRef Name="company_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="project_case_ibfk_3">
-          <End Role="user" Type="Self.user" Multiplicity="0..1" />
-          <End Role="project_case" Type="Self.project_case" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="user">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="project_case">
-              <PropertyRef Name="user_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="user_ibfk_1">
-          <End Role="company" Type="Self.company" Multiplicity="0..1" />
-          <End Role="user" Type="Self.user" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="company">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="user">
-              <PropertyRef Name="company_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="DataCenterEntitiesStoreContainer">
-          <EntitySet Name="city" EntityType="Self.city" Schema="todaystart" store:Type="Tables" />
-          <EntitySet Name="company" EntityType="Self.company" Schema="todaystart" store:Type="Tables" />
-          <EntitySet Name="file" EntityType="Self.file" Schema="todaystart" store:Type="Tables" />
-          <EntitySet Name="operate_log" EntityType="Self.operate_log" Schema="todaystart" store:Type="Tables" />
-          <EntitySet Name="project_case" EntityType="Self.project_case" Schema="todaystart" store:Type="Tables" />
-          <EntitySet Name="sequence" EntityType="Self.sequence" Schema="todaystart" store:Type="Tables" />
-          <EntitySet Name="sys_dictionary" EntityType="Self.sys_dictionary" Schema="todaystart" store:Type="Tables" />
-          <EntitySet Name="sys_user" EntityType="Self.sys_user" Schema="todaystart" store:Type="Tables" />
-          <EntitySet Name="user" EntityType="Self.user" Schema="todaystart" store:Type="Tables" />
-          <AssociationSet Name="company_ibfk_1" Association="Self.company_ibfk_1">
-            <End Role="sys_dictionary" EntitySet="sys_dictionary" />
-            <End Role="company" EntitySet="company" />
-          </AssociationSet>
-          <AssociationSet Name="company_ibfk_2" Association="Self.company_ibfk_2">
-            <End Role="user" EntitySet="user" />
-            <End Role="company" EntitySet="company" />
-          </AssociationSet>
-          <AssociationSet Name="company_ibfk_3" Association="Self.company_ibfk_3">
-            <End Role="city" EntitySet="city" />
-            <End Role="company" EntitySet="company" />
-          </AssociationSet>
-          <AssociationSet Name="company_ibfk_4" Association="Self.company_ibfk_4">
-            <End Role="project_case" EntitySet="project_case" />
-            <End Role="company" EntitySet="company" />
-          </AssociationSet>
-          <AssociationSet Name="project_case_ibfk_1" Association="Self.project_case_ibfk_1">
-            <End Role="sys_dictionary" EntitySet="sys_dictionary" />
-            <End Role="project_case" EntitySet="project_case" />
-          </AssociationSet>
-          <AssociationSet Name="project_case_ibfk_2" Association="Self.project_case_ibfk_2">
-            <End Role="company" EntitySet="company" />
-            <End Role="project_case" EntitySet="project_case" />
-          </AssociationSet>
-          <AssociationSet Name="project_case_ibfk_3" Association="Self.project_case_ibfk_3">
-            <End Role="user" EntitySet="user" />
-            <End Role="project_case" EntitySet="project_case" />
-          </AssociationSet>
-          <AssociationSet Name="user_ibfk_1" Association="Self.user_ibfk_1">
-            <End Role="company" EntitySet="company" />
-            <End Role="user" EntitySet="user" />
-          </AssociationSet>
+          <EntitySet Name="category" EntityType="Self.category" Schema="rainbrace" store:Type="Tables" />
+          <EntitySet Name="contact_msg" EntityType="Self.contact_msg" Schema="rainbrace" store:Type="Tables" />
+          <EntitySet Name="dictionary" EntityType="Self.dictionary" Schema="rainbrace" store:Type="Tables" />
+          <EntitySet Name="image" EntityType="Self.image" Schema="rainbrace" store:Type="Tables" />
+          <EntitySet Name="operate_log" EntityType="Self.operate_log" Schema="rainbrace" store:Type="Tables" />
+          <EntitySet Name="page" EntityType="Self.page" Schema="rainbrace" store:Type="Tables" />
+          <EntitySet Name="product" EntityType="Self.product" Schema="rainbrace" store:Type="Tables" />
+          <EntitySet Name="setting" EntityType="Self.setting" Schema="rainbrace" store:Type="Tables" />
+          <EntitySet Name="sys_user" EntityType="Self.sys_user" Schema="rainbrace" store:Type="Tables" />
+          <EntitySet Name="user" EntityType="Self.user" Schema="rainbrace" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DataCenter.Entities" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="cities" EntityType="DataCenter.Entities.city" />
-          <EntitySet Name="companies" EntityType="DataCenter.Entities.company" />
+          <EntitySet Name="categories" EntityType="DataCenter.Entities.category" />
+          <EntitySet Name="contact_msg" EntityType="DataCenter.Entities.contact_msg" />
+          <EntitySet Name="dictionaries" EntityType="DataCenter.Entities.dictionary" />
+          <EntitySet Name="images" EntityType="DataCenter.Entities.image" />
           <EntitySet Name="operate_log" EntityType="DataCenter.Entities.operate_log" />
-          <EntitySet Name="project_case" EntityType="DataCenter.Entities.project_case" />
-          <EntitySet Name="sequences" EntityType="DataCenter.Entities.sequence" />
-          <EntitySet Name="sys_dictionary" EntityType="DataCenter.Entities.sys_dictionary" />
+          <EntitySet Name="pages" EntityType="DataCenter.Entities.page" />
+          <EntitySet Name="products" EntityType="DataCenter.Entities.product" />
+          <EntitySet Name="settings" EntityType="DataCenter.Entities.setting" />
           <EntitySet Name="sys_user" EntityType="DataCenter.Entities.sys_user" />
           <EntitySet Name="users" EntityType="DataCenter.Entities.user" />
-          <AssociationSet Name="company_ibfk_3" Association="DataCenter.Entities.company_ibfk_3">
-            <End Role="city" EntitySet="cities" />
-            <End Role="company" EntitySet="companies" />
-          </AssociationSet>
-          <AssociationSet Name="company_ibfk_1" Association="DataCenter.Entities.company_ibfk_1">
-            <End Role="sys_dictionary" EntitySet="sys_dictionary" />
-            <End Role="company" EntitySet="companies" />
-          </AssociationSet>
-          <AssociationSet Name="company_ibfk_2" Association="DataCenter.Entities.company_ibfk_2">
-            <End Role="user" EntitySet="users" />
-            <End Role="company" EntitySet="companies" />
-          </AssociationSet>
-          <AssociationSet Name="company_ibfk_4" Association="DataCenter.Entities.company_ibfk_4">
-            <End Role="project_case" EntitySet="project_case" />
-            <End Role="company" EntitySet="companies" />
-          </AssociationSet>
-          <AssociationSet Name="project_case_ibfk_2" Association="DataCenter.Entities.project_case_ibfk_2">
-            <End Role="company" EntitySet="companies" />
-            <End Role="project_case" EntitySet="project_case" />
-          </AssociationSet>
-          <AssociationSet Name="project_case_ibfk_1" Association="DataCenter.Entities.project_case_ibfk_1">
-            <End Role="sys_dictionary" EntitySet="sys_dictionary" />
-            <End Role="project_case" EntitySet="project_case" />
-          </AssociationSet>
-          <AssociationSet Name="project_case_ibfk_3" Association="DataCenter.Entities.project_case_ibfk_3">
-            <End Role="user" EntitySet="users" />
-            <End Role="project_case" EntitySet="project_case" />
-          </AssociationSet>
-          <EntitySet Name="files" EntityType="DataCenter.Entities.file" />
-          <AssociationSet Name="user_ibfk_1" Association="DataCenter.Entities.user_ibfk_1">
-            <End Role="company" EntitySet="companies" />
-            <End Role="user" EntitySet="users" />
-          </AssociationSet>
         </EntityContainer>
-        <EntityType Name="city">
+        <EntityType Name="category">
           <Key>
-            <PropertyRef Name="Id" />
+            <PropertyRef Name="id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="province" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="city_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="companies" Relationship="DataCenter.Entities.company_ibfk_3" FromRole="city" ToRole="company" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="category_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="parent_id" Type="Int32" />
+          <Property Name="sort" Type="Int32" />
         </EntityType>
-        <EntityType Name="company">
+        <EntityType Name="contact_msg">
           <Key>
-            <PropertyRef Name="Id" />
+            <PropertyRef Name="id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="introduce_page_id" Type="Int32" />
-          <Property Name="type_id" Type="Int32" />
-          <Property Name="address" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="contact_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="user_id" Type="Int32" />
-          <Property Name="site_url" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="qq_number" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <Property Name="phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <Property Name="mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <Property Name="city_id" Type="Int32" />
-          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="company_image_path" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="logo_path" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="phone" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="country_id" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="msg_type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="content" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="create_time" Type="DateTime" />
-          <Property Name="update_time" Type="DateTime" />
-          <NavigationProperty Name="city" Relationship="DataCenter.Entities.company_ibfk_3" FromRole="company" ToRole="city" />
-          <NavigationProperty Name="sys_dictionary" Relationship="DataCenter.Entities.company_ibfk_1" FromRole="company" ToRole="sys_dictionary" />
-          <NavigationProperty Name="user" Relationship="DataCenter.Entities.company_ibfk_2" FromRole="company" ToRole="user" />
-          <NavigationProperty Name="project_case" Relationship="DataCenter.Entities.company_ibfk_4" FromRole="company" ToRole="project_case" />
-          <NavigationProperty Name="project_case1" Relationship="DataCenter.Entities.project_case_ibfk_2" FromRole="company" ToRole="project_case" />
-          <NavigationProperty Name="users" Relationship="DataCenter.Entities.user_ibfk_1" FromRole="company" ToRole="user" />
-          <Property Name="company_phone" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="dictionary">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="value" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="group" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="date_created" Type="DateTime" />
+          <Property Name="date_updated" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="image">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="image_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="image_path" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="product_id" Type="Int32" />
+          <Property Name="create_time" Type="DateTime" />
         </EntityType>
         <EntityType Name="operate_log">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="desript" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
           <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
@@ -378,67 +213,48 @@
           <Property Name="result" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="create_time" Type="DateTime" />
         </EntityType>
-        <EntityType Name="project_case">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="title" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="descript" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
-          <Property Name="type_id" Type="Int32" />
-          <Property Name="content" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
-          <Property Name="company_id" Type="Int32" />
-          <Property Name="user_id" Type="Int32" />
-          <Property Name="main_image_path" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="is_company_intro" Type="Int32" />
-          <Property Name="is_publish" Type="Int32" />
-          <Property Name="view_count" Type="Int32" />
-          <Property Name="publish_time" Type="DateTime" />
-          <Property Name="create_time" Type="DateTime" />
-          <Property Name="update_time" Type="DateTime" />
-          <NavigationProperty Name="companies" Relationship="DataCenter.Entities.company_ibfk_4" FromRole="project_case" ToRole="company" />
-          <NavigationProperty Name="company" Relationship="DataCenter.Entities.project_case_ibfk_2" FromRole="project_case" ToRole="company" />
-          <NavigationProperty Name="sys_dictionary" Relationship="DataCenter.Entities.project_case_ibfk_1" FromRole="project_case" ToRole="sys_dictionary" />
-          <NavigationProperty Name="user" Relationship="DataCenter.Entities.project_case_ibfk_3" FromRole="project_case" ToRole="user" />
-          <Property Name="project_contact_phone" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
-          <Property Name="project_address" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="project_action_company" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="project_design_company" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="project_type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="project_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="project_area" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="product_metal" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="product_ruler" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="product_cence" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="product_price" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="product_address" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="is_product" Type="Int32" />
-        </EntityType>
-        <EntityType Name="sequence">
-          <Key>
-            <PropertyRef Name="name" />
-          </Key>
-          <Property Name="name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="id" Type="Decimal" Nullable="false" />
-        </EntityType>
-        <EntityType Name="sys_dictionary">
+        <EntityType Name="page">
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
-          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="value" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="group" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="create_time" Type="DateTime" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="page_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="page_title" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="page_content" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
           <Property Name="update_time" Type="DateTime" />
-          <NavigationProperty Name="companies" Relationship="DataCenter.Entities.company_ibfk_1" FromRole="sys_dictionary" ToRole="company" />
-          <NavigationProperty Name="project_case" Relationship="DataCenter.Entities.project_case_ibfk_1" FromRole="sys_dictionary" ToRole="project_case" />
+          <Property Name="create_time" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="product">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="product_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="product_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="country" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="amazon_url" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="main_image_id" Type="Int32" />
+          <Property Name="catoryid" Type="Int32" />
+          <Property Name="product_specification" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="product_features" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="seo_title" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="seo_keyword" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="seo_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="setting">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="value" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+          <Property Name="group" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="sys_user">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="password" Type="String" MaxLength="124" FixedLength="false" Unicode="false" />
           <Property Name="hash_code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
@@ -449,7 +265,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="real_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="qq_number" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
@@ -466,152 +282,57 @@
           <Property Name="last_login_time" Type="DateTime" />
           <Property Name="create_time" Type="DateTime" />
           <Property Name="update_time" Type="DateTime" />
-          <NavigationProperty Name="companies" Relationship="DataCenter.Entities.company_ibfk_2" FromRole="user" ToRole="company" />
-          <NavigationProperty Name="project_case" Relationship="DataCenter.Entities.project_case_ibfk_3" FromRole="user" ToRole="project_case" />
-          <NavigationProperty Name="company" Relationship="DataCenter.Entities.user_ibfk_1" FromRole="user" ToRole="company" />
         </EntityType>
-        <Association Name="company_ibfk_3">
-          <End Type="DataCenter.Entities.city" Role="city" Multiplicity="0..1" />
-          <End Type="DataCenter.Entities.company" Role="company" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="city">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="company">
-              <PropertyRef Name="city_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="company_ibfk_1">
-          <End Type="DataCenter.Entities.sys_dictionary" Role="sys_dictionary" Multiplicity="0..1" />
-          <End Type="DataCenter.Entities.company" Role="company" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="sys_dictionary">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="company">
-              <PropertyRef Name="type_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="company_ibfk_2">
-          <End Type="DataCenter.Entities.user" Role="user" Multiplicity="0..1" />
-          <End Type="DataCenter.Entities.company" Role="company" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="user">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="company">
-              <PropertyRef Name="user_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="company_ibfk_4">
-          <End Type="DataCenter.Entities.project_case" Role="project_case" Multiplicity="0..1" />
-          <End Type="DataCenter.Entities.company" Role="company" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="project_case">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="company">
-              <PropertyRef Name="introduce_page_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="project_case_ibfk_2">
-          <End Type="DataCenter.Entities.company" Role="company" Multiplicity="0..1" />
-          <End Type="DataCenter.Entities.project_case" Role="project_case" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="company">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="project_case">
-              <PropertyRef Name="company_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="project_case_ibfk_1">
-          <End Type="DataCenter.Entities.sys_dictionary" Role="sys_dictionary" Multiplicity="0..1" />
-          <End Type="DataCenter.Entities.project_case" Role="project_case" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="sys_dictionary">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="project_case">
-              <PropertyRef Name="type_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="project_case_ibfk_3">
-          <End Type="DataCenter.Entities.user" Role="user" Multiplicity="0..1" />
-          <End Type="DataCenter.Entities.project_case" Role="project_case" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="user">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="project_case">
-              <PropertyRef Name="user_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <EntityType Name="file">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
-          <Property Name="file_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="file_path" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="create_time" Type="DateTime" />
-        </EntityType>
-        <Association Name="user_ibfk_1">
-          <End Type="DataCenter.Entities.company" Role="company" Multiplicity="0..1" />
-          <End Type="DataCenter.Entities.user" Role="user" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="company">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="user">
-              <PropertyRef Name="company_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="DataCenterEntitiesStoreContainer" CdmEntityContainer="Entities">
-          <EntitySetMapping Name="cities">
-            <EntityTypeMapping TypeName="DataCenter.Entities.city">
-              <MappingFragment StoreEntitySet="city">
-                <ScalarProperty Name="type" ColumnName="type" />
-                <ScalarProperty Name="city_name" ColumnName="city_name" />
-                <ScalarProperty Name="province" ColumnName="province" />
-                <ScalarProperty Name="Id" ColumnName="Id" />
+          <EntitySetMapping Name="categories">
+            <EntityTypeMapping TypeName="DataCenter.Entities.category">
+              <MappingFragment StoreEntitySet="category">
+                <ScalarProperty Name="sort" ColumnName="sort" />
+                <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+                <ScalarProperty Name="category_name" ColumnName="category_name" />
+                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="companies">
-            <EntityTypeMapping TypeName="DataCenter.Entities.company">
-              <MappingFragment StoreEntitySet="company">
-                <ScalarProperty Name="company_phone" ColumnName="company_phone" />
-                <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <EntitySetMapping Name="contact_msg">
+            <EntityTypeMapping TypeName="DataCenter.Entities.contact_msg">
+              <MappingFragment StoreEntitySet="contact_msg">
                 <ScalarProperty Name="create_time" ColumnName="create_time" />
-                <ScalarProperty Name="logo_path" ColumnName="logo_path" />
-                <ScalarProperty Name="company_image_path" ColumnName="company_image_path" />
-                <ScalarProperty Name="email" ColumnName="email" />
-                <ScalarProperty Name="city_id" ColumnName="city_id" />
-                <ScalarProperty Name="mobile" ColumnName="mobile" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="msg_type" ColumnName="msg_type" />
+                <ScalarProperty Name="country_id" ColumnName="country_id" />
                 <ScalarProperty Name="phone" ColumnName="phone" />
-                <ScalarProperty Name="qq_number" ColumnName="qq_number" />
-                <ScalarProperty Name="site_url" ColumnName="site_url" />
-                <ScalarProperty Name="user_id" ColumnName="user_id" />
-                <ScalarProperty Name="contact_name" ColumnName="contact_name" />
-                <ScalarProperty Name="address" ColumnName="address" />
-                <ScalarProperty Name="type_id" ColumnName="type_id" />
-                <ScalarProperty Name="introduce_page_id" ColumnName="introduce_page_id" />
+                <ScalarProperty Name="email" ColumnName="email" />
                 <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="dictionaries">
+            <EntityTypeMapping TypeName="DataCenter.Entities.dictionary">
+              <MappingFragment StoreEntitySet="dictionary">
+                <ScalarProperty Name="date_updated" ColumnName="date_updated" />
+                <ScalarProperty Name="date_created" ColumnName="date_created" />
+                <ScalarProperty Name="group" ColumnName="group" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="images">
+            <EntityTypeMapping TypeName="DataCenter.Entities.image">
+              <MappingFragment StoreEntitySet="image">
+                <ScalarProperty Name="create_time" ColumnName="create_time" />
+                <ScalarProperty Name="product_id" ColumnName="product_id" />
+                <ScalarProperty Name="image_path" ColumnName="image_path" />
+                <ScalarProperty Name="image_name" ColumnName="image_name" />
+                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -628,52 +349,39 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="project_case">
-            <EntityTypeMapping TypeName="DataCenter.Entities.project_case">
-              <MappingFragment StoreEntitySet="project_case">
-                <ScalarProperty Name="is_product" ColumnName="is_product" />
-                <ScalarProperty Name="product_address" ColumnName="product_address" />
-                <ScalarProperty Name="product_price" ColumnName="product_price" />
-                <ScalarProperty Name="product_cence" ColumnName="product_cence" />
-                <ScalarProperty Name="product_ruler" ColumnName="product_ruler" />
-                <ScalarProperty Name="product_metal" ColumnName="product_metal" />
-                <ScalarProperty Name="project_area" ColumnName="project_area" />
-                <ScalarProperty Name="project_name" ColumnName="project_name" />
-                <ScalarProperty Name="project_type" ColumnName="project_type" />
-                <ScalarProperty Name="project_design_company" ColumnName="project_design_company" />
-                <ScalarProperty Name="project_action_company" ColumnName="project_action_company" />
-                <ScalarProperty Name="project_address" ColumnName="project_address" />
-                <ScalarProperty Name="project_contact_phone" ColumnName="project_contact_phone" />
-                <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <EntitySetMapping Name="pages">
+            <EntityTypeMapping TypeName="DataCenter.Entities.page">
+              <MappingFragment StoreEntitySet="page">
                 <ScalarProperty Name="create_time" ColumnName="create_time" />
-                <ScalarProperty Name="publish_time" ColumnName="publish_time" />
-                <ScalarProperty Name="view_count" ColumnName="view_count" />
-                <ScalarProperty Name="is_publish" ColumnName="is_publish" />
-                <ScalarProperty Name="is_company_intro" ColumnName="is_company_intro" />
-                <ScalarProperty Name="main_image_path" ColumnName="main_image_path" />
-                <ScalarProperty Name="user_id" ColumnName="user_id" />
-                <ScalarProperty Name="company_id" ColumnName="company_id" />
-                <ScalarProperty Name="content" ColumnName="content" />
-                <ScalarProperty Name="type_id" ColumnName="type_id" />
-                <ScalarProperty Name="descript" ColumnName="descript" />
-                <ScalarProperty Name="title" ColumnName="title" />
-                <ScalarProperty Name="Id" ColumnName="Id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="sequences">
-            <EntityTypeMapping TypeName="DataCenter.Entities.sequence">
-              <MappingFragment StoreEntitySet="sequence">
+                <ScalarProperty Name="update_time" ColumnName="update_time" />
+                <ScalarProperty Name="page_content" ColumnName="page_content" />
+                <ScalarProperty Name="page_title" ColumnName="page_title" />
+                <ScalarProperty Name="page_name" ColumnName="page_name" />
                 <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="name" ColumnName="name" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="sys_dictionary">
-            <EntityTypeMapping TypeName="DataCenter.Entities.sys_dictionary">
-              <MappingFragment StoreEntitySet="sys_dictionary">
-                <ScalarProperty Name="update_time" ColumnName="update_time" />
-                <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <EntitySetMapping Name="products">
+            <EntityTypeMapping TypeName="DataCenter.Entities.product">
+              <MappingFragment StoreEntitySet="product">
+                <ScalarProperty Name="seo_desc" ColumnName="seo_desc" />
+                <ScalarProperty Name="seo_keyword" ColumnName="seo_keyword" />
+                <ScalarProperty Name="seo_title" ColumnName="seo_title" />
+                <ScalarProperty Name="product_features" ColumnName="product_features" />
+                <ScalarProperty Name="product_specification" ColumnName="product_specification" />
+                <ScalarProperty Name="catoryid" ColumnName="catoryid" />
+                <ScalarProperty Name="main_image_id" ColumnName="main_image_id" />
+                <ScalarProperty Name="amazon_url" ColumnName="amazon_url" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="product_desc" ColumnName="product_desc" />
+                <ScalarProperty Name="product_name" ColumnName="product_name" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="settings">
+            <EntityTypeMapping TypeName="DataCenter.Entities.setting">
+              <MappingFragment StoreEntitySet="setting">
                 <ScalarProperty Name="group" ColumnName="group" />
                 <ScalarProperty Name="value" ColumnName="value" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -713,16 +421,6 @@
                 <ScalarProperty Name="real_name" ColumnName="real_name" />
                 <ScalarProperty Name="user_name" ColumnName="user_name" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="files">
-            <EntityTypeMapping TypeName="DataCenter.Entities.file">
-              <MappingFragment StoreEntitySet="file">
-                <ScalarProperty Name="create_time" ColumnName="create_time" />
-                <ScalarProperty Name="file_path" ColumnName="file_path" />
-                <ScalarProperty Name="file_name" ColumnName="file_name" />
-                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

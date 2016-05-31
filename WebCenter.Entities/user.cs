@@ -14,12 +14,6 @@ namespace WebCenter.Entities
     
     public partial class user
     {
-        public user()
-        {
-            this.companies = new HashSet<company>();
-            this.project_case = new HashSet<project_case>();
-        }
-    
     
     
     
@@ -89,9 +83,5 @@ namespace WebCenter.Entities
     
     
         public Nullable<System.DateTime> update_time { get; set; }
-    
-        public virtual ICollection<company> companies { get; set; }
-        public virtual ICollection<project_case> project_case { get; set; }
-        public virtual company company { get; set; }
     }
 }

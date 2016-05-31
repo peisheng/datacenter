@@ -110,10 +110,6 @@
       <Project>{71568A82-D403-47F5-8928-AC80AA5EA642}</Project>
       <Name>WebCenter.IServices</Name>
     </ProjectReference>
-    <ProjectReference Include="..\LanguagePack\LanguagePack.csproj">
-      <Project>{75235e4b-393a-4e39-8de9-e6fdc2b2d55d}</Project>
-      <Name>LanguagePack</Name>
-    </ProjectReference>
     <ProjectReference Include="..\WebCenter.Dal\WebCenter.DAL.csproj">
       <Project>{057ff7fa-a49d-440d-8263-751990af8adf}</Project>
       <Name>WebCenter.DAL</Name>

@@ -10,15 +10,19 @@ namespace WebCenter.IServices
 {
    
 	
-	public partial interface IcityService:IBaseService<city>
+	public partial interface IcategoryService:IBaseService<category>
     {   
     }
 	
-	public partial interface IcompanyService:IBaseService<company>
+	public partial interface Icontact_msgService:IBaseService<contact_msg>
     {   
     }
 	
-	public partial interface IfileService:IBaseService<file>
+	public partial interface IdictionaryService:IBaseService<dictionary>
+    {   
+    }
+	
+	public partial interface IimageService:IBaseService<image>
     {   
     }
 	
@@ -26,15 +30,15 @@ namespace WebCenter.IServices
     {   
     }
 	
-	public partial interface Iproject_caseService:IBaseService<project_case>
+	public partial interface IpageService:IBaseService<page>
     {   
     }
 	
-	public partial interface IsequenceService:IBaseService<sequence>
+	public partial interface IproductService:IBaseService<product>
     {   
     }
 	
-	public partial interface Isys_dictionaryService:IBaseService<sys_dictionary>
+	public partial interface IsettingService:IBaseService<setting>
     {   
     }
 	

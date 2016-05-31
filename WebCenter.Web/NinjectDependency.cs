@@ -17,19 +17,21 @@ public partial class  NinjectDependencyResolver:IDependencyResolver
 private void AutoAddBinds()
 {
 	
-	   kernel.Bind<IcityService>().To<cityService>().InRequestScope();
+	   kernel.Bind<IcategoryService>().To<categoryService>().InRequestScope();
 	
-	   kernel.Bind<IcompanyService>().To<companyService>().InRequestScope();
+	   kernel.Bind<Icontact_msgService>().To<contact_msgService>().InRequestScope();
 	
-	   kernel.Bind<IfileService>().To<fileService>().InRequestScope();
+	   kernel.Bind<IdictionaryService>().To<dictionaryService>().InRequestScope();
+	
+	   kernel.Bind<IimageService>().To<imageService>().InRequestScope();
 	
 	   kernel.Bind<Ioperate_logService>().To<operate_logService>().InRequestScope();
 	
-	   kernel.Bind<Iproject_caseService>().To<project_caseService>().InRequestScope();
+	   kernel.Bind<IpageService>().To<pageService>().InRequestScope();
 	
-	   kernel.Bind<IsequenceService>().To<sequenceService>().InRequestScope();
+	   kernel.Bind<IproductService>().To<productService>().InRequestScope();
 	
-	   kernel.Bind<Isys_dictionaryService>().To<sys_dictionaryService>().InRequestScope();
+	   kernel.Bind<IsettingService>().To<settingService>().InRequestScope();
 	
 	   kernel.Bind<Isys_userService>().To<sys_userService>().InRequestScope();
 	

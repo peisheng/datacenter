@@ -13,33 +13,43 @@ namespace WebCenter.Services
 {
    
 	
-	public partial class cityService:BaseService<city>,IcityService
+	public partial class categoryService:BaseService<category>,IcategoryService
     {   
-        public cityService()
+        public categoryService()
         {}
         public override void SetCurrentRepository()
         {
-            CurrentRepository = _dbSession.cityRepository;
+            CurrentRepository = _dbSession.categoryRepository;
         }  
     }
 	
-	public partial class companyService:BaseService<company>,IcompanyService
+	public partial class contact_msgService:BaseService<contact_msg>,Icontact_msgService
     {   
-        public companyService()
+        public contact_msgService()
         {}
         public override void SetCurrentRepository()
         {
-            CurrentRepository = _dbSession.companyRepository;
+            CurrentRepository = _dbSession.contact_msgRepository;
         }  
     }
 	
-	public partial class fileService:BaseService<file>,IfileService
+	public partial class dictionaryService:BaseService<dictionary>,IdictionaryService
     {   
-        public fileService()
+        public dictionaryService()
         {}
         public override void SetCurrentRepository()
         {
-            CurrentRepository = _dbSession.fileRepository;
+            CurrentRepository = _dbSession.dictionaryRepository;
+        }  
+    }
+	
+	public partial class imageService:BaseService<image>,IimageService
+    {   
+        public imageService()
+        {}
+        public override void SetCurrentRepository()
+        {
+            CurrentRepository = _dbSession.imageRepository;
         }  
     }
 	
@@ -53,33 +63,33 @@ namespace WebCenter.Services
         }  
     }
 	
-	public partial class project_caseService:BaseService<project_case>,Iproject_caseService
+	public partial class pageService:BaseService<page>,IpageService
     {   
-        public project_caseService()
+        public pageService()
         {}
         public override void SetCurrentRepository()
         {
-            CurrentRepository = _dbSession.project_caseRepository;
+            CurrentRepository = _dbSession.pageRepository;
         }  
     }
 	
-	public partial class sequenceService:BaseService<sequence>,IsequenceService
+	public partial class productService:BaseService<product>,IproductService
     {   
-        public sequenceService()
+        public productService()
         {}
         public override void SetCurrentRepository()
         {
-            CurrentRepository = _dbSession.sequenceRepository;
+            CurrentRepository = _dbSession.productRepository;
         }  
     }
 	
-	public partial class sys_dictionaryService:BaseService<sys_dictionary>,Isys_dictionaryService
+	public partial class settingService:BaseService<setting>,IsettingService
     {   
-        public sys_dictionaryService()
+        public settingService()
         {}
         public override void SetCurrentRepository()
         {
-            CurrentRepository = _dbSession.sys_dictionaryRepository;
+            CurrentRepository = _dbSession.settingRepository;
         }  
     }
 	

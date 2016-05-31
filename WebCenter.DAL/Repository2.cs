@@ -7,17 +7,22 @@ namespace WebCenter.DAL
 {
    
 	
-	public partial class cityRepository :BaseRepository<city>,IcityRepository
+	public partial class categoryRepository :BaseRepository<category>,IcategoryRepository
     {
          
     }
 	
-	public partial class companyRepository :BaseRepository<company>,IcompanyRepository
+	public partial class contact_msgRepository :BaseRepository<contact_msg>,Icontact_msgRepository
     {
          
     }
 	
-	public partial class fileRepository :BaseRepository<file>,IfileRepository
+	public partial class dictionaryRepository :BaseRepository<dictionary>,IdictionaryRepository
+    {
+         
+    }
+	
+	public partial class imageRepository :BaseRepository<image>,IimageRepository
     {
          
     }
@@ -27,17 +32,17 @@ namespace WebCenter.DAL
          
     }
 	
-	public partial class project_caseRepository :BaseRepository<project_case>,Iproject_caseRepository
+	public partial class pageRepository :BaseRepository<page>,IpageRepository
     {
          
     }
 	
-	public partial class sequenceRepository :BaseRepository<sequence>,IsequenceRepository
+	public partial class productRepository :BaseRepository<product>,IproductRepository
     {
          
     }
 	
-	public partial class sys_dictionaryRepository :BaseRepository<sys_dictionary>,Isys_dictionaryRepository
+	public partial class settingRepository :BaseRepository<setting>,IsettingRepository
     {
          
     }

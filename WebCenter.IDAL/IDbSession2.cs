@@ -13,25 +13,28 @@ namespace WebCenter.IDAL
    
 	  
 
-		IDAL.IcityRepository cityRepository { get; }
+		IDAL.IcategoryRepository categoryRepository { get; }
 	  
 
-		IDAL.IcompanyRepository companyRepository { get; }
+		IDAL.Icontact_msgRepository contact_msgRepository { get; }
 	  
 
-		IDAL.IfileRepository fileRepository { get; }
+		IDAL.IdictionaryRepository dictionaryRepository { get; }
+	  
+
+		IDAL.IimageRepository imageRepository { get; }
 	  
 
 		IDAL.Ioperate_logRepository operate_logRepository { get; }
 	  
 
-		IDAL.Iproject_caseRepository project_caseRepository { get; }
+		IDAL.IpageRepository pageRepository { get; }
 	  
 
-		IDAL.IsequenceRepository sequenceRepository { get; }
+		IDAL.IproductRepository productRepository { get; }
 	  
 
-		IDAL.Isys_dictionaryRepository sys_dictionaryRepository { get; }
+		IDAL.IsettingRepository settingRepository { get; }
 	  
 
 		IDAL.Isys_userRepository sys_userRepository { get; }

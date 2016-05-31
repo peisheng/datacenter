@@ -6,15 +6,19 @@ namespace WebCenter.IDAL
 {
    
 	
-    public partial interface IcityRepository :IBaseRepository<city>
+    public partial interface IcategoryRepository :IBaseRepository<category>
     {         
     }
 	
-    public partial interface IcompanyRepository :IBaseRepository<company>
+    public partial interface Icontact_msgRepository :IBaseRepository<contact_msg>
     {         
     }
 	
-    public partial interface IfileRepository :IBaseRepository<file>
+    public partial interface IdictionaryRepository :IBaseRepository<dictionary>
+    {         
+    }
+	
+    public partial interface IimageRepository :IBaseRepository<image>
     {         
     }
 	
@@ -22,15 +26,15 @@ namespace WebCenter.IDAL
     {         
     }
 	
-    public partial interface Iproject_caseRepository :IBaseRepository<project_case>
+    public partial interface IpageRepository :IBaseRepository<page>
     {         
     }
 	
-    public partial interface IsequenceRepository :IBaseRepository<sequence>
+    public partial interface IproductRepository :IBaseRepository<product>
     {         
     }
 	
-    public partial interface Isys_dictionaryRepository :IBaseRepository<sys_dictionary>
+    public partial interface IsettingRepository :IBaseRepository<setting>
     {         
     }
 	

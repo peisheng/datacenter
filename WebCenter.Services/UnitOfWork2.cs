@@ -9,21 +9,28 @@ namespace WebCenter.Services
 {  
 	
   [Ninject.Inject]
-	 public  IcityService IcityService
+	 public  IcategoryService IcategoryService
     {
         get;
         set;
     } 
 	
   [Ninject.Inject]
-	 public  IcompanyService IcompanyService
+	 public  Icontact_msgService Icontact_msgService
     {
         get;
         set;
     } 
 	
   [Ninject.Inject]
-	 public  IfileService IfileService
+	 public  IdictionaryService IdictionaryService
+    {
+        get;
+        set;
+    } 
+	
+  [Ninject.Inject]
+	 public  IimageService IimageService
     {
         get;
         set;
@@ -37,21 +44,21 @@ namespace WebCenter.Services
     } 
 	
   [Ninject.Inject]
-	 public  Iproject_caseService Iproject_caseService
+	 public  IpageService IpageService
     {
         get;
         set;
     } 
 	
   [Ninject.Inject]
-	 public  IsequenceService IsequenceService
+	 public  IproductService IproductService
     {
         get;
         set;
     } 
 	
   [Ninject.Inject]
-	 public  Isys_dictionaryService Isys_dictionaryService
+	 public  IsettingService IsettingService
     {
         get;
         set;

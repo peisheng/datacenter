@@ -83,7 +83,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>IUnitOfWork2.tt</DependentUpon>
     </Compile>
-    <Compile Include="ProjectServices\IProjectService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -70,7 +70,7 @@ namespace WebCenter.Web.Controllers
                         file_name = file.file_name
                     };
                     ImageHelper.GetPicThumbnailWidth(sPath,smallPath,120,160,100);
-                    bool isZipSuccess = ImageHelper.GetPicThumbnailWidth(sPath, dPath, 300, 650, 100);
+                    bool isZipSuccess = ImageHelper.GetPicThumbnailWidth(sPath, dPath, 300, 650, 80);
                     
                     if (!isZipSuccess)
                     {

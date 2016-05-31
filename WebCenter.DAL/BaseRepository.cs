@@ -45,27 +45,26 @@ namespace WebCenter.DAL
             IList<PropertyInfo> primeKeys = GetPrimeKeys(entity, out tableName);
             if (null == primeKeys)
                 return;
-            foreach (var item in primeKeys)
-            {
-                var itemValue = item.GetValue(entity);
-                string sql = string.Format("INSERT INTO `sequence` (`name`) VALUES('{0}') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();", tableName);
-                var obj = db.Database.SqlQuery<int>(sql, new string[0]).FirstOrDefault();
-                if (itemValue != null)
-                {
-                    if (string.IsNullOrEmpty(itemValue.ToString()) || itemValue.ToString() == "0")//增加判断当为空值时也生成相应的主键值  add by zhengpsh 2014-12-01
-                    {
+            //foreach (var item in primeKeys)
+            //{
+            //    var itemValue = item.GetValue(entity);
+            //    string sql = string.Format("INSERT INTO `sequence` (`name`) VALUES('{0}') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();", tableName);
+            //    var obj = db.Database.SqlQuery<int>(sql, new string[0]).FirstOrDefault();
+            //    if (itemValue != null)
+            //    {
+            //        if (string.IsNullOrEmpty(itemValue.ToString()) || itemValue.ToString() == "0")//增加判断当为空值时也生成相应的主键值  add by zhengpsh 2014-12-01
+            //        {
+            //            ///INSERT INTO `sequence` (`name`) VALUES('new_business') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
+            //            item.SetValue(entity, obj, null);
+            //            //item.SetValue(entity, Guid.NewGuid().ToString("N"), null);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        item.SetValue(entity, obj, null);
+            //    }
 
-                        ///INSERT INTO `sequence` (`name`) VALUES('new_business') ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id` + 1); SELECT LAST_INSERT_ID();
-                        item.SetValue(entity, obj, null);
-                        //item.SetValue(entity, Guid.NewGuid().ToString("N"), null);
-                    }
-                }
-                else
-                {
-                    item.SetValue(entity, obj, null);
-                }
-
-            }
+            //}
         }
 
         private IList<PropertyInfo> GetPrimeKeys(T entity, out string tableName)

@@ -209,9 +209,17 @@ namespace Common
             Bitmap ob = new Bitmap(Convert.ToInt32(sW),Convert.ToInt32(sH));
             Graphics g = Graphics.FromImage(ob);
             g.Clear(Color.WhiteSmoke);
-            g.CompositingQuality = CompositingQuality.HighQuality;
-            g.SmoothingMode = SmoothingMode.HighQuality;
-            g.InterpolationMode = InterpolationMode.HighQualityBicubic;
+            //g.CompositingQuality = CompositingQuality.HighQuality;
+            //g.SmoothingMode = SmoothingMode.HighQuality;
+            //g.InterpolationMode = InterpolationMode.HighQualityBicubic;
+
+
+            g.CompositingQuality = CompositingQuality.HighSpeed;
+           // g.SmoothingMode = SmoothingMode.None;
+          //  g.InterpolationMode = InterpolationMode.Default;
+
+
+
            Rectangle rect= new Rectangle(0,0,Convert.ToInt32(sW), Convert.ToInt32(sH));
            g.DrawImage(iSource, rect, 0, 0, iSource.Width, iSource.Height, GraphicsUnit.Pixel);
 

@@ -47,6 +47,7 @@ namespace WebCenter.Web.Controllers
             //log.user_name = user_name;
             //log.user_id = user_id;
             Uof.Ioperate_logService.AddEntity(log);
+            
         }
 
 
