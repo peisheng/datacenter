@@ -14,6 +14,11 @@ namespace WebCenter.Entities
     
     public partial class image
     {
+        public image()
+        {
+            this.products = new HashSet<product>();
+        }
+    
     
     
     
@@ -35,5 +40,8 @@ namespace WebCenter.Entities
     
     
         public Nullable<System.DateTime> create_time { get; set; }
+    
+        public virtual product product { get; set; }
+        public virtual ICollection<product> products { get; set; }
     }
 }

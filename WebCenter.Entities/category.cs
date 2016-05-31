@@ -14,6 +14,11 @@ namespace WebCenter.Entities
     
     public partial class category
     {
+        public category()
+        {
+            this.products = new HashSet<product>();
+        }
+    
     
     
     
@@ -31,5 +36,7 @@ namespace WebCenter.Entities
     
     
         public Nullable<int> sort { get; set; }
+    
+        public virtual ICollection<product> products { get; set; }
     }
 }

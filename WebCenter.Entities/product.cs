@@ -14,6 +14,11 @@ namespace WebCenter.Entities
     
     public partial class product
     {
+        public product()
+        {
+            this.images = new HashSet<image>();
+        }
+    
     
     
     
@@ -63,5 +68,9 @@ namespace WebCenter.Entities
     
     
         public string seo_desc { get; set; }
+    
+        public virtual category category { get; set; }
+        public virtual ICollection<image> images { get; set; }
+        public virtual image image { get; set; }
     }
 }
