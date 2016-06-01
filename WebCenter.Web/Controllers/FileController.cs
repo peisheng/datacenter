@@ -57,17 +57,17 @@ namespace WebCenter.Web.Controllers
                     string dPath = realPath + guid + "_450_300" + ext ;
                     string smallPath = realPath + guid + "_160_120" + ext;
                     postFile.SaveAs(realPath + file_name);
-                    file file = new Entities.file();
-                    file.file_path = returnPath;
-                    file.file_name = file_name;
+                    image file = new Entities.image();
+                    file.image_path = returnPath;
+                    file.image_name = file_name;
                     file.create_time = DateTime.Now;
-                    file = Uof.IfileService.AddEntity(file);
+                    file = Uof.IimageService.AddEntity(file);
                     var result = new
-                    {
-                        file_path = returnPath,
+                    {                      
+                        image_path = returnPath,
                         small_path = samllPath,
                         id = file.id,
-                        file_name = file.file_name
+                        image_name = file.image_name
                     };
                     ImageHelper.GetPicThumbnailWidth(sPath,smallPath,120,160,100);
                     bool isZipSuccess = ImageHelper.GetPicThumbnailWidth(sPath, dPath, 300, 650, 80);

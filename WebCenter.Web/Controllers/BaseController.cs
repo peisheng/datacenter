@@ -34,6 +34,10 @@ namespace WebCenter.Web.Controllers
         {
             get { return Json(new { result = false }, JsonRequestBehavior.AllowGet); }
         }
+        public ActionResult SuccessResult
+        {
+            get { return Json(new { result = true }, JsonRequestBehavior.AllowGet); }
+        }
 
         public void AddLog(string name, string descipt, string result)
         {

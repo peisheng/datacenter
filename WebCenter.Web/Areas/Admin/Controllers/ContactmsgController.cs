@@ -15,9 +15,9 @@ using WebCenter.Web.Controllers;
 
 namespace WebCenter.Web.Areas.Admin.Controllers
 {
-    public class ProductController : BaseController
+    public class ContactmsgController : BaseController
     {
-        public ProductController(IUnitOfWork UOF)
+        public ContactmsgController(IUnitOfWork UOF)
             : base(UOF)
         {
 
@@ -37,34 +37,22 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         public ActionResult List(int page_index = 0, int page_size = 20, string keyword = "")
         {
 
-            Expression<Func<product, bool>> condition = pro => true;
+            Expression<Func<contact_msg, bool>> condition = cont => true;
             if (!string.IsNullOrEmpty(keyword))
             {
-                Expression<Func<product, bool>> tmp = prj => prj.product_name.IndexOf(keyword) > -1 || prj.product_desc.IndexOf(keyword) > -1;
+                Expression<Func<contact_msg, bool>> tmp = con => con.content.IndexOf(keyword) > -1 || con.name.IndexOf(keyword) > -1||con.phone.IndexOf(keyword)>-1||con.email.IndexOf(keyword)>-1;
                 condition = tmp;
             }
 
-            PagedList<product> list = Uof.IproductService.GetAll(condition).OrderByDescending(item => item.id).ToPagedList(page_index, page_size);
+            PagedList<contact_msg> list = Uof.Icontact_msgService.GetAll(condition).OrderByDescending(item => item.id).ToPagedList(page_index, page_size);
 
-            var obj = new ArrayList();
-            foreach (var item in list)
-            {
-                var it = new
-                {
-                    id = item.id,
-                    name = item.product_name,
-                    desc = item.product_desc,
-                    main_imgurl = item.main_image_id,
-
-                };
-                obj.Add(it);
-            }
+            
             var result = new
             {
                 total_count = list.TotalCount,
                 current_page = page_index,
                 page_size = page_size,
-                items = obj
+                items = list.ToList()
             };
             return Json(result, JsonRequestBehavior.AllowGet);
         }
@@ -77,30 +65,30 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         {
             if (id <= 0)
                 return ErrorResult;
-            product pro = Uof.IproductService.GetById(id);
+            contact_msg pro = Uof.Icontact_msgService.GetById(id);
             return Json(pro, JsonRequestBehavior.AllowGet);
         }
-        public ActionResult Save(string productObj,string imageids)
+        public ActionResult Save(contact_msg msg)
         {
-            product prod = JsonConvert.DeserializeObject<product>(productObj);
-            if (prod != null)
+            contact_msg contMsg = msg;
+            if (contMsg != null)
             {
-                if (prod.id > 0)
+                if (contMsg.id > 0)
                 {
-                    //save prod
+                    Uof.Icontact_msgService.Save(contMsg.id, msg);
                 }
                 else
                 {
-                    //add prod
+                    Uof.Icontact_msgService.AddEntity(contMsg);
                 }
-                return Json(prod);
+                return Json(contMsg);
                 
             }
             return ErrorResult;
         }
         public ActionResult Delete(int id)
         {
-            var b=Uof.IproductService.DeleteEntity(id);
+            var b = Uof.Icontact_msgService.DeleteEntity(id);
             if(b)
             {
                 return SuccessResult;
