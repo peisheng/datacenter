@@ -54,8 +54,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                     id = item.id,
                     name = item.product_name,
                     desc = item.product_desc,
-                    main_imgurl = item.main_image_id,
-
+                    main_image = item.image
                 };
                 obj.Add(it);
             }
@@ -80,18 +79,57 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             product pro = Uof.IproductService.GetById(id);
             return Json(pro, JsonRequestBehavior.AllowGet);
         }
-        public ActionResult Save(string productObj,string imageids)
+        public ActionResult Save(string productObj, List<int> imageIds)
         {
             product prod = JsonConvert.DeserializeObject<product>(productObj);
             if (prod != null)
             {
                 if (prod.id > 0)
                 {
-                    //save prod
+                   product  getPro= Uof.IproductService.GetById(prod.id);
+                   List<int> excepts= getPro.images.Select(p => p.id).ToList().Except(imageIds).ToList();
+                   foreach (var item in excepts)
+                   {
+                       Uof.IimageService.DeleteEntity(item);
+                   };
+                   var obj= Uof.IimageService.GetAll(p => imageIds.Contains(p.id)).ToList();
+                   foreach (var item in obj)
+                   {
+                       if (item.product_id != prod.id)
+                       {
+                           item.product_id = prod.id;
+                           Uof.IimageService.Save(item.id,item);
+                       }
+                   }
+                   Uof.IproductService.Save(prod.id,prod);
+                   var img=Uof.IimageService.GetById(prod.main_image_id.GetValueOrDefault(0));
+                   if (img!=null)
+                   {
+                       img.product_id = prod.id;
+                       Uof.IimageService.UpdateEntity(img);
+                   }
+                    
                 }
                 else
                 {
-                    //add prod
+                   prod= Uof.IproductService.AddEntity(prod);
+                   var obj = Uof.IimageService.GetAll(p => imageIds.Contains(p.id)).ToList();
+                   foreach (var item in obj)
+                   {
+                       if (item.product_id != prod.id)
+                       {
+                           item.product_id = prod.id;
+                           Uof.IimageService.Save(item.id, item);
+                       }
+                   }
+                   var img = Uof.IimageService.GetById(prod.main_image_id.GetValueOrDefault(0));
+                   if (img != null)
+                   {
+                       img.product_id = prod.id;
+                       Uof.IimageService.UpdateEntity(img);
+                   }
+                   
+                   
                 }
                 return Json(prod);
                 
