@@ -47,7 +47,7 @@ namespace WebCenter.Entities
     
     
     
-        public Nullable<int> catoryid { get; set; }
+        public Nullable<int> categoryid { get; set; }
     
     
     
@@ -68,6 +68,10 @@ namespace WebCenter.Entities
     
     
         public string seo_desc { get; set; }
+    
+    
+    
+        public Nullable<int> is_publish { get; set; }
     
         public virtual category category { get; set; }
         public virtual ICollection<image> images { get; set; }

@@ -5,16 +5,16 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="625d74e1092944a886cf389a97db8259" Name="Diagram1">
-        <EntityTypeShape EntityType="DataCenter.Entities.category" Width="1.5" PointX="0.75" PointY="0.75" />
-        <EntityTypeShape EntityType="DataCenter.Entities.contact_msg" Width="1.5" PointX="2.75" PointY="0.75" />
-        <EntityTypeShape EntityType="DataCenter.Entities.dictionary" Width="1.5" PointX="4.75" PointY="0.75" />
-        <EntityTypeShape EntityType="DataCenter.Entities.image" Width="1.5" PointX="0.75" PointY="4.75" />
-        <EntityTypeShape EntityType="DataCenter.Entities.operate_log" Width="1.5" PointX="2.75" PointY="4.75" />
-        <EntityTypeShape EntityType="DataCenter.Entities.page" Width="1.5" PointX="4.75" PointY="4.75" />
-        <EntityTypeShape EntityType="DataCenter.Entities.product" Width="1.5" PointX="6.75" PointY="0.75" />
-        <EntityTypeShape EntityType="DataCenter.Entities.setting" Width="1.5" PointX="6.75" PointY="4.75" />
-        <EntityTypeShape EntityType="DataCenter.Entities.sys_user" Width="1.5" PointX="4.75" PointY="7.75" />
-        <EntityTypeShape EntityType="DataCenter.Entities.user" Width="1.5" PointX="6.75" PointY="7.75" />
+        <EntityTypeShape EntityType="DataCenter.Entities.category" Width="1.5" PointX="0.75" PointY="2" />
+        <EntityTypeShape EntityType="DataCenter.Entities.contact_msg" Width="1.5" PointX="0.75" PointY="5.75" />
+        <EntityTypeShape EntityType="DataCenter.Entities.dictionary" Width="1.5" PointX="2.75" PointY="5.75" />
+        <EntityTypeShape EntityType="DataCenter.Entities.image" Width="1.5" PointX="5.25" PointY="1.75" />
+        <EntityTypeShape EntityType="DataCenter.Entities.operate_log" Width="1.5" PointX="4.75" PointY="5.75" />
+        <EntityTypeShape EntityType="DataCenter.Entities.page" Width="1.5" PointX="6.75" PointY="5.75" />
+        <EntityTypeShape EntityType="DataCenter.Entities.product" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="DataCenter.Entities.setting" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DataCenter.Entities.sys_user" Width="1.5" PointX="8.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DataCenter.Entities.user" Width="1.5" PointX="8.75" PointY="6.75" />
         <AssociationConnector Association="DataCenter.Entities.product_ibfk_2" />
         <AssociationConnector Association="DataCenter.Entities.image_ibfk_1" />
         <AssociationConnector Association="DataCenter.Entities.product_ibfk_1" />

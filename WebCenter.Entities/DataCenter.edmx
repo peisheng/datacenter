@@ -26,6 +26,7 @@
           <Property Name="msg_type" Type="varchar" MaxLength="255" />
           <Property Name="content" Type="varchar" MaxLength="255" />
           <Property Name="create_time" Type="datetime" Precision="0" />
+          <Property Name="is_read" Type="int" />
         </EntityType>
         <EntityType Name="dictionary">
           <Key>
@@ -45,6 +46,7 @@
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="image_name" Type="varchar" MaxLength="255" />
           <Property Name="image_path" Type="varchar" MaxLength="255" />
+          <Property Name="small_path" Type="varchar" MaxLength="255" />
           <Property Name="product_id" Type="int" />
           <Property Name="create_time" Type="datetime" Precision="0" />
         </EntityType>
@@ -81,12 +83,13 @@
           <Property Name="country" Type="varchar" MaxLength="255" />
           <Property Name="amazon_url" Type="varchar" MaxLength="500" />
           <Property Name="main_image_id" Type="int" />
-          <Property Name="catoryid" Type="int" />
+          <Property Name="categoryid" Type="int" />
           <Property Name="product_specification" Type="text" />
           <Property Name="product_features" Type="text" />
           <Property Name="seo_title" Type="varchar" MaxLength="255" />
           <Property Name="seo_keyword" Type="varchar" MaxLength="255" />
           <Property Name="seo_desc" Type="varchar" MaxLength="255" />
+          <Property Name="is_publish" Type="int" />
         </EntityType>
         <EntityType Name="setting">
           <Key>
@@ -143,7 +146,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="product_ibfk_1">
-          <End Role="image" Type="Self.image" Multiplicity="0..1" />
+          <End Role="image" Type="Self.image" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="product" Type="Self.product" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="image">
@@ -162,7 +167,7 @@
               <PropertyRef Name="id" />
             </Principal>
             <Dependent Role="product">
-              <PropertyRef Name="catoryid" />
+              <PropertyRef Name="categoryid" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -240,6 +245,7 @@
           <Property Name="msg_type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="content" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="create_time" Type="DateTime" />
+          <Property Name="is_read" Type="Int32" />
         </EntityType>
         <EntityType Name="dictionary">
           <Key>
@@ -259,6 +265,7 @@
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="image_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="image_path" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="small_path" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="product_id" Type="Int32" />
           <Property Name="create_time" Type="DateTime" />
           <NavigationProperty Name="product" Relationship="DataCenter.Entities.image_ibfk_1" FromRole="image" ToRole="product" />
@@ -297,12 +304,13 @@
           <Property Name="country" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="amazon_url" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
           <Property Name="main_image_id" Type="Int32" />
-          <Property Name="catoryid" Type="Int32" />
+          <Property Name="categoryid" Type="Int32" />
           <Property Name="product_specification" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
           <Property Name="product_features" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
           <Property Name="seo_title" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="seo_keyword" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="seo_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="is_publish" Type="Int32" />
           <NavigationProperty Name="category" Relationship="DataCenter.Entities.product_ibfk_2" FromRole="product" ToRole="category" />
           <NavigationProperty Name="images" Relationship="DataCenter.Entities.image_ibfk_1" FromRole="product" ToRole="image" />
           <NavigationProperty Name="image" Relationship="DataCenter.Entities.product_ibfk_1" FromRole="product" ToRole="image" />
@@ -357,7 +365,7 @@
               <PropertyRef Name="id" />
             </Principal>
             <Dependent Role="product">
-              <PropertyRef Name="catoryid" />
+              <PropertyRef Name="categoryid" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -404,6 +412,7 @@
           <EntitySetMapping Name="contact_msg">
             <EntityTypeMapping TypeName="DataCenter.Entities.contact_msg">
               <MappingFragment StoreEntitySet="contact_msg">
+                <ScalarProperty Name="is_read" ColumnName="is_read" />
                 <ScalarProperty Name="create_time" ColumnName="create_time" />
                 <ScalarProperty Name="content" ColumnName="content" />
                 <ScalarProperty Name="msg_type" ColumnName="msg_type" />
@@ -432,6 +441,7 @@
               <MappingFragment StoreEntitySet="image">
                 <ScalarProperty Name="create_time" ColumnName="create_time" />
                 <ScalarProperty Name="product_id" ColumnName="product_id" />
+                <ScalarProperty Name="small_path" ColumnName="small_path" />
                 <ScalarProperty Name="image_path" ColumnName="image_path" />
                 <ScalarProperty Name="image_name" ColumnName="image_name" />
                 <ScalarProperty Name="id" ColumnName="id" />
@@ -466,12 +476,13 @@
           <EntitySetMapping Name="products">
             <EntityTypeMapping TypeName="DataCenter.Entities.product">
               <MappingFragment StoreEntitySet="product">
+                <ScalarProperty Name="is_publish" ColumnName="is_publish" />
                 <ScalarProperty Name="seo_desc" ColumnName="seo_desc" />
                 <ScalarProperty Name="seo_keyword" ColumnName="seo_keyword" />
                 <ScalarProperty Name="seo_title" ColumnName="seo_title" />
                 <ScalarProperty Name="product_features" ColumnName="product_features" />
                 <ScalarProperty Name="product_specification" ColumnName="product_specification" />
-                <ScalarProperty Name="catoryid" ColumnName="catoryid" />
+                <ScalarProperty Name="categoryid" ColumnName="categoryid" />
                 <ScalarProperty Name="main_image_id" ColumnName="main_image_id" />
                 <ScalarProperty Name="amazon_url" ColumnName="amazon_url" />
                 <ScalarProperty Name="country" ColumnName="country" />

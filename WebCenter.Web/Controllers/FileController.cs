@@ -59,6 +59,7 @@ namespace WebCenter.Web.Controllers
                     postFile.SaveAs(realPath + file_name);
                     image file = new Entities.image();
                     file.image_path = returnPath;
+                    file.small_path = samllPath;
                     file.image_name = file_name;
                     file.create_time = DateTime.Now;
                     file = Uof.IimageService.AddEntity(file);
@@ -90,7 +91,11 @@ namespace WebCenter.Web.Controllers
         }
 
 
-        
+        public ActionResult Get(List<int> ids)
+        {
+           var list=  Uof.IimageService.GetAll(p => ids.Contains(p.id)).ToList();
+           return Json(list,JsonRequestBehavior.AllowGet);
+        }
 
 
 

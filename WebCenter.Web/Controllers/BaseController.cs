@@ -9,6 +9,7 @@ using CacheManager.Core;
 using System.Configuration;
 using Common;
 using Newtonsoft.Json;
+using WebCenter.Web.Code;
 
 
 
@@ -52,6 +53,17 @@ namespace WebCenter.Web.Controllers
             //log.user_id = user_id;
             Uof.Ioperate_logService.AddEntity(log);
             
+        }
+
+        protected override JsonResult Json(object data, string contentType, System.Text.Encoding contentEncoding, JsonRequestBehavior behavior)
+        {
+            return new JsonNetResult
+            {
+                Data = data,
+                ContentType = contentType,
+                ContentEncoding = contentEncoding,
+                JsonRequestBehavior = behavior
+            };
         }
 
 

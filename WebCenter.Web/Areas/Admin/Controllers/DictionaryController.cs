@@ -22,17 +22,11 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         {
 
         }
-        public Isys_dictionaryService DictService
-        {
-            get
-            {
-                return Uof.Isys_dictionaryService;
-            }
-        }
+        
 
         public ActionResult GetTypeDictList(string type)
         {
-            var list = Uof.Isys_dictionaryService.GetAll(p => p.group == type).ToList();
+            var list = Uof.IdictionaryService.GetAll(p => p.group == type).ToList();
             var obj = list.Select(item => new
             {
                 id = item.id,
@@ -42,20 +36,11 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             return Json(obj, JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult GetCompanyTypeList()
-        {
-            return this.GetTypeDictList("公司类型");
-        }
-
-        public ActionResult GetArticleTypeList()
-        {
-            return this.GetTypeDictList("文章标签");
-        }
+      
 
         public ActionResult GetDictById(int id)
         {
-
-            var dict = Uof.Isys_dictionaryService.GetById(id);
+            var dict = Uof.IdictionaryService.GetById(id);
             var obj = new
             {
                 id = dict.id,
@@ -76,14 +61,14 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         public ActionResult List(int page_index = 1, int page_size = 20, string group = "")
         {
 
-            Expression<Func<sys_dictionary, bool>> condition = dict => true;
+            Expression<Func<dictionary, bool>> condition = dict => true;
             if (!string.IsNullOrEmpty(group))
             {
                 string gro = group.Trim();
-                Expression<Func<sys_dictionary, bool>> tmp = dict => dict.group == gro;
+                Expression<Func<dictionary, bool>> tmp = dict => dict.group == gro;
                 condition = tmp;
             }
-            PagedList<sys_dictionary> list = Uof.Isys_dictionaryService.GetAll(condition).OrderByDescending(item => item.id).ToPagedList(page_index, page_size);
+            PagedList<dictionary> list = Uof.IdictionaryService.GetAll(condition).OrderByDescending(item => item.id).ToPagedList(page_index, page_size);
             if (list != null)
             {
                 ArrayList al = new ArrayList();
@@ -120,7 +105,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         public ActionResult GroupList()
         {
 
-            var list = Uof.Isys_dictionaryService.GetAll().GroupBy(p => p.group).Select(item => item.Key).ToList();
+            var list = Uof.IdictionaryService.GetAll().GroupBy(p => p.group).Select(item => item.Key).ToList();
             return Json(list,JsonRequestBehavior.AllowGet);
 
         }
@@ -137,15 +122,11 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         [HttpPost]
         public ActionResult Save(string dict)
         {
-            sys_dictionary _dict = new sys_dictionary();
-            //_dict.group;
-            //_dict.name;
-            //_dict.value;
-                
-            _dict = JsonConvert.DeserializeObject<sys_dictionary>(dict);
+            dictionary _dict = new dictionary();    
+            _dict = JsonConvert.DeserializeObject<dictionary>(dict);
             if (dict != null && _dict.id > 0)
             {
-                Uof.Isys_dictionaryService.UpdateEntity(_dict);
+                Uof.IdictionaryService.UpdateEntity(_dict);
                 AddLog("修改配置信息ID:" + _dict.id.ToString(), " 修改配置信息", "成功");
 
                 return Json(new { 
@@ -156,7 +137,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             else
             {
                 AddLog("添加配置信息ID:" + _dict.id.ToString(), " 添加配置信息", "成功");
-               _dict= Uof.Isys_dictionaryService.AddEntity(_dict);
+               _dict= Uof.IdictionaryService.AddEntity(_dict);
                 return Json(new
                 {
                     result = true,
@@ -177,7 +158,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         {
             if (id > 0)
             {
-                bool b = Uof.Isys_dictionaryService.DeleteEntity(id);
+                bool b = Uof.IdictionaryService.DeleteEntity(id);
                 if (b)
                 {
                     return Json(new { result = true },JsonRequestBehavior.AllowGet);

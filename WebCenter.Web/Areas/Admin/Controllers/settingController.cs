@@ -39,29 +39,29 @@ namespace WebCenter.Web.Areas.Admin.Controllers
            var list= Uof.IsettingService.GetAll().ToList();
            return Json(list, JsonRequestBehavior.AllowGet);
         }
-        
-        public ActionResult Save(List<setting> list)
+
+        public ActionResult Get(int id)
         {
-            List<setting> addlist=new List<setting>();
-             List<setting> updatelist=new List<setting>();
-            foreach (var item in list)
+            var list = Uof.IsettingService.GetById(id);
+            return Json(list, JsonRequestBehavior.AllowGet);
+        }
+        
+        
+        public ActionResult Save(setting set)
+        {
+            if (set.id > 0)
             {
-                if (item.id > 0)
-                {
-                    updatelist.Add(item);
-                }
-                else
-                {
-                    addlist.Add(item);
-                }
+                var obj = Uof.IsettingService.GetById(set.id);
+                obj.id = set.id;
+                obj.group = set.group;
+                obj.name = set.name;
+                obj.value = set.value;
+                Uof.IsettingService.UpdateEntity(obj);
+
             }
-            if (addlist.Count > 0)
+            else
             {
-                Uof.IsettingService.AddEntities(addlist);
-            }
-            if (updatelist.Count > 0)
-            {
-                Uof.IsettingService.UpdateEntities(updatelist);
+                Uof.IsettingService.AddEntity(set);
             }
             return SuccessResult;
             

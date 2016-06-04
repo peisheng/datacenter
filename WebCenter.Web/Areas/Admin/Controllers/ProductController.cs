@@ -52,9 +52,12 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                 var it = new
                 {
                     id = item.id,
-                    name = item.product_name,
-                    desc = item.product_desc,
-                    main_image = item.image
+                    product_name = item.product_name,
+                    product_desc = item.product_desc,
+                    catetgory_name=item.category==null?"":item.category.category_name,
+                    seo_title=item.seo_title,
+                    seo_keyword=item.seo_keyword,
+                    is_publish=item.is_publish.GetValueOrDefault(0)==0?"未发布":"已发布"
                 };
                 obj.Add(it);
             }
@@ -87,7 +90,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                 if (prod.id > 0)
                 {
                    product  getPro= Uof.IproductService.GetById(prod.id);
-                   List<int> excepts= getPro.images.Select(p => p.id).ToList().Except(imageIds).ToList();
+                   List<int> excepts= getPro.images.ToList().Select(p => p.id).ToList().Except(imageIds).ToList();
                    foreach (var item in excepts)
                    {
                        Uof.IimageService.DeleteEntity(item);
@@ -101,7 +104,17 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                            Uof.IimageService.Save(item.id,item);
                        }
                    }
-                   Uof.IproductService.Save(prod.id,prod);
+                   getPro.main_image_id = prod.main_image_id;
+                   getPro.product_desc = prod.product_desc;
+                   getPro.product_features = prod.product_features;
+                   getPro.product_name = prod.product_name;
+                   getPro.product_specification = prod.product_specification;
+                   getPro.seo_desc = prod.seo_desc;
+                   getPro.seo_keyword = prod.seo_keyword;
+                   getPro.seo_title = prod.seo_title;
+                   getPro.amazon_url = prod.amazon_url;
+                   getPro.categoryid = prod.categoryid;
+                   Uof.IproductService.UpdateEntity(getPro);
                    var img=Uof.IimageService.GetById(prod.main_image_id.GetValueOrDefault(0));
                    if (img!=null)
                    {
@@ -138,6 +151,15 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         }
         public ActionResult Delete(int id)
         {
+            product pro = Uof.IproductService.GetById(id); ;
+            pro.main_image_id = null;
+            Uof.IproductService.UpdateEntity(pro);
+            var list = Uof.IimageService.GetAll(p => p.product_id == pro.id).ToList();
+            for (int i=0;i<list.Count;i++)
+            {
+                var item = list[i];
+                Uof.IimageService.DeleteEntity(item); 
+            }
             var b=Uof.IproductService.DeleteEntity(id);
             if(b)
             {
@@ -145,6 +167,20 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             }
             else
                 return ErrorResult;
+        }
+
+        public ActionResult SetPublish(int type, int id)
+        {
+
+            product pro = Uof.IproductService.GetById(id);
+            if (pro!=null)
+            {
+                pro.is_publish = type;
+                Uof.IproductService.UpdateEntity(pro);
+
+            }
+            return SuccessResult;
+                
         }
 
 

@@ -35,6 +35,10 @@ namespace WebCenter.Entities
     
     
     
+        public string small_path { get; set; }
+    
+    
+    
         public Nullable<int> product_id { get; set; }
     
     

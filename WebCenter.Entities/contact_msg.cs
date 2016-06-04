@@ -47,5 +47,9 @@ namespace WebCenter.Entities
     
     
         public Nullable<System.DateTime> create_time { get; set; }
+    
+    
+    
+        public Nullable<int> is_read { get; set; }
     }
 }
