@@ -28,6 +28,7 @@ namespace WebCenter.Web.Controllers
         {
             Uof = uof;
             Cache = CacheUtil.Cache;
+            ViewData.Add("mycate","mycate");
 
         }
 

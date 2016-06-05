@@ -57,7 +57,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
            category cate = Uof.IcategoryService.GetById(id);
             return Json(cate, JsonRequestBehavior.AllowGet);
         }
-        public ActionResult Save(string category_name,int parent_id,int sort,int id=0)
+        public ActionResult Save(string category_name,int? parent_id,int sort,int id=0)
         {
             if (id > 0)
             {

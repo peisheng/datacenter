@@ -24,7 +24,8 @@
           <Property Name="phone" Type="varchar" MaxLength="255" />
           <Property Name="country_id" Type="varchar" MaxLength="255" />
           <Property Name="msg_type" Type="varchar" MaxLength="255" />
-          <Property Name="content" Type="varchar" MaxLength="255" />
+          <Property Name="subject" Type="varchar" MaxLength="255" />
+          <Property Name="content" Type="varchar" MaxLength="2000" />
           <Property Name="create_time" Type="datetime" Precision="0" />
           <Property Name="is_read" Type="int" />
         </EntityType>
@@ -246,6 +247,7 @@
           <Property Name="content" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="create_time" Type="DateTime" />
           <Property Name="is_read" Type="Int32" />
+          <Property Name="subject" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="dictionary">
           <Key>
@@ -412,6 +414,7 @@
           <EntitySetMapping Name="contact_msg">
             <EntityTypeMapping TypeName="DataCenter.Entities.contact_msg">
               <MappingFragment StoreEntitySet="contact_msg">
+                <ScalarProperty Name="subject" ColumnName="subject" />
                 <ScalarProperty Name="is_read" ColumnName="is_read" />
                 <ScalarProperty Name="create_time" ColumnName="create_time" />
                 <ScalarProperty Name="content" ColumnName="content" />

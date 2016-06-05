@@ -34,10 +34,17 @@ namespace WebCenter.Web.Areas.Admin.Controllers
         [Authorize]
         [HttpGet]
 
-        public ActionResult List()
+        public ActionResult List(int page_index = 0, int page_size = 20)
         {
-            var list = Uof.IpageService.GetAll().ToList();
-            return Json(list, JsonRequestBehavior.AllowGet);
+            var list = Uof.IpageService.GetAll().OrderByDescending(item => item.id).ToPagedList(page_index, page_size);
+            var result = new
+            {
+                total_count = list.TotalCount,
+                current_page = page_index,
+                page_size = page_size,
+                items = list.ToList()
+            };
+            return Json(result, JsonRequestBehavior.AllowGet);           
         }
         /// <summary>
         /// 取得产口详细

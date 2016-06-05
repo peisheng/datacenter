@@ -51,5 +51,9 @@ namespace WebCenter.Entities
     
     
         public Nullable<int> is_read { get; set; }
+    
+    
+    
+        public string subject { get; set; }
     }
 }

@@ -66,7 +66,17 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             if (id <= 0)
                 return ErrorResult;
             contact_msg pro = Uof.Icontact_msgService.GetById(id);
-            return Json(pro, JsonRequestBehavior.AllowGet);
+            contact_msg result = pro;
+            if (pro.is_read == null || pro.is_read == 0)
+            {         
+
+                result.is_read = 1;
+                Uof.Icontact_msgService.UpdateEntity(pro);
+            }
+           
+
+
+            return Json(result, JsonRequestBehavior.AllowGet);
         }
         public ActionResult Save(contact_msg msg)
         {

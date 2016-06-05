@@ -95,6 +95,7 @@
     <Compile Include="Spell.cs" />
     <Compile Include="SpellOptions.cs" />
     <Compile Include="StringExtensions.cs" />
+    <Compile Include="Uploader.cs" />
     <Compile Include="UserInfo.cs" />
     <Compile Include="WebAppSetting.cs" />
     <Compile Include="WebGrab.cs" />
