@@ -7,8 +7,9 @@ namespace WebCenter.Web
 {
     public class CacheKeys
     {
-        public  const string BaseControllerCache = "BaseControllerCache";
-        public const string CompanyListCache = "CompanyListCache";
+        public const string BaseCateCacheKey = "BaseCateCacheKey";
+        public const string MetaCacheKey = "MetaCacheKey";
+        public const string SettingCacehKey = "SettingCacehKey";
 
     }
 }

@@ -15,7 +15,7 @@ using WebCenter.Web.Controllers;
 
 namespace WebCenter.Web.Areas.Admin.Controllers
 {
-    public class DictionaryController : BaseController
+    public class DictionaryController : AdminBaseController
     {
         public DictionaryController(IUnitOfWork UOF)
             : base(UOF)

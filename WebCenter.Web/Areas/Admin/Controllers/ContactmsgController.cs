@@ -15,7 +15,7 @@ using WebCenter.Web.Controllers;
 
 namespace WebCenter.Web.Areas.Admin.Controllers
 {
-    public class ContactmsgController : BaseController
+    public class ContactmsgController : AdminBaseController
     {
         public ContactmsgController(IUnitOfWork UOF)
             : base(UOF)

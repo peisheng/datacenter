@@ -15,7 +15,7 @@ using WebCenter.Web.Controllers;
 
 namespace WebCenter.Web.Areas.Admin.Controllers
 {
-    public class CategoryController : BaseController
+    public class CategoryController : AdminBaseController
     {
         public CategoryController(IUnitOfWork UOF)
             : base(UOF)

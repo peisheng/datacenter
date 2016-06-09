@@ -1,0 +1,4580 @@
+
+ 
+记录时间：2016-06-10 00:10:26,794 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE (`Extent1`.`parent_id` IS  NULL) OR (0 = `Extent1`.`parent_id`)
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:26,794 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE (`Extent1`.`parent_id` IS  NULL) OR (0 = `Extent1`.`parent_id`)
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:26,897 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:26,897 
+错误描述：
+执行时间:5 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:26,901 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:26,901 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:26,903 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:26,903 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:26,905 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:26,905 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:26,906 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:26,906 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:27,389 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`
+FROM `setting` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:27,389 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`
+FROM `setting` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:30,633 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:30,663 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:30,666 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:55,881 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 113,114,115,116 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:56,116 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 1,2,3,4 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:10:56,127 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:11:00,915 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:11:00,916 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:11:00,919 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:11:02,553 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:11:12,198 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:11:12,200 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:11:12,202 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:11:12,205 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:11:29,136 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:11:29,137 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:11:29,138 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:11:29,141 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:13:22,621 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE (`Extent1`.`parent_id` IS  NULL) OR (0 = `Extent1`.`parent_id`)
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:13:22,621 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE (`Extent1`.`parent_id` IS  NULL) OR (0 = `Extent1`.`parent_id`)
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:13:22,724 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:13:22,724 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:13:22,726 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:13:22,726 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:13:22,729 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:13:22,729 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:13:22,731 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:13:22,731 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:13:22,732 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:13:22,733 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:13:23,128 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`
+FROM `setting` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:13:23,129 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`
+FROM `setting` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:13:31,583 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`page_name`, 
+`Extent1`.`page_title`, 
+`Extent1`.`page_content`, 
+`Extent1`.`update_time`, 
+`Extent1`.`create_time`
+FROM `page` AS `Extent1`
+ WHERE @gp1 = `Extent1`.`page_name` LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:13:31,768 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 113,114,115,116 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:13:32,066 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 1,2,3,4 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:13:32,158 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:16:35,111 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`page_name`, 
+`Extent1`.`page_title`, 
+`Extent1`.`page_content`, 
+`Extent1`.`update_time`, 
+`Extent1`.`create_time`
+FROM `page` AS `Extent1`
+ WHERE @gp1 = `Extent1`.`page_name` LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:16:43,092 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`page_name`, 
+`Extent1`.`page_title`, 
+`Extent1`.`page_content`, 
+`Extent1`.`update_time`, 
+`Extent1`.`create_time`
+FROM `page` AS `Extent1`
+ WHERE @gp1 = `Extent1`.`page_name` LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:16:44,644 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`page_name`, 
+`Extent1`.`page_title`, 
+`Extent1`.`page_content`, 
+`Extent1`.`update_time`, 
+`Extent1`.`create_time`
+FROM `page` AS `Extent1`
+ WHERE @gp1 = `Extent1`.`page_name` LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:18:12,881 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`page_name`, 
+`Extent1`.`page_title`, 
+`Extent1`.`page_content`, 
+`Extent1`.`update_time`, 
+`Extent1`.`create_time`
+FROM `page` AS `Extent1`
+ WHERE @gp1 = `Extent1`.`page_name` LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:42:08,746 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE (`Extent1`.`parent_id` IS  NULL) OR (0 = `Extent1`.`parent_id`)
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:42:08,746 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE (`Extent1`.`parent_id` IS  NULL) OR (0 = `Extent1`.`parent_id`)
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:42:08,838 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:42:08,838 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:42:08,840 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:42:08,840 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:42:08,842 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:42:08,842 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:42:08,844 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:42:08,844 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:42:08,845 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:42:08,845 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:42:09,278 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`
+FROM `setting` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:42:09,278 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`
+FROM `setting` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:42:12,403 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`page_name`, 
+`Extent1`.`page_title`, 
+`Extent1`.`page_content`, 
+`Extent1`.`update_time`, 
+`Extent1`.`create_time`
+FROM `page` AS `Extent1`
+ WHERE (`Extent1`.`page_name` = @p__linq__0) OR ((`Extent1`.`page_name` IS  NULL) AND (@p__linq__0 IS  NULL)) LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:42:12,412 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 113,114,115,116 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:42:12,723 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 1,2,3,4 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:42:12,867 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:08,772 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE (`Extent1`.`parent_id` IS  NULL) OR (0 = `Extent1`.`parent_id`)
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:08,773 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE (`Extent1`.`parent_id` IS  NULL) OR (0 = `Extent1`.`parent_id`)
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:08,772 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE (`Extent1`.`parent_id` IS  NULL) OR (0 = `Extent1`.`parent_id`)
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:08,890 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:08,891 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:08,891 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:08,892 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:08,892 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:08,892 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:08,894 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:08,894 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:08,894 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:08,897 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:08,897 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:08,897 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:08,898 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:08,898 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:08,898 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:09,460 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`
+FROM `setting` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:09,461 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`
+FROM `setting` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:09,462 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`
+FROM `setting` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:14,067 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`page_name`, 
+`Extent1`.`page_title`, 
+`Extent1`.`page_content`, 
+`Extent1`.`update_time`, 
+`Extent1`.`create_time`
+FROM `page` AS `Extent1`
+ WHERE (`Extent1`.`page_name` = @p__linq__0) OR ((`Extent1`.`page_name` IS  NULL) AND (@p__linq__0 IS  NULL)) LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:14,067 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 113,114,115,116 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:14,068 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`page_name`, 
+`Extent1`.`page_title`, 
+`Extent1`.`page_content`, 
+`Extent1`.`update_time`, 
+`Extent1`.`create_time`
+FROM `page` AS `Extent1`
+ WHERE (`Extent1`.`page_name` = @p__linq__0) OR ((`Extent1`.`page_name` IS  NULL) AND (@p__linq__0 IS  NULL)) LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:14,483 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 1,2,3,4 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:14,606 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:43:19,847 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`page_name`, 
+`Extent1`.`page_title`, 
+`Extent1`.`page_content`, 
+`Extent1`.`update_time`, 
+`Extent1`.`create_time`
+FROM `page` AS `Extent1`
+ WHERE (`Extent1`.`page_name` = @p__linq__0) OR ((`Extent1`.`page_name` IS  NULL) AND (@p__linq__0 IS  NULL)) LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 00:44:56,089 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`page_name`, 
+`Extent1`.`page_title`, 
+`Extent1`.`page_content`, 
+`Extent1`.`update_time`, 
+`Extent1`.`create_time`
+FROM `page` AS `Extent1`
+ WHERE (`Extent1`.`page_name` = @p__linq__0) OR ((`Extent1`.`page_name` IS  NULL) AND (@p__linq__0 IS  NULL)) LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:14:14,643 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE (`Extent1`.`parent_id` IS  NULL) OR (0 = `Extent1`.`parent_id`)
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:14:14,730 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:14:14,732 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:14:14,734 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:14:14,735 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:14:14,737 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:14:15,043 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`
+FROM `setting` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:14:16,743 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 113,114,115,116 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:14:17,031 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 1,2,3,4 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:14:17,097 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:15:34,989 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`page_name`, 
+`Extent1`.`page_title`, 
+`Extent1`.`page_content`, 
+`Extent1`.`update_time`, 
+`Extent1`.`create_time`
+FROM `page` AS `Extent1`
+ WHERE (`Extent1`.`page_name` = @p__linq__0) OR ((`Extent1`.`page_name` IS  NULL) AND (@p__linq__0 IS  NULL)) LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:15:58,048 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`page_name`, 
+`Extent1`.`page_title`, 
+`Extent1`.`page_content`, 
+`Extent1`.`update_time`, 
+`Extent1`.`create_time`
+FROM `page` AS `Extent1`
+ WHERE (`Extent1`.`page_name` = @p__linq__0) OR ((`Extent1`.`page_name` IS  NULL) AND (@p__linq__0 IS  NULL)) LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:16:26,840 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`page_name`, 
+`Extent1`.`page_title`, 
+`Extent1`.`page_content`, 
+`Extent1`.`update_time`, 
+`Extent1`.`create_time`
+FROM `page` AS `Extent1`
+ WHERE (`Extent1`.`page_name` = @p__linq__0) OR ((`Extent1`.`page_name` IS  NULL) AND (@p__linq__0 IS  NULL)) LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:16:30,580 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`page_name`, 
+`Extent1`.`page_title`, 
+`Extent1`.`page_content`, 
+`Extent1`.`update_time`, 
+`Extent1`.`create_time`
+FROM `page` AS `Extent1`
+ WHERE (`Extent1`.`page_name` = @p__linq__0) OR ((`Extent1`.`page_name` IS  NULL) AND (@p__linq__0 IS  NULL)) LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:16:31,691 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`page_name`, 
+`Extent1`.`page_title`, 
+`Extent1`.`page_content`, 
+`Extent1`.`update_time`, 
+`Extent1`.`create_time`
+FROM `page` AS `Extent1`
+ WHERE (`Extent1`.`page_name` = @p__linq__0) OR ((`Extent1`.`page_name` IS  NULL) AND (@p__linq__0 IS  NULL)) LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:16:54,247 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`page_name`, 
+`Extent1`.`page_title`, 
+`Extent1`.`page_content`, 
+`Extent1`.`update_time`, 
+`Extent1`.`create_time`
+FROM `page` AS `Extent1`
+ WHERE (`Extent1`.`page_name` = @p__linq__0) OR ((`Extent1`.`page_name` IS  NULL) AND (@p__linq__0 IS  NULL)) LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:07,646 
+错误描述：
+执行时间:4 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE (`Extent1`.`parent_id` IS  NULL) OR (0 = `Extent1`.`parent_id`)
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:07,651 
+错误描述：
+执行时间:4 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE (`Extent1`.`parent_id` IS  NULL) OR (0 = `Extent1`.`parent_id`)
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:07,758 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:07,758 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:07,761 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:07,761 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:07,763 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:07,763 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:07,765 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:07,765 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:07,766 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:07,766 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:08,233 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`
+FROM `setting` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:08,233 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`
+FROM `setting` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:11,851 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 113,114,115,116 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:11,851 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 113,114,115,116 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:12,392 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 1,2,3,4 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:12,392 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 1,2,3,4 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:12,438 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:12,438 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:25,405 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`page_name`, 
+`Extent1`.`page_title`, 
+`Extent1`.`page_content`, 
+`Extent1`.`update_time`, 
+`Extent1`.`create_time`
+FROM `page` AS `Extent1`
+ WHERE @gp1 = `Extent1`.`page_name` LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:32,920 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:32,927 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:32,933 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:22:32,935 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:24:55,867 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:24:55,869 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:24:55,870 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:24:55,871 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:13,786 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:13,787 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:13,790 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:13,792 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:16,683 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 113,114,115,116 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:16,686 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 1,2,3,4 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:16,688 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:20,378 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:20,380 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:20,382 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:20,385 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:22,728 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:22,730 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:22,732 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:22,734 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:25,665 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:25,666 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:25,668 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:25,669 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:28,451 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:28,452 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:28,453 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:28,455 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:35,088 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:35,090 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:35,092 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:35,094 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:38,742 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:38,744 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:38,746 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:38,749 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:41,362 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:41,363 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:41,364 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:41,366 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:44,307 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:44,309 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:44,311 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:46,729 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:46,730 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:46,732 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:50,279 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:50,281 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:50,283 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:52,505 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:52,507 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:52,510 
+错误描述：
+执行时间:1 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:52,521 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:54,840 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:54,842 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:54,844 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:54,846 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:58,014 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:58,015 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:58,017 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:25:58,019 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:26:00,526 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:26:00,527 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:26:00,529 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:26:00,531 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:28:45,170 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE (`Extent1`.`parent_id` IS  NULL) OR (0 = `Extent1`.`parent_id`)
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:28:45,249 
+错误描述：
+执行时间:2 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:28:45,252 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:28:45,254 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:28:45,256 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:28:45,258 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:28:45,576 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`
+FROM `setting` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:28:47,220 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 113,114,115,116 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:28:47,502 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 1,2,3,4 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:28:47,565 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:28:55,144 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:28:55,151 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:28:55,161 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:28:55,163 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:28:59,137 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:28:59,139 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:28:59,140 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:28:59,143 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:02,560 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:02,562 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:02,563 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:02,565 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:05,081 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:05,082 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:05,084 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:05,086 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:07,298 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:07,299 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:07,301 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:07,303 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:09,169 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:09,171 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:09,172 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:09,174 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:11,056 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:11,058 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:11,060 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:13,496 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:13,498 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:13,499 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:13,501 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:15,576 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:15,578 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:15,579 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:15,581 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:16,911 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:16,913 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:16,915 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:47,513 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 113,114,115,116 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:47,517 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 1,2,3,4 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:47,518 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:52,874 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:52,876 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:52,878 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:52,880 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:54,281 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:54,283 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:54,285 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:54,295 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:56,643 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 113,114,115,116 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:56,646 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 1,2,3,4 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:56,647 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:59,126 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:59,128 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`categoryid` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:59,130 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`id` = @p__linq__0 LIMIT 1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:29:59,132 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:38:58,440 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE (`Extent1`.`parent_id` IS  NULL) OR (0 = `Extent1`.`parent_id`)
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:38:58,555 
+错误描述：
+执行时间:3 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:38:58,559 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:38:58,561 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:38:58,563 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:38:58,564 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`category_name`, 
+`Extent1`.`parent_id`, 
+`Extent1`.`sort`
+FROM `category` AS `Extent1`
+ WHERE `Extent1`.`parent_id` = @p__linq__0
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:38:58,863 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`name`, 
+`Extent1`.`value`, 
+`Extent1`.`group`
+FROM `setting` AS `Extent1`
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:38:59,341 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:39:00,703 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 113,114,115,116 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:39:00,978 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 1,2,3,4 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:39:01,035 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:39:55,549 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:39:55,553 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 113,114,115,116 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:39:55,555 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 1,2,3,4 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:39:55,558 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:40:05,023 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @p0 LIMIT 2
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:40:05,028 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 113,114,115,116 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:40:05,032 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`product_name`, 
+`Extent1`.`product_desc`, 
+`Extent1`.`country`, 
+`Extent1`.`amazon_url`, 
+`Extent1`.`main_image_id`, 
+`Extent1`.`categoryid`, 
+`Extent1`.`product_specification`, 
+`Extent1`.`product_features`, 
+`Extent1`.`seo_title`, 
+`Extent1`.`seo_keyword`, 
+`Extent1`.`seo_desc`, 
+`Extent1`.`is_publish`
+FROM `product` AS `Extent1`
+ WHERE `Extent1`.`id` IN ( 1,2,3,4 )
+---------------------------------------------------
+
+ 
+记录时间：2016-06-10 01:40:05,033 
+错误描述：
+执行时间:0 毫秒 
+ -->ReaderExecuted.Command:
+SELECT
+`Extent1`.`id`, 
+`Extent1`.`image_name`, 
+`Extent1`.`image_path`, 
+`Extent1`.`small_path`, 
+`Extent1`.`product_id`, 
+`Extent1`.`create_time`
+FROM `image` AS `Extent1`
+ WHERE `Extent1`.`id` = @EntityKeyValue1
+---------------------------------------------------

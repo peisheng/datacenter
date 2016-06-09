@@ -15,7 +15,7 @@ using WebCenter.Web.Controllers;
 
 namespace WebCenter.Web.Areas.Admin.Controllers
 {
-    public class ProductController : BaseController
+    public class ProductController : AdminBaseController
     {
         public ProductController(IUnitOfWork UOF)
             : base(UOF)

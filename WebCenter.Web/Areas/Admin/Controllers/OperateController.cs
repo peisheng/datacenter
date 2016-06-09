@@ -14,7 +14,7 @@ using WebCenter.Web.Controllers;
 
 namespace WebCenter.Web.Areas.Admin.Controllers
 {
-    public class OperateController : BaseController
+    public class OperateController : AdminBaseController
     {
         public OperateController(IUnitOfWork UOF)
             : base(UOF)

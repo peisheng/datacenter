@@ -2,24 +2,35 @@
     <div class="amaz_auto">
         <div class="amaz_subff">
             Your Position : <a href="/">Home</a>
-            &gt; <span class="amaz_lac"><a href="http://www.aukey.com/category/Power" alt="Power" title="Power">Power</a></span>
+            @foreach (var item in ViewData.Model.Cates)
+            {
+
+                &gt; <span class="amaz_lac"><a href="/category/@{@item.id}_@item.category_name" alt="@item.category_name" title="Power">@item.category_name</a></span>
+            }
+            <!--&gt; <span class="amaz_lac"><a href="http://www.aukey.com/category/Power" alt="Power" title="Power">Power</a></span>
             &gt; <span class="amaz_lac"><a href="http://www.aukey.com/category/Car_Chargers" alt="Car Chargers" title="Car Chargers">Car Chargers</a></span>
-            &gt; <span class="amaz_lac">Compact AUKEY Car Charger with Dual USB Ports &amp; 4.8A Output for iPhone 6S, Samsung Galaxy S7, &amp; All USB Powered Devices</span>
+                -->
+            &gt; <span class="amaz_lac">@ViewBag.Model.ProductName</span>
         </div>
         <div class="amaz_datbox power_first">
             <div class="clear"></div>
             <div class="amaz_datbox con">
                 <div class="amaz_lrslid">
                     <div class="amaz_datimg">
-                        <img src="images/1512/cc_s5_1.jpg" width="445" height="378">
+                        <img src="@ViewData.Model.image_path" width="445" height="378">
                         <!-- 图片变换速度慢问题 -->
-                        <img src="images/1512/cc_s5_1.jpg" width="445" height="378" style="display:none;">
-                        <img src="images/1512/cc_s5_2.jpg" width="445" height="378" style="display:none;">
-                        <img src="images/1512/cc_s5_3.jpg" width="445" height="378" style="display:none;">
-                        <img src="images/1512/cc_s5_4.jpg" width="445" height="378" style="display:none;">
-                        <img src="images/1512/cc_s5_5.jpg" width="445" height="378" style="display:none;">
-                        <img src="images/1512/cc_s5_6.jpg" width="445" height="378" style="display:none;">
-                        <img src="images/1512/cc_s5_7.jpg" width="445" height="378" style="display:none;">
+                        @foreach (var item in ViewBag.Model.ImagePaths)
+                        {
+                            <img src="@item.image_path" width="445" height="378" style="display:none;">
+                        }
+                        <!-- <img src="images/1512/cc_s5_1.jpg" width="445" height="378" style="display:none;">
+                         <img src="images/1512/cc_s5_2.jpg" width="445" height="378" style="display:none;">
+                         <img src="images/1512/cc_s5_3.jpg" width="445" height="378" style="display:none;">
+                         <img src="images/1512/cc_s5_4.jpg" width="445" height="378" style="display:none;">
+                         <img src="images/1512/cc_s5_5.jpg" width="445" height="378" style="display:none;">
+                         <img src="images/1512/cc_s5_6.jpg" width="445" height="378" style="display:none;">
+                         <img src="images/1512/cc_s5_7.jpg" width="445" height="378" style="display:none;">
+                        -->
                     </div>
                     <!--  <div class="amaz_chag style_ico_a">
                      </div> -->
@@ -31,14 +42,17 @@
 
                                 <div class="show_limbox">
                                     <ul class="sery_im">
-
-                                        <li><img check-img="images/1512/cc_s5_1.jpg" src="images/thumbs/product/48830/cc_s5_1.thumbs.500x500.jpg"></li>
-                                        <li><img check-img="images/1512/cc_s5_2.jpg" src="images/thumbs/product/48830/cc_s5_2.thumbs.500x500.jpg"></li>
-                                        <li><img check-img="images/1512/cc_s5_3.jpg" src="images/thumbs/product/48830/cc_s5_3.thumbs.500x500.jpg"></li>
-                                        <li><img check-img="images/1512/cc_s5_4.jpg" src="images/thumbs/product/48830/cc_s5_4.thumbs.500x500.jpg"></li>
-                                        <li><img check-img="images/1512/cc_s5_5.jpg" src="images/thumbs/product/48830/cc_s5_5.thumbs.500x500.jpg"></li>
-                                        <li><img check-img="images/1512/cc_s5_6.jpg" src="images/thumbs/product/48830/cc_s5_6.thumbs.500x500.jpg"></li>
-                                        <li><img check-img="images/1512/cc_s5_7.jpg" src="images/thumbs/product/48830/cc_s5_7.thumbs.500x500.jpg"></li>
+                                        @foreach (var item in ViewData.Model.ImagePaths)
+                                        {
+                                            <li><img check-img="@item.image_path" src="@item.small_path"></li>
+                                        }
+                                        <!--<li><img check-img="images/1512/cc_s5_2.jpg" src="images/thumbs/product/48830/cc_s5_2.thumbs.500x500.jpg"></li>
+                                          <li><img check-img="images/1512/cc_s5_3.jpg" src="images/thumbs/product/48830/cc_s5_3.thumbs.500x500.jpg"></li>
+                                          <li><img check-img="images/1512/cc_s5_4.jpg" src="images/thumbs/product/48830/cc_s5_4.thumbs.500x500.jpg"></li>
+                                          <li><img check-img="images/1512/cc_s5_5.jpg" src="images/thumbs/product/48830/cc_s5_5.thumbs.500x500.jpg"></li>
+                                          <li><img check-img="images/1512/cc_s5_6.jpg" src="images/thumbs/product/48830/cc_s5_6.thumbs.500x500.jpg"></li>
+                                          <li><img check-img="images/1512/cc_s5_7.jpg" src="images/thumbs/product/48830/cc_s5_7.thumbs.500x500.jpg"></li>
+                                            -->
                                     </ul>
 
                                 </div>
@@ -50,7 +64,7 @@
                 </div>
                 <div class="amaz_lfslid">
 
-                    <div class="gods_head">Compact AUKEY Car Charger with Dual USB Ports &amp; 4.8A Output for iPhone 6S, Samsung Galaxy S7, &amp; All USB Powered Devices                    </div>
+                    <div class="gods_head">@ViewBag.Model.ProductName                   </div>
                     <!-- 价格 -->
                     <!-- <div class="product_price">$</div> -->
                     <!--  <div class="product_short_desc">Array</div> -->
@@ -60,8 +74,9 @@
                     <div class="amz_buy_city">
                         Choose Your Country:
                         <div class="buy_url type_Black" style="">
-                            <a class="amaz_currt" href="javascript:void(0)" url="http://www.amazon.com/gp/product/B018DHQJQU/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B018DHQJQU&amp;linkCode=as2&amp;tag=aukeydirect-20&amp;linkId=XGO55RVJYDKQFJ2M">United States</a>
-                            <a href="javascript:void(0)" url="http://www.amazon.ca/dp/B014R1KEM6">
+                            <a class="amaz_currt" href="javascript:void(0)" url="@ViewData.Model.AmazonUrl">United States</a>
+                            
+                            @*<a href="javascript:void(0)" url="http://www.amazon.ca/dp/B014R1KEM6">
                                 Canada
                             </a>
                             <a href="javascript:void(0)" url="&nbsp;http://www.amazon.co.uk/dp/B019XP8PMM">
@@ -75,11 +90,11 @@
                             </a>
                             <a href="javascript:void(0)" url="http://www.amazon.it/dp/B018KFD1SY">
                                 Italy
-                            </a>
+                            </a>*@
                         </div>
 
                     </div>
-                    <div class="btn_box_buylink"><a target="_blank" href="http://www.amazon.com/gp/product/B018DHQJQU/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B018DHQJQU&amp;linkCode=as2&amp;tag=aukeydirect-20&amp;linkId=XGO55RVJYDKQFJ2M" class="buy-button">Buy on Amazon</a></div>
+                    <div class="btn_box_buylink"><a target="_blank" href="@ViewData.Model.AmazonUrl" class="buy-button">Buy on Amazon</a></div>
                     <!--  <div class="link_icon">
                          <li><a href=""><img src="images/new/link1.jpg"></a></li>
                          <li><a href=""><img src="images/new/link2.jpg"></a></li>
@@ -100,70 +115,16 @@
                     <!-- <hr> -->
                     <p>Product Specification</p>
                     <div class="pro_spe">
-                        <div class="attribute_head amaz_txt spe">Model Number:</div>
-                        <div class="attribute_end amaz_txt spe">CC-S5</div>
-                        <div class="clear"></div>
+                        @ViewData.Model.Specification
                     </div>
-                    <div class="pro_spe">
-                        <div class="attribute_head amaz_txt spe">
-                            Technology:
-                        </div>
-                        <div class="attribute_end amaz_txt spe">AiPower</div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="pro_spe">
-                        <div class="attribute_head amaz_txt spe">
-                            Input:
-                        </div>
-                        <div class="attribute_end amaz_txt spe">DC 12-24V&nbsp;2.3A&nbsp;(Max)</div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="pro_spe">
-                        <div class="attribute_head amaz_txt spe">
-                            Output:
-                        </div>
-                        <div class="attribute_end amaz_txt spe">DC&nbsp;5V/4.8A&nbsp;(Max)</div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="pro_spe">
-                        <div class="attribute_head amaz_txt spe">
-                            Dimensions:
-                        </div>
-                        <div class="attribute_end amaz_txt spe">25*&nbsp;25&nbsp;*40&nbsp;mm/ 0.98*0.98*1.57in</div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="pro_spe">
-                        <div class="attribute_head amaz_txt spe">
-                            Weight:
-                        </div>
-                        <div class="attribute_end amaz_txt spe">13.1g / 0.46oz</div>
-                        <div class="clear"></div>
-                    </div>
+                     
                 </div>
                 <div class="amaz_bufhead Features">
                     <p>Product Features</p>
                     <div class="Features amaz_txt">
-                        <div class="attribute_head amaz_txt feat">● &nbsp; </div>
-
-                        <div class="attribute_end amaz_txt feat">Detects the optimal rates to charge your many USB devices and provides up to 2.4A per AiPower USB port.</div>
+                        @ViewData.Model.Features
                     </div>
-                    <div class="clear"></div>
-                    <div class="Features amaz_txt">
-                        <div class="attribute_head amaz_txt feat">
-                            ● &nbsp;
-                        </div>
-
-                        <div class="attribute_end amaz_txt feat">Ultra compact, just 0.5oz, compatible with all 12/24V cars, van, trucks and other vehicles, charges all USB powered devices.</div>
-                    </div>
-                    <div class="clear"></div>
-                    <div class="Features amaz_txt">
-                        <div class="attribute_head amaz_txt feat">
-                            ● &nbsp;
-                        </div>
-
-                        <div class="attribute_end amaz_txt feat">Safeguards to protect against over charging and power surges.</div>
-                    </div>
-                    <div class="clear"></div>
+                     
                 </div>
 
             </div>

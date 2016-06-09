@@ -7,26 +7,41 @@
                 </div>
                 <div class="bd">
                     <ul>
-                        <li>
-                            <a href="http://www.aukey.com/product/cc-y3-car-charger-car-charger" title="AUKEY USB Type C Car Charger">
-                                <div class="banner_02" style="background-image: url(http://www.aukey.com/images/index/banner/CarCharger.jpg); "></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.aukey.com/product/pl-wd02-mobile-phone-camera-lenses-lens" title="AUKEY Mobile Lens">
-                                <div class="banner_03" style="background-image: url(http://www.aukey.com/images/index/banner/Lens1024.jpg); "></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.aukey.com/product/sk_m8_g" title="AUKEY Bluetooth Speaker">
-                                <div class="banner_04" style="background-image: url(http://www.aukey.com/images/index/banner/BluetoothSpeaker.jpg); "></div>
-                            </a>
-                        </li>
-                        <li style="border-left:none;">
-                            <a title="AUKEY USB Type C Power Bank">
-                                <div class="banner_01" style="background-image: url(http://www.aukey.com/images/index/banner/TypeC.jpg); "></div>
-                            </a>
-                        </li>
+                        <!-- <li>
+                             <a href="http://www.aukey.com/product/cc-y3-car-charger-car-charger" title="AUKEY USB Type C Car Charger">
+                                 <div class="banner_02" style="background-image: url(http://www.aukey.com/images/index/banner/CarCharger.jpg); "></div>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="http://www.aukey.com/product/pl-wd02-mobile-phone-camera-lenses-lens" title="AUKEY Mobile Lens">
+                                 <div class="banner_03" style="background-image: url(http://www.aukey.com/images/index/banner/Lens1024.jpg); "></div>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="http://www.aukey.com/product/sk_m8_g" title="AUKEY Bluetooth Speaker">
+                                 <div class="banner_04" style="background-image: url(http://www.aukey.com/images/index/banner/BluetoothSpeaker.jpg); "></div>
+                             </a>
+                         </li>
+                         <li style="border-left:none;">
+                             <a title="AUKEY USB Type C Power Bank">
+                                 <div class="banner_01" style="background-image: url(http://www.aukey.com/images/index/banner/TypeC.jpg); "></div>
+                             </a>
+                         </li>-->
+                        @{
+                            var i = 0;
+                        }
+                        @foreach (var item in ViewData.Model.Play)
+                        {
+                           
+                            <li style="border-left:none;">
+                                <a title="" href="@item.Link">
+                                    <div class="banner_0@i" style="background-image: url(/@item.ImagePath); "></div>
+                                </a>
+                            </li>                            
+                            i++;
+                        }
+
+
 
                     </ul>
                 </div>
@@ -39,7 +54,9 @@
 
             <div class="min-banner">
                 <ul>
-                    <li class="ban_sm_1">
+
+                    <!--
+                        <li class="ban_sm_1">
                         <div class="ban_sm_1 con" style="background-image: url(http://www.aukey.com/images/bannr_img/TypeC.jpg);">
                             <a href="http://www.aukey.com/category/type_c"></a>
                         </div>
@@ -59,6 +76,18 @@
                             <a href="http://www.aukey.com/category/Audio"></a>
                         </div>
                     </li>
+                        -->
+                    @{var j = 0;}
+                    @foreach (var item in ViewData.Model.Four)
+                    {
+                       
+                        <li class="ban_sm_@j">
+                            <div class="ban_sm_@j con" style="background-image: url(@item.ImagePath);">
+                                <a href="@item.Link"></a>
+                            </div>
+                        </li>
+                        j++;
+                    }
 
                 </ul>
             </div>

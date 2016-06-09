@@ -1,45 +1,20 @@
-﻿
-<div class="amaz_top_head">
-    <!-- Nav -->
-    <nav class="m_nav">
-        <ul class="nav-list-new">
-            <li class="nav-item">
-                <a>PRODUCTS</a>
-                <ul class="nav-submenu">
-                    <li class="nav-submenu-item">
-                        <a href="http://www.aukey.com/category/Power">Power</a>
-                    </li>
-                    <li class="nav-submenu-item">
-                        <a href="http://www.aukey.com/category/Audio">Audio</a>
-                    </li>
-                    <li class="nav-submenu-item">
-                        <a href="http://www.aukey.com/category/Mobile_Accessories">Mobile Accessories</a>
-                    </li>
-                    <li class="nav-submenu-item">
-                        <a href="http://www.aukey.com/category/Auto_Accessories">Auto Accessories</a>
-                    </li>
-                    <li class="nav-submenu-item">
-                        <a href="http://www.aukey.com/category/Cables_&_Hubs">Cables & Hubs</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="http://www.aukey.com/technologies">TECHNOLOGIES</a>
-            </li>
-            <li class="nav-item">
-                <a>SUPPORT</a>
-                <ul class="nav-submenu">
-                    <li class="nav-submenu-item"><a href="http://www.aukey.com/welcome/contact">Contact Us</a></li>
-                    <li class="nav-submenu-item"><a href="http://www.aukey.com/index/user">Warranty Registration</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <!-- /Nav -->
+﻿<div class="amaz_top_head">
+
 
     <div class="nav_headbox">
         <ul class="nav_head left">
-            <a href="http://www.aukey.com"><div class="logo_img">AUKEY</div></a>
+            <a href="/"><div class="logo_img">
+                @{
+                    if (string.IsNullOrEmpty(ViewBag.LogoPath))
+                    {
+                       <span>Rainbrace</span>  
+                    }
+                    else
+                    {
+                        <img src="@ViewBag.LogoPath" style="width:150px;height:50px;" /> 
+                    }
+                }
+                </div></a>
         </ul>
         <ul class="nav_head mid">
             <li>
@@ -47,11 +22,11 @@
                     <a style="cursor: default;" href="javascript:void(0);">PRODUCTS</a>
                 </div>
             </li>
-            <li>
+           <!-- <li>
                 <div class="list" id="navlistaip">
                     <a style="cursor: default;">TECHNOLOGIES</a>
                 </div>
-            </li>
+            </li>-->
             <li>
                 <div class="list" id="navlistsup">
                     <a style="cursor: default;">SUPPORT</a>
@@ -64,7 +39,34 @@
             <div class="box" id="navbox" style="">
                 <div class="cont" style="display:none;">
                     <ul class="sublist clearfix">
-                        <li>
+                        @{
+                            var cates = ViewBag.Cates as Dictionary<WebCenter.Entities.category, List<WebCenter.Entities.category>>;
+                            foreach (KeyValuePair<WebCenter.Entities.category, List<WebCenter.Entities.category>> kv in cates)
+                            { 
+                                var cateP=kv.Key;
+                                var subList=kv.Value;
+                                var sName = cateP.category_name.Replace("&", "_");
+                                
+                                <li>
+                                    <div style="width:100%;height:auto;">
+                                        <h3 class="mcate-item-hd">
+                                            <span><a href="/category/@cateP.id-@sName">@cateP.category_name</a></span>
+                                        </h3>
+                                    </div>
+                                    <p class="mcate-item-bd">
+                                        @foreach (var item in subList)
+                                        {
+                                            var ssName = item.category_name.Replace("&", "_");
+                                         <a href="/category/@item.id-@ssName" title="Power Banks">@item.category_name</a> 
+                                        }
+                                        
+                                    </p>
+                                </li>
+
+                            }
+                        }
+
+                        @*<li>
                             <div style="width:100%;height:auto;">
                                 <h3 class="mcate-item-hd">
                                     <span><a href="http://www.aukey.com/category/Power">Power</a></span>
@@ -124,7 +126,7 @@
                                 <a href="http://www.aukey.com/category/USB-C_to_USB_Hubs" title="USB-C to USB Hubs">USB-C to USB Hubs</a>
                                 <a href="http://www.aukey.com/category/USB_Hubs" title="USB  Hubs">USB  Hubs</a>
                             </p>
-                        </li>
+                        </li>*@
                     </ul>
                 </div>
             </div>
@@ -132,7 +134,7 @@
         </div>
 
         <!-- menu2 begin -->
-        <div class="nav">
+        <!--<div class="nav">  
             <div style="width:250px;margin:right auto;" class="box" id="navboxaip" style="height:0px;opacity:0;overflow:hidden;">
                 <div class="containaip" style="display:none;">
                     <ul class="sublist clearfix">
@@ -145,16 +147,16 @@
                 </div>
             </div>
             <div class="clear"></div>
-        </div>
+        </div>-->
 
         <!-- menu3 begin -->
         <div class="nav">
             <div style="width:220px;margin:right auto;" class="box" id="navboxsup" style="height:0px;opacity:0;overflow:hidden;">
                 <div class="contain" style="display:none;">
                     <ul class="sublist clearfix">
-                        <li><a href="http://www.aukey.com/welcome/contact">Contact Us</a></li>
-                        <li><a href="http://www.aukey.com/index/user" class="pregister">Warranty Registration</a></li>
-                        <li><a href="http://www.aukey.com/index/software">Software & Manual</a></li>
+                        <li><a href="/welcome/contact">Contact Us</a></li>
+                        @*<li><a href="http://www.aukey.com/index/user" class="pregister">Warranty Registration</a></li>
+                        <li><a href="http://www.aukey.com/index/software">Software & Manual</a></li>*@
                     </ul>
                 </div>
             </div>
@@ -165,15 +167,15 @@
 
 
     <!-- search -->
-    <div class="search" style="position:absolute;right:130px;z-index:99;top:-3px;">
+    @*<div class="search" style="position:absolute;right:130px;z-index:99;top:-3px; display:none;">
         <form action="/search/index" method="post" class="searchForm">
             <div class="searchimg" style="height:46px;width:46px;background: url(../images/new/search.png) no-repeat 15px 19px;"></div>
             <div class="searchtext" style="display:none;"><input type="text" name="text" style="width:0px;"></div>
         </form>
-    </div>
+    </div>*@
 
     <!-- sing_in -->
-    <div class="person" onmouseover="display()" onmouseout="disappear()">
+    @*<div class="person" onmouseover="display()" onmouseout="disappear()" style="display:none;">
         <ul class="nav_head right">
             <li style="margin-right:0px;background: url(../images/new/new_icon.png) no-repeat -49px -278px;">
                 <a class="sign_in filter_img" id="pers" alt="Sign in" title="Sign in"></a>
@@ -196,7 +198,7 @@
                 </form>
             </div>
         </ul>
-    </div>
+    </div>*@
 
     <script type="text/javascript" language="javascript">
         function display() {
