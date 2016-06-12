@@ -66,7 +66,7 @@ namespace WebCenter.Web.Controllers
                     {
                         LinkText lt = new LinkText();
                         lt.Text = item.product_name;
-                        lt.Link = "/product/" + item.id.ToString() + "_" + item.product_name;
+                        lt.Link = "/product/" + item.id.ToString() + "-" + item.product_name.Replace('&', ' ').Replace('-', ' ').Replace('.', ' ').Replace('/',' ');
                         lt.ImagePath = item.image.image_path;
                         four.Add(lt);
                     }

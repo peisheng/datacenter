@@ -83,6 +83,12 @@
           <Property Name="product_desc" Type="varchar" MaxLength="255" />
           <Property Name="country" Type="varchar" MaxLength="255" />
           <Property Name="amazon_url" Type="varchar" MaxLength="500" />
+          <Property Name="germany_amazon_url" Type="varchar" MaxLength="500" />
+          <Property Name="franch_amazon_url" Type="varchar" MaxLength="500" />
+          <Property Name="Italy_amazon_url" Type="varchar" MaxLength="500" />
+          <Property Name="spanish_amazon_url" Type="varchar" MaxLength="500" />
+          <Property Name="japan_amazon_url" Type="varchar" MaxLength="500" />
+          <Property Name="uk_amazon_url" Type="varchar" MaxLength="500" />
           <Property Name="main_image_id" Type="int" />
           <Property Name="categoryid" Type="int" />
           <Property Name="product_specification" Type="text" />
@@ -316,6 +322,12 @@
           <NavigationProperty Name="category" Relationship="DataCenter.Entities.product_ibfk_2" FromRole="product" ToRole="category" />
           <NavigationProperty Name="images" Relationship="DataCenter.Entities.image_ibfk_1" FromRole="product" ToRole="image" />
           <NavigationProperty Name="image" Relationship="DataCenter.Entities.product_ibfk_1" FromRole="product" ToRole="image" />
+          <Property Name="germany_amazon_url" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="franch_amazon_url" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Italy_amazon_url" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="spanish_amazon_url" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="japan_amazon_url" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="uk_amazon_url" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="setting">
           <Key>
@@ -479,6 +491,12 @@
           <EntitySetMapping Name="products">
             <EntityTypeMapping TypeName="DataCenter.Entities.product">
               <MappingFragment StoreEntitySet="product">
+                <ScalarProperty Name="uk_amazon_url" ColumnName="uk_amazon_url" />
+                <ScalarProperty Name="japan_amazon_url" ColumnName="japan_amazon_url" />
+                <ScalarProperty Name="spanish_amazon_url" ColumnName="spanish_amazon_url" />
+                <ScalarProperty Name="Italy_amazon_url" ColumnName="Italy_amazon_url" />
+                <ScalarProperty Name="franch_amazon_url" ColumnName="franch_amazon_url" />
+                <ScalarProperty Name="germany_amazon_url" ColumnName="germany_amazon_url" />
                 <ScalarProperty Name="is_publish" ColumnName="is_publish" />
                 <ScalarProperty Name="seo_desc" ColumnName="seo_desc" />
                 <ScalarProperty Name="seo_keyword" ColumnName="seo_keyword" />

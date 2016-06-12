@@ -113,6 +113,12 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                    getPro.seo_keyword = prod.seo_keyword;
                    getPro.seo_title = prod.seo_title;
                    getPro.amazon_url = prod.amazon_url;
+                   getPro.franch_amazon_url = prod.franch_amazon_url;
+                   getPro.germany_amazon_url = prod.germany_amazon_url;
+                   getPro.Italy_amazon_url = prod.Italy_amazon_url;
+                   getPro.japan_amazon_url = prod.japan_amazon_url;
+                   getPro.spanish_amazon_url = prod.spanish_amazon_url;
+                   getPro.uk_amazon_url = prod.uk_amazon_url;
                    getPro.categoryid = prod.categoryid;
                    Uof.IproductService.UpdateEntity(getPro);
                    var img=Uof.IimageService.GetById(prod.main_image_id.GetValueOrDefault(0));

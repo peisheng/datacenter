@@ -6,7 +6,7 @@
             @foreach (var item in ViewData.Model.ParentCates)
             {
                 <text>
-                &gt;  <span class="amaz_lac"><a href="/category/@{@item.id}-@item.category_name" alt="@item.category_name" title="Power">@item.category_name</a></span>
+                &gt;  <span class="amaz_lac"><a href="/category/@{@item.id}-@item.category_name.Replace('&', ' ').Replace('-', ' ').Replace('.', ' ').Replace('/',' ')" alt="@item.category_name" title="Power">@item.category_name</a></span>
                 </text>
             }
 
@@ -20,7 +20,7 @@
                 {
                     <div class="product_nav">
                         <ul>
-                            <li><a href="/category/@{@item.id}-@item.category_name" alt="@item.category_name" title="@item.category_name">@item.category_name</a></li>
+                            <li><a href="/category/@{@item.id}-@item.category_name.Replace('&', ' ').Replace('-', ' ').Replace('.', ' ').Replace('/',' ')" alt="@item.category_name" title="@item.category_name">@item.category_name</a></li>
                         </ul>
                     </div>
                 }
@@ -30,31 +30,15 @@
             {
                 <div class="tour-preview">
                     <div class="tour-photo">
-                        <a href="/product/@item.id" title="@item.product_name"><img typeof="foaf:Image" src="@item.image.small_path" onload="lzld(this)" width="350" height="350" alt="@item.product_name"></a>
+                        <a href="/product/@{@item.id}-@item.product_name.Replace('&', ' ').Replace('-', ' ').Replace('.', ' ').Replace('/',' ')" title="@item.product_name"><img typeof="foaf:Image" src="@item.image.small_path" onload="lzld(this)" width="350" height="350" alt="@item.product_name"></a>
                     </div>                   
                     <div class="tour-title-2">
-                        <a style="opacity:1;" href="/product/@item.id" title="@item.product_name">@item.product_name</a>
+                        <a style="opacity:1;" href="/product/@{@item.id}-@item.product_name.Replace('&', ' ').Replace('-', ' ').Replace('.', ' ').Replace('/',' ')" title="@item.product_name">@item.product_name</a>
                     </div>
                    
                 </div>
             }
-            @*<div class="tour-preview">
-                <div class="tour-photo">
-                    <a href="http://www.aukey.com/product/sk_m8_g" title="AUKEY Outdoor Waterproof Bluetooth 4.0 Stereo Speaker"><img typeof="foaf:Image" src="images/thumbs/product/USA54617-SK-M8-G /sk_m8_1.thumbs.500x500.jpg" onload="lzld(this)" width="350" height="350" alt="AUKEY Outdoor Waterproof Bluetooth 4.0 Stereo Speaker"></a>
-                </div>
-                <!-- <h2 class="tour-title">
-                    <a href="http://www.aukey.com/product/sk_m8_g" title="AUKEY Outdoor Waterproof Bluetooth 4.0 Stereo Speaker" >AUKEY Outdoor Waterproof Bluetooth 4.0 Stereo Speaker</a>
-                </h2>     -->
-
-                <div class="tour-title-2">
-                    <a style="opacity:1;" href="http://www.aukey.com/product/sk_m8_g" title="AUKEY Outdoor Waterproof Bluetooth 4.0 Stereo Speaker">AUKEY Outdoor Waterproof Bluetooth 4.0 Stereo Speaker</a>
-                </div>
-                <!-- <div class="tour-summary"> ##Instant pairing to your smartphone or tablet in 3 seconds from up to 33 feet away.#
-                ##IPX4 certified for use in wet environments. No more worrying about rain or spills, you can even clean it with running tap water.###
-                ##Compact rugged IPX4 Bluetooth speaker delivers big sound through 2x powerful 3W drivers. Great for indoor and outdoor use.###<br /><a href="http://www.aukey.com/product/sk_m8_g" class="views-more-link">Read more...</a></div>  -->
-                <!-- <p class="tour-read-more"><a href="http://www.aukey.com/product/sk_m8_g">Read More</a></p> -->
-            </div>*@
-
+           
 
 
 

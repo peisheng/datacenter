@@ -362,7 +362,7 @@ input.form-submit:hover{
 	overflow: hidden;
 }
 .ban_sm_1.con {
-	height: 200px;
+	height: 400px;
 	background-position:50% 50% ;
 	background-size: cover;
     background-image: url(../images/bannr_img/TypeC.jpg);
@@ -373,7 +373,7 @@ input.form-submit:hover{
     transform: scale(1);
 }
 .ban_sm_2.con {
-	height: 200px;
+	height: 400px;
 	background-position:50% 50% ;
 	background-size: cover;
     background-image: url(../images/bannr_img/QC3.jpg);
@@ -385,7 +385,7 @@ input.form-submit:hover{
 }
 
 .ban_sm_3.con{
-	height: 200px;
+	height: 400px;
 	background-position:54% 50% ;
 	background-size: cover;
     background-image: url(../images/bannr_img/Lenses.jpg);
@@ -397,7 +397,7 @@ input.form-submit:hover{
 }
 
 .ban_sm_4.con{
-	height: 200px;
+	height: 400px;
 	background-position:50% 50% ;
 	background-size: cover;
     background-image: url(../images/bannr_img/Audio.jpg);

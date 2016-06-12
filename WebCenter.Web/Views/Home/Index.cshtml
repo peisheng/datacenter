@@ -7,26 +7,7 @@
                 </div>
                 <div class="bd">
                     <ul>
-                        <!-- <li>
-                             <a href="http://www.aukey.com/product/cc-y3-car-charger-car-charger" title="AUKEY USB Type C Car Charger">
-                                 <div class="banner_02" style="background-image: url(http://www.aukey.com/images/index/banner/CarCharger.jpg); "></div>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="http://www.aukey.com/product/pl-wd02-mobile-phone-camera-lenses-lens" title="AUKEY Mobile Lens">
-                                 <div class="banner_03" style="background-image: url(http://www.aukey.com/images/index/banner/Lens1024.jpg); "></div>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="http://www.aukey.com/product/sk_m8_g" title="AUKEY Bluetooth Speaker">
-                                 <div class="banner_04" style="background-image: url(http://www.aukey.com/images/index/banner/BluetoothSpeaker.jpg); "></div>
-                             </a>
-                         </li>
-                         <li style="border-left:none;">
-                             <a title="AUKEY USB Type C Power Bank">
-                                 <div class="banner_01" style="background-image: url(http://www.aukey.com/images/index/banner/TypeC.jpg); "></div>
-                             </a>
-                         </li>-->
+                        
                         @{
                             var i = 0;
                         }
@@ -35,7 +16,7 @@
                            
                             <li style="border-left:none;">
                                 <a title="" href="@item.Link">
-                                    <div class="banner_0@i" style="background-image: url(/@item.ImagePath); "></div>
+                                    <div class="banner_0@i" style="background-image: url(@item.ImagePath); "></div>
                                 </a>
                             </li>                            
                             i++;
@@ -55,29 +36,8 @@
             <div class="min-banner">
                 <ul>
 
-                    <!--
-                        <li class="ban_sm_1">
-                        <div class="ban_sm_1 con" style="background-image: url(http://www.aukey.com/images/bannr_img/TypeC.jpg);">
-                            <a href="http://www.aukey.com/category/type_c"></a>
-                        </div>
-                    </li>
-                    <li class="ban_sm_2">
-                        <div class="ban_sm_2 con" style="background-image: url(http://www.aukey.com/images/bannr_img/QC3.jpg);">
-                            <a href="http://www.aukey.com/category/qualcomm_quick_charge_3-0"></a>
-                        </div>
-                    </li>
-                    <li class="ban_sm_3" >
-                        <div class="ban_sm_3 con" style="background-image: url(http://www.aukey.com/images/bannr_img/Lenses.jpg);">
-                            <a href="http://www.aukey.com/category/Mobile_Phone_Camera_Lenses"></a>
-                        </div>
-                    </li>
-                    <li class="ban_sm_4" >
-                        <div class="ban_sm_4 con" style="background-image: url(http://www.aukey.com/images/bannr_img/Audio.jpg);">
-                            <a href="http://www.aukey.com/category/Audio"></a>
-                        </div>
-                    </li>
-                        -->
-                    @{var j = 0;}
+                  
+                    @{var j = 1;}
                     @foreach (var item in ViewData.Model.Four)
                     {
                        
@@ -86,7 +46,15 @@
                                 <a href="@item.Link"></a>
                             </div>
                         </li>
-                        j++;
+                        if (j == 4)
+                        {
+                            j = 1;
+                        }
+                        else
+                        {
+                            j++;
+                        }
+                     
                     }
 
                 </ul>

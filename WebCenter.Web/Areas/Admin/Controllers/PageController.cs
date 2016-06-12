@@ -81,6 +81,13 @@ namespace WebCenter.Web.Areas.Admin.Controllers
             }
 
         }
+
+        public ActionResult Delete(int id)
+        {
+            if (id > 0)
+                Uof.IpageService.DeleteEntity(id);
+            return SuccessResult;
+        }
        
 
 

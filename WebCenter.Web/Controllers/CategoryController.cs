@@ -50,6 +50,14 @@ namespace WebCenter.Web.Controllers
              if (subCates.Count > 0)
              {
                  model.SubCates = subCates;
+                 foreach (var  item in subCates)
+                 {
+                     var subProducts = item.products.ToList();
+                     if (subProducts.Count>0)
+                     {
+                         model.ProdList.AddRange(subProducts);
+                     }                    
+                 }
              }
              else
              {

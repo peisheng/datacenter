@@ -19,6 +19,12 @@ namespace WebCenter.Web
                namespaces: new[] { "WebCenter.Web.Controllers" }
            );
             routes.MapRoute(
+              name: "product",
+              url: "product/{id}-{product_name}",
+              defaults: new { controller = "Product", action = "Index", id = UrlParameter.Optional, cate_name = UrlParameter.Optional },
+              namespaces: new[] { "WebCenter.Web.Controllers" }
+          );
+            routes.MapRoute(
               name: "contact",
               url: "welcome/contact",
               defaults: new { controller = "page", action = "contact" },

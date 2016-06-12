@@ -73,6 +73,30 @@ namespace WebCenter.Entities
     
         public Nullable<int> is_publish { get; set; }
     
+    
+    
+        public string germany_amazon_url { get; set; }
+    
+    
+    
+        public string franch_amazon_url { get; set; }
+    
+    
+    
+        public string Italy_amazon_url { get; set; }
+    
+    
+    
+        public string spanish_amazon_url { get; set; }
+    
+    
+    
+        public string japan_amazon_url { get; set; }
+    
+    
+    
+        public string uk_amazon_url { get; set; }
+    
         public virtual category category { get; set; }
         public virtual ICollection<image> images { get; set; }
         public virtual image image { get; set; }

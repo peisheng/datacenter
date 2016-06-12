@@ -10,8 +10,8 @@
                 <h2 style="text-align: center;">Contact Us</h2>
 
                 <div>
-                    <p>
-                        @ViewData.Model.Content
+                    <p id="content_id">
+                        @HttpUtility.HtmlDecode( ViewData.Model.Content)
                     </p>
                 </div>
                 <hr>
@@ -47,6 +47,18 @@
                 </div>
             </div>
             <script>
+
+                function htmlEncode(str) {
+                    var ele = document.createElement('span');
+                    ele.appendChild(document.createTextNode(str));
+                    return ele.innerHTML;
+                }
+                function htmlDecode(str) {
+                    var ele = document.createElement('span');
+                    ele.innerHTML = str;
+                    return ele.textContent;
+                }
+
             $(document).ready(function () {
 
                 $("#submit").click(function () {
@@ -72,8 +84,16 @@
                          });
                 });
 
+                setTimeout(function () {
+                    $("#content_id").html(htmlDecode($("#content_id").html()));
+                    
+                }, 10);
+
 
             });
+
+
+         
             </script>
 
         </div>

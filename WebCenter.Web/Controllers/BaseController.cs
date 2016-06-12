@@ -49,7 +49,11 @@ namespace WebCenter.Web.Controllers
                         var inList = Uof.IcategoryService.GetAll(p => p.parent_id == item.id).ToList();
                         if (inList.Count > 0)
                         {
-                            dict.Add(item, inList);
+                            if (!dict.ContainsKey(item))
+                            {
+                                dict.Add(item, inList);
+                            }
+                           
                         }
                     }
                     Cache.Add(CacheKeys.BaseCateCacheKey, dict);
@@ -195,7 +199,11 @@ namespace WebCenter.Web.Controllers
                 {
                     foreach (var item in query)
                     {
-                        hash.Add(item.name, item.value);
+                        if (!hash.ContainsKey(item.name))
+                        {
+                            hash.Add(item.name, item.value);
+                        }
+                       
                     }
                     Cache.Add(CacheKeys.SettingCacehKey, hash);
                     return hash;

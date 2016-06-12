@@ -3,8 +3,8 @@
 
     <div class="nav_headbox">
         <ul class="nav_head left">
-            <a href="/"><div class="logo_img">
-                @{
+            <a href="/"><div class="logo_img" style="">
+                @*@{
                     if (string.IsNullOrEmpty(ViewBag.LogoPath))
                     {
                        <span>Rainbrace</span>  
@@ -13,7 +13,8 @@
                     {
                         <img src="@ViewBag.LogoPath" style="width:150px;height:50px;" /> 
                     }
-                }
+                }*@
+                            Rainbrace
                 </div></a>
         </ul>
         <ul class="nav_head mid">
@@ -45,7 +46,7 @@
                             { 
                                 var cateP=kv.Key;
                                 var subList=kv.Value;
-                                var sName = cateP.category_name.Replace("&", "_");
+                                var sName = cateP.category_name.Replace('&', ' ').Replace('-', ' ').Replace('.', ' ').Replace('/', ' ');
                                 
                                 <li>
                                     <div style="width:100%;height:auto;">
@@ -55,10 +56,10 @@
                                     </div>
                                     <p class="mcate-item-bd">
                                         @foreach (var item in subList)
-                                        {
-                                            var ssName = item.category_name.Replace("&", "_");
-                                         <a href="/category/@item.id-@ssName" title="Power Banks">@item.category_name</a> 
-                                        }
+{
+    var ssName = item.category_name.Replace('&', ' ').Replace('-', ' ').Replace('.', ' ').Replace('/',' ');
+    <a href="/category/@item.id-@ssName" title="Power Banks">@item.category_name</a>
+}
                                         
                                     </p>
                                 </li>
