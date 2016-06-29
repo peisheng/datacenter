@@ -12,6 +12,7 @@ namespace WebCenter.Web.Models
         public string Specification { get; set; }
         public image MainImage { get; set; }
 
+        public string SeoLinkText { get; set; }
         public string AmazonUrl { get; set; }
         public string germany_amazon_url { get; set; }
         public string franch_amazon_url { get; set; }

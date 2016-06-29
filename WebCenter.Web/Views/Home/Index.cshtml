@@ -16,7 +16,7 @@
                            
                             <li style="border-left:none;">
                                 <a title="" href="@item.Link">
-                                    <div class="banner_0@i" style="background-image: url(@item.ImagePath); "></div>
+                                    <div class="banner_0@i" style="background-image: url(@item.ImagePath);    background-size: cover; background-repeat:no-repeat; "></div>
                                 </a>
                             </li>                            
                             i++;
@@ -41,8 +41,8 @@
                     @foreach (var item in ViewData.Model.Four)
                     {
                        
-                        <li class="ban_sm_@j">
-                            <div class="ban_sm_@j con" style="background-image: url(@item.ImagePath);">
+                        <li class="ban_sm_@j" style="height:100%!important;">
+                            <div class="ban_sm_@j con" style="background-image: url(@item.ImagePath);background-size: cover; background-repeat:no-repeat;">
                                 <a href="@item.Link"></a>
                             </div>
                         </li>

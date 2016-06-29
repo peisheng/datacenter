@@ -10,6 +10,7 @@ namespace WebCenter.Web
         public const string BaseCateCacheKey = "BaseCateCacheKey";
         public const string MetaCacheKey = "MetaCacheKey";
         public const string SettingCacehKey = "SettingCacehKey";
+        public const string ParentCatesCacheKey = "ParentCatesCacheKey";
 
     }
 }

@@ -6,7 +6,7 @@
             @foreach (var item in ViewData.Model.ParentCates)
             {
                 <text>
-                &gt;  <span class="amaz_lac"><a href="/category/@{@item.id}-@item.category_name.Replace('&', ' ').Replace('-', ' ').Replace('.', ' ').Replace('/',' ')" alt="@item.category_name" title="Power">@item.category_name</a></span>
+                &gt;  <span class="amaz_lac"><a href="/category/@{@item.id}/@item.category_name.Replace('&', ' ').Replace('.', ' ').Replace('/',' ').Replace('+',' ')" alt="@item.category_name" title="Power">@item.category_name</a></span>
                 </text>
             }
 
@@ -20,7 +20,7 @@
                 {
                     <div class="product_nav">
                         <ul>
-                            <li><a href="/category/@{@item.id}-@item.category_name.Replace('&', ' ').Replace('-', ' ').Replace('.', ' ').Replace('/',' ')" alt="@item.category_name" title="@item.category_name">@item.category_name</a></li>
+                            <li><a href="/category/@{@item.id}/@item.category_name.Replace('&', ' ').Replace('.', ' ').Replace('/',' ').Replace('+',' ')" alt="@item.category_name" title="@item.category_name">@item.category_name</a></li>
                         </ul>
                     </div>
                 }
@@ -30,10 +30,10 @@
             {
                 <div class="tour-preview">
                     <div class="tour-photo">
-                        <a href="/product/@{@item.id}-@item.product_name.Replace('&', ' ').Replace('-', ' ').Replace('.', ' ').Replace('/',' ')" title="@item.product_name"><img typeof="foaf:Image" src="@item.image.small_path" onload="lzld(this)" width="350" height="350" alt="@item.product_name"></a>
+                        <a href="/product/@{@item.id}/@item.seo_link_text.Replace('&', ' ').Replace('.', ' ').Replace('/',' ').Replace('+',' ')" title="@item.product_name"><img typeof="foaf:Image" src="@item.image.small_path" onload="lzld(this)" width="350" height="350" alt="@item.product_name"></a>
                     </div>                   
                     <div class="tour-title-2">
-                        <a style="opacity:1;" href="/product/@{@item.id}-@item.product_name.Replace('&', ' ').Replace('-', ' ').Replace('.', ' ').Replace('/',' ')" title="@item.product_name">@item.product_name</a>
+                        <a style="opacity:1;" href="/product/@{@item.id}/@item.seo_link_text.Replace('&', ' ').Replace('.', ' ').Replace('/', ' ').Replace('+',' ')" title="@item.product_name">@item.product_name</a>
                     </div>
                    
                 </div>

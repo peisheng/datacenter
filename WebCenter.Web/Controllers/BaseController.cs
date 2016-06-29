@@ -30,6 +30,7 @@ namespace WebCenter.Web.Controllers
             Uof = uof;
             Cache = CacheUtil.Cache;
             ViewBag.Cates = getCates();
+            ViewBag.ParentCates = getParentCates();
            // ViewBag.MetaData = getSettings();
             ReadMetaData();
 
@@ -67,6 +68,24 @@ namespace WebCenter.Web.Controllers
             return null;
         }
 
+        private List<category> getParentCates()
+        {
+            var cateObj = Cache.Get(CacheKeys.ParentCatesCacheKey) as List<category>;
+            if (cateObj == null)
+            {
+             
+                var list = Uof.IcategoryService.GetAll(p => p.parent_id == 0 || p.parent_id == null).ToList();
+                if(list!=null)
+                {
+                      Cache.Add(CacheKeys.ParentCatesCacheKey, list); 
+                    cateObj=list;
+                }
+                  
+                
+            }
+            return cateObj;
+          
+        }
         private void ReadMetaData()
         {
             Hashtable table = getSettings();
@@ -251,6 +270,8 @@ namespace WebCenter.Web.Controllers
                 JsonRequestBehavior = behavior
             };
         }
+
+        
 
 
 

@@ -66,7 +66,11 @@ namespace WebCenter.Web.Controllers
                     {
                         LinkText lt = new LinkText();
                         lt.Text = item.product_name;
-                        lt.Link = "/product/" + item.id.ToString() + "-" + item.product_name.Replace('&', ' ').Replace('-', ' ').Replace('.', ' ').Replace('/',' ');
+                        if (string.IsNullOrEmpty(item.seo_link_text))
+                        {
+                            item.seo_link_text = item.product_name;
+                        }
+                        lt.Link = "/product/" + item.id.ToString() + "/" + item.seo_link_text.Replace('&', ' ').Replace('.', ' ').Replace('/', ' ').Replace('+', ' ');
                         lt.ImagePath = item.image.image_path;
                         four.Add(lt);
                     }

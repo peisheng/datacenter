@@ -5,7 +5,7 @@
             @foreach (var item in ViewData.Model.Cates)
             {
                 <text>
-                    &gt; <span class="amaz_lac"><a href="/category/@{@item.id}-@item.category_name.Replace('&', ' ').Replace('-', ' ').Replace('.', ' ').Replace('/',' ')" alt="@item.category_name" title="Power">@item.category_name</a></span>
+                    &gt; <span class="amaz_lac"><a href="/category/@{@item.id}/@item.category_name.Replace('&', ' ').Replace('.', ' ').Replace('/',' ').Replace('+',' ')" alt="@item.category_name" title="Power">@item.category_name</a></span>
                 </text>
             }
             <!--&gt; <span class="amaz_lac"><a href="http://www.aukey.com/category/Power" alt="Power" title="Power">Power</a></span>

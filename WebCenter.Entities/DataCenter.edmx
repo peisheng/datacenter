@@ -93,6 +93,7 @@
           <Property Name="categoryid" Type="int" />
           <Property Name="product_specification" Type="text" />
           <Property Name="product_features" Type="text" />
+          <Property Name="seo_link_text" Type="varchar" MaxLength="255" />
           <Property Name="seo_title" Type="varchar" MaxLength="255" />
           <Property Name="seo_keyword" Type="varchar" MaxLength="255" />
           <Property Name="seo_desc" Type="varchar" MaxLength="255" />
@@ -328,6 +329,7 @@
           <Property Name="spanish_amazon_url" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
           <Property Name="japan_amazon_url" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
           <Property Name="uk_amazon_url" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="seo_link_text" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="setting">
           <Key>
@@ -491,6 +493,7 @@
           <EntitySetMapping Name="products">
             <EntityTypeMapping TypeName="DataCenter.Entities.product">
               <MappingFragment StoreEntitySet="product">
+                <ScalarProperty Name="seo_link_text" ColumnName="seo_link_text" />
                 <ScalarProperty Name="uk_amazon_url" ColumnName="uk_amazon_url" />
                 <ScalarProperty Name="japan_amazon_url" ColumnName="japan_amazon_url" />
                 <ScalarProperty Name="spanish_amazon_url" ColumnName="spanish_amazon_url" />

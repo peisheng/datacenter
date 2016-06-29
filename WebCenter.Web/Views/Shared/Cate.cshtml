@@ -1,5 +1,30 @@
 ﻿<div class="amaz_top_head">
 
+    <nav class="m_nav">
+        <ul class="nav-list-new">
+            <li class="nav-item">
+                <a>PRODUCTS</a>
+                <ul class="nav-submenu">
+                    @foreach (var item in ViewBag.ParentCates as List<WebCenter.Entities.category>)
+                    {
+                        
+                         <li class="nav-submenu-item">
+                             <a href="/category/@item.id/@item.category_name.Replace('&', ' ').Replace('.', ' ').Replace('/', ' ').Replace('+',' ')">@item.category_name.Replace('&', ' ').Replace('.', ' ').Replace('/', ' ')</a>
+                          </li> 
+                    }
+                     
+                </ul>
+            </li>
+           
+            <li class="nav-item">
+                <a>SUPPORT</a>
+                <ul class="nav-submenu">
+                    <li class="nav-submenu-item"><a href="http://www.rainbrace.com/welcome/contact">Contact Us</a></li>
+                  
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
     <div class="nav_headbox">
         <ul class="nav_head left">
@@ -46,19 +71,19 @@
                             { 
                                 var cateP=kv.Key;
                                 var subList=kv.Value;
-                                var sName = cateP.category_name.Replace('&', ' ').Replace('-', ' ').Replace('.', ' ').Replace('/', ' ');
+                                var sName = cateP.category_name.Replace('&', ' ').Replace('.', ' ').Replace('/', ' ').Replace('+', ' ');
                                 
                                 <li>
                                     <div style="width:100%;height:auto;">
                                         <h3 class="mcate-item-hd">
-                                            <span><a href="/category/@cateP.id-@sName">@cateP.category_name</a></span>
+                                            <span><a href="/category/@cateP.id/@sName">@cateP.category_name</a></span>
                                         </h3>
                                     </div>
                                     <p class="mcate-item-bd">
                                         @foreach (var item in subList)
 {
-    var ssName = item.category_name.Replace('&', ' ').Replace('-', ' ').Replace('.', ' ').Replace('/',' ');
-    <a href="/category/@item.id-@ssName" title="Power Banks">@item.category_name</a>
+    var ssName = item.category_name.Replace('&', ' ').Replace('.', ' ').Replace('/', ' ').Replace('+', ' ');
+    <a href="/category/@item.id/@ssName" title="Power Banks">@item.category_name</a>
 }
                                         
                                     </p>
@@ -67,88 +92,14 @@
                             }
                         }
 
-                        @*<li>
-                            <div style="width:100%;height:auto;">
-                                <h3 class="mcate-item-hd">
-                                    <span><a href="http://www.aukey.com/category/Power">Power</a></span>
-                                </h3>
-                            </div>
-                            <p class="mcate-item-bd">
-                                <a href="http://www.aukey.com/category/Power_Banks" title="Power Banks">Power Banks</a>
-                                <a href="http://www.aukey.com/category/Wall_Chargers" title="Wall Chargers">Wall Chargers</a>
-                                <a href="http://www.aukey.com/category/Car_Chargers" title="Car Chargers">Car Chargers</a>
-                                <a href="http://www.aukey.com/category/Solar_Charger" title="Solar Charger">Solar Charger</a>
-                            </p>
-                        </li>
-                        <li>
-                            <div style="width:100%;height:auto;">
-                                <h3 class="mcate-item-hd">
-                                    <span><a href="http://www.aukey.com/category/Audio">Audio</a></span>
-                                </h3>
-                            </div>
-                            <p class="mcate-item-bd">
-                                <a href="http://www.aukey.com/category/Bluetooth_Speakers" title="Bluetooth Speakers">Bluetooth Speakers</a>
-                                <a href="http://www.aukey.com/category/Bluetooth_Headphones" title="Bluetooth Headphones">Bluetooth Headphones</a>
-                                <a href="http://www.aukey.com/category/bluetooth_adapter" title="Bluetooth Adapter">Bluetooth Adapter</a>
-                            </p>
-                        </li>
-                        <li>
-                            <div style="width:100%;height:auto;">
-                                <h3 class="mcate-item-hd">
-                                    <span><a href="http://www.aukey.com/category/Mobile_Accessories">Mobile Accessories</a></span>
-                                </h3>
-                            </div>
-                            <p class="mcate-item-bd">
-                                <a href="http://www.aukey.com/category/Mobile_Phone_Camera_Lenses" title="Mobile Phone Camera Lenses">Mobile Phone Camera Lenses</a>
-                                <a href="http://www.aukey.com/category/Bluetooth_Selfie_Sticks" title="Bluetooth Selfie Sticks">Bluetooth Selfie Sticks</a>
-                            </p>
-                        </li>
-                        <li>
-                            <div style="width:100%;height:auto;">
-                                <h3 class="mcate-item-hd">
-                                    <span><a href="http://www.aukey.com/category/Auto_Accessories">Auto Accessories</a></span>
-                                </h3>
-                            </div>
-                            <p class="mcate-item-bd">
-                                <a href="http://www.aukey.com/category/Mobile_Phone_Car_Mounts" title="Mobile Phone Car Mounts">Mobile Phone Car Mounts</a>
-                                <a href="http://www.aukey.com/category/Car_Chargers" title="Car Chargers">Car Chargers</a>
-                            </p>
-                        </li>
-                        <li>
-                            <div style="width:100%;height:auto;">
-                                <h3 class="mcate-item-hd">
-                                    <span><a href="http://www.aukey.com/category/Cables_&_Hubs">Cables & Hubs</a></span>
-                                </h3>
-                            </div>
-                            <p class="mcate-item-bd">
-                                <a href="http://www.aukey.com/category/USB-C_Cables" title="USB-C Cables">USB-C Cables</a>
-                                <a href="http://www.aukey.com/category/Lightning_Cables" title="Lightning Cables">Lightning Cables</a>
-                                <a href="http://www.aukey.com/category/Micro_USB_Cables" title="Micro USB Cables">Micro USB Cables</a>
-                                <a href="http://www.aukey.com/category/USB-C_to_USB_Hubs" title="USB-C to USB Hubs">USB-C to USB Hubs</a>
-                                <a href="http://www.aukey.com/category/USB_Hubs" title="USB  Hubs">USB  Hubs</a>
-                            </p>
-                        </li>*@
+                      
                     </ul>
                 </div>
             </div>
             <div class="clear"></div>
         </div>
 
-        <!-- menu2 begin -->
-        <!--<div class="nav">  
-            <div style="width:250px;margin:right auto;" class="box" id="navboxaip" style="height:0px;opacity:0;overflow:hidden;">
-                <div class="containaip" style="display:none;">
-                    <ul class="sublist clearfix">
-                        <li><a href="http://www.aukey.com/technologies">Qualcomm Quick Charge</a></li>
-                        <li><a href="http://www.aukey.com/technologies#AiPower">AiPower</a></li>
-                        <li><a href="http://www.aukey.com/technologies#PowerAll">PowerAll</a></li>
-                        <li><a href="http://www.aukey.com/technologies#TurboRecharge">Turbo Recharge</a></li>
-                        <li><a href="http://www.aukey.com/technologies#EntireProtect">EntireProtect</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="clear"></div>
-        </div>-->
+        
 
         <!-- menu3 begin -->
         <div class="nav">

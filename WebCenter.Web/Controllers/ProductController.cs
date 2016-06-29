@@ -38,6 +38,7 @@ namespace WebCenter.Web.Controllers
                model.ImagePaths = prod.images.ToList();
                model.Specification = prod.product_specification;
                model.ProductName = prod.product_name;
+             
                model.Cates = new List<category>();
             
                if (prod.category.parent_id > 0)

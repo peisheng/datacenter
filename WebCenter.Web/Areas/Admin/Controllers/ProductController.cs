@@ -55,6 +55,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                     product_name = item.product_name,
                     product_desc = item.product_desc,
                     catetgory_name=item.category==null?"":item.category.category_name,
+                    seo_link_text=item.seo_link_text,
                     seo_title=item.seo_title,
                     seo_keyword=item.seo_keyword,
                     is_publish=item.is_publish.GetValueOrDefault(0)==0?"未发布":"已发布"
@@ -109,6 +110,7 @@ namespace WebCenter.Web.Areas.Admin.Controllers
                    getPro.product_features = prod.product_features;
                    getPro.product_name = prod.product_name;
                    getPro.product_specification = prod.product_specification;
+                   getPro.seo_link_text = prod.seo_link_text;
                    getPro.seo_desc = prod.seo_desc;
                    getPro.seo_keyword = prod.seo_keyword;
                    getPro.seo_title = prod.seo_title;

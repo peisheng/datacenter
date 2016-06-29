@@ -97,6 +97,10 @@ namespace WebCenter.Entities
     
         public string uk_amazon_url { get; set; }
     
+    
+    
+        public string seo_link_text { get; set; }
+    
         public virtual category category { get; set; }
         public virtual ICollection<image> images { get; set; }
         public virtual image image { get; set; }
