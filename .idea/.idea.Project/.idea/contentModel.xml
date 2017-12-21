@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Administrator\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_Project.376751157.00" t="ExcludeRecursive" />
+    <e p="N:\carrerGit\datacenter" t="IncludeFlat">
+      <e p=".nuget" t="Include">
+        <e p="NuGet.Config" t="Include" />
+        <e p="NuGet.exe" t="Include" />
+        <e p="NuGet.targets" t="Include" />
+      </e>
+      <e p="1WeXinSdk" t="Include" />
+      <e p="Common" t="Include" />
+      <e p="DataLayer" t="Include" />
+      <e p="LanguagePack" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="lang.Designer.cs" t="Include" />
+        <e p="lang.resx" t="Include" />
+        <e p="LanguagePack.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="LogicLayer" t="Include" />
+      <e p="packages" t="ExcludeRecursive">
+        <e p="repositories.config" t="Include" />
+      </e>
+      <e p="Project.sln" t="IncludeFlat" />
+      <e p="WebCenter.Common" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CacheUtil.cs" t="Include" />
+        <e p="Common.csproj" t="IncludeRecursive" />
+        <e p="CultureInfoAttribute.cs" t="Include" />
+        <e p="DbCommandInterceptor.cs" t="Include" />
+        <e p="DistinctExtensions.cs" t="Include" />
+        <e p="Dynamic.cs" t="Include" />
+        <e p="Email.cs" t="Include" />
+        <e p="FileHelper.cs" t="Include" />
+        <e p="HashPassword.cs" t="Include" />
+        <e p="ImageHelper.cs" t="Include" />
+        <e p="LogHelper.cs" t="Include" />
+        <e p="MikePagerAjaxExtensions.cs" t="Include" />
+        <e p="MikePagerHtmlExtensions.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="PagedList.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Spell.cs" t="Include" />
+        <e p="SpellOptions.cs" t="Include" />
+        <e p="StringExtensions.cs" t="Include" />
+        <e p="UserInfo.cs" t="Include" />
+        <e p="WebAppSetting.cs" t="Include" />
+        <e p="WebGrab.cs" t="Include" />
+      </e>
+      <e p="WebCenter.Dal" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="BaseRepository.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DbSession.cs" t="Include" />
+        <e p="DbSession.tt" t="Include" />
+        <e p="DbSession3.cs" t="Include" />
+        <e p="DbSessionFactory.cs" t="Include" />
+        <e p="EFContextFactory.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Repository.tt" t="Include" />
+        <e p="Repository2.cs" t="Include" />
+        <e p="WebCenter.DAL.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="WebCenter.Entities" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="App_Readme" t="Include">
+          <e p="Elmah.txt" t="Include" />
+        </e>
+        <e p="Attribute" t="Include">
+          <e p="EntityPrimKey.cs" t="Include" />
+        </e>
+        <e p="BaseModel.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="city.cs" t="Include" />
+        <e p="company.cs" t="Include" />
+        <e p="DataCenter.Context.cs" t="Include" />
+        <e p="DataCenter.Context.tt" t="Include" />
+        <e p="DataCenter.cs" t="Include" />
+        <e p="DataCenter.Designer.cs" t="Include" />
+        <e p="DataCenter.edmx" t="Include" />
+        <e p="DataCenter.edmx.diagram" t="Include" />
+        <e p="DataCenter.tt" t="Include" />
+        <e p="DataCenterDb.cs" t="Include" />
+        <e p="file.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="operate_log.cs" t="Include" />
+        <e p="packages.config" t="Include" />
+        <e p="project_case.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="sequence.cs" t="Include" />
+        <e p="sys_dictionary.cs" t="Include" />
+        <e p="sys_user.cs" t="Include" />
+        <e p="user.cs" t="Include" />
+        <e p="WebCenter.Entities.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="WebCenter.IDal" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="IBaseRepository.cs" t="Include" />
+        <e p="IDbSession.cs" t="Include" />
+        <e p="IDbSession.tt" t="Include" />
+        <e p="IDbSession2.cs" t="Include" />
+        <e p="IRepository.tt" t="Include" />
+        <e p="IRepository2.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="WebCenter.IDAL.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="WebCenter.IServices" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="IBaseService.cs" t="Include" />
+        <e p="IServices.cs" t="Include" />
+        <e p="IServices.tt" t="Include" />
+        <e p="ISysServices" t="Include">
+          <e p="ITheIndexService.cs" t="Include" />
+        </e>
+        <e p="IUnitOfWork.cs" t="Include" />
+        <e p="IUnitOfWork2.cs" t="Include" />
+        <e p="IUnitOfWork2.tt" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="ProjectServices" t="Include">
+          <e p="IProjectService.cs" t="Include" />
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="WebCenter.IServices.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="WebCenter.Services" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="BaseService.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BussServices" t="Include" />
+        <e p="Migrations" t="Include">
+          <e p="Configuration.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Respository" t="Include" />
+        <e p="Services.cs" t="Include" />
+        <e p="Services.tt" t="Include" />
+        <e p="SysServices" t="Include">
+          <e p="TheIndexService.cs" t="Include" />
+        </e>
+        <e p="UnitOfWork.cs" t="Include" />
+        <e p="UnitOfWork2.cs" t="Include" />
+        <e p="UnitOfWork2.tt" t="Include" />
+        <e p="WebCenter.Services.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="WebCenter.Web" t="IncludeRecursive">
+        <e p="App_Data" t="Include" />
+        <e p="App_Start" t="Include">
+          <e p="BundleConfig.cs" t="Include" />
+          <e p="FilterConfig.cs" t="Include" />
+          <e p="NinjectWebCommon.cs" t="Include" />
+          <e p="RouteConfig.cs" t="Include" />
+          <e p="WeixinConfig.cs" t="Include" />
+        </e>
+        <e p="Areas" t="Include">
+          <e p="Admin" t="Include">
+            <e p="AdminAreaRegistration.cs" t="Include" />
+            <e p="Controllers" t="Include">
+              <e p="AccountController.cs" t="Include" />
+              <e p="CityController.cs" t="Include" />
+              <e p="CompanyController.cs" t="Include" />
+              <e p="DictionaryController.cs" t="Include" />
+              <e p="OperateController.cs" t="Include" />
+              <e p="ProjectController.cs" t="Include" />
+              <e p="UserController.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include" />
+            <e p="Views" t="Include">
+              <e p="Account" t="Include" />
+              <e p="Shared" t="Include" />
+              <e p="web.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Code" t="Include">
+          <e p="CacheKeys.cs" t="Include" />
+        </e>
+        <e p="Content" t="Include">
+          <e p="bootstrap-theme.css" t="Include" />
+          <e p="bootstrap-theme.css.map" t="Include" />
+          <e p="bootstrap-theme.min.css" t="Include" />
+          <e p="bootstrap.css" t="Include" />
+          <e p="bootstrap.css.map" t="Include" />
+          <e p="bootstrap.min.css" t="Include" />
+          <e p="Site.css" t="Include" />
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="AccountController.cs" t="Include" />
+          <e p="BaseController.cs" t="Include" />
+          <e p="CommonController.cs" t="Include" />
+          <e p="CompanyController.cs" t="Include" />
+          <e p="FileController.cs" t="Include" />
+          <e p="HomeController.cs" t="Include" />
+          <e p="ProjectController.cs" t="Include" />
+          <e p="weixin" t="Include">
+            <e p="JSSDKController.cs" t="Include" />
+            <e p="MediaController.cs" t="Include" />
+            <e p="OAuthController.cs" t="Include" />
+            <e p="WeixinController.cs" t="Include" />
+            <e p="WXPayController.cs" t="Include" />
+          </e>
+        </e>
+        <e p="favicon.ico" t="Include" />
+        <e p="Filters" t="Include">
+          <e p="JsonAttribute.cs" t="Include" />
+          <e p="WeixinOAuthAuthorizeAttribute.cs" t="Include" />
+        </e>
+        <e p="fonts" t="Include">
+          <e p="glyphicons-halflings-regular.eot" t="Include" />
+          <e p="glyphicons-halflings-regular.svg" t="Include" />
+          <e p="glyphicons-halflings-regular.ttf" t="Include" />
+          <e p="glyphicons-halflings-regular.woff" t="Include" />
+        </e>
+        <e p="Global.asax" t="Include" />
+        <e p="Global.asax.cs" t="Include" />
+        <e p="Infrastructure" t="Include">
+          <e p="NinjectDependencyResolver.cs" t="Include" />
+        </e>
+        <e p="log4net.config" t="Include" />
+        <e p="Models" t="Include">
+          <e p="JSSDKModel.cs" t="Include" />
+        </e>
+        <e p="NinjectDependency.cs" t="Include" />
+        <e p="NinjectDependency.tt" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Project_Readme.html" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="dd.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="_references.js" t="Include" />
+          <e p="bootstrap.js" t="Include" />
+          <e p="bootstrap.min.js" t="Include" />
+          <e p="jquery-1.10.2.intellisense.js" t="Include" />
+          <e p="jquery-1.10.2.js" t="Include" />
+          <e p="jquery-1.10.2.min.js" t="Include" />
+          <e p="jquery-1.10.2.min.map" t="Include" />
+          <e p="jquery.validate-vsdoc.js" t="Include" />
+          <e p="jquery.validate.js" t="Include" />
+          <e p="jquery.validate.min.js" t="Include" />
+          <e p="jquery.validate.unobtrusive.js" t="Include" />
+          <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+          <e p="jssdk" t="Include">
+            <e p="demo.js" t="Include" />
+          </e>
+          <e p="modernizr-2.6.2.js" t="Include" />
+          <e p="respond.js" t="Include" />
+          <e p="respond.min.js" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="AuthorizationManager.cs" t="Include" />
+        </e>
+        <e p="Views" t="Include">
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="Account" t="Include" />
+          <e p="Base" t="Include" />
+          <e p="Home" t="Include">
+            <e p="About.cshtml" t="Include" />
+            <e p="Contact.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="jssdk" t="Include">
+            <e p="Index.cshtml" t="Include" />
+            <e p="Pay.cshtml" t="Include" />
+          </e>
+          <e p="Media" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="OAuth" t="Include">
+            <e p="Failed.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="WebCenter.Web.csproj" t="IncludeRecursive" />
+        <e p="WeixinExecutor" t="Include">
+          <e p="WeixinExecutor.cs" t="Include" />
+        </e>
+      </e>
+      <e p="WebLayer" t="Include" />
+      <e p="WebTool" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Form1.cs" t="Include" />
+        <e p="Form1.Designer.cs" t="Include" />
+        <e p="Form1.resx" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="WebTool.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="weixinsdk\Deepleo.Web" t="IncludeRecursive">
+        <e p="App_Data" t="Include" />
+        <e p="App_Start" t="Include">
+          <e p="FilterConfig.cs" t="Include" />
+          <e p="RouteConfig.cs" t="Include" />
+          <e p="WebApiConfig.cs" t="Include" />
+          <e p="WeixinConfig.cs" t="Include" />
+        </e>
+        <e p="Attributes" t="Include">
+          <e p="WeixinOAuthAuthorizeAttribute.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Content" t="Include">
+          <e p="css" t="Include">
+            <e p="jssdk" t="Include">
+              <e p="style.css" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="AccountController.cs" t="Include" />
+          <e p="HomeController.cs" t="Include" />
+          <e p="JSSDKController.cs" t="Include" />
+          <e p="MediaController.cs" t="Include" />
+          <e p="OAuthController.cs" t="Include" />
+          <e p="WeixinController.cs" t="Include" />
+          <e p="WXPayController.cs" t="Include" />
+        </e>
+        <e p="Deepleo.Web.csproj" t="IncludeRecursive" />
+        <e p="Global.asax" t="Include" />
+        <e p="Global.asax.cs" t="Include" />
+        <e p="Images" t="Include">
+          <e p="ad.jpg" t="Include" />
+          <e p="jssdk-demo.png" t="Include" />
+        </e>
+        <e p="LogWriterConfig.xml" t="Include" />
+        <e p="Models" t="Include">
+          <e p="JSSDKModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Profile1.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="jssdk" t="Include">
+            <e p="demo.js" t="Include" />
+          </e>
+        </e>
+        <e p="Services" t="Include">
+          <e p="AuthorizationManager.cs" t="Include" />
+          <e p="LogWriter.cs" t="Include" />
+        </e>
+        <e p="Views" t="Include">
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="Account" t="Include">
+            <e p="Login.cshtml" t="Include" />
+          </e>
+          <e p="Home" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="jssdk" t="Include">
+            <e p="Index.cshtml" t="Include" />
+            <e p="Pay.cshtml" t="Include" />
+          </e>
+          <e p="Media" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="OAuth" t="Include">
+            <e p="Failed.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="WeixinExecutor" t="Include">
+          <e p="WeixinExecutor.cs" t="Include" />
+        </e>
+      </e>
+      <e p="weixinsdk\Deepleo.Weixin.SDK" t="IncludeRecursive">
+        <e p="AcceptMessageAPI.cs" t="Include" />
+        <e p="AdvanceMassReplayMessageAPI.cs" t="Include" />
+        <e p="BasicAPI.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Card" t="Include">
+          <e p="CreateCardAPI.cs" t="Include" />
+          <e p="ManageCardAPI.cs" t="Include" />
+          <e p="SendCardAPI.cs" t="Include" />
+          <e p="Special" t="Include">
+            <e p="AirTickectAPI.cs" t="Include" />
+            <e p="LuckyMoneyAPI.cs" t="Include" />
+            <e p="MeetingTicketAPI.cs" t="Include" />
+            <e p="MemberCardAPI.cs" t="Include" />
+            <e p="MovieTickectAPI.cs" t="Include" />
+          </e>
+          <e p="TestWhiteAPI.cs" t="Include" />
+          <e p="UseCardAPI.cs" t="Include" />
+        </e>
+        <e p="Cryptography" t="Include">
+          <e p="Cryptography.cs" t="Include" />
+          <e p="Readme.txt" t="Include" />
+          <e p="Sample.cs" t="Include" />
+          <e p="WXBizMsgCrypt.cs" t="Include" />
+        </e>
+        <e p="CustomMenuAPI.cs" t="Include" />
+        <e p="Deepleo.Weixin.SDK.csproj" t="IncludeRecursive" />
+        <e p="Entities" t="Include">
+          <e p="WeixinArtcle.cs" t="Include" />
+          <e p="WeixinMessage.cs" t="Include" />
+          <e p="WeixinNews.cs" t="Include" />
+        </e>
+        <e p="Helpers" t="Include">
+          <e p="DateTimeExtension.cs" t="Include" />
+          <e p="DynamicJson.cs" t="Include" />
+          <e p="DynamicXml.cs" t="Include" />
+          <e p="TokenHelper.cs" t="Include" />
+          <e p="Util.cs" t="Include" />
+        </e>
+        <e p="Interface" t="Include">
+          <e p="IWeixinExecutor.cs" t="Include" />
+        </e>
+        <e p="InterfaceStatisticsAPI.cs" t="Include" />
+        <e p="jssdk" t="Include">
+          <e p="JSAPI.cs" t="Include" />
+        </e>
+        <e p="MaterialAPI.cs" t="Include" />
+        <e p="Merchant" t="Include">
+          <e p="CommonAPI.cs" t="Include" />
+          <e p="ExpressAPI.cs" t="Include" />
+          <e p="GroupAPI.cs" t="Include" />
+          <e p="OrderAPI.cs" t="Include" />
+          <e p="ProductAPI.cs" t="Include" />
+          <e p="ShelfAPI.cs" t="Include" />
+          <e p="StockAPI.cs" t="Include" />
+        </e>
+        <e p="MessageStatisticsAPI.cs" t="Include" />
+        <e p="MutliServiceAPI.cs" t="Include" />
+        <e p="NewsStatisticsAPI.cs" t="Include" />
+        <e p="OAuth2API.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Pay" t="Include">
+          <e p="PayUtil.cs" t="Include" />
+          <e p="WxBizPayAPI.cs" t="Include" />
+          <e p="WxMicroPayAPI.cs" t="Include" />
+          <e p="WxPayAPI.cs" t="Include" />
+        </e>
+        <e p="PromotionAPI.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="ReplayActiveMessageAPI.cs" t="Include" />
+        <e p="ReplayPassiveMessageAPI.cs" t="Include" />
+        <e p="ServiceAdminAPI.cs" t="Include" />
+        <e p="SmartAPI.cs" t="Include" />
+        <e p="TemplateMessageAPI.cs" t="Include" />
+        <e p="UserAdminAPI.cs" t="Include" />
+        <e p="UserStatisticsAPI.cs" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>
